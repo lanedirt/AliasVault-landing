@@ -10,25 +10,23 @@ const Footer = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
-                <Link href="/" className="mb-8 inline-block">
+              <Link
+                href="/"
+                className={`header-logo flex items-center justify-start w-full pb-6`}>
+                <div className="flex items-center">
                   <Image
-                    src="/images/logo/logo-2.svg"
+                    src="/images/logo/icon-trimmed.png"
                     alt="logo"
-                    className="w-full dark:hidden"
-                    width={140}
-                    height={30}
+                    width={50}
+                    height={50}
+                    className="mr-3"
                   />
-                  <Image
-                    src="/images/logo/logo.svg"
-                    alt="logo"
-                    className="hidden w-full dark:block"
-                    width={140}
-                    height={30}
-                  />
-                </Link>
+                  <h1 className="text-2xl font-bold my-auto">AliasVault</h1>
+                </div>
+              </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lobortis.
+                  AliasVault is a free and open-source E2E encrypted
+                  password and virtual identity manager. Keeping you safe online.
                 </p>
                 <div className="flex items-center">
                   <a
@@ -212,29 +210,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
-          <div className="py-8">
-            <p className="text-center text-base text-body-color dark:text-white">
-              Template by{" "}
-              <a
-                href="http://uideck.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary"
-              >
-                UIdeck
-              </a>{" "}
-              and{" "}
-              <a
-                href="https://nextjstemplates.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary"
-              >
-                Next.js Templates
-              </a>
-            </p>
-          </div>
+
         </div>
         <div className="absolute right-0 top-14 z-[-1]">
           <svg
