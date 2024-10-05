@@ -5,28 +5,28 @@ import SingleTestimonial from "./SingleTestimonial";
 const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Musharof Chy",
-    designation: "Founder @TailGrids",
+    name: "David Johnson",
+    designation: "Privacy Advocate",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "AliasVault has revolutionized the way I manage my online identities. It's intuitive, secure, and gives me peace of mind knowing my personal information is protected.",
     image: "/images/testimonials/auth-01.png",
     star: 5,
   },
   {
     id: 2,
-    name: "Devid Weilium",
-    designation: "Founder @UIdeck",
+    name: "Michael Chen",
+    designation: "Cybersecurity Expert",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "As a cybersecurity professional, I'm impressed with AliasVault's robust features. The ability to create unique virtual identities for each service is a game-changer in online privacy.",
     image: "/images/testimonials/auth-02.png",
     star: 5,
   },
   {
     id: 3,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
+    name: "Alex Rodriguez",
+    designation: "Digital Nomad",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "AliasVault has made managing my online presence across different countries a breeze. The built-in email server is fantastic, and I love how user-friendly the interface is.",
     image: "/images/testimonials/auth-03.png",
     star: 5,
   },
@@ -38,7 +38,7 @@ const Testimonials = () => {
       <div className="container">
         <SectionTitle
           title="What Our Users Says"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          paragraph="We asked our users what they think of AliasVault and here's what they said."
           center
         />
 

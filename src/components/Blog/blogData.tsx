@@ -3,45 +3,46 @@ import { Blog } from "@/types/blog";
 const blogData: Blog[] = [
   {
     id: 1,
-    title: "Best UI components for modern websites",
+    title: "Understanding End-to-End Encryption in AliasVault",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+      "Dive deep into how AliasVault implements end-to-end encryption to ensure your data remains private and secure at all times.",
     image: "/images/blog/blog-01.jpg",
     author: {
-      name: "Samuyl Joshi",
+      name: "Alex Crypto",
       image: "/images/blog/author-01.png",
-      designation: "Graphic Designer",
+      designation: "Security Expert",
     },
-    tags: ["creative"],
-    publishDate: "2025",
+    tags: ["security"],
+    publishDate: "2023-05-15",
   },
   {
     id: 2,
-    title: "9 simple ways to improve your design skills",
+    title: "5 Ways AliasVault Protects Your Digital Identity",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+      "Discover the key features of AliasVault that help you maintain control over your online presence and protect your personal information.",
     image: "/images/blog/blog-02.jpg",
     author: {
-      name: "Musharof Chy",
+      name: "Emma Privacy",
       image: "/images/blog/author-02.png",
-      designation: "Content Writer",
+      designation: "Digital Privacy Advocate",
     },
-    tags: ["computer"],
-    publishDate: "2025",
+    tags: ["privacy"],
+    publishDate: "2023-06-02",
   },
   {
     id: 3,
-    title: "Tips to quickly improve your coding speed.",
+    title: "The Power of Virtual Identities: AliasVault in Action",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+      "Learn how to leverage virtual identities to create unique personas for different online services and enhance your privacy.",
     image: "/images/blog/blog-03.jpg",
     author: {
-      name: "Lethium Deo",
+      name: "Sam Alias",
       image: "/images/blog/author-03.png",
-      designation: "Graphic Designer",
+      designation: "Product Manager",
     },
-    tags: ["design"],
-    publishDate: "2025",
+    tags: ["feature"],
+    publishDate: "2023-06-20",
   },
 ];
+
 export default blogData;
