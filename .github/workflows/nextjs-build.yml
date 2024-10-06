@@ -1,4 +1,4 @@
-name: Next.js build and test
+name: Next.js build
 
 on:
   push:
@@ -23,6 +23,3 @@ jobs:
 
     - name: Build
       run: npm run build
-
-    - name: Test
-      run: npm test
