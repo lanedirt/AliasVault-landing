@@ -52,10 +52,10 @@ const Hero = () => {
                 </div>
                 <div className="mt-6 text-center">
                   <Link
-                    href="#"
+                    href="https://github.com/lanedirt/AliasVault?tab=readme-ov-file#installation"
                     className="text-sm text-body-color dark:text-body-color-dark hover:underline"
                   >
-                    Setup your own private server or cloud instance (coming soon)
+                    Setup your own private server or cloud instance
                   </Link>
                 </div>
               </div>
