@@ -24,7 +24,7 @@ const AboutSectionOne = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Taking back control."
+                title="Your privacy. Protected."
                 paragraph="In an ideal world you don't need AliasVault, in reality you do. Many companies track your online activities without your knowledge. Even reputable vendors can fall victim to data breaches due to poor security practices, causing your sensitive information to fall into the wrong hands. AliasVault protects you from bad actors and empowers you to regain control over your digital identity."
                 mb="44px"
               />
