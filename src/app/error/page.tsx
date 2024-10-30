@@ -113,8 +113,8 @@ const ErrorPage = () => {
                         y2="27.0837"
                         gradientUnits="userSpaceOnUse"
                       >
-                        <stop stopColor="#4A6CF7" stopOpacity="0" />
-                        <stop offset="1" stopColor="#4A6CF7" />
+                        <stop stopColor="#d68338" stopOpacity="0" />
+                        <stop offset="1" stopColor="#d68338" />
                       </linearGradient>
                       <linearGradient
                         id="paint1_linear_116:1137"
@@ -124,8 +124,8 @@ const ErrorPage = () => {
                         y2="-2.91631"
                         gradientUnits="userSpaceOnUse"
                       >
-                        <stop stopColor="#4A6CF7" stopOpacity="0" />
-                        <stop offset="1" stopColor="#4A6CF7" />
+                        <stop stopColor="#d68338" stopOpacity="0" />
+                        <stop offset="1" stopColor="#d68338" />
                       </linearGradient>
                       <radialGradient
                         id="paint2_radial_116:1137"
@@ -135,8 +135,8 @@ const ErrorPage = () => {
                         gradientUnits="userSpaceOnUse"
                         gradientTransform="translate(227.5 81.5) rotate(90) scale(73.5368)"
                       >
-                        <stop stopOpacity="0.47" />
-                        <stop offset="1" stopOpacity="0" />
+                        <stop stopColor="#f49541" stopOpacity="0.47" />
+                        <stop offset="1" stopColor="#d68338" stopOpacity="0" />
                       </radialGradient>
                     </defs>
                   </svg>

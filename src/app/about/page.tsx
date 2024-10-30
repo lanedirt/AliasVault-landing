@@ -15,7 +15,7 @@ const AboutPage = () => {
     <>
       <Breadcrumb
         pageName="About AliasVault"
-        description="AliasVault is a free and open-source end-to-end encrypted password and virtual identity manager. With AliasVault you can create unique identities, passwords and email addresses for each of your accounts. Keeping you safe online."
+        description="AliasVault is a free and open-source end-to-end encrypted password and virtual identity manager. With AliasVault you can create unique identities, passwords and email addresses for every website you use. Keeping you safe online."
       />
       <AboutSectionOne />
       <AboutSectionTwo />

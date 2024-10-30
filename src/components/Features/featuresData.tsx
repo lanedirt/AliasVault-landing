@@ -59,7 +59,7 @@ const featuresData: Feature[] = [
     ),
     title: "End-To-End Encryption",
     paragraph:
-      "AliasVault features a zero-knowledge architecture to ensure that your data is always secure. Your data is fully encrypted on your local device and your master password is never transmitted to the server.",
+      "Your data is fully encrypted on your local device before being saved. Your master password is never transmitted to the server. No one, except you, can see inside your vault.",
   },
   {
     id: 1,
@@ -74,7 +74,7 @@ const featuresData: Feature[] = [
     ),
     title: "Cloud or self-hosted",
     paragraph:
-      "You can use the official AliasVault cloud service, or self-host AliasVault on your own server or a cloud provider of your choice, keeping your data in your own hands.",
+      "You can use the official AliasVault cloud service, or self-host AliasVault on your own server or a cloud provider of your choice. You are in control.",
   },
   {
     id: 1,
@@ -89,7 +89,7 @@ const featuresData: Feature[] = [
     ),
     title: "Free and Open-Source",
     paragraph:
-      "AliasVault is free and open-source software, released under the MIT license. It is built with transparency in mind, and its source code is freely available on GitHub.",
+      "AliasVault is free and open-source software, released under the MIT license. It is built with transparency in mind, and its source code is freely available on GitHub to review.",
   },
 ];
 export default featuresData;
