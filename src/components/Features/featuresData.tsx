@@ -27,9 +27,9 @@ const featuresData: Feature[] = [
         <path d="M20 15C22.75 15 25 17.25 25 20C25 22.75 22.75 25 20 25C17.25 25 15 22.75 15 20C15 17.25 17.25 15 20 15ZM20 0C22.75 0 25 2.25 25 5C25 7.75 22.75 10 20 10C17.25 10 15 7.75 15 5C15 2.25 17.25 0 20 0ZM5 30C7.75 30 10 32.25 10 35C10 37.75 7.75 40 5 40C2.25 40 0 37.75 0 35C0 32.25 2.25 30 5 30ZM5 15C7.75 15 10 17.25 10 20C10 22.75 7.75 25 5 25C2.25 25 0 22.75 0 20C0 17.25 2.25 15 5 15ZM5 0C7.75 0 10 2.25 10 5C10 7.75 7.75 10 5 10C2.25 10 0 7.75 0 5C0 2.25 2.25 0 5 0ZM35 0C37.75 0 40 2.25 40 5C40 7.75 37.75 10 35 10C32.25 10 30 7.75 30 5C30 2.25 32.25 0 35 0Z" />
       </svg>
     ),
-    title: "Identity Generator",
+    title: "Alias Generator",
     paragraph:
-      "AliasVault allows you to generate unique identities (aliases) that you can use to sign up for different services, keeping your real identity hidden.",
+      "AliasVault allows you to generate unique aliases (identities) that you can use to sign up for different services, keeping your real identity hidden.",
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ const featuresData: Feature[] = [
     ),
     title: "Email Server",
     paragraph:
-      "AliasVault features a built-in email server that allows you to create unique email addresses for each of your accounts. No need for third-party email providers.",
+      "AliasVault features a built-in email server that allows you to create unique email addresses and receive emails straight in AliasVault. No need for third-party email providers.",
   },
   {
     id: 4,
@@ -59,7 +59,7 @@ const featuresData: Feature[] = [
     ),
     title: "End-To-End Encryption",
     paragraph:
-      "Your data is fully encrypted on your local device before being saved. Your master password is never transmitted to the server. No one, except you, can see inside your vault.",
+      "Your data is fully encrypted on your local device before backed up online. Your master password is never transmitted to the server. No one, except you, can see inside your vault.",
   },
   {
     id: 1,
@@ -74,7 +74,7 @@ const featuresData: Feature[] = [
     ),
     title: "Cloud or self-hosted",
     paragraph:
-      "You can use the official AliasVault cloud service, or self-host AliasVault on your own server or a cloud provider of your choice. You are in control.",
+      "You can use the official AliasVault cloud service, or self-host AliasVault on your own server or a cloud provider of your choice. Giving you control of your data.",
   },
   {
     id: 1,

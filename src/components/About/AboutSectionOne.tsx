@@ -25,7 +25,7 @@ const AboutSectionOne = () => {
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
                 title="Your privacy. Protected."
-                paragraph="In an ideal world you don't need AliasVault, in reality you do. Many companies track your online activities without your knowledge. Even reputable vendors can fall victim to data breaches due to poor security practices, causing your sensitive information to fall into the wrong hands. AliasVault helps keep you safe online and lets you control how websites see and track you."
+                paragraph="In an ideal world you don't need AliasVault, in reality you do. Many companies track your online activities without your knowledge, creating <a href='https://en.wikipedia.org/wiki/Shadow_profile' target='_blank'>shadow profiles</a> of you. Even reputable companies can fall victim to <a href='https://en.wikipedia.org/wiki/Data_breach' target='_blank'>data breaches</a> due to poor security practices, causing your personal information to fall into the wrong hands. AliasVault helps keep you safe online and lets you control how websites see and track you."
                 mb="44px"
               />
 
@@ -36,8 +36,8 @@ const AboutSectionOne = () => {
                 <div className="mx-[-12px] flex flex-wrap">
                   <div className="w-full px-3">
                     <List text="Every website, a new alias, email address and password" />
-                    <List text="When your data is shared, you know by whom" />
-                    <List text="Only use your real identity and email address when it's absolutely necessary, keeping your information private" />
+                    <List text="When your data is shared, you know which service caused it" />
+                    <List text="Only use your real identity and email address when it's absolutely necessary, keeping your private information private" />
                   </div>
                 </div>
               </div>

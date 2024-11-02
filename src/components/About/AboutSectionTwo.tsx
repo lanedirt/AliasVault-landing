@@ -41,7 +41,7 @@ const AboutSectionTwo = () => {
                   Virtual Identities
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Create unique virtual identities for each website or service you use.
+                  Create unique virtual identities (aliases) for each website or service you use.
                   This feature helps you maintain separate online personas and prevents
                   cross-site tracking of your activities.
                 </p>
