@@ -5,7 +5,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Documentation | AliasVault",
-  description: "AliasVault is a free and open-source end-to-end encrypted password and alias manager.",
+  description: "AliasVault is an open-source end-to-end encrypted password and alias manager.",
    // other metadata
 };
 
@@ -14,7 +14,7 @@ const AboutPage = () => {
     <>
       <Breadcrumb
         pageName="Documentation"
-        description="We're working hard to bring you our documentation. Check back soon for updates!"
+        description="We're working hard to publish the AliasVault standalone documentation website. Check back soon for updates!"
       />
       <DocsComingSoon />
     </>

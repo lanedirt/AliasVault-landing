@@ -25,8 +25,7 @@ const Footer = () => {
                 </div>
               </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  AliasVault is a free and open-source E2E encrypted
-                  password and alias manager. Keeping you safe online.
+                  AliasVault is an open-source, end-to-end encrypted password and alias manager that keeps you safe online.
                 </p>
                 <div className="flex items-center">
                   <a

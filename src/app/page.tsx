@@ -8,7 +8,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "AliasVault",
-  description: "AliasVault is a free and open-source end-to-end encrypted password and alias manager.",
+  description: "AliasVault is an open-source end-to-end encrypted password and alias manager.",
   // other metadata
 };
 
