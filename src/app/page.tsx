@@ -1,10 +1,11 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
+import CallToAction from "@/components/CallToAction/CallToAction";
 import ScrollUp from "@/components/Common/ScrollUp";
+import FAQ from "@/components/FAQ";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
-import Video from "@/components/Video";
 import { Metadata } from "next";
+import SectionSpacing from "@/components/Common/SectionSpacing";
 
 export const metadata: Metadata = {
   title: "AliasVault",
@@ -18,9 +19,12 @@ export default function Home() {
       <ScrollUp />
       <Hero />
       <Features />
-      <Video />
+      <SectionSpacing withBorder />
       <AboutSectionOne />
-      <AboutSectionTwo />
+      <SectionSpacing className="pt-16" />
+      <CallToAction />
+      <SectionSpacing withBorder className="pt-16 md:pt-20" />
+      <FAQ />
     </>
   );
 }

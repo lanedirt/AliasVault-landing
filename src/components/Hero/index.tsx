@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -8,9 +9,9 @@ const Hero = () => {
         className="relative z-10 overflow-hidden bg-white pb-8 pt-[120px] dark:bg-gray-dark md:pb-[140px] md:pt-[150px] xl:pt-[180px] 2xl:pt-[210px]"
       >
         <div className="container relative z-10">
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4">
-              <div className="mx-auto max-w-[800px] text-center">
+          <div className="-mx-4 flex flex-wrap items-center">
+            <div className="w-full px-4 lg:w-1/2">
+              <div className="text-center lg:text-left">
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
                   Open-Source Password &<br /> Alias Manager
                 </h1>
@@ -58,6 +59,24 @@ const Hero = () => {
                     Install AliasVault on your own server
                   </Link>
                 </div>
+              </div>
+            </div>
+            <div className="w-full px-4 lg:w-1/2">
+              <div className="mt-8 text-center lg:mt-0">
+                <Image
+                  src="/images/hero/hero-light.png"
+                  alt="hero-image"
+                  width={1000}
+                  height={1000}
+                  className="mx-auto dark:hidden"
+                />
+                <Image
+                  src="/images/hero/hero-dark.png"
+                  alt="hero-image"
+                  width={1000}
+                  height={1000}
+                  className="mx-auto hidden dark:block"
+                />
               </div>
             </div>
           </div>

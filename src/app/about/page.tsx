@@ -1,5 +1,6 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
+import CallToAction from "@/components/CallToAction/CallToAction";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 
 import { Metadata } from "next";
@@ -19,6 +20,7 @@ const AboutPage = () => {
       />
       <AboutSectionOne />
       <AboutSectionTwo />
+      <CallToAction />
     </>
   );
 };
