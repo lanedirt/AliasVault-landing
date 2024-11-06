@@ -9,7 +9,7 @@ const Features = () => {
         <div className="container">
           <SectionTitle
             title="AliasVault Features"
-            paragraph="The following is what makes AliasVault unique."
+            paragraph="Discover how AliasVault revolutionizes your digital identity with powerful features designed for your privacy and convenience."
             center
           />
 

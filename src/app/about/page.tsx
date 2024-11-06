@@ -2,6 +2,7 @@ import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import CallToAction from "@/components/CallToAction/CallToAction";
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import Founder from "@/components/Founder";
 
 import { Metadata } from "next";
 
@@ -19,8 +20,7 @@ const AboutPage = () => {
         description="AliasVault is an open-source end-to-end encrypted password and alias manager. With AliasVault you can create unique identities, passwords and email addresses for every website you use. Keeping you safe online."
       />
       <AboutSectionOne />
-      <AboutSectionTwo />
-      <CallToAction />
+      <Founder />
     </>
   );
 };

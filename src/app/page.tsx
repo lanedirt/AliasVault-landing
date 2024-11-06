@@ -4,6 +4,7 @@ import ScrollUp from "@/components/Common/ScrollUp";
 import FAQ from "@/components/FAQ";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
+import Founder from "@/components/Founder";
 import { Metadata } from "next";
 import SectionSpacing from "@/components/Common/SectionSpacing";
 
