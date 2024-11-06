@@ -18,12 +18,12 @@ const Founder = () => {
           {/* Quote content wrapper */}
           <div className="wow fadeInUp relative bg-white dark:bg-gray-800/50 rounded-2xl p-8 md:p-12 shadow-lg">
             {/* Large quote mark */}
-            <span className="absolute -left-4 -top-4 text-7xl text-primary/30 select-none">"</span>
+            <span className="absolute -left-4 -top-4 text-7xl text-primary/30 select-none">&quot;</span>
 
             {/* Quote text */}
             <div className="space-y-6 text-base leading-relaxed text-body-color sm:text-lg sm:leading-relaxed pl-6">
               <p>
-                As a software developer and architect, I've always believed in fighting against spam and making privacy accessible to everyone. This led me to create asdasd.nl in 2013, a Dutch temporary email service that later evolved into SpamOK.com in 2023, helping thousands of people every day to protect themselves from unwanted spam and data collection through free temporary email addresses.
+                As a software developer and architect, I&apos;ve always believed in fighting against spam and making privacy accessible to everyone. This led me to create asdasd.nl in 2013, a Dutch temporary email service that later evolved into SpamOK.com in 2023, helping thousands of people every day to protect themselves from unwanted spam and data collection through free temporary email addresses.
               </p>
               <p>
                 To take privacy protection even further, I decided to create AliasVault – a state-of-the-art encrypted password & alias manager platform that helps you reclaim control of your digital identity.
