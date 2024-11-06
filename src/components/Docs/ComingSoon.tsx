@@ -7,7 +7,7 @@ const ComingSoon = () => {
             <p className="mt-8 text-base text-body-color">
               Until the documentation website is finished, you can find instructions on how to use AliasVault on our{" "}
               <a
-                href="https://github.com/lanedirt/aliasvault"
+                href="https://github.com/lanedirt/aliasvault?tab=readme-ov-file#-aliasvault"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:underline"
