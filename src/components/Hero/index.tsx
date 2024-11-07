@@ -16,8 +16,7 @@ const Hero = () => {
                   Open-Source Password &<br /> Alias Manager
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  AliasVault is an end-to-end encrypted
-                  password and alias manager. AliasVault allows you to create alternative identities, passwords and email addresses for every website you use. Keeping your personal information private.
+                  AliasVault is an end-to-end encrypted password and alias manager that protects your privacy by creating alternative identities, passwords and email addresses for every website you use. Keeping your personal information private.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link

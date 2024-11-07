@@ -16,7 +16,7 @@ const CallToAction = ({ className = "" }: CallToActionProps) => {
               Start improving your online privacy
             </h2>
             <p className="mb-6 text-lg text-gray-700 dark:text-white/90">
-              Stop spam • Protect your identity • Free & open source
+              Stop spam • Protect your identity • Open source
             </p>
             <Link
               href="https://app.aliasvault.net"
