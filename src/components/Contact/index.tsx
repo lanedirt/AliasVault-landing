@@ -50,7 +50,7 @@ const ContactContent = () => {
               Documentation & FAQ
             </h3>
             <p className="text-base text-body-color dark:text-body-color-dark">
-              Our FAQ and documentation is a great place to start. While we're working on our standalone documentation
+              Our FAQ and documentation is a great place to start. While we&apos;re working on our standalone documentation
               website, you can find comprehensive information in our GitHub repository.
             </p>
             <div className="mt-4">
