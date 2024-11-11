@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import { Metadata } from "next";
 import SectionSpacing from "@/components/Common/SectionSpacing";
 import ScrollHandler from '@/components/ScrollHandler'
+import { Suspense } from 'react';
 
 
 export const metadata: Metadata = {
@@ -19,7 +20,9 @@ export default function Home() {
 
   return (
     <>
-      <ScrollHandler />
+      <Suspense fallback={null}>
+        <ScrollHandler />
+      </Suspense>
       <ScrollUp />
       <Hero />
       <Features />
