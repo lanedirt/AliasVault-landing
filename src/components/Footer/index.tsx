@@ -143,20 +143,19 @@ const Footer = () => {
                 <ul>
                   <li>
                     <Link
-                      href="https://github.com/lanedirt/AliasVault/issues"
-                      target="_blank"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                        href="/contact"
+                        className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Open Support Ticket
+                      Contact
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="https://github.com/lanedirt/AliasVault/discussions"
-                      target="_blank"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                        href="https://github.com/lanedirt/AliasVault/issues"
+                        target="_blank"
+                        className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Contact
+                      Open Support Ticket
                     </Link>
                   </li>
                 </ul>
@@ -168,15 +167,15 @@ const Footer = () => {
         </div>
         <div className="absolute right-0 top-14 z-[-1]">
           <svg
-            width="55"
-            height="99"
-            viewBox="0 0 55 99"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+              width="55"
+              height="99"
+              viewBox="0 0 55 99"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
           >
-            <circle opacity="0.8" cx="49.5" cy="49.5" r="49.5" fill="#959CB1" />
+            <circle opacity="0.8" cx="49.5" cy="49.5" r="49.5" fill="#959CB1"/>
             <mask
-              id="mask0_94:899"
+                id="mask0_94:899"
               style={{ maskType: "alpha" }}
               maskUnits="userSpaceOnUse"
               x="0"

@@ -6,6 +6,8 @@ import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import { Metadata } from "next";
 import SectionSpacing from "@/components/Common/SectionSpacing";
+import ScrollHandler from '@/components/ScrollHandler'
+
 
 export const metadata: Metadata = {
   title: "AliasVault",
@@ -14,8 +16,10 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+
   return (
     <>
+      <ScrollHandler />
       <ScrollUp />
       <Hero />
       <Features />

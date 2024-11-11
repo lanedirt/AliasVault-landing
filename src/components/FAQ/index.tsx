@@ -12,7 +12,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="pt-16 md:pt-20 lg:pt-28">
+    <section id="faq" className="pt-16 md:pt-20 lg:pt-28">
       <div className="container">
         <SectionTitle
           title="Frequently Asked Questions"
