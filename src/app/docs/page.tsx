@@ -1,7 +1,6 @@
-import DocsComingSoon from "@/components/Docs/ComingSoon";
-import Breadcrumb from "@/components/Common/Breadcrumb";
-
+import Documentation from "@/components/Docs/Documentation";
 import { Metadata } from "next";
+import Breadcrumb from "@/components/Common/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Documentation | AliasVault",
@@ -14,9 +13,8 @@ const AboutPage = () => {
     <>
       <Breadcrumb
         pageName="Documentation"
-        description="We're working hard to publish the AliasVault standalone documentation website. Check back soon for updates!"
       />
-      <DocsComingSoon />
+      <Documentation />
     </>
   );
 };
