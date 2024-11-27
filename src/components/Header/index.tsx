@@ -64,7 +64,7 @@ const Header = () => {
                     height={50}
                     className="mr-3"
                   />
-                  <h1 className="text-2xl font-bold my-auto">AliasVault</h1>
+                  <span className="text-2xl font-bold my-auto">AliasVault</span>
                 </div>
               </Link>
             </div>
