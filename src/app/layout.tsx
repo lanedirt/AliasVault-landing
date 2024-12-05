@@ -5,6 +5,7 @@ import { Providers } from "./providers";
 import { Inter } from "next/font/google";
 import "../styles/index.css";
 import { Metadata } from "next";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -52,6 +53,7 @@ export default function RootLayout({
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
+      <Script src="https://plausible.xivi.nl/js/script.js" defer data-domain="aliasvault.net" />
 
       <head />
 
