@@ -8,7 +8,7 @@ const faqData: FAQItem[] = [
   {
     id: 1,
     question: "What is AliasVault?",
-    answer: "AliasVault is an open-source password and alias manager that allows you to create unique identities, passwords, and email addresses for every website you use. It's designed to enhance your online privacy and security through end-to-end encryption.",
+    answer: "AliasVault is an open-source password and (email) alias manager that allows you to create unique identities, passwords, and email addresses for every website you use. It's designed to enhance your online privacy and security through end-to-end encryption.",
   },
   {
     id: 2,
