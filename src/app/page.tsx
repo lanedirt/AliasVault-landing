@@ -8,6 +8,7 @@ import { Metadata } from "next";
 import SectionSpacing from "@/components/Common/SectionSpacing";
 import ScrollHandler from '@/components/ScrollHandler'
 import { Suspense } from 'react';
+import Video from "@/components/Video";
 
 
 export const metadata: Metadata = {
@@ -25,6 +26,7 @@ export default function Home() {
       </Suspense>
       <ScrollUp />
       <Hero />
+      <Video />
       <Features />
       <SectionSpacing withBorder />
       <AboutSectionOne />
