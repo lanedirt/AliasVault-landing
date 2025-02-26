@@ -1,12 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
+import BrowserBadge from "../Common/BrowserBadge";
 
 const Hero = () => {
   return (
     <>
       <section
         id="home"
-        className="relative z-10 overflow-hidden bg-white pb-8 pt-[120px] dark:bg-gray-dark md:pb-[140px] md:pt-[150px] xl:pt-[180px] 2xl:pt-[210px]"
+        className="relative z-10 overflow-hidden bg-white pb-8 pt-[120px] dark:bg-gray-dark md:pb-[140px] md:pt-[150px] xl:pt-[180px]"
       >
         <div className="container relative z-10">
           <div className="-mx-4 flex flex-wrap items-center">
@@ -18,17 +19,17 @@ const Hero = () => {
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
                   AliasVault is an end-to-end encrypted password and (email) alias manager that protects your privacy by creating alternative identities, passwords and email addresses for every website you use. Keeping your personal information private.
                 </p>
-                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+                <div className="flex flex-col items-center justify-center lg:items-start lg:justify-start space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
                     href="https://app.aliasvault.net"
                     target="_blank"
-                    className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+                    className="rounded-3xl bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
                     Create your free vault
                   </Link>
                   <Link
                     href="https://github.com/lanedirt/AliasVault"
-                    className="inline-flex items-center rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
+                    className="inline-flex items-center justify-center py-4 text-base font-semibold duration-300 ease-in-out hover:underline dark:text-white"
                   >
                     <svg
                       className="mr-2 h-5 w-5"
@@ -42,21 +43,58 @@ const Hero = () => {
                         clipRule="evenodd"
                       />
                     </svg>
-                    View on GitHub
+                    GitHub / Self-host
                   </Link>
                 </div>
-                <div className="my-8 flex items-center justify-center">
-                  <div className="h-px w-16 bg-gray-300 dark:bg-gray-700"></div>
-                  <span className="mx-4 text-sm text-gray-500 dark:text-gray-400">or</span>
-                  <div className="h-px w-16 bg-gray-300 dark:bg-gray-700"></div>
-                </div>
-                <div className="mt-6 text-center">
-                  <Link
-                    href="https://github.com/lanedirt/AliasVault?tab=readme-ov-file#installation"
-                    className="text-sm text-body-color dark:text-body-color-dark hover:underline"
-                  >
-                    Install AliasVault on your own server
-                  </Link>
+                <div className="mt-6 flex items-center justify-center lg:justify-start space-x-2">
+                  {/* Chrome Extension Badge */}
+                  <BrowserBadge
+                    href="https://chromewebstore.google.com/detail/aliasvault/bmoggiinmnodjphdjnmpcnlleamkfedj"
+                    icon="/images/browser-icons/chrome.svg"
+                    alt="Chrome Web Store"
+                  />
+
+                  {/* Firefox Extension Badge */}
+                  <BrowserBadge
+                    icon="/images/browser-icons/firefox.svg"
+                    alt="Firefox extension (Coming Soon)"
+                    className="opacity-50 cursor-not-allowed"
+                    disabled
+                  />
+
+                  {/* Edge Extension Badge */}
+                  <BrowserBadge
+                    icon="/images/browser-icons/edge.svg"
+                    alt="Edge extension (Coming Soon)"
+                    className="opacity-50 cursor-not-allowed"
+                    disabled
+                  />
+
+                  {/* Safari Extension Badge */}
+                  <BrowserBadge
+                    icon="/images/browser-icons/safari.svg"
+                    alt="Safari extension (Coming Soon)"
+                    className="opacity-50 cursor-not-allowed"
+                    disabled
+                  />
+
+                  {/* Brave Extension Badge */}
+                  <BrowserBadge
+                    icon="/images/browser-icons/brave.svg"
+                    alt="Brave extension (Coming Soon)"
+                    className="opacity-50 cursor-not-allowed"
+                    disabled
+                  />
+
+                  {/* Divider */}
+                  <span className="text-gray-400 dark:text-gray-600 flex items-center">-</span>
+
+                  {/* Made in NL Badge */}
+                  <div className="flex items-center space-x-2">
+                    <img src="/images/flags/nl.svg" alt="Made in NL" title="Made in NL" className="w-6 h-6" />
+                    <img src="/images/flags/gdpr.svg" alt="GDPR Compliant" title="GDPR Compliant" className="w-6 h-6" />
+                    <span className="text-sm text-gray-600 dark:text-gray-400">NL-based (Europe)</span>
+                  </div>
                 </div>
               </div>
             </div>

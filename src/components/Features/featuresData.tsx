@@ -62,7 +62,7 @@ const featuresData: Feature[] = [
       "Your data is fully encrypted on your local device before backed up online. Your master password is never transmitted to the server. No one, except you, can see inside your vault.",
   },
   {
-    id: 1,
+    id: 5,
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
         <path
@@ -77,7 +77,7 @@ const featuresData: Feature[] = [
       "You can use the official AliasVault cloud service, or self-host AliasVault on your own server or a cloud provider of your choice. Giving you control of your data.",
   },
   {
-    id: 1,
+    id: 6,
     icon: (
       <svg width="40" height="45" viewBox="0 0 40 45" className="fill-current">
         <path
