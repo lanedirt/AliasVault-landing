@@ -1,22 +1,21 @@
-import Documentation from "@/components/Docs/Documentation";
+import PrivacyPolicy from "@/components/PrivacyPolicy/PrivacyPolicy";
 import { Metadata } from "next";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Documentation | AliasVault",
+  title: "Privacy Policy | AliasVault",
   description: "AliasVault is an open-source end-to-end encrypted password and alias manager.",
-   // other metadata
 };
 
-const DocsPage = () => {
+const PrivacyPolicyPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Documentation"
+        pageName="Privacy Policy"
       />
-      <Documentation />
+      <PrivacyPolicy />
     </>
   );
 };
 
-export default DocsPage;
+export default PrivacyPolicyPage;

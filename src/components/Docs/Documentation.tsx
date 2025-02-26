@@ -32,18 +32,6 @@ const Documentation = () => {
             </p>
             <ul className="list-disc pl-6 space-y-3 text-base font-medium text-body-color dark:text-body-color-dark">
               <li>
-                Visit our{" "}
-                <a
-                  href="https://github.com/lanedirt/aliasvault/discussions"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline"
-                >
-                  GitHub Discussions
-                </a>{" "}
-                page
-              </li>
-              <li>
                 Check our{" "}
                 <Link
                   href="/contact"
