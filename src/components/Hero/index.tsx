@@ -43,7 +43,14 @@ const Hero = () => {
                         clipRule="evenodd"
                       />
                     </svg>
-                    GitHub / Self-host
+                    GitHub <Image
+                      className="inline-block ml-3"
+                      alt="GitHub Repo stars"
+                      src={`https://img.shields.io/github/stars/lanedirt/AliasVault?${new Date().getTime()}`}
+                      width={90}
+                      height={20}
+                      unoptimized
+                    />
                   </Link>
                 </div>
                 <div className="mt-6 flex items-center justify-center lg:justify-start space-x-2">
