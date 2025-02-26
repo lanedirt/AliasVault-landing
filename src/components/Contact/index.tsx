@@ -6,18 +6,30 @@ const ContactContent = () => {
       <div className="container">
         <div className="mx-auto">
           <div className="mb-12">
+            <p className="mb-4 text-base text-body-color dark:text-body-color-dark">
+              AliasVault is an open-source project founded and maintained by{" "}
+              <a
+                href="https://github.com/lanedirt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                Leendert de Borst
+              </a>{" "}
+              and operates from the Netherlands. We offer an official cloud-hosted version, with our own dedicated servers located in Germany, fully compliant with European GDPR regulations.
+            </p>
+            <p className="mb-4 text-base text-body-color dark:text-body-color-dark">
+              For inquiries regarding our cloud-hosted service, commercial licensing, or enterprise support, please contact:{" "}
+              <a
+                href="mailto:contact@support.aliasvault.net"
+                className="text-primary hover:underline"
+              >
+                contact@support.aliasvault.net
+              </a>
+            </p>
             <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
               Support & Bug Reports
             </h3>
-            <p className="mb-4 text-base text-body-color dark:text-body-color-dark">
-              For cloud-hosted AliasVault support inquiries, contact us directly at:{" "}
-              <a
-                  href="mailto:contact@support.aliasvault.net"
-                  className="text-primary hover:underline"
-              >
-                contact@support.aliasvault.net
-              </a>.
-            </p>
             <p className="text-base text-body-color dark:text-body-color-dark">
               For bug reports please use our GitHub repository. For technical discussions about the open-source project, join our Discord community:
             </p>

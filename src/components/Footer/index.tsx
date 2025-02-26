@@ -166,9 +166,17 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                        href="https://github.com/lanedirt/AliasVault/issues"
-                        target="_blank"
+                        href="/report-abuse"
                         className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      Report Abuse
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="https://github.com/lanedirt/AliasVault/issues"
+                      target="_blank"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Open Support Ticket
                     </Link>

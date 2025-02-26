@@ -4,7 +4,7 @@ import Image from "next/image";
 import CallToAction from "@/components/CallToAction/CallToAction";
 
 export const metadata: Metadata = {
-  title: "Alternative to Bitwarden | AliasVault",
+  title: "Alternative to Bitwarden",
   description: "AliasVault is an open-source end-to-end encrypted password and alias manager.",
 };
 

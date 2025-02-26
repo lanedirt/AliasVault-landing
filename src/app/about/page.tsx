@@ -5,7 +5,7 @@ import Founder from "@/components/Founder";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About | AliasVault",
+  title: "About",
   description: "AliasVault is an open-source end-to-end encrypted password and alias manager.",
    // other metadata
 };
