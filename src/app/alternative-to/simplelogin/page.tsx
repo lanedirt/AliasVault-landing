@@ -1,6 +1,4 @@
-import Documentation from "@/components/Docs/Documentation";
 import { Metadata } from "next";
-import Breadcrumb from "@/components/Common/Breadcrumb";
 import Link from "next/link";
 import Image from "next/image";
 import CallToAction from "@/components/CallToAction/CallToAction";
@@ -8,7 +6,6 @@ import CallToAction from "@/components/CallToAction/CallToAction";
 export const metadata: Metadata = {
   title: "Alternative to SimpleLogin",
   description: "AliasVault is an open-source end-to-end encrypted password and alias manager.",
-   // other metadata
 };
 
 const SimpleLoginPage = () => {
