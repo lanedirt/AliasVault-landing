@@ -6,9 +6,6 @@ const PrivacyPolicy = () => {
       <div className="container">
         <div className="space-y-8">
           <div>
-            <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-              Privacy Policy
-            </h3>
             <p className="text-base font-medium leading-relaxed text-body-color dark:text-body-color-dark">
               Last updated: February 26, 2025
             </p>
