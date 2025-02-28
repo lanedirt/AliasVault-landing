@@ -13,8 +13,8 @@ const Video = () => {
     <section className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="AliasVault in Action"
-          paragraph="See how AliasVault works, including password management, email alias creation, and privacy protection capabilities."
+          title="AliasVault demo"
+          paragraph="Check out the video below to see AliasVault in action."
           center
           mb="80px"
         />
@@ -31,7 +31,7 @@ const Video = () => {
                   onClick={() => setOpen(true)}
                   className="block w-full h-full relative"
                 >
-                  <Image src="/images/video/video.jpg" alt="video image" fill />
+                  <Image src="/images/video/av-video.jpg" alt="video image" fill />
                   <div className="absolute right-0 top-0 flex h-full w-full items-center justify-center">
                     <div className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-white bg-opacity-75 text-primary transition hover:bg-opacity-100">
                       <svg
@@ -54,7 +54,7 @@ const Video = () => {
       <ModalVideo
         channel="youtube"
         isOpen={isOpen}
-        videoId="L61p2uyiMSo"
+        videoId="T35VHmS8a-A"
         onClose={() => setOpen(false)}
       />
 
