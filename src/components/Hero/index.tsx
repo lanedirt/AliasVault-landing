@@ -63,10 +63,9 @@ const Hero = () => {
 
                   {/* Firefox Extension Badge */}
                   <BrowserBadge
+                    href="https://addons.mozilla.org/en-US/firefox/addon/aliasvault/"
                     icon="/images/browser-icons/firefox.svg"
-                    alt="Firefox extension (Coming Soon)"
-                    className="opacity-50 cursor-not-allowed"
-                    disabled
+                    alt="Firefox extension"
                   />
 
                   {/* Edge Extension Badge */}
