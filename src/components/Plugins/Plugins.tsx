@@ -1,4 +1,3 @@
-import Link from "next/link";
 import BrowserBadge from "../Common/BrowserBadge";
 
 const Plugins = () => {
@@ -110,7 +109,7 @@ const Plugins = () => {
               Development Roadmap
             </h3>
             <p className="text-base font-medium leading-relaxed text-body-color dark:text-body-color-dark">
-              We're constantly working to improve AliasVault and expand our ecosystem of plugins and integrations. To track our progress and see what's coming next, check out our{" "}
+              We&apos;re constantly working to improve AliasVault and expand our ecosystem of plugins and integrations. To track our progress and see what&apos;s coming next, check out our{" "}
               <a
                 href="https://github.com/lanedirt/AliasVault?tab=readme-ov-file#roadmap"
                 target="_blank"
