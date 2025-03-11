@@ -106,10 +106,18 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
+                      href="/plugins"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      Plugins
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
                       href="/docs"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Documentation
+                      Docs
                     </Link>
                   </li>
                   <li>

@@ -179,7 +179,7 @@ const Header = () => {
                   href="https://app.aliasvault.net"
                   className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-3xl bg-primary px-8 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block lg:px-6"
                 >
-                  Create your free vault
+                  Create free vault
                 </Link>
                 <div>
                   <ThemeToggler />
