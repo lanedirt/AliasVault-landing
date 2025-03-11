@@ -10,16 +10,15 @@ const Documentation = () => {
               Technical Documentation
             </h3>
             <p className="text-base font-medium leading-relaxed text-body-color dark:text-body-color-dark">
-              For technical documentation about installing and configuring AliasVault on your own server, visit our{" "}
+              For technical documentation about installing and configuring AliasVault on your own server, visit our documentation website at{" "}
               <a
                 href="https://docs.aliasvault.net"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:underline"
               >
-                documentation website
-              </a>
-              .
+                docs.aliasvault.net
+              </a>.
             </p>
           </div>
 
