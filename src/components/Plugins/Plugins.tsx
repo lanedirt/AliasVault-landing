@@ -44,13 +44,13 @@ const Plugins = () => {
 
               <div className="flex flex-col items-center p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
                 <BrowserBadge
+                  href="https://microsoftedge.microsoft.com/addons/detail/aliasvault/kabaanafahnjkfkplbnllebdmppdemfo"
                   icon="/images/browser-icons/edge.svg"
-                  alt="Edge extension (Coming Soon)"
-                  className="mb-2 opacity-50"
-                  disabled
+                  alt="Microsoft Edge extension"
+                  className="mb-2"
                 />
-                <span className="text-sm font-medium text-black dark:text-white">Edge</span>
-                <span className="text-xs text-amber-600 dark:text-amber-400">Coming Soon</span>
+                <span className="text-sm font-medium text-black dark:text-white">Microsoft Edge</span>
+                <span className="text-xs text-green-600 dark:text-green-400">Available</span>
               </div>
 
               <div className="flex flex-col items-center p-4 border border-gray-200 dark:border-gray-700 rounded-lg">

@@ -68,12 +68,11 @@ const Hero = () => {
                     alt="Firefox extension"
                   />
 
-                  {/* Edge Extension Badge */}
+                  {/* Microsoft Edge Extension Badge */}
                   <BrowserBadge
+                    href="https://microsoftedge.microsoft.com/addons/detail/aliasvault/kabaanafahnjkfkplbnllebdmppdemfo"
                     icon="/images/browser-icons/edge.svg"
-                    alt="Edge extension (Coming Soon)"
-                    className="opacity-50 cursor-not-allowed"
-                    disabled
+                    alt="Microsoft Edge extension"
                   />
 
                   {/* Safari Extension Badge */}
