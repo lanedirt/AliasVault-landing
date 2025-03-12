@@ -85,10 +85,9 @@ const Hero = () => {
 
                   {/* Brave Extension Badge */}
                   <BrowserBadge
+                    href="https://chromewebstore.google.com/detail/aliasvault/bmoggiinmnodjphdjnmpcnlleamkfedj"
                     icon="/images/browser-icons/brave.svg"
-                    alt="Brave extension (Coming Soon)"
-                    className="opacity-50 cursor-not-allowed"
-                    disabled
+                    alt="Brave extension"
                   />
 
                   {/* Divider */}
