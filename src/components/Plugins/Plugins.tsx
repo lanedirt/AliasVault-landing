@@ -55,13 +55,13 @@ const Plugins = () => {
 
               <div className="flex flex-col items-center p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
                 <BrowserBadge
+                  href="https://apps.apple.com/app/id6743163173"
                   icon="/images/browser-icons/safari.svg"
-                  alt="Safari extension (Coming Soon)"
-                  className="mb-2 opacity-50"
-                  disabled
+                  alt="Safari extension"
+                  className="mb-2"
                 />
                 <span className="text-sm font-medium text-black dark:text-white">Safari</span>
-                <span className="text-xs text-amber-600 dark:text-amber-400">Coming Soon</span>
+                <span className="text-xs text-green-600 dark:text-green-400">Available</span>
               </div>
 
               <div className="flex flex-col items-center p-4 border border-gray-200 dark:border-gray-700 rounded-lg">

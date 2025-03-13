@@ -77,10 +77,9 @@ const Hero = () => {
 
                   {/* Safari Extension Badge */}
                   <BrowserBadge
+                    href="https://apps.apple.com/app/id6743163173"
                     icon="/images/browser-icons/safari.svg"
-                    alt="Safari extension (Coming Soon)"
-                    className="opacity-50 cursor-not-allowed"
-                    disabled
+                    alt="Safari extension"
                   />
 
                   {/* Brave Extension Badge */}
