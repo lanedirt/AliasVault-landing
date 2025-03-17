@@ -12,6 +12,7 @@ const PluginsPage = () => {
     <>
       <Breadcrumb
         pageName="Plugins"
+        description="AliasVault not only offers a web app, but also various plugins and extensions that allow you to integrate AliasVault into your daily workflow across different platforms and devices."
       />
       <Plugins />
     </>

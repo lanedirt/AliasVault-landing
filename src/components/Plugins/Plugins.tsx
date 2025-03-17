@@ -5,12 +5,6 @@ const Plugins = () => {
     <section className="pt-9 pb-16 md:pb-20 lg:pb-28">
       <div className="container">
         <div className="space-y-8">
-          <div className="text-start mb-8">
-            <p className="mt-4 text-base font-medium leading-relaxed text-body-color dark:text-body-color-dark mx-auto">
-              AliasVault not only offers the main web application, but also various plugins and extensions that allow you to integrate AliasVault into your daily workflow across different platforms and devices.
-            </p>
-          </div>
-
           <div>
             <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
               Browser Extensions
