@@ -25,13 +25,13 @@ export const passwordManagementFeatures: FeatureCategory = {
       status: "available"
     },
     {
-      name: "Adjustable Patterns",
+      name: "Adjustable Generator",
       description: "Create custom patterns, length, and character sets for your passwords to make them more secure. Customizable per credential.",
       status: "available"
     },
     {
-      name: "Built-in 2FA authenticator",
-      description: "Store and generate 2FA secrets for your passwords directly in AliasVault.",
+      name: "Built-in 2FA Authenticator",
+      description: "Store and generate 2FA secrets for all your accounts directly in AliasVault.",
       status: "available"
     },
     {
@@ -76,7 +76,7 @@ export const emailAliasFeatures: FeatureCategory = {
 export const securityFeatures: FeatureCategory = {
   title: "Security Features",
   description: "AliasVault uses industry-standard encryption and security measures to protect your data.",
-  imageSrc: "/images/features/security-features.png",
+  imageSrc: "/images/features/security.png",
   imageAlt: "AliasVault Security Features",
   features: [
     {
@@ -106,8 +106,8 @@ export const securityFeatures: FeatureCategory = {
 export const platformSupportFeatures: FeatureCategory = {
   title: "Browser Plugins & Native Apps",
   description: "Access your vault from anywhere with AliasVault's browser extensions and native mobile applications.",
-  imageSrc: "/images/features/platform-support.png",
-  imageAlt: "AliasVault Platform Support",
+  imageSrc: "/images/features/plugins.png",
+  imageAlt: "AliasVault Plugins",
   features: [
     {
       name: "Browser Extensions",
@@ -126,7 +126,7 @@ export const platformSupportFeatures: FeatureCategory = {
 export const selfHostingFeatures: FeatureCategory = {
   title: "Self-hosting Support",
   description: "Take full control of your data by self-hosting AliasVault on your own server or a cloud provider of your choice.",
-  imageSrc: "/images/features/self-hosting.png",
+  imageSrc: "/images/features/selfhost.png",
   imageAlt: "AliasVault Self-hosting",
   features: [
     {
@@ -140,13 +140,13 @@ export const selfHostingFeatures: FeatureCategory = {
       status: "available"
     },
     {
-      name: "Audit Logs",
-      description: "Track all activities on your server with built-in audit logs.",
+      name: "Admin Panel & Logs",
+      description: "Track all activities on your server with the built-in admin panel and audit logs.",
       status: "available"
     },
     {
       name: "Family & Team Management",
-      description: "Manage access and permissions for family members and team members in organizational vaults.",
+      description: "Share vaults with family members and team members via organizational features.",
       status: "upcoming"
     },
   ]
