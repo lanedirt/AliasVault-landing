@@ -30,11 +30,6 @@ export const passwordManagementFeatures: FeatureCategory = {
       status: "available"
     },
     {
-      name: "Password History",
-      description: "View and restore previous versions of your passwords and other vault items.",
-      status: "upcoming"
-    },
-    {
       name: "Password Sharing",
       description: "Securely share access to stored passwords with family members or team members.",
       status: "upcoming"
@@ -65,19 +60,19 @@ export const emailAliasFeatures: FeatureCategory = {
       status: "available"
     },
     {
-      name: "Third-party Email Integration",
-      description: "Connect your AliasVault server to your existing email accounts to receive emails directly in AliasVault.",
+      name: "Custom Domains (cloud-hosted)",
+      description: "Use email aliases with your own domain on the official cloud-hosted AliasVault server.",
       status: "upcoming"
     }
   ]
 };
 
-// Identity Management Features
-export const identityManagementFeatures: FeatureCategory = {
-  title: "Identity Management",
-  description: "Protect your personal information by creating and managing multiple digital identities with AliasVault's identity management features.",
-  imageSrc: "/images/features/identity-management.png",
-  imageAlt: "AliasVault Identity Management",
+// Security Features
+export const securityFeatures: FeatureCategory = {
+  title: "Security Features",
+  description: "AliasVault uses industry-standard encryption and security measures to protect your data.",
+  imageSrc: "/images/features/security-features.png",
+  imageAlt: "AliasVault Security Features",
   features: [
     {
       name: "End-to-End Encryption",
@@ -91,18 +86,13 @@ export const identityManagementFeatures: FeatureCategory = {
     },
     {
       name: "Biometric Authentication",
-      description: "Unlock your vault using fingerprint or face recognition on supported devices.",
+      description: "Unlock your vault using fingerprint or face recognition on supported devices via WebAuthn.",
       status: "available"
     },
     {
-      name: "Secure Notes",
-      description: "Store sensitive information like credit card details, secure notes, and other confidential data.",
+      name: "Secure Notes & Attachments",
+      description: "Store sensitive information like credit card details, secure notes, and other confidential data inside your vault.",
       status: "available"
-    },
-    {
-      name: "Emergency Access",
-      description: "Designate trusted contacts who can request access to your vault in case of emergency.",
-      status: "upcoming"
     }
   ]
 };
@@ -161,7 +151,7 @@ export const selfHostingFeatures: FeatureCategory = {
 export const allFeatureCategories: FeatureCategory[] = [
   passwordManagementFeatures,
   emailAliasFeatures,
-  identityManagementFeatures,
+  securityFeatures,
   platformSupportFeatures,
   selfHostingFeatures
 ];

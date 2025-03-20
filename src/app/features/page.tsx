@@ -46,15 +46,15 @@ export default function Features() {
         <div className="container">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
             <div className="flex items-center">
-              <div className="mr-3 flex h-[50px] w-[50px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
-                <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="mr-3 flex h-[50px] w-[50px] items-center justify-center rounded-md bg-green-500 bg-opacity-10 text-green-500">
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
               <span className="text-base text-gray-700 dark:text-gray-300">Available</span>
             </div>
             <div className="flex items-center">
-              <div className="mr-3 flex h-[50px] w-[50px] items-center justify-center rounded-md bg-yellow-500 bg-opacity-10 text-yellow-500">
+              <div className="mr-3 flex h-[50px] w-[50px] items-center justify-center rounded-md bg-primary-500 bg-opacity-10 text-primary-500">
                 <svg className="h-6 w-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
