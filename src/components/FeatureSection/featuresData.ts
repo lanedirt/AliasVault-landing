@@ -25,8 +25,13 @@ export const passwordManagementFeatures: FeatureCategory = {
       status: "available"
     },
     {
-      name: "Customizable Patterns",
+      name: "Adjustable Patterns",
       description: "Create custom patterns, length, and character sets for your passwords to make them more secure. Customizable per credential.",
+      status: "available"
+    },
+    {
+      name: "Built-in 2FA authenticator",
+      description: "Store and generate 2FA secrets for your passwords directly in AliasVault.",
       status: "available"
     },
     {
@@ -40,7 +45,7 @@ export const passwordManagementFeatures: FeatureCategory = {
 // Email Alias Features
 export const emailAliasFeatures: FeatureCategory = {
   title: "Email Aliases",
-  description: "Create unique email addresses for different services to protect your primary email and reduce spam with AliasVault's built-in email server.",
+  description: "Create unique email addresses for different services to protect your primary email and reduce spam with AliasVault's built-in email server. No external dependencies.",
   imageSrc: "/images/features/email-aliases.png",
   imageAlt: "AliasVault Email Aliases",
   features: [

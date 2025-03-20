@@ -40,7 +40,7 @@ const FeatureSection = ({
                 alt={imageAlt}
                 width={500}
                 height={500}
-                className="mx-auto rounded-lg shadow-xl dark:shadow-gray-800 lg:mx-0"
+                className="mx-auto rounded-lg"
               />
               {/* Abstract SVG decoration */}
               <div className={`absolute -bottom-10 ${reversed ? "-left-10" : "-right-10"} z-[-1] hidden lg:block`}>
