@@ -1,13 +1,12 @@
 import ScrollUp from "@/components/Common/ScrollUp";
-import SectionTitle from "@/components/Common/SectionTitle";
 import SectionSpacing from "@/components/Common/SectionSpacing";
 import { Metadata } from "next";
 import { Suspense } from 'react';
 import ScrollHandler from '@/components/ScrollHandler';
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import FeaturesHero from "@/components/FeaturesHero";
 import FeatureSection from "@/components/FeatureSection";
 import { allFeatureCategories } from "@/components/FeatureSection/featuresData";
+import CallToAction from "@/components/CallToAction/CallToAction";
 
 export const metadata: Metadata = {
   title: "Features | AliasVault",
@@ -27,7 +26,7 @@ export default function Features() {
       <ScrollUp />
 
       {/* Feature Sections */}
-      <div className="bg-gray-50 dark:bg-gray-800/20">
+      <div className="bg-gray-50 dark:bg-black">
         {allFeatureCategories.map((category, index) => (
           <FeatureSection
             key={index}
@@ -74,6 +73,9 @@ export default function Features() {
       </section>
 
       <SectionSpacing withBorder />
+
+      <CallToAction />
+
     </>
   );
 }
