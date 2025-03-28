@@ -11,6 +11,28 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "label": "Run lint",
+            "type": "shell",
+            "command": "npm",
+            "args": ["run", "lint"],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Run build",
+            "type": "shell",
+            "command": "npm",
+            "args": ["run", "build"],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }
