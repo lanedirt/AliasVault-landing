@@ -102,17 +102,36 @@ const Plugins = () => {
             <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
               Development Roadmap
             </h3>
-            <p className="text-base font-medium leading-relaxed text-body-color dark:text-body-color-dark">
-              We&apos;re constantly working to improve AliasVault and expand our ecosystem of plugins and integrations. To track our progress and see what&apos;s coming next, check out our{" "}
-              <a
-                href="https://github.com/lanedirt/AliasVault?tab=readme-ov-file#roadmap"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary hover:underline"
-              >
-                full roadmap on GitHub
-              </a>.
-            </p>
+            <div className="space-y-4">
+              <p className="text-base font-medium leading-relaxed text-body-color dark:text-body-color-dark">
+                AliasVault is under active development, with a strong focus on usability, security, and cross-platform support.
+                The main focus is on ensuring robust usability for everyday tasks, including comprehensive autofill capabilities across all platforms.
+              </p>
+              
+              <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold text-black dark:text-white mb-2">
+                  Current Development Status
+                </h4>
+                <ul className="list-disc pl-6 space-y-2 text-base font-medium text-body-color dark:text-body-color-dark">
+                  <li>🚀 Incremental releases every 2-3 weeks</li>
+                  <li>✅ Production-ready with data integrity guarantees</li>
+                  <li>🔄 Automatic migration support</li>
+                  <li>👥 Strong emphasis on user feedback and testing</li>
+                </ul>
+              </div>
+
+              <p className="text-base font-medium leading-relaxed text-body-color dark:text-body-color-dark">
+               To track our progress and see what&apos;s coming next, check out our{" "}
+                <a
+                  href="https://github.com/lanedirt/AliasVault/issues/731"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline"
+                >
+                  full roadmap on GitHub
+                </a>.
+              </p>
+            </div>
           </div>
         </div>
       </div>

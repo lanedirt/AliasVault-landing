@@ -69,6 +69,20 @@ export default function Features() {
               <span className="text-base text-gray-700 dark:text-gray-300">Not Available</span>
             </div>
           </div>
+          
+          <div className="text-center mt-8">
+            <p className="text-base text-gray-700 dark:text-gray-300">
+              Track our progress and see what&apos;s coming next on our{" "}
+              <a
+                href="https://github.com/lanedirt/AliasVault/issues/731"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-500 hover:underline"
+              >
+                roadmap on GitHub
+              </a>
+            </p>
+          </div>
         </div>
       </section>
 

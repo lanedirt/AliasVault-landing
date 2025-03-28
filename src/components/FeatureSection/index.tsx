@@ -112,7 +112,14 @@ const FeatureSection = ({
                       <h3 className="mb-2 text-xl font-bold text-black dark:text-white">
                         {feature.name}
                         {feature.status === 'upcoming' && (
-                          <span className="ml-2 text-xs font-normal text-yellow-500">(Coming Soon)</span>
+                          <a 
+                            href="https://github.com/lanedirt/AliasVault/issues/731"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="ml-2 text-xs font-normal text-yellow-500 hover:underline"
+                          >
+                            (Coming Soon)
+                          </a>
                         )}
                       </h3>
                       <p className="text-base text-body-color dark:text-body-color-dark">

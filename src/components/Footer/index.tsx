@@ -130,7 +130,8 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="https://github.com/lanedirt/AliasVault?tab=readme-ov-file#roadmap"
+                      href="https://github.com/lanedirt/AliasVault/issues/731"
+                      target="_blank"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Roadmap
