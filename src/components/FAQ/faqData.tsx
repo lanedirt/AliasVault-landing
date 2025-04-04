@@ -32,8 +32,8 @@ const faqData: FAQItem[] = [
   },
   {
     id: 6,
-    question: "Are there any restrictions when using AliasVault's email aliases?",
-    answer: "Yes, there are two main restrictions: 1) Email aliases are receive-only, meaning you cannot send or reply to emails from your aliases. This measure prevents potential abuse of the system for spam. 2) There is a 10 megabyte size limit for incoming emails - any emails larger than this will be rejected.",
+    question: "Are there restrictions when using AliasVault's email aliases?",
+    answer: "Yes, there are two main restrictions: 1) Email aliases are receive-only, meaning you cannot send or reply to emails from your aliases. This measure prevents potential abuse of the system for spam. 2) There is a 10 megabyte size limit for incoming emails - any emails larger than this will be rejected. In the future, optional paid subscriptions will offer reply functionality and higher storage limits.",
   },
 ];
 
