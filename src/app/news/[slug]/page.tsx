@@ -1,4 +1,4 @@
-import { getBlogPostBySlug } from '@/lib/blog'
+import { getNewsBySlug } from '@/lib/blog'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -6,20 +6,20 @@ import { Metadata } from 'next'
 import { serialize } from 'next-mdx-remote/serialize'
 import MDXContent from '@/components/MDX/MDXContent'
 
-interface BlogPostPageProps {
+interface NewsArticlePageProps {
   params: {
     slug: string
   }
 }
 
-export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: NewsArticlePageProps): Promise<Metadata> {
   const { slug } = await params
-  const post = getBlogPostBySlug(slug)
+  const post = getNewsBySlug(slug)
   
   if (!post) {
     return {
-      title: 'Post Not Found',
-      description: 'The requested blog post could not be found.',
+      title: 'News Article Not Found',
+      description: 'The requested news article could not be found.',
     }
   }
 
@@ -29,10 +29,9 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   }
 }
 
-
-export default async function BlogPostPage({ params }: BlogPostPageProps) {
+export default async function NewsArticlePage({ params }: NewsArticlePageProps) {
   const { slug } = await params
-  const post = getBlogPostBySlug(slug)
+  const post = getNewsBySlug(slug)
 
   if (!post) {
     notFound()

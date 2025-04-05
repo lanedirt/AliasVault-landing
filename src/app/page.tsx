@@ -9,7 +9,7 @@ import SectionSpacing from "@/components/Common/SectionSpacing";
 import ScrollHandler from '@/components/ScrollHandler'
 import { Suspense } from 'react';
 import Video from "@/components/Video";
-import Blog from "@/components/Blog";
+import RecentBlogAndNews from "@/components/Blog/RecentBlogs";
 
 
 export const metadata: Metadata = {
@@ -36,7 +36,7 @@ export default function Home() {
       <SectionSpacing withBorder className="pt-16 md:pt-20" />
       <FAQ />
       <SectionSpacing className="pt-16" />
-      <Blog />
+      <RecentBlogAndNews />
     </>
   );
 }

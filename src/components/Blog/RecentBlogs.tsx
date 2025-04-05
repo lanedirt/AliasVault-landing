@@ -1,9 +1,10 @@
 import SectionTitle from "../Common/SectionTitle";
 import SingleBlog from "./SingleBlog";
-import { getAllPosts } from "@/lib/blog";
+import { getAllBlogAndNewsPosts } from "@/lib/blog";
+import SingleNews from "./SingleNews";
 
-const Blog = () => {
-  const posts = getAllPosts();
+const RecentBlogAndNews = () => {
+  const posts = getAllBlogAndNewsPosts();
 
   return (
     <section
@@ -20,7 +21,11 @@ const Blog = () => {
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 md:gap-x-6 lg:gap-x-8 xl:grid-cols-3">
           {posts.slice(0, 3).map((blog) => (
             <div key={blog.slug} className="w-full">
-              <SingleBlog blog={blog} />
+              {blog.type === 'blog' ? (
+                <SingleBlog blog={blog} />
+              ) : blog.type === 'news' ? (
+                <SingleNews news={blog} />
+              ) : null}
             </div>
           ))}
         </div>
@@ -29,4 +34,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default RecentBlogAndNews;
