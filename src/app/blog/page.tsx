@@ -1,7 +1,6 @@
+import { getAllPosts } from '@/lib/blog'
 import SingleBlog from "@/components/Blog/SingleBlog";
-import blogData from "@/components/Blog/blogData";
 import Breadcrumb from "@/components/Common/Breadcrumb";
-
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,7 +9,9 @@ export const metadata: Metadata = {
   // other metadata
 };
 
-const Blog = () => {
+export default function Blog() {
+  const posts = getAllPosts()
+
   return (
     <>
       <Breadcrumb
@@ -21,12 +22,12 @@ const Blog = () => {
       <section className="pb-[120px] pt-[120px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap justify-center">
-            {blogData.map((blog) => (
+            {posts.map((post) => (
               <div
-                key={blog.id}
+                key={post.slug}
                 className="w-full px-4 md:w-2/3 lg:w-1/2 xl:w-1/3"
               >
-                <SingleBlog blog={blog} />
+                <SingleBlog blog={post} />
               </div>
             ))}
           </div>
@@ -94,6 +95,4 @@ const Blog = () => {
       </section>
     </>
   );
-};
-
-export default Blog;
+}
