@@ -1,10 +1,10 @@
 import { getPostBySlug, getAllPosts } from '@/lib/blog'
 import { notFound } from 'next/navigation'
-import { MDXRemote } from 'next-mdx-remote/rsc'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Metadata } from 'next'
-import { components } from '@/components/MDXComponents'
+import { serialize } from 'next-mdx-remote/serialize'
+import MDXContent from '@/components/MDX/MDXContent'
 
 interface BlogPostPageProps {
   params: {
@@ -13,7 +13,8 @@ interface BlogPostPageProps {
 }
 
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
-  const post = getPostBySlug(params.slug)
+  const { slug } = await params
+  const post = getPostBySlug(slug)
   
   if (!post) {
     return {
@@ -35,12 +36,24 @@ export async function generateStaticParams() {
   }))
 }
 
-export default function BlogPostPage({ params }: BlogPostPageProps) {
-  const post = getPostBySlug(params.slug)
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
+  const { slug } = await params
+  const post = getPostBySlug(slug)
 
   if (!post) {
     notFound()
   }
+
+  const mdxSource = await serialize(post.content, {
+    mdxOptions: {
+      development: process.env.NODE_ENV === 'development',
+      format: 'mdx',
+      rehypePlugins: [],
+      remarkPlugins: [],
+    },
+  })
+
+  console.log(mdxSource);
 
   return (
     <section className="pb-[120px] pt-[150px]">
@@ -107,9 +120,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                   </div>
                 </div>
               </div>
-              <div className="prose prose-lg max-w-none dark:prose-invert">
-                <MDXRemote source={post.content} components={components} />
-              </div>
+              <MDXContent source={mdxSource} />
             </div>
           </div>
         </div>
