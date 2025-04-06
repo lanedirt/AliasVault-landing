@@ -1,12 +1,18 @@
-const TagButton = ({ href = "#0", text }: { href?: string; text: string }) => {
+import Link from 'next/link'
+
+interface TagButtonProps {
+  text: string
+}
+
+const TagButton = ({ text }: TagButtonProps) => {
   return (
-    <a
-      href={href}
-      className="bg-gray-light mb-3 mr-3 inline-flex items-center justify-center rounded-sm px-4 py-2 text-sm text-black duration-300 hover:bg-primary hover:text-white dark:bg-[#2C303B] dark:text-white dark:hover:bg-primary"
+    <Link
+      href={`/blog/tag/${text.toLowerCase()}`}
+      className="mr-3 mb-3 inline-flex items-center justify-center rounded-md bg-primary bg-opacity-10 px-4 py-2 text-sm font-medium text-primary hover:bg-opacity-20"
     >
       {text}
-    </a>
-  );
-};
+    </Link>
+  )
+}
 
-export default TagButton;
+export default TagButton
