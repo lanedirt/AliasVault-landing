@@ -6,7 +6,7 @@ import SingleNews from '@/components/Blog/SingleNews';
 
 export const metadata: Metadata = {
   title: "Blog & Recent News | AliasVault",
-  description: "Here you can find the latest news and updates about AliasVault.",
+  description: "Here you can find the latest blog posts and news published by AliasVault.",
   // other metadata
 };
 
@@ -17,7 +17,7 @@ export default function Blog() {
     <>
       <Breadcrumb
         pageName="Blog & Recent News"
-        description="Here you can find the latest news and updates about AliasVault."
+        description="Here you can find the latest blog posts and news published by AliasVault."
       />
 
       <section className="pb-[120px] pt-[120px]">

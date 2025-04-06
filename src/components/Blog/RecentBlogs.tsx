@@ -14,7 +14,7 @@ const RecentBlogAndNews = () => {
       <div className="container">
         <SectionTitle
           title="Blog & Recent News"
-          paragraph="Here you can find the latest news and updates about AliasVault."
+          paragraph="Read the latest blog posts and news published by AliasVault."
           center
         />
 
