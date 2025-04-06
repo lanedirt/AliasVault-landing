@@ -1,34 +1,36 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const RelatedPost = ({
-  image,
-  slug,
-  title,
-  date,
-}: {
+interface RelatedPostProps {
+  title: string;
   image: string;
   slug: string;
-  title: string;
   date: string;
-}) => {
+}
+
+const RelatedPost = ({ title, image, slug, date }: RelatedPostProps) => {
   return (
-    <div className="flex items-center lg:block xl:flex">
-      <div className="mr-5 lg:mb-3 xl:mb-0">
-        <div className="relative h-[60px] w-[70px] overflow-hidden rounded-md sm:h-[75px] sm:w-[85px]">
-          <Image src={image} alt={title} fill />
+    <div className="flex items-center">
+      <div className="mr-5 w-[100px] overflow-hidden rounded">
+        <div className="relative aspect-[100/70] w-full">
+          <Image
+            src={image}
+            alt={title}
+            fill
+            className="object-cover"
+          />
         </div>
       </div>
       <div className="w-full">
-        <h5>
+        <h4>
           <Link
             href={slug}
-            className="mb-[6px] block text-base font-medium leading-snug text-black hover:text-primary dark:text-white dark:hover:text-primary"
+            className="mb-1 text-base font-medium leading-snug text-black hover:text-primary dark:text-white dark:hover:text-primary"
           >
             {title}
           </Link>
-        </h5>
-        <p className="text-xs font-medium text-body-color">{date}</p>
+        </h4>
+        <p className="text-xs text-body-color">{date}</p>
       </div>
     </div>
   );
