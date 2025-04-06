@@ -1,6 +1,8 @@
 import Image from 'next/image'
+import { GitHubRelease } from '@/components/Common/GitHubRelease'
 
 export const components = {
+  GitHubRelease,
   img: (props: any) => (
     <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
       <Image
