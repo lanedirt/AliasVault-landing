@@ -24,7 +24,7 @@ export const GitHubRelease = ({ version = 'latest' }: GitHubReleaseProps) => {
   const [release, setRelease] = useState<GitHubRelease | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [showDownloads, setShowDownloads] = useState(true);
+  const [showDownloads, setShowDownloads] = useState(false);
 
   useEffect(() => {
     const fetchRelease = async () => {
