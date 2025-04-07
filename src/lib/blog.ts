@@ -69,7 +69,7 @@ export function getBlogPostBySlug(slug: string): ContentPost | null {
       content,
       ...data,
     } as ContentPost
-  } catch (error) {
+  } catch {
     return null
   }
 } 
@@ -86,7 +86,12 @@ export function getNewsBySlug(slug: string): ContentPost | null {
       content,
       ...data,
     } as ContentPost
-  } catch (error) {
+  } catch {
     return null
   }
+}
+
+export function getBlogPostsByTag(tag: string): ContentPost[] {
+  const posts = getAllBlogPosts();
+  return posts.filter(post => post.tags.includes(tag));
 }
