@@ -7,6 +7,8 @@ services:
     restart: always
     ports:
       - "3000:3000"
+    volumes:
+      - ./src/content:/app/src/content
     environment:
       - NODE_ENV=production
       - NEXT_PUBLIC_BASE_URL=https://aliasvault.net
