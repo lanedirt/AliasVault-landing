@@ -104,7 +104,7 @@ export const GitHubRelease = ({ version = 'latest' }: GitHubReleaseProps) => {
           href={release.html_url}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+          className="flex items-center text-primary-600 hover:text-primary-800 dark:text-primary-400 dark:hover:text-primary-300"
         >
           View Full Release Notes on GitHub
         </a>
@@ -114,7 +114,7 @@ export const GitHubRelease = ({ version = 'latest' }: GitHubReleaseProps) => {
             href="https://docs.aliasvault.net/installation/install.html" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+            className="text-primary-600 hover:text-primary-800 dark:text-primary-400 dark:hover:text-primary-300"
           >
             AliasVault Installation Guide
           </a>.</p>
@@ -127,7 +127,7 @@ export const GitHubRelease = ({ version = 'latest' }: GitHubReleaseProps) => {
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Downloads</h3>
                 <button
                   onClick={() => setShowDownloads(!showDownloads)}
-                  className="flex items-center text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+                  className="flex items-center text-primary-600 hover:text-primary-800 dark:text-primary-400 dark:hover:text-primary-300"
                 >
                   {showDownloads ? (
                     <>
