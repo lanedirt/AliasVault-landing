@@ -7,9 +7,9 @@ import { serialize } from 'next-mdx-remote/serialize'
 import MDXContent from '@/components/MDX/MDXContent'
 
 interface NewsArticlePageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 export async function generateMetadata({ params }: NewsArticlePageProps): Promise<Metadata> {
@@ -23,9 +23,41 @@ export async function generateMetadata({ params }: NewsArticlePageProps): Promis
     }
   }
 
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://aliasvault.net'
+  const imageUrl = post.image ? `${baseUrl}${post.image}` : `${baseUrl}/images/blog/post-01.jpg`
+
   return {
     title: post.title,
     description: post.description,
+    openGraph: {
+      title: post.title,
+      description: post.description,
+      url: `${baseUrl}/news/${slug}`,
+      siteName: 'AliasVault',
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+      locale: 'en_US',
+      type: 'article',
+      authors: [post.author.name],
+      publishedTime: post.date,
+      tags: post.tags,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.description,
+      images: [imageUrl],
+      creator: '@aliasvault',
+    },
+    alternates: {
+      canonical: `${baseUrl}/news/${slug}`,
+    },
   }
 }
 

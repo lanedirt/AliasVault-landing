@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { BlogPost } from "@/lib/blog";
+import { ContentPost } from "@/lib/blog";
 
 interface SingleBlogProps {
-  blog: BlogPost;
+  blog: ContentPost;
 }
 
 const SingleBlog = ({ blog }: SingleBlogProps) => {

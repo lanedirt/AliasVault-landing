@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next'
+import { getAllBlogAndNewsPosts } from '@/lib/blog'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Get base URL from environment variable or default
@@ -20,14 +21,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         priority: 1.0
     }))
 
-    // Example: add dynamic routes from database/API
-    // const posts = await fetchPosts()
-    // const dynamicRoutes = posts.map(post => ({
-    //   url: `${baseUrl}/blog/${post.slug}`,
-    //   lastModified: post.updatedAt,
-    //   changeFrequency: 'weekly' as const,
-    //   priority: 0.8
-    // }))
+    // Get all blog and news posts
+    const posts = getAllBlogAndNewsPosts()
+    
+    // Create dynamic routes for blog and news posts
+    const dynamicRoutes = posts.map(post => ({
+        url: `${baseUrl}/${post.type}/${post.slug}`,
+        lastModified: new Date(post.date),
+        changeFrequency: 'weekly' as const,
+        priority: 0.8
+    }))
 
-    return [...staticRoutes/* , ...dynamicRoutes */]
+    return [...staticRoutes, ...dynamicRoutes]
 }
