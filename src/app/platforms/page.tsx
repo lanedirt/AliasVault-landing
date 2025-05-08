@@ -1,9 +1,9 @@
-import Plugins from "@/components/Plugins/Plugins";
 import { Metadata } from "next";
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import Platforms from "@/components/Platforms/Platforms";
 
 export const metadata: Metadata = {
-  title: "Plugins",
+  title: "Platforms",
   description: "AliasVault browser extensions and mobile apps for password and alias management.",
 };
 
@@ -11,10 +11,10 @@ const PluginsPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Plugins"
-        description="AliasVault offers various plugins and extensions that allow you to integrate AliasVault into your daily workflow across different platforms and devices."
+        pageName="Platforms"
+        description="AliasVault is available on all major platforms, including web, desktop, and mobile."
       />
-      <Plugins />
+      <Platforms />
     </>
   );
 };

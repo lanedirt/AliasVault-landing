@@ -15,8 +15,8 @@ const menuData: Menu[] = [
   },
   {
     id: 3,
-    title: "Plugins",
-    path: "/plugins",
+    title: "Platforms",
+    path: "/platforms",
     newTab: false,
   },
   {

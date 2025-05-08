@@ -116,7 +116,7 @@ const Hero = () => {
 
                   {/* Made in NL Badge */}
                   <div className="flex items-center space-x-2">
-                    <Image src="/images/flags/nl.svg" width={24} height={24} alt="Made in The Netherlands" title="Made in The Netherlands" />
+                    <Image src="/images/flags/nl.svg" width={24} height={24} alt="Made in The Netherlands (EU)" title="Made in The Netherlands (EU)" />
                     <Image src="/images/flags/gdpr.svg" width={24} height={24} alt="GDPR Compliant" title="GDPR Compliant" />
                   </div>
                 </div>

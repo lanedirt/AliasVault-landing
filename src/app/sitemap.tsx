@@ -3,14 +3,14 @@ import { getAllBlogAndNewsPosts } from '@/lib/blog'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Get base URL from environment variable or default
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://aliasvault.net'
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.aliasvault.net'
 
     // Static routes
     const staticRoutes = [
         '',
         '/about',
         '/features',
-        '/plugins',
+        '/platforms',
         '/docs',
         '/blog',
         '/contact',
@@ -23,7 +23,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     // Get all blog and news posts
     const posts = getAllBlogAndNewsPosts()
-    
+
     // Create dynamic routes for blog and news posts
     const dynamicRoutes = posts.map(post => ({
         url: `${baseUrl}/${post.type}/${post.slug}`,
