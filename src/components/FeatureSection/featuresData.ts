@@ -104,8 +104,8 @@ export const securityFeatures: FeatureCategory = {
 
 // Platform Support Features
 export const platformSupportFeatures: FeatureCategory = {
-  title: "Browser Plugins & Native Apps",
-  description: "Access your vault from anywhere with AliasVault's browser extensions and native mobile applications.",
+  title: "Mobile Apps & Browser Extensions",
+  description: "Access your vault from anywhere with AliasVault's mobile apps and browser extensions.",
   imageSrc: "/images/features/plugins.png",
   imageAlt: "AliasVault Plugins",
   features: [
@@ -115,10 +115,15 @@ export const platformSupportFeatures: FeatureCategory = {
       status: "available"
     },
     {
-      name: "Mobile Apps",
-      description: "Access your vault on the go with native mobile applications for iOS and Android.",
-      status: "upcoming"
+      name: "iOS App",
+      description: "Access your vault on your iPhone or iPad with the official iOS app. Supports native autofill and biometric authentication, keeping your data secure.",
+      status: "available"
     },
+    {
+      name: "Android App",
+      description: "Support for Android is coming in the next few weeks.",
+      status: "upcoming"
+    }
   ]
 };
 
