@@ -1,4 +1,4 @@
-import BrowserBadge from "../Common/BrowserBadge";
+import BrowserBadge from "../Common/Badge";
 
 const Plugins = () => {
   return (
@@ -17,7 +17,8 @@ const Plugins = () => {
               <div className="flex flex-col items-center p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
                 <BrowserBadge
                   href="https://chromewebstore.google.com/detail/aliasvault/bmoggiinmnodjphdjnmpcnlleamkfedj"
-                  icon="/images/browser-icons/chrome.svg"
+                  iconLight="/images/browser-icons/chrome.svg"
+                  iconDark="/images/browser-icons/chrome-dark.svg"
                   alt="Chrome Web Store"
                   className="mb-2"
                 />
@@ -28,7 +29,8 @@ const Plugins = () => {
               <div className="flex flex-col items-center p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
                 <BrowserBadge
                   href="https://addons.mozilla.org/en-US/firefox/addon/aliasvault/"
-                  icon="/images/browser-icons/firefox.svg"
+                  iconLight="/images/browser-icons/firefox.svg"
+                  iconDark="/images/browser-icons/firefox-dark.svg"
                   alt="Firefox extension"
                   className="mb-2"
                 />
@@ -39,7 +41,8 @@ const Plugins = () => {
               <div className="flex flex-col items-center p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
                 <BrowserBadge
                   href="https://microsoftedge.microsoft.com/addons/detail/aliasvault/kabaanafahnjkfkplbnllebdmppdemfo"
-                  icon="/images/browser-icons/edge.svg"
+                  iconLight="/images/browser-icons/edge.svg"
+                  iconDark="/images/browser-icons/edge-dark.svg"
                   alt="Microsoft Edge extension"
                   className="mb-2"
                 />
@@ -50,7 +53,8 @@ const Plugins = () => {
               <div className="flex flex-col items-center p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
                 <BrowserBadge
                   href="https://apps.apple.com/app/id6743163173"
-                  icon="/images/browser-icons/safari.svg"
+                  iconLight="/images/browser-icons/safari.svg"
+                  iconDark="/images/browser-icons/safari-dark.svg"
                   alt="Safari extension"
                   className="mb-2"
                 />
@@ -60,7 +64,8 @@ const Plugins = () => {
 
               <div className="flex flex-col items-center p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
                 <BrowserBadge
-                  icon="/images/browser-icons/brave.svg"
+                  iconLight="/images/browser-icons/brave.svg"
+                  iconDark="/images/browser-icons/brave-dark.svg"
                   href="https://chromewebstore.google.com/detail/aliasvault/bmoggiinmnodjphdjnmpcnlleamkfedj"
                   alt="Brave extension"
                   className="mb-2"
@@ -107,7 +112,7 @@ const Plugins = () => {
                 AliasVault is under active development, with a strong focus on usability, security, and cross-platform support.
                 The main focus is on ensuring robust usability for everyday tasks, including comprehensive autofill capabilities across all platforms.
               </p>
-              
+
               <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg">
                 <h4 className="text-lg font-semibold text-black dark:text-white mb-2">
                   Current Development Status
