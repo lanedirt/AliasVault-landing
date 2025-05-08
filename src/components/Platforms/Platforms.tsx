@@ -11,7 +11,7 @@ const Platforms = () => {
               Mobile Apps
             </h3>
             <p className="mb-4 text-base font-medium leading-relaxed text-body-color dark:text-body-color-dark">
-              We&apos;re proud to announce that AliasVault is now available on iOS! Experience the full power of AliasVault on your iPhone and iPad with our native iOS application. Android users, stay tuned - we&apos;re putting the finishing touches on your app, and it will be available in the Play Store within the next few weeks!
+              AliasVault is currently available as a native iOS app allowing you to manage and use your credentials and aliases on the go. Android users, stay tuned - we&apos;re putting the finishing touches on the Native Android app, and it will be available in the Play Store within the next few weeks!
             </p>
             <div className="flex items-center space-x-4 mb-4">
               <a

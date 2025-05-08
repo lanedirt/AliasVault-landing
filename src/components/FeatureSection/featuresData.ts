@@ -141,7 +141,7 @@ export const selfHostingFeatures: FeatureCategory = {
     },
     {
       name: "Free and Open-Source",
-      description: "Completely free and open-source software released under the MIT license, with source code available on GitHub.",
+      description: "Completely free and open-source software, with source code available on GitHub.",
       status: "available"
     },
     {
