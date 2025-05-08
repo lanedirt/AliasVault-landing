@@ -14,7 +14,7 @@ const featuresData: Feature[] = [
     ),
     title: "Password Manager",
     paragraph:
-      "AliasVault allows you to store all your passwords in one place, and access them from any device.",
+      "AliasVault allows you to generate and store all your passwords in one place, and access them from any device (desktop, mobile, tablet).",
   },
   {
     id: 2,
@@ -74,7 +74,7 @@ const featuresData: Feature[] = [
     ),
     title: "Cloud or self-hosted",
     paragraph:
-      "You can use the official AliasVault cloud service, or self-host AliasVault on your own server or a cloud provider of your choice. Giving you control of your data.",
+      "You can use the official AliasVault cloud service, or self-host AliasVault on your own server or a cloud provider of your choice. Your data is in your control.",
   },
   {
     id: 6,
@@ -89,7 +89,7 @@ const featuresData: Feature[] = [
     ),
     title: "Free and Open-Source",
     paragraph:
-      "AliasVault is free and open-source software, released under the MIT license. It is built with transparency in mind, and its source code is freely available on GitHub to review.",
+      "AliasVault is free and open-source software. It is built with transparency in mind, and its source code is freely available on GitHub to review.",
   },
 ];
 export default featuresData;
