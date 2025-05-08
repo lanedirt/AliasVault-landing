@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import BrowserBadge from "../Common/BrowserBadge";
+import Badge from "../Common/Badge";
 
 const Hero = () => {
   return (
@@ -54,39 +54,61 @@ const Hero = () => {
                   </Link>
                 </div>
                 <div className="mt-6 flex items-center justify-center lg:justify-start space-x-2">
+                  {/* Apple App Store Badge */}
+                  <Badge
+                    href="https://apps.apple.com/app/id6745490915"
+                    iconLight="/images/app-store/apple-light.svg"
+                    iconDark="/images/app-store/apple-dark.svg"
+                    alt="Download on the App Store"
+                  />
+
                   {/* Chrome Extension Badge */}
-                  <BrowserBadge
+                  <Badge
                     href="https://chromewebstore.google.com/detail/aliasvault/bmoggiinmnodjphdjnmpcnlleamkfedj"
-                    icon="/images/browser-icons/chrome.svg"
+                    iconLight="/images/browser-icons/chrome.svg"
+                    iconDark="/images/browser-icons/chrome.svg"
                     alt="Chrome Web Store"
                   />
 
                   {/* Firefox Extension Badge */}
-                  <BrowserBadge
+                  <Badge
                     href="https://addons.mozilla.org/en-US/firefox/addon/aliasvault/"
-                    icon="/images/browser-icons/firefox.svg"
+                    iconLight="/images/browser-icons/firefox.svg"
+                    iconDark="/images/browser-icons/firefox.svg"
                     alt="Firefox extension"
                   />
 
                   {/* Microsoft Edge Extension Badge */}
-                  <BrowserBadge
+                  <Badge
                     href="https://microsoftedge.microsoft.com/addons/detail/aliasvault/kabaanafahnjkfkplbnllebdmppdemfo"
-                    icon="/images/browser-icons/edge.svg"
+                    iconLight="/images/browser-icons/edge.svg"
+                    iconDark="/images/browser-icons/edge.svg"
                     alt="Microsoft Edge extension"
                   />
 
                   {/* Safari Extension Badge */}
-                  <BrowserBadge
+                  <Badge
                     href="https://apps.apple.com/app/id6743163173"
-                    icon="/images/browser-icons/safari.svg"
+                    iconLight="/images/browser-icons/safari.svg"
+                    iconDark="/images/browser-icons/safari.svg"
                     alt="Safari extension"
                   />
 
                   {/* Brave Extension Badge */}
-                  <BrowserBadge
+                  <Badge
                     href="https://chromewebstore.google.com/detail/aliasvault/bmoggiinmnodjphdjnmpcnlleamkfedj"
-                    icon="/images/browser-icons/brave.svg"
+                    iconLight="/images/browser-icons/brave.svg"
+                    iconDark="/images/browser-icons/brave.svg"
                     alt="Brave extension"
+                  />
+
+                  {/* Android Play Store Badge */}
+                  <Badge
+                    href="https://play.google.com/store/apps/details?id=com.aliasvault.app"
+                    iconLight="/images/app-store/android.svg"
+                    iconDark="/images/app-store/android.svg"
+                    alt="Android (coming soon)"
+                    disabled={true}
                   />
 
                   {/* Divider */}
@@ -96,7 +118,6 @@ const Hero = () => {
                   <div className="flex items-center space-x-2">
                     <Image src="/images/flags/nl.svg" width={24} height={24} alt="Made in The Netherlands" title="Made in The Netherlands" />
                     <Image src="/images/flags/gdpr.svg" width={24} height={24} alt="GDPR Compliant" title="GDPR Compliant" />
-                    <span className="text-sm text-gray-600 dark:text-gray-400" title="Made in The Netherlands">NL-based (EU)</span>
                   </div>
                 </div>
               </div>

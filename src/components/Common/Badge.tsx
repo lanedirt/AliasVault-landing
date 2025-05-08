@@ -3,13 +3,14 @@ import Image from "next/image";
 
 interface BrowserBadgeProps {
   href?: string;
-  icon: string;
+  iconLight: string;
+  iconDark: string;
   alt: string;
   className?: string;
   disabled?: boolean;
 }
 
-const BrowserBadge = ({ href, icon, alt, className = "", disabled = false }: BrowserBadgeProps) => {
+const BrowserBadge = ({ href, iconLight, iconDark, alt, className = "", disabled = false }: BrowserBadgeProps) => {
   const commonClasses = `inline-flex items-center justify-center rounded-md bg-gray-100 p-2 transition-all duration-200
     ${disabled ? 'cursor-not-allowed' : 'hover:bg-gray-200'}
     dark:bg-slate-600 ${disabled ? '' : 'dark:hover:bg-slate-700'}
@@ -18,11 +19,18 @@ const BrowserBadge = ({ href, icon, alt, className = "", disabled = false }: Bro
   return disabled ? (
     <div className={commonClasses} title={alt}>
       <Image
-        src={icon}
+        src={iconLight}
         alt={alt}
         width={24}
         height={24}
-        className="h-6 w-6 opacity-40"
+        className="h-6 w-6 opacity-20 dark:hidden"
+      />
+      <Image
+        src={iconDark}
+        alt={alt}
+        width={24}
+        height={24}
+        className="hidden h-6 w-6 opacity-20 dark:block"
       />
     </div>
   ) : (
@@ -33,11 +41,18 @@ const BrowserBadge = ({ href, icon, alt, className = "", disabled = false }: Bro
       className={commonClasses}
     >
       <Image
-        src={icon}
+        src={iconLight}
         alt={alt}
         width={24}
         height={24}
-        className="h-6 w-6"
+        className="h-6 w-6 fill-current dark:hidden"
+      />
+      <Image
+        src={iconDark}
+        alt={alt}
+        width={24}
+        height={24}
+        className="hidden h-6 w-6 fill-current dark:block"
       />
     </Link>
   );
