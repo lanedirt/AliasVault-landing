@@ -121,7 +121,7 @@ export const platformSupportFeatures: FeatureCategory = {
     },
     {
       name: "Android App",
-      description: "Support for Android is coming in the next few weeks.",
+      description: "Support for Android is being worked on and will be available in the next few weeks! Stay tuned!",
       status: "upcoming"
     }
   ]
