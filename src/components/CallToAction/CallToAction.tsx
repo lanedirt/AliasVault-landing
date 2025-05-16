@@ -13,10 +13,10 @@ const CallToAction = ({ className = "" }: CallToActionProps) => {
           {/* Left side content */}
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
             <h2 className="mb-4 text-3xl font-bold text-gray-900 dark:text-white">
-              Start improving your online privacy
+              Protect your privacy, improve your security
             </h2>
             <p className="mb-6 text-lg text-gray-700 dark:text-white/90">
-              Stop spam • Protect your identity • Open source
+              Stop spam • Protect your privacy • Open source
             </p>
             <Link
               href="https://app.aliasvault.net"

@@ -23,17 +23,16 @@ const Founder = () => {
             {/* Quote text */}
             <div className="space-y-6 text-base leading-relaxed text-body-color sm:text-lg sm:leading-relaxed pl-6">
               <p>
-                As a software developer and architect, I&apos;ve always believed in fighting against spam and making privacy accessible to everyone. This belief led me to create asdasd.nl in 2013, a Dutch temporary email service that later evolved into the multilingual SpamOK.com – helping thousands of people every day protect themselves from unwanted spam and data collection through free temporary email addresses.
+                As a software developer and architect, I’ve always been passionate about fighting spam and making privacy accessible. In 2013, I launched asdasd.nl, a Dutch temporary email service that grew into the multilingual SpamOK.com, helping thousands protect themselves from spam and data collection.
               </p>
               <p>
-                Building on that foundation, I started to begin work on AliasVault in the beginning of 2024: a self-hostable, end-to-end encrypted password and alias manager designed to give users full control over their digital identity. AliasVault enables you to easily generate unique passwords, aliases, and email addresses for every website you use – keeping your personal information private and secure.
+                In 2024, I began building AliasVault. A self-hostable, end-to-end encrypted password and alias manager that puts users in control of their digital identity. It lets you generate unique passwords and email aliases for every site you use, keeping your personal data secure.
               </p>
               <p>
-                Since releasing the first beta in December, I’ve dedicated myself to continuous improvement with regular updates every two weeks. New features like browser extensions, 2FA support, and seamless import from other password managers make AliasVault more powerful and accessible with each release.
+                Since the beta release in December, I’ve continued to work on AliasVault with bi-weekly updates. New features like browser extensions, 2FA, and imports from other password managers make AliasVault more powerful and accessible with each release.
               </p>
               <p>
-                AliasVault is a passion project, entirely self-funded and community-driven. My goal is to make AliasVault a meaningful contribution to online privacy and a product that can stand on its own. AliasVault is open-source and self-hostable, so anyone can inspect the code or run it on their own infrastructure. In the future, optional premium features will be introduced to the cloud version to help support development and ensure sustainability.
-              </p>
+                AliasVault is open source and as of right now, entirely self-funded. It’s built to be transparent, community-driven, and privacy-first. Optional premium cloud features will support long-term development, but anyone can self-host it or inspect the code. Read more about <a href="/mission" className="text-primary">our mission</a> to learn what drives this project.              </p>
             </div>
 
             {/* Author info */}

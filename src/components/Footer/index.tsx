@@ -106,6 +106,14 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
+                      href="/mission"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      Our Mission
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
                       href="/features"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
@@ -114,10 +122,10 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="/plugins"
+                      href="/platforms"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Plugins
+                      Platforms
                     </Link>
                   </li>
                   <li>
@@ -127,29 +135,6 @@ const Footer = () => {
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Documentation
-                      <svg
-                        className="ml-1 inline-block h-4 w-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                        />
-                      </svg>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="https://github.com/lanedirt/AliasVault/issues/731"
-                      target="_blank"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Roadmap
                       <svg
                         className="ml-1 inline-block h-4 w-4"
                         fill="none"
