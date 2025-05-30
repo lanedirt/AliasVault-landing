@@ -1,7 +1,7 @@
-import SectionTitle from "../Common/SectionTitle";
 import SingleBlog from "./SingleBlog";
 import { getAllBlogAndNewsPosts } from "@/lib/blog";
 import SingleNews from "./SingleNews";
+import RssIcon from "@/components/Common/RssIcon";
 
 const RecentBlogAndNews = () => {
   const posts = getAllBlogAndNewsPosts();
@@ -12,11 +12,15 @@ const RecentBlogAndNews = () => {
       className="bg-gray-light dark:bg-bg-color-dark py-16 md:py-20 lg:py-28"
     >
       <div className="container">
-        <SectionTitle
-          title="Blog & Recent News"
-          paragraph="Read the latest blog posts and news published by AliasVault."
-          center
-        />
+        <div className="flex flex-col items-center mb-8">
+          <div className="flex items-center gap-4 mb-4">
+            <h2 className="text-3xl font-bold text-black dark:text-white">Blog & Recent News</h2>
+            <RssIcon />
+          </div>
+          <p className="text-base text-body-color dark:text-body-color-dark">
+            Read the latest blog posts and news published by AliasVault.
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 md:gap-x-6 lg:gap-x-8 xl:grid-cols-3">
           {posts.slice(0, 3).map((blog) => (
