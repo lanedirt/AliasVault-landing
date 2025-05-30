@@ -4,6 +4,7 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 import SingleNews from '@/components/Blog/SingleNews';
 import Link from 'next/link';
+import RssIcon from '@/components/Common/RssIcon';
 
 export const metadata: Metadata = {
   title: "Blog & Recent News | AliasVault",
@@ -22,7 +23,7 @@ export default async function Blog({ searchParams }: BlogPageProps) {
   const currentPage = Number(page) || 1;
   const allPosts = getAllBlogAndNewsPosts();
   const totalPages = Math.ceil(allPosts.length / ITEMS_PER_PAGE);
-  
+
   // Calculate the posts to show for the current page
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const endIndex = startIndex + ITEMS_PER_PAGE;
@@ -37,6 +38,10 @@ export default async function Blog({ searchParams }: BlogPageProps) {
 
       <section className="pb-[120px] pt-[120px]">
         <div className="container">
+          <div className="mb-8 flex items-center justify-between">
+            <h2 className="text-2xl font-bold text-black dark:text-white">Latest Posts</h2>
+            <RssIcon />
+          </div>
           <div className="-mx-4 flex flex-wrap">
             {currentPosts.map((post) => (
               <div
@@ -64,7 +69,7 @@ export default async function Blog({ searchParams }: BlogPageProps) {
                       Prev
                     </Link>
                   </li>
-                  
+
                   {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
                     <li key={page} className="mx-1">
                       <Link
@@ -79,7 +84,7 @@ export default async function Blog({ searchParams }: BlogPageProps) {
                       </Link>
                     </li>
                   ))}
-                  
+
                   <li className="mx-1">
                     <Link
                       href={`/blog?page=${Math.min(totalPages, currentPage + 1)}`}
