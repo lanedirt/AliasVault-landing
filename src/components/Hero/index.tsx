@@ -62,6 +62,14 @@ const Hero = () => {
                     alt="Download on the App Store"
                   />
 
+                  {/* Android Play Store Badge */}
+                  <Badge
+                    href="https://play.google.com/store/apps/details?id=net.aliasvault.app"
+                    iconLight="/images/app-store/android.svg"
+                    iconDark="/images/app-store/android.svg"
+                    alt="Android"
+                  />
+
                   {/* Chrome Extension Badge */}
                   <Badge
                     href="https://chromewebstore.google.com/detail/aliasvault/bmoggiinmnodjphdjnmpcnlleamkfedj"
@@ -100,15 +108,6 @@ const Hero = () => {
                     iconLight="/images/browser-icons/brave.svg"
                     iconDark="/images/browser-icons/brave.svg"
                     alt="Brave extension"
-                  />
-
-                  {/* Android Play Store Badge */}
-                  <Badge
-                    href="https://play.google.com/store/apps/details?id=com.aliasvault.app"
-                    iconLight="/images/app-store/android.svg"
-                    iconDark="/images/app-store/android.svg"
-                    alt="Android (coming soon)"
-                    disabled={true}
                   />
 
                   {/* Divider */}
