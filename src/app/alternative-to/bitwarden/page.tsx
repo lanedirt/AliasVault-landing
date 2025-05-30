@@ -206,9 +206,6 @@ const BitwardenPage = () => {
           </p>
           <ul className="list-disc pl-6 space-y-4">
             <li>
-              <strong>Mobile Apps:</strong> While Bitwarden offers native mobile apps for iOS and Android, AliasVault does not (yet). Adding mobile apps is however planned in our roadmap.
-            </li>
-            <li>
               <strong>Age:</strong> Bitwarden has been around longer and has a larger user base, which means more community-tested features and integrations.
             </li>
           </ul>

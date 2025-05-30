@@ -116,13 +116,13 @@ export const platformSupportFeatures: FeatureCategory = {
     },
     {
       name: "iOS App",
-      description: "Access your vault on your iPhone or iPad with the official iOS app. Supports native autofill and biometric authentication, keeping your data secure.",
+      description: "Access your vault on your iPhone or iPad with the official iOS app. Supports native autofill and Face ID / Touch ID authentication, keeping your data secure.",
       status: "available"
     },
     {
       name: "Android App",
-      description: "Support for Android is being worked on and will be available in the next few weeks! Stay tuned!",
-      status: "upcoming"
+      description: "Access your vault on your Android device with the official Android app. Supports native autofill and biometric authentication, keeping your data secure.",
+      status: "available"
     }
   ]
 };
