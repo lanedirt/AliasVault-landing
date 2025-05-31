@@ -1,0 +1,67 @@
+---
+title: "AliasVault 0.18.0 Released"
+description: "Native Android App Release, General Improvements and Tweaks"
+date: "2025-05-31"
+image: "/images/blog/headers/0.18.0.jpg"
+author:
+  name: "Leendert de Borst"
+  image: "/images/founder/founder.jpg"
+  designation: "Founder"
+tags:
+  - release
+---
+
+# Native Android App and Full Platform Coverage
+
+AliasVault 0.18.0 is live! This release brings AliasVault to Android, making AliasVault now officially available across **all major platforms**: Web, Browser Extensions, and mobile (iOS + Android). Alongside this milestone, we’ve introduced new admin capabilities, critical bug fixes, and UI/UX improvements across the board.
+
+<ClickableImage
+  src="/images/blog/releases/0.18.0.jpg"
+  alt="AliasVault 0.18.0 Release"
+  caption="AliasVault is now available on Android"
+/>
+
+## 🤖 Native Android App Now Available
+
+AliasVault’s native **Android app** has arrived on Google Play. It brings mobile-first security and usability, including:
+
+- Native autofill support for apps and websites
+- Biometric unlock (Fingerprint, Face)
+- Seamless integration with both self-hosted and cloud-hosted setups
+
+[Download AliasVault for Android](https://play.google.com/store/apps/details?id=net.aliasvault.app)
+
+With this addition, you can now access AliasVault wherever you are, on **web, iOS, Android, and browser extensions** — with a consistent, secure experience.
+
+## 🔐 Admin Control: Revoke All Sessions
+
+Admins can now instantly **revoke all active sessions** for a user with a single click. This is especially useful for emergency deactivations or incident response.
+
+## 📩 More Admin Visibility
+
+The user list in the admin panel now shows how many emails each user has received — adding a new layer of visibility for usage monitoring.
+
+## 🧠 Browser Extension Autofill Accuracy
+
+We’ve fixed some long-standing issues in the browser extension:
+
+- Prevented autofill from triggering on irrelevant (non-login) fields
+- Fixed crashes when entering self-hosted URLs without an HTTPS prefix
+
+The result is a more precise and stable autofill experience across websites.
+
+## 🛠️ Other Fixes and Changes
+
+- Fixed Docker volume path issue with self-hosted setups trying to enable SSL certs
+- Resolved username/email overflow in the UI
+- Closed an API issue that could expose whether a username exists
+- Removed legacy SQLite server dependencies
+
+<GitHubRelease version="0.18.0" />
+
+## 🛣️ What's Next?
+
+In the coming months, we’ll be focusing on **general password and alias management improvements**, as we head toward our long-anticipated **v1.0 release**.
+
+Check out the [roadmap on GitHub](https://github.com/lanedirt/AliasVault/issues/731) and stay tuned!
+
