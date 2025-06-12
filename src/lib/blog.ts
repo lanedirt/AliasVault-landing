@@ -72,7 +72,7 @@ export function getBlogPostBySlug(slug: string): ContentPost | null {
   } catch {
     return null
   }
-} 
+}
 
 export function getNewsBySlug(slug: string): ContentPost | null {
   try {
@@ -92,6 +92,8 @@ export function getNewsBySlug(slug: string): ContentPost | null {
 }
 
 export function getBlogPostsByTag(tag: string): ContentPost[] {
-  const posts = getAllBlogPosts();
-  return posts.filter(post => post.tags.includes(tag));
+  const blogPosts = getAllBlogPosts();
+  const newsPosts = getAllNewsPosts();
+  const allPosts = [...blogPosts, ...newsPosts];
+  return allPosts.filter(post => post.tags.includes(tag));
 }
