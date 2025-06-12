@@ -53,5 +53,13 @@ ENV HSTS_MAX_AGE 300
 ENV HSTS_INCLUDE_SUBDOMAINS false
 ENV HSTS_PRELOAD false
 
+# Security Headers Configuration
+ENV CSP_ENABLED true
+ENV X_FRAME_OPTIONS "SAMEORIGIN"
+ENV X_CONTENT_TYPE_OPTIONS "nosniff"
+ENV X_XSS_PROTECTION "1; mode=block"
+ENV REFERRER_POLICY "strict-origin-when-cross-origin"
+ENV PERMISSIONS_POLICY "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+
 # Use next start to run the application
 CMD ["npm", "run", "start"]
