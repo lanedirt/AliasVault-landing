@@ -48,5 +48,10 @@ EXPOSE 3000
 
 ENV PORT 3000
 
+# Enable HSTS with a 5-minute max-age (300 seconds) as recommended for initial deployment
+ENV HSTS_MAX_AGE 300
+ENV HSTS_INCLUDE_SUBDOMAINS false
+ENV HSTS_PRELOAD false
+
 # Use next start to run the application
 CMD ["npm", "run", "start"]
