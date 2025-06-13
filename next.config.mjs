@@ -42,7 +42,7 @@ const nextConfig = {
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
               "font-src 'self' https://fonts.gstatic.com",
               "img-src 'self' data: blob: https://img.shields.io",
-              "connect-src 'self' https://api.github.com",
+              "connect-src 'self' https://api.github.com https://plausible.xivi.nl",
               "object-src 'none'",
               "base-uri 'self'",
               "form-action 'self'",
