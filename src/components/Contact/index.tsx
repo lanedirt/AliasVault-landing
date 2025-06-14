@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const ContactContent = () => {
   return (
@@ -18,7 +19,7 @@ const ContactContent = () => {
               </a>{" "}
               and operates from the Netherlands. We offer an official cloud-hosted version, with our own dedicated servers located in Germany, fully compliant with European GDPR regulations.
             </p>
-            <p className="mb-4 text-base text-body-color dark:text-body-color-dark">
+            <p className="mb-12 text-base text-body-color dark:text-body-color-dark">
               For inquiries regarding our cloud-hosted service, commercial licensing, or enterprise support, please contact:{" "}
               <a
                 href="mailto:contact@support.aliasvault.net"
@@ -109,6 +110,27 @@ const ContactContent = () => {
                Discuss ideas on our Discord Community
               </a>
             </div>
+          </div>
+
+          <div className="mt-12">
+            <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+              Donations
+            </h3>
+            <p className="mb-4 text-base text-body-color dark:text-body-color-dark">
+              If you find AliasVault useful, consider supporting its development through Buy Me A Coffee. Donations are optional but greatly appreciated and will help us continue to improve the project.
+            </p>
+            <a
+              href="https://www.buymeacoffee.com/lanedirt"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/images/contact/buymeacoffee.png"
+                alt="Buy Me A Coffee"
+                width={217}
+                height={60}
+              />
+            </a>
           </div>
         </div>
       </div>
