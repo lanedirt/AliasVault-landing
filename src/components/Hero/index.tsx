@@ -14,7 +14,7 @@ const Hero = () => {
             <div className="w-full px-4 lg:w-1/2">
               <div className="text-center lg:text-left">
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  The Privacy-First Password & Email Alias Manager
+                  Privacy-First Password &amp; Email Alias Manager
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
                   AliasVault is an end-to-end encrypted password and (email) alias manager that protects your privacy by creating alternative identities, passwords and email addresses for every website you use.
