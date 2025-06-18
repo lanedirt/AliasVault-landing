@@ -43,6 +43,7 @@ const nextConfig = {
               "font-src 'self' https://fonts.gstatic.com",
               "img-src 'self' data: blob: https://img.shields.io",
               "connect-src 'self' https://api.github.com https://plausible.xivi.nl",
+              "frame-src 'self' https://www.youtube.com https://youtube.com",
               "object-src 'none'",
               "base-uri 'self'",
               "form-action 'self'",
