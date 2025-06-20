@@ -102,18 +102,38 @@ export const securityFeatures: FeatureCategory = {
   ]
 };
 
-// Platform Support Features
-export const platformSupportFeatures: FeatureCategory = {
-  title: "Mobile Apps & Browser Extensions",
-  description: "Access your vault from anywhere with AliasVault's mobile apps and browser extensions.",
+// Browser extension features
+export const browserExtensionFeatures: FeatureCategory = {
+  title: "Browser Extensions",
+  description: "Access your vault from anywhere with AliasVault's browser extensions.",
   imageSrc: "/images/features/plugins.png",
-  imageAlt: "AliasVault Plugins",
+  imageAlt: "AliasVault Browser Extensions",
   features: [
     {
-      name: "Browser Extensions",
-      description: "Seamlessly autofill passwords and generate aliases directly from your browser with our extensions for Chrome, Firefox, Edge, and Safari.",
+      name: "Available for every browser",
+      description: "The AliasVault browser extension is officially available for Chrome, Firefox, Edge, Safari. Additional Chrome-based browsers are also supported such as Brave, Vivaldi and Opera.",
       status: "available"
     },
+    {
+      name: "Autofill Credentials",
+      description: "Seamlessly autofill (user)names and passwords while you browse.",
+      status: "available"
+    },
+    {
+      name: "Email Alias Generator",
+      description: "Generate (email) aliases directly from the browser extension with a simple click.",
+      status: "available"
+    }
+  ]
+};
+
+// Mobile app features
+export const mobileAppFeatures: FeatureCategory = {
+  title: "Mobile Apps",
+  description: "Access your vault from anywhere with AliasVault's mobile apps.",
+  imageSrc: "/images/features/mobile-app.png",
+  imageAlt: "AliasVault Mobile Apps",
+  features: [
     {
       name: "iOS App",
       description: "Access your vault on your iPhone or iPad with the official iOS app. Supports native autofill and Face ID / Touch ID authentication, keeping your data secure.",
@@ -121,7 +141,7 @@ export const platformSupportFeatures: FeatureCategory = {
     },
     {
       name: "Android App",
-      description: "Access your vault on your Android device with the official Android app. Supports native autofill and biometric authentication, keeping your data secure.",
+      description: "Access your vault on your Android device with the official Android app. Supports native autofill and biometric authentication, keeping your data secure. Available on Google Play or as a manual APK via GitHub.",
       status: "available"
     }
   ]
@@ -162,6 +182,7 @@ export const allFeatureCategories: FeatureCategory[] = [
   passwordManagementFeatures,
   emailAliasFeatures,
   securityFeatures,
-  platformSupportFeatures,
+  browserExtensionFeatures,
+  mobileAppFeatures,
   selfHostingFeatures
 ];
