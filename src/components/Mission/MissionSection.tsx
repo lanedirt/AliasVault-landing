@@ -10,10 +10,10 @@ const MissionSection = () => {
                 Why AliasVault
               </h2>
               <p className="text-base !leading-relaxed text-body-color md:text-lg">
-                The mission of AliasVault is simple: to make the internet a safer and more private place — where you decide what to share, and with whom.
+                The mission of AliasVault is simple: to make the internet a safer and more private place, where you decide what to share, and with whom.
               </p>
               <p className="mt-4 text-base !leading-relaxed text-body-color md:text-lg">
-                We believe privacy is a right, not a luxury — and our mission is to put control back into the hands of users, helping them stay secure and anonymous online.
+                We believe privacy is a right, not a luxury. Our mission is to put control back into the hands of users, helping them stay secure and anonymous online.
               </p>
               <p className="mt-4 text-base !leading-relaxed text-body-color md:text-lg">
                 AliasVault is the response to a web that tracks everything: a way to take back control of your digital privacy and help you stay secure online.
@@ -35,7 +35,7 @@ const MissionSection = () => {
                 Now due to the internet, companies developed ways to know exactly who you are, what you like, and what you’re looking for, sometimes even before you do. And this doesn’t just affect adults. Even children watching innocent cartoons online are being tracked. Their clicks, their habits, even their preferences are collected and used to build up a profile on them.
               </p>
               <p className="mt-4 text-base !leading-relaxed text-body-color md:text-lg">
-                To put it in perspective: imagine you’re walking through a shopping mall and someone follows you around, writes down everything you do, how long you stay in each store, what you look at (maybe even a specific medicine) — and then shares that with all the other stores, or sells it to the highest bidder. That would be called stalking, harassment, or worse.
+                To put it in perspective: imagine you’re walking through a shopping mall and someone follows you around, writes down everything you do, how long you stay in each store, what you look at (perhaps a specific medicine) — and then shares that with all the other stores, or sells it to the highest bidder. That would be called stalking, harassment, or worse.
                 But on the internet, this has become the norm.
               </p>
             </div>
@@ -74,7 +74,7 @@ const MissionSection = () => {
                 Right now, AliasVault helps you generate unique aliases and passwords, so you never have to give away more than necessary. But this is just the beginning. We’re building a privacy platform designed to protect you and your family, with features that make it easy to stay private by default.
               </p>
               <p className="text-base !leading-relaxed text-body-color md:text-lg">
-                Everything we do at AliasVault supports one mission: to make the internet a safer and more private place — where you decide what to share, and with whom.
+                Everything we do at AliasVault supports one mission: to make the internet a safer and more private place. Where you decide what to share, and with whom.
               </p>
             </div>
           </div>
