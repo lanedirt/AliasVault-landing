@@ -72,7 +72,7 @@ const Platforms = () => {
                   className="mb-2"
                 />
                 <span className="text-sm font-medium text-black dark:text-white">Chrome</span>
-                <span className="text-xs text-green-600 dark:text-green-400">Available</span>
+                <span className="text-xs text-green-600 dark:text-green-400">Install</span>
               </div>
 
               <div className="flex flex-col items-center p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
@@ -84,7 +84,7 @@ const Platforms = () => {
                   className="mb-2"
                 />
                 <span className="text-sm font-medium text-black dark:text-white">Firefox</span>
-                <span className="text-xs text-green-600 dark:text-green-400">Available</span>
+                <span className="text-xs text-green-600 dark:text-green-400">Install</span>
               </div>
 
               <div className="flex flex-col items-center p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
@@ -96,7 +96,7 @@ const Platforms = () => {
                   className="mb-2"
                 />
                 <span className="text-sm font-medium text-black dark:text-white">Microsoft Edge</span>
-                <span className="text-xs text-green-600 dark:text-green-400">Available</span>
+                <span className="text-xs text-green-600 dark:text-green-400">Install</span>
               </div>
 
               <div className="flex flex-col items-center p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
@@ -108,7 +108,7 @@ const Platforms = () => {
                   className="mb-2"
                 />
                 <span className="text-sm font-medium text-black dark:text-white">Safari</span>
-                <span className="text-xs text-green-600 dark:text-green-400">Available</span>
+                <span className="text-xs text-green-600 dark:text-green-400">Install</span>
               </div>
 
               <div className="flex flex-col items-center p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
@@ -120,7 +120,7 @@ const Platforms = () => {
                   className="mb-2"
                 />
                 <span className="text-sm font-medium text-black dark:text-white">Brave</span>
-                <span className="text-xs text-green-600 dark:text-green-400">Available</span>
+                <span className="text-xs text-green-600 dark:text-green-400">Install</span>
               </div>
             </div>
 
