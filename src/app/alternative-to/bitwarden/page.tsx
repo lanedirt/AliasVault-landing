@@ -190,6 +190,16 @@ const BitwardenPage = () => {
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">⚠️</td>
               </tr>
+              <tr className="dark:text-white">
+                <td className="border border-gray-300 dark:border-gray-700 p-4">Browser Extensions</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
+              </tr>
+              <tr className="dark:text-white">
+                <td className="border border-gray-300 dark:border-gray-700 p-4">Mobile Apps</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
+              </tr>
             </tbody>
           </table>
         </div>

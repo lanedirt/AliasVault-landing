@@ -220,6 +220,14 @@ const Footer = () => {
                       Alternative to Bitwarden
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="/alternative-to/proton-pass"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      Alternative to Proton Pass
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
