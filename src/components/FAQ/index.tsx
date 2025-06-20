@@ -57,14 +57,15 @@ const FAQ = () => {
               <div
                 className={`transform transition-all duration-300 ease-in-out ${
                   openIndex === index
-                    ? "visible opacity-100 max-h-96"
+                    ? "visible opacity-100 max-h-128"
                     : "invisible opacity-0 max-h-0"
                 }`}
               >
                 <div className="border-t border-gray-200 px-6 py-4 dark:border-gray-800">
-                  <p className="text-base text-body-color dark:text-body-color-dark">
-                    {faq.answer}
-                  </p>
+                  <div
+                    className="text-base text-body-color dark:text-body-color-dark whitespace-pre-line [&_a]:text-primary [&_a]:underline [&_a]:decoration-primary/30 [&_a]:underline-offset-2 [&_a]:transition-all [&_a]:duration-200 hover:[&_a]:decoration-primary"
+                    dangerouslySetInnerHTML={{ __html: faq.answer }}
+                  />
                 </div>
               </div>
             </div>
