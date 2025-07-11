@@ -1,11 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 interface CallToActionProps {
   className?: string;
 }
 
 const CallToAction = ({ className = "" }: CallToActionProps) => {
+  const t = useTranslations();
   return (
     <section className={`mt-8 lg:mt-20 ${className}`}>
       <div className="container bg-gradient-to-br from-primary-400 dark:from-primary-700 dark:to-gray-900 rounded-2xl p-10 md:p-12 lg:p-16 lg:px-32">
@@ -13,16 +15,16 @@ const CallToAction = ({ className = "" }: CallToActionProps) => {
           {/* Left side content */}
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
             <h2 className="mb-4 text-3xl font-bold text-gray-900 dark:text-white">
-              Protect your privacy, improve your security
+              {t('callToAction.title')}
             </h2>
             <p className="mb-6 text-lg text-gray-700 dark:text-white/90">
-              Stop spam • Protect your privacy • Open source
+              {t('callToAction.description')}
             </p>
             <Link
               href="https://app.aliasvault.net"
               className="relative flex items-center justify-center bg-primary-600 px-8 py-4 font-semibold text-white transition-all duration-200 hover:bg-primary-700 hover:scale-105"
             >
-              Get started with AliasVault
+              {t('callToAction.buttonText')}
               <svg
                 className="ml-2 h-5 w-5"
                 fill="none"
@@ -44,7 +46,7 @@ const CallToAction = ({ className = "" }: CallToActionProps) => {
           <div className="hidden lg:flex w-full lg:w-1/2 justify-center lg:justify-end">
             <Image
               src="/images/logo/logo.svg"
-              alt="AliasVault logo"
+              alt={t('callToAction.logoAlt')}
               width={200}
               height={200}
             />
