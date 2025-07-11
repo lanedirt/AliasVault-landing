@@ -1,15 +1,17 @@
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 interface RssIconProps {
   className?: string;
 }
 
 const RssIcon = ({ className = '' }: RssIconProps) => {
+  const t = useTranslations();
   return (
     <Link
       href="/rss.xml"
       className={`inline-flex items-center justify-center rounded-full bg-primary p-2 text-white hover:bg-opacity-90 ${className}`}
-      title="RSS Feed"
+      title={t('common.rssFeed')}
       target="_blank"
       rel="noopener noreferrer"
     >

@@ -134,7 +134,11 @@
     "readMore": "Lees meer",
     "backToHome": "Terug naar home",
     "notFound": "Pagina niet gevonden",
-    "comingSoon": "Binnenkort beschikbaar"
+    "comingSoon": "Binnenkort beschikbaar",
+    "home": "Home",
+    "rssFeed": "RSS Feed",
+    "scrollToTop": "scroll naar boven",
+    "languageSelector": "Taalkiezer"
   },
   "faq": {
     "title": "Veelgestelde Vragen",
@@ -192,5 +196,11 @@
     "description": "Bekijk de video hieronder om AliasVault in actie te zien.",
     "playButtonAriaLabel": "video afspeelknop",
     "imageAlt": "video afbeelding"
+  },
+  "callToAction": {
+    "title": "Bescherm uw privacy, verbeter uw veiligheid",
+    "description": "Stop spam • Bescherm uw privacy • Open source",
+    "buttonText": "Aan de slag met AliasVault",
+    "logoAlt": "AliasVault logo"
   }
 }

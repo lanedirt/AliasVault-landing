@@ -134,7 +134,11 @@
     "readMore": "Read more",
     "backToHome": "Back to home",
     "notFound": "Page not found",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "home": "Home",
+    "rssFeed": "RSS Feed",
+    "scrollToTop": "scroll to top",
+    "languageSelector": "Language selector"
   },
   "faq": {
     "title": "Frequently Asked Questions",
@@ -192,5 +196,11 @@
     "description": "Check out the video below to see AliasVault in action.",
     "playButtonAriaLabel": "video play button",
     "imageAlt": "video image"
+  },
+  "callToAction": {
+    "title": "Protect your privacy, improve your security",
+    "description": "Stop spam • Protect your privacy • Open source",
+    "buttonText": "Get started with AliasVault",
+    "logoAlt": "AliasVault logo"
   }
 }
