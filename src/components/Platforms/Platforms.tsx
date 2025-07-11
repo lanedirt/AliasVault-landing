@@ -1,17 +1,20 @@
 import BrowserBadge from "../Common/Badge";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const Platforms = () => {
+  const t = useTranslations();
+  
   return (
     <section className="pt-9 pb-16 md:pb-20 lg:pb-28">
       <div className="container">
         <div className="space-y-8">
           <div>
             <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-              Mobile Apps
+              {t('platforms.mobileApps.title')}
             </h3>
             <p className="mb-4 text-base font-medium leading-relaxed text-body-color dark:text-body-color-dark">
-              AliasVault is available as a native iOS and Android app allowing you to manage and use your credentials and aliases on the go.
+              {t('platforms.mobileApps.description')}
             </p>
             <div className="flex items-center space-x-4 mb-4">
               <a
@@ -22,7 +25,7 @@ const Platforms = () => {
               >
                 <Image
                   src="/images/app-store/download-app-store.svg"
-                  alt="Download on the App Store"
+                  alt={t('platforms.mobileApps.appStoreAlt')}
                   width={120}
                   height={40}
                   className="w-[120px] h-[40px]"
@@ -36,7 +39,7 @@ const Platforms = () => {
               >
                 <Image
                   src="/images/app-store/download-play-store.svg"
-                  alt="Download on the Play Store"
+                  alt={t('platforms.mobileApps.playStoreAlt')}
                   width={120}
                   height={40}
                   className="w-[120px] h-[40px]"
@@ -44,22 +47,22 @@ const Platforms = () => {
               </a>
             </div>
             <p className="text-base font-medium leading-relaxed text-body-color dark:text-body-color-dark">
-              The AliasVault mobile apps feature:
+              {t('platforms.mobileApps.featuresTitle')}
             </p>
             <ul className="list-disc pl-6 space-y-2 mt-2 text-base font-medium text-body-color dark:text-body-color-dark">
-              <li>Biometric authentication (Face ID / Touch ID)</li>
-              <li>Offline access to your passwords</li>
-              <li>Integration with mobile browsers</li>
-              <li>Seamless sync across all your devices</li>
+              <li>{t('platforms.mobileApps.features.biometric')}</li>
+              <li>{t('platforms.mobileApps.features.offline')}</li>
+              <li>{t('platforms.mobileApps.features.integration')}</li>
+              <li>{t('platforms.mobileApps.features.sync')}</li>
             </ul>
           </div>
 
           <div>
             <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-              Browser Extensions
+              {t('platforms.browserExtensions.title')}
             </h3>
             <p className="mb-6 text-base font-medium leading-relaxed text-body-color dark:text-body-color-dark">
-              AliasVault offers browser extensions that integrate seamlessly with your browsing experience, making it easy to manage your passwords and aliases directly from your browser.
+              {t('platforms.browserExtensions.description')}
             </p>
 
             <div className="flex flex-wrap gap-4 mb-6">
@@ -72,7 +75,7 @@ const Platforms = () => {
                   className="mb-2"
                 />
                 <span className="text-sm font-medium text-black dark:text-white">Chrome</span>
-                <span className="text-xs text-green-600 dark:text-green-400">Install</span>
+                <span className="text-xs text-green-600 dark:text-green-400">{t('platforms.browserExtensions.install')}</span>
               </div>
 
               <div className="flex flex-col items-center p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
@@ -84,7 +87,7 @@ const Platforms = () => {
                   className="mb-2"
                 />
                 <span className="text-sm font-medium text-black dark:text-white">Firefox</span>
-                <span className="text-xs text-green-600 dark:text-green-400">Install</span>
+                <span className="text-xs text-green-600 dark:text-green-400">{t('platforms.browserExtensions.install')}</span>
               </div>
 
               <div className="flex flex-col items-center p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
@@ -96,7 +99,7 @@ const Platforms = () => {
                   className="mb-2"
                 />
                 <span className="text-sm font-medium text-black dark:text-white">Microsoft Edge</span>
-                <span className="text-xs text-green-600 dark:text-green-400">Install</span>
+                <span className="text-xs text-green-600 dark:text-green-400">{t('platforms.browserExtensions.install')}</span>
               </div>
 
               <div className="flex flex-col items-center p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
@@ -108,7 +111,7 @@ const Platforms = () => {
                   className="mb-2"
                 />
                 <span className="text-sm font-medium text-black dark:text-white">Safari</span>
-                <span className="text-xs text-green-600 dark:text-green-400">Install</span>
+                <span className="text-xs text-green-600 dark:text-green-400">{t('platforms.browserExtensions.install')}</span>
               </div>
 
               <div className="flex flex-col items-center p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
@@ -120,52 +123,51 @@ const Platforms = () => {
                   className="mb-2"
                 />
                 <span className="text-sm font-medium text-black dark:text-white">Brave</span>
-                <span className="text-xs text-green-600 dark:text-green-400">Install</span>
+                <span className="text-xs text-green-600 dark:text-green-400">{t('platforms.browserExtensions.install')}</span>
               </div>
             </div>
 
             <p className="text-base font-medium leading-relaxed text-body-color dark:text-body-color-dark">
-              Our browser extensions allow you to:
+              {t('platforms.browserExtensions.featuresTitle')}
             </p>
             <ul className="list-disc pl-6 space-y-2 mt-2 text-base font-medium text-body-color dark:text-body-color-dark">
-              <li>Auto-fill passwords and login information</li>
-              <li>Generate new email aliases on the fly</li>
-              <li>Access your vault directly from your browser</li>
-              <li>Securely save new credentials as you browse</li>
+              <li>{t('platforms.browserExtensions.features.autofill')}</li>
+              <li>{t('platforms.browserExtensions.features.aliases')}</li>
+              <li>{t('platforms.browserExtensions.features.access')}</li>
+              <li>{t('platforms.browserExtensions.features.save')}</li>
             </ul>
           </div>
 
           <div>
             <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-              Development Roadmap
+              {t('platforms.roadmap.title')}
             </h3>
             <div className="space-y-4">
               <p className="text-base font-medium leading-relaxed text-body-color dark:text-body-color-dark">
-                AliasVault is under active development, with a strong focus on usability, security, and cross-platform support.
-                The main focus is on ensuring robust usability for everyday tasks, including comprehensive autofill capabilities across all platforms.
+                {t('platforms.roadmap.description')}
               </p>
 
               <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg">
                 <h4 className="text-lg font-semibold text-black dark:text-white mb-2">
-                  Current Development Status
+                  {t('platforms.roadmap.statusTitle')}
                 </h4>
                 <ul className="list-disc pl-6 space-y-2 text-base font-medium text-body-color dark:text-body-color-dark">
-                  <li>🚀 Incremental releases every 2-3 weeks</li>
-                  <li>✅ Production-ready with data integrity guarantees</li>
-                  <li>🔄 Automatic migration support</li>
-                  <li>👥 Strong emphasis on user feedback and testing</li>
+                  <li>{t('platforms.roadmap.statusItems.releases')}</li>
+                  <li>{t('platforms.roadmap.statusItems.production')}</li>
+                  <li>{t('platforms.roadmap.statusItems.migration')}</li>
+                  <li>{t('platforms.roadmap.statusItems.feedback')}</li>
                 </ul>
               </div>
 
               <p className="text-base font-medium leading-relaxed text-body-color dark:text-body-color-dark">
-               To track our progress and see what&apos;s coming next, check out our{" "}
+                {t('platforms.roadmap.roadmapLink')}{" "}
                 <a
                   href="https://github.com/lanedirt/AliasVault/issues/731"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary hover:underline"
                 >
-                  full roadmap on GitHub
+                  {t('platforms.roadmap.roadmapLinkText')}
                 </a>.
               </p>
             </div>

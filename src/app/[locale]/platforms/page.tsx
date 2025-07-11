@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import Platforms from "@/components/Platforms/Platforms";
+import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = {
   title: "Platforms",
@@ -8,11 +9,13 @@ export const metadata: Metadata = {
 };
 
 const PluginsPage = () => {
+  const t = useTranslations();
+  
   return (
     <>
       <Breadcrumb
-        pageName="Platforms"
-        description="AliasVault is available on all major platforms, including web, desktop, and mobile."
+        pageName={t('platforms.title')}
+        description={t('platforms.pageDescription')}
       />
       <Platforms />
     </>

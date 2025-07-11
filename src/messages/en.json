@@ -68,6 +68,14 @@
     "title": "Features",
     "subtitle": "What makes AliasVault unique",
     "description": "AliasVault provides comprehensive privacy protection through innovative features designed to keep your digital identity secure.",
+    "pageDescription": "Discover the powerful features that make AliasVault the ultimate solution for password and identity management.",
+    "legend": {
+      "available": "Available",
+      "comingSoon": "Coming Soon",
+      "notAvailable": "Not Available",
+      "roadmapText": "Track our progress and see what's coming next on our",
+      "roadmapLink": "roadmap on GitHub"
+    },
     "items": {
       "passwordManager": {
         "title": "Password Manager",
@@ -99,6 +107,7 @@
     "title": "About AliasVault",
     "subtitle": "Privacy-first password management",
     "description": "Learn more about our mission to provide secure, private password and alias management.",
+    "pageDescription": "AliasVault is an open-source end-to-end encrypted password and alias manager. With AliasVault you can create unique identities, passwords and email addresses for every website you use. Keeping you safe online.",
     "sectionOne": {
       "title": "Your privacy. Protected.",
       "paragraph": "In an ideal world you don't need AliasVault, in reality you do. Many companies track your online activity without your permission or knowledge, creating <a href='https://en.wikipedia.org/wiki/Shadow_profile' target='_blank'>shadow profiles</a> of you. Even the most reputable companies can fall victim to <a href='https://en.wikipedia.org/wiki/Data_breach' target='_blank'>data breaches</a>, causing your personal information to fall into the wrong hands. AliasVault helps keep you safe online by letting you control how websites see and track you.",
@@ -123,7 +132,46 @@
   "platforms": {
     "title": "Platforms",
     "subtitle": "Available everywhere",
-    "description": "AliasVault is available on all major platforms and browsers."
+    "description": "AliasVault is available on all major platforms and browsers.",
+    "pageDescription": "AliasVault is available on all major platforms, including web, desktop, and mobile.",
+    "mobileApps": {
+      "title": "Mobile Apps",
+      "description": "AliasVault is available as a native iOS and Android app allowing you to manage and use your credentials and aliases on the go.",
+      "appStoreAlt": "Download on the App Store",
+      "playStoreAlt": "Download on the Play Store",
+      "featuresTitle": "The AliasVault mobile apps feature:",
+      "features": {
+        "biometric": "Biometric authentication (Face ID / Touch ID)",
+        "offline": "Offline access to your passwords",
+        "integration": "Integration with mobile browsers",
+        "sync": "Seamless sync across all your devices"
+      }
+    },
+    "browserExtensions": {
+      "title": "Browser Extensions",
+      "description": "AliasVault offers browser extensions that integrate seamlessly with your browsing experience, making it easy to manage your passwords and aliases directly from your browser.",
+      "install": "Install",
+      "featuresTitle": "Our browser extensions allow you to:",
+      "features": {
+        "autofill": "Auto-fill passwords and login information",
+        "aliases": "Generate new email aliases on the fly",
+        "access": "Access your vault directly from your browser",
+        "save": "Securely save new credentials as you browse"
+      }
+    },
+    "roadmap": {
+      "title": "Development Roadmap",
+      "description": "AliasVault is under active development, with a strong focus on usability, security, and cross-platform support. The main focus is on ensuring robust usability for everyday tasks, including comprehensive autofill capabilities across all platforms.",
+      "statusTitle": "Current Development Status",
+      "statusItems": {
+        "releases": "🚀 Incremental releases every 2-3 weeks",
+        "production": "✅ Production-ready with data integrity guarantees",
+        "migration": "🔄 Automatic migration support",
+        "feedback": "👥 Strong emphasis on user feedback and testing"
+      },
+      "roadmapLink": "To track our progress and see what's coming next, check out our",
+      "roadmapLinkText": "full roadmap on GitHub"
+    }
   },
   "common": {
     "loading": "Loading...",
