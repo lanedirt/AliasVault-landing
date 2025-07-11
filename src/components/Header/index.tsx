@@ -5,10 +5,13 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
+import { useTranslations, useLocale } from "next-intl";
 
 const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const navbarToggleHandler = () => setNavbarOpen(!navbarOpen);
+  const t = useTranslations();
+  const locale = useLocale();
 
   const [sticky, setSticky] = useState(false);
   useEffect(() => {
@@ -24,6 +27,13 @@ const Header = () => {
     setOpenIndex(openIndex === index ? -1 : index);
 
   const pathname = usePathname();
+  
+  // Create localized menu data
+  const localizedMenuData = menuData.map(item => ({
+    ...item,
+    title: t(`navigation.${item.title.toLowerCase()}`),
+    path: `/${locale}${item.path}`
+  }));
 
   return (
     <header
@@ -37,10 +47,10 @@ const Header = () => {
         <div className="relative -mx-4 flex items-center justify-between">
           {/* Logo */}
           <div className="w-60 max-w-full px-4">
-            <Link href="/" className={`flex items-center ${sticky ? "py-5" : "py-8"}`}>
+            <Link href={`/${locale}`} className={`flex items-center ${sticky ? "py-5" : "py-8"}`}>
               <Image
                 src="/images/logo/icon-trimmed.png"
-                alt="logo"
+                alt={t('footer.alt.logo')}
                 width={45}
                 height={45}
                 className="mr-3"
@@ -91,7 +101,7 @@ const Header = () => {
             } lg:hidden`}
           >
             <ul className="divide-y divide-body-color/20 dark:divide-body-color/40">
-              {menuData.map((menuItem, index) => (
+              {localizedMenuData.map((menuItem, index) => (
                 <li key={index} className="py-3">
                   {menuItem.path ? (
                     <Link
@@ -162,7 +172,7 @@ const Header = () => {
                   className="block text-base text-dark hover:text-primary dark:text-white/70 dark:hover:text-white transition-colors"
                   onClick={() => setNavbarOpen(false)}
                 >
-                  Discord
+                  {t('footer.social.discord')}
                   <svg
                         className="ml-1 inline-block h-4 w-4"
                         fill="none"
@@ -185,7 +195,7 @@ const Header = () => {
                   className="block text-base text-dark hover:text-primary dark:text-white/70 dark:hover:text-white transition-colors"
                   onClick={() => setNavbarOpen(false)}
                 >
-                  GitHub
+                  {t('footer.social.github')}
                   <svg
                         className="ml-1 inline-block h-4 w-4"
                         fill="none"
@@ -210,7 +220,7 @@ const Header = () => {
           {/* Right Side Content */}
           <div className="flex items-center gap-4 px-4">
             <nav className="hidden lg:flex items-center space-x-6">
-              {menuData.map((menuItem, index) => (
+              {localizedMenuData.map((menuItem, index) => (
                 <div key={index} className="relative group">
                   {menuItem.path ? (
                     <Link

@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "title": "AliasVault",
+    "description": "AliasVault is an open-source end-to-end encrypted password and alias manager."
+  },
+  "navigation": {
+    "features": "Features",
+    "platforms": "Platforms",
+    "blog": "Blog"
+  },
+  "hero": {
+    "title": "Privacy-First Password & Email Alias Manager",
+    "description": "AliasVault is an end-to-end encrypted password and (email) alias manager that protects your privacy by creating alternative identities, passwords and email addresses for every website you use.",
+    "cta": "Create your free vault",
+    "github": "GitHub",
+    "alt": {
+      "githubStars": "GitHub Repo stars",
+      "appStore": "Download on the App Store",
+      "android": "Android",
+      "chrome": "Chrome Web Store",
+      "firefox": "Firefox extension",
+      "edge": "Microsoft Edge extension",
+      "safari": "Safari extension",
+      "brave": "Brave extension",
+      "madeInNL": "Made in The Netherlands (EU)",
+      "gdpr": "GDPR Compliant",
+      "heroImage": "hero-image"
+    }
+  },
+  "footer": {
+    "description": "AliasVault is a privacy-first, open-source, end-to-end encrypted password and (email) alias manager that protects your privacy.",
+    "sections": {
+      "aliasvault": "AliasVault",
+      "alternatives": "Alternative",
+      "support": "Support"
+    },
+    "links": {
+      "about": "About",
+      "mission": "Our Mission",
+      "features": "Features",
+      "platforms": "Platforms",
+      "documentation": "Documentation",
+      "source": "Source code",
+      "alt_simplelogin": "Alternative to SimpleLogin",
+      "alt_bitwarden": "Alternative to Bitwarden",
+      "alt_proton": "Alternative to Proton Pass",
+      "contact": "Contact",
+      "report_abuse": "Report Abuse",
+      "support_ticket": "Open Support Ticket",
+      "license": "License",
+      "privacy": "Privacy Policy"
+    },
+    "social": {
+      "github": "GitHub",
+      "discord": "Discord",
+      "facebook": "Facebook",
+      "twitter": "X/Twitter",
+      "youtube": "YouTube"
+    },
+    "alt": {
+      "logo": "logo"
+    },
+    "language": "Language"
+  },
+  "features": {
+    "title": "Features",
+    "subtitle": "What makes AliasVault unique",
+    "description": "AliasVault provides comprehensive privacy protection through innovative features designed to keep your digital identity secure."
+  },
+  "about": {
+    "title": "About AliasVault",
+    "subtitle": "Privacy-first password management",
+    "description": "Learn more about our mission to provide secure, private password and alias management."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch",
+    "description": "Have questions or need support? We're here to help."
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Latest news and updates",
+    "description": "Stay up to date with the latest AliasVault news, updates, and privacy insights."
+  },
+  "platforms": {
+    "title": "Platforms",
+    "subtitle": "Available everywhere",
+    "description": "AliasVault is available on all major platforms and browsers."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "tryAgain": "Try again",
+    "learnMore": "Learn more",
+    "getStarted": "Get started",
+    "readMore": "Read more",
+    "backToHome": "Back to home",
+    "notFound": "Page not found",
+    "comingSoon": "Coming soon"
+  }
+}

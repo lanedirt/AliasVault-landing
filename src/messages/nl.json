@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "title": "AliasVault",
+    "description": "AliasVault is een open-source end-to-end versleutelde wachtwoord- en aliasmanager."
+  },
+  "navigation": {
+    "features": "Functies",
+    "platforms": "Platforms",
+    "blog": "Blog"
+  },
+  "hero": {
+    "title": "Privacy-First Wachtwoord & E-mail Alias Manager",
+    "description": "AliasVault is een end-to-end versleutelde wachtwoord- en (e-mail) aliasmanager die uw privacy beschermt door alternatieve identiteiten, wachtwoorden en e-mailadressen aan te maken voor elke website die u gebruikt.",
+    "cta": "Maak uw gratis kluis",
+    "github": "GitHub",
+    "alt": {
+      "githubStars": "GitHub Repo sterren",
+      "appStore": "Download op de App Store",
+      "android": "Android",
+      "chrome": "Chrome Web Store",
+      "firefox": "Firefox extensie",
+      "edge": "Microsoft Edge extensie",
+      "safari": "Safari extensie",
+      "brave": "Brave extensie",
+      "madeInNL": "Gemaakt in Nederland (EU)",
+      "gdpr": "GDPR-conform",
+      "heroImage": "hero-afbeelding"
+    }
+  },
+  "footer": {
+    "description": "AliasVault is een privacy-first, open-source, end-to-end versleutelde wachtwoord- en (e-mail) aliasmanager die uw privacy beschermt.",
+    "sections": {
+      "aliasvault": "AliasVault",
+      "alternatives": "Alternatief",
+      "support": "Ondersteuning"
+    },
+    "links": {
+      "about": "Over",
+      "mission": "Onze Missie",
+      "features": "Functies",
+      "platforms": "Platforms",
+      "documentation": "Documentatie",
+      "source": "Broncode",
+      "alt_simplelogin": "Alternatief voor SimpleLogin",
+      "alt_bitwarden": "Alternatief voor Bitwarden",
+      "alt_proton": "Alternatief voor Proton Pass",
+      "contact": "Contact",
+      "report_abuse": "Misbruik Melden",
+      "support_ticket": "Support Ticket Openen",
+      "license": "Licentie",
+      "privacy": "Privacy Beleid"
+    },
+    "social": {
+      "github": "GitHub",
+      "discord": "Discord",
+      "facebook": "Facebook",
+      "twitter": "X/Twitter",
+      "youtube": "YouTube"
+    },
+    "alt": {
+      "logo": "logo"
+    },
+    "language": "Taal"
+  },
+  "features": {
+    "title": "Functies",
+    "subtitle": "Wat maakt AliasVault uniek",
+    "description": "AliasVault biedt uitgebreide privacybescherming door innovatieve functies die uw digitale identiteit veilig houden."
+  },
+  "about": {
+    "title": "Over AliasVault",
+    "subtitle": "Privacy-first wachtwoordbeheer",
+    "description": "Leer meer over onze missie om veilig, privé wachtwoord- en aliasbeheer te bieden."
+  },
+  "contact": {
+    "title": "Neem Contact Op",
+    "subtitle": "Neem contact met ons op",
+    "description": "Heeft u vragen of heeft u ondersteuning nodig? Wij staan klaar om te helpen."
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Laatste nieuws en updates",
+    "description": "Blijf op de hoogte van het laatste AliasVault nieuws, updates en privacy-inzichten."
+  },
+  "platforms": {
+    "title": "Platforms",
+    "subtitle": "Overal beschikbaar",
+    "description": "AliasVault is beschikbaar op alle belangrijke platforms en browsers."
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Fout",
+    "tryAgain": "Probeer opnieuw",
+    "learnMore": "Meer leren",
+    "getStarted": "Aan de slag",
+    "readMore": "Lees meer",
+    "backToHome": "Terug naar home",
+    "notFound": "Pagina niet gevonden",
+    "comingSoon": "Binnenkort beschikbaar"
+  }
+}

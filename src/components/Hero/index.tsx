@@ -1,8 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import Badge from "../Common/Badge";
+import { useTranslations } from "next-intl";
 
 const Hero = () => {
+  const t = useTranslations('hero');
   return (
     <>
       <section
@@ -14,10 +16,10 @@ const Hero = () => {
             <div className="w-full px-4 lg:w-1/2">
               <div className="text-center lg:text-left">
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Privacy-First Password &amp; Email Alias Manager
+                  {t('title')}
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  AliasVault is an end-to-end encrypted password and (email) alias manager that protects your privacy by creating alternative identities, passwords and email addresses for every website you use.
+                  {t('description')}
                 </p>
                 <div className="flex flex-col items-center justify-center lg:items-start lg:justify-start space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
@@ -25,7 +27,7 @@ const Hero = () => {
                     target="_blank"
                     className="rounded-3xl bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                    Create your free vault
+                    {t('cta')}
                   </Link>
                   <Link
                     href="https://github.com/lanedirt/AliasVault"
@@ -43,9 +45,9 @@ const Hero = () => {
                         clipRule="evenodd"
                       />
                     </svg>
-                    GitHub <Image
+                    {t('github')} <Image
                       className="inline-block ml-3"
-                      alt="GitHub Repo stars"
+                      alt={t('alt.githubStars')}
                       src={`https://img.shields.io/github/stars/lanedirt/AliasVault?${new Date().getTime()}`}
                       width={90}
                       height={20}
@@ -59,7 +61,7 @@ const Hero = () => {
                     href="https://apps.apple.com/app/id6745490915"
                     iconLight="/images/app-store/apple-light.svg"
                     iconDark="/images/app-store/apple-dark.svg"
-                    alt="Download on the App Store"
+                    alt={t('alt.appStore')}
                   />
 
                   {/* Android Play Store Badge */}
@@ -67,7 +69,7 @@ const Hero = () => {
                     href="https://play.google.com/store/apps/details?id=net.aliasvault.app"
                     iconLight="/images/app-store/android.svg"
                     iconDark="/images/app-store/android.svg"
-                    alt="Android"
+                    alt={t('alt.android')}
                   />
 
                   {/* Chrome Extension Badge */}
@@ -75,7 +77,7 @@ const Hero = () => {
                     href="https://chromewebstore.google.com/detail/aliasvault/bmoggiinmnodjphdjnmpcnlleamkfedj"
                     iconLight="/images/browser-icons/chrome.svg"
                     iconDark="/images/browser-icons/chrome.svg"
-                    alt="Chrome Web Store"
+                    alt={t('alt.chrome')}
                   />
 
                   {/* Firefox Extension Badge */}
@@ -83,7 +85,7 @@ const Hero = () => {
                     href="https://addons.mozilla.org/en-US/firefox/addon/aliasvault/"
                     iconLight="/images/browser-icons/firefox.svg"
                     iconDark="/images/browser-icons/firefox.svg"
-                    alt="Firefox extension"
+                    alt={t('alt.firefox')}
                   />
 
                   {/* Microsoft Edge Extension Badge */}
@@ -91,7 +93,7 @@ const Hero = () => {
                     href="https://microsoftedge.microsoft.com/addons/detail/aliasvault/kabaanafahnjkfkplbnllebdmppdemfo"
                     iconLight="/images/browser-icons/edge.svg"
                     iconDark="/images/browser-icons/edge.svg"
-                    alt="Microsoft Edge extension"
+                    alt={t('alt.edge')}
                   />
 
                   {/* Safari Extension Badge */}
@@ -99,7 +101,7 @@ const Hero = () => {
                     href="https://apps.apple.com/app/id6743163173"
                     iconLight="/images/browser-icons/safari.svg"
                     iconDark="/images/browser-icons/safari.svg"
-                    alt="Safari extension"
+                    alt={t('alt.safari')}
                   />
 
                   {/* Brave Extension Badge */}
@@ -107,7 +109,7 @@ const Hero = () => {
                     href="https://chromewebstore.google.com/detail/aliasvault/bmoggiinmnodjphdjnmpcnlleamkfedj"
                     iconLight="/images/browser-icons/brave.svg"
                     iconDark="/images/browser-icons/brave.svg"
-                    alt="Brave extension"
+                    alt={t('alt.brave')}
                   />
 
                   {/* Divider */}
@@ -115,8 +117,8 @@ const Hero = () => {
 
                   {/* Made in NL Badge */}
                   <div className="flex items-center space-x-2">
-                    <Image src="/images/flags/nl.svg" width={24} height={24} alt="Made in The Netherlands (EU)" title="Made in The Netherlands (EU)" />
-                    <Image src="/images/flags/gdpr.svg" width={24} height={24} alt="GDPR Compliant" title="GDPR Compliant" />
+                    <Image src="/images/flags/nl.svg" width={24} height={24} alt={t('hero.alt.madeInNL')} title={t('hero.alt.madeInNL')} />
+                    <Image src="/images/flags/gdpr.svg" width={24} height={24} alt={t('hero.alt.gdpr')} title={t('hero.alt.gdpr')} />
                   </div>
                 </div>
               </div>
@@ -125,14 +127,14 @@ const Hero = () => {
               <div className="mt-8 text-center lg:mt-0">
                 <Image
                   src="/images/hero/hero-light.png"
-                  alt="hero-image"
+                  alt={t('alt.heroImage')}
                   width={1000}
                   height={1000}
                   className="mx-auto dark:hidden"
                 />
                 <Image
                   src="/images/hero/hero-dark.png"
-                  alt="hero-image"
+                  alt={t('alt.heroImage')}
                   width={1000}
                   height={1000}
                   className="mx-auto hidden dark:block"

@@ -1,8 +1,13 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations, useLocale } from "next-intl";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const Footer = () => {
+  const t = useTranslations();
+  const locale = useLocale();
+
   return (
     <>
       <footer className="relative z-10 bg-white pt-16 dark:bg-gray-dark md:pt-20 lg:pt-24 mt-16 md:mt-20 lg:mt-28">
@@ -11,12 +16,12 @@ const Footer = () => {
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
               <Link
-                href="/"
+                href={`/${locale}`}
                 className={`header-logo flex items-center justify-start w-full pb-6`}>
                 <div className="flex items-center">
                   <Image
                     src="/images/logo/icon-trimmed.png"
-                    alt="logo"
+                    alt={t('footer.alt.logo')}
                     width={50}
                     height={50}
                     className="mr-3"
@@ -25,7 +30,7 @@ const Footer = () => {
                 </div>
               </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  AliasVault is a privacy-first, open-source, end-to-end encrypted password and (email) alias manager that protects your privacy.
+                  {t('footer.description')}
                 </p>
                 <div className="flex items-center">
                   <a
@@ -129,39 +134,39 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  AliasVault
+                  {t('footer.sections.aliasvault')}
                 </h2>
                 <ul>
                   <li>
                     <Link
-                      href="/about"
+                      href={`/${locale}/about`}
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      About
+                      {t('footer.links.about')}
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/mission"
+                      href={`/${locale}/mission`}
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Our Mission
+                      {t('footer.links.mission')}
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/features"
+                      href={`/${locale}/features`}
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Features
+                      {t('footer.links.features')}
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/platforms"
+                      href={`/${locale}/platforms`}
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Platforms
+                      {t('footer.links.platforms')}
                     </Link>
                   </li>
                   <li>
@@ -170,7 +175,7 @@ const Footer = () => {
                       target="_blank"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Documentation
+                      {t('footer.links.documentation')}
                       <svg
                         className="ml-1 inline-block h-4 w-4"
                         fill="none"
@@ -193,7 +198,7 @@ const Footer = () => {
                       target="_blank"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Source code
+                      {t('footer.links.source')}
                       <svg
                         className="ml-1 inline-block h-4 w-4"
                         fill="none"
@@ -217,31 +222,31 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Alternative
+                  {t('footer.sections.alternatives')}
                 </h2>
                 <ul>
                   <li>
                     <Link
-                      href="/alternative-to/simplelogin"
+                      href={`/${locale}/alternative-to/simplelogin`}
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Alternative to SimpleLogin
+                      {t('footer.links.alt_simplelogin')}
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/alternative-to/bitwarden"
+                      href={`/${locale}/alternative-to/bitwarden`}
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Alternative to Bitwarden
+                      {t('footer.links.alt_bitwarden')}
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/alternative-to/proton-pass"
+                      href={`/${locale}/alternative-to/proton-pass`}
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Alternative to Proton Pass
+                      {t('footer.links.alt_proton')}
                     </Link>
                   </li>
                 </ul>
@@ -251,23 +256,23 @@ const Footer = () => {
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Support
+                  {t('footer.sections.support')}
                 </h2>
                 <ul>
                   <li>
                     <Link
-                        href="/contact"
+                        href={`/${locale}/contact`}
                         className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Contact
+                      {t('footer.links.contact')}
                     </Link>
                   </li>
                   <li>
                     <Link
-                        href="/report-abuse"
+                        href={`/${locale}/report-abuse`}
                         className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Report Abuse
+                      {t('footer.links.report_abuse')}
                     </Link>
                   </li>
                   <li>
@@ -276,7 +281,7 @@ const Footer = () => {
                       target="_blank"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Open Support Ticket
+                      {t('footer.links.support_ticket')}
                     </Link>
                   </li>
                   <li>
@@ -285,15 +290,15 @@ const Footer = () => {
                       target="_blank"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      License
+                      {t('footer.links.license')}
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/privacy-policy"
+                      href={`/${locale}/privacy-policy`}
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Privacy Policy
+                      {t('footer.links.privacy')}
                     </Link>
                   </li>
                 </ul>
@@ -301,6 +306,20 @@ const Footer = () => {
             </div>
           </div>
 
+          {/* Language Switcher */}
+          <div className="border-t border-body-color/50 pt-6 dark:border-body-color/20 pb-8">
+            <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+              <p className="text-base text-body-color dark:text-body-color-dark">
+                © 2024 AliasVault. All rights reserved.
+              </p>
+              <div className="flex items-center gap-4">
+                <span className="text-sm text-body-color dark:text-body-color-dark">
+                  {t('footer.language')}
+                </span>
+                <LanguageSwitcher />
+              </div>
+            </div>
+          </div>
 
         </div>
         <div className="absolute right-0 top-14 z-[-1]">
