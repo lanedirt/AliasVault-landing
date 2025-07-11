@@ -1,23 +1,24 @@
 import { Menu } from "@/types/menu";
 
-const menuData: Menu[] = [
+const getMenuData = (t: (key: string) => string): Menu[] => [
   {
     id: 1,
-    title: "Features",
+    title: t('navigation.features'),
     path: "/features",
     newTab: false,
   },
   {
     id: 2,
-    title: "Platforms",
+    title: t('navigation.platforms'),
     path: "/platforms",
     newTab: false,
   },
   {
     id: 3,
-    title: "Blog",
+    title: t('navigation.blog'),
     path: "/blog",
     newTab: false,
   },
 ];
-export default menuData;
+
+export default getMenuData;

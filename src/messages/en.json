@@ -122,7 +122,42 @@
   "contact": {
     "title": "Contact Us",
     "subtitle": "Get in touch",
-    "description": "Have questions or need support? We're here to help."
+    "description": "Have questions or need support? We're here to help.",
+    "content": {
+      "intro": "AliasVault is an open-source project founded and maintained by",
+      "founder": "Leendert de Borst",
+      "location": "and operates from the Netherlands. We offer an official cloud-hosted version, with our own dedicated servers located in Germany, fully compliant with European GDPR regulations.",
+      "inquiries": "For inquiries regarding our cloud-hosted service, commercial licensing, or enterprise support, please contact:",
+      "support": {
+        "title": "Support & Bug Reports",
+        "description": "For bug reports please use our GitHub repository. For technical discussions about the open-source project, join our Discord community:",
+        "links": {
+          "github": "Report issues on GitHub",
+          "discord": "Ask your questions on our Discord Community"
+        }
+      },
+      "faq": {
+        "title": "FAQ & Documentation",
+        "description": "Find answers to common questions in our FAQ, or find more information on our separate documentation website.",
+        "links": {
+          "faq": "Read FAQ",
+          "docs": "View Documentation"
+        }
+      },
+      "features": {
+        "title": "Feature Requests & Ideas",
+        "description": "Have an idea for improving AliasVault? Submit feature requests through our GitHub Discussions. Please check if your suggestion has already been made and feel free to upvote existing requests you support. If you wish to get in contact with the author and maintainers instead, feel free to join our Discord community.",
+        "links": {
+          "submit": "Submit Feature Request",
+          "discuss": "Discuss ideas on our Discord Community"
+        }
+      },
+      "donations": {
+        "title": "Donations",
+        "description": "If you find AliasVault useful, consider supporting its development through Buy Me A Coffee. Donations are optional but greatly appreciated and will help us continue to improve the project.",
+        "imageAlt": "Buy Me A Coffee"
+      }
+    }
   },
   "blog": {
     "title": "Blog",
@@ -250,5 +285,37 @@
     "description": "Stop spam • Protect your privacy • Open source",
     "buttonText": "Get started with AliasVault",
     "logoAlt": "AliasVault logo"
+  },
+  "founder": {
+    "title": "Story behind AliasVault",
+    "subtitle": "Meet the founder behind AliasVault and discover what drives our mission",
+    "story": {
+      "paragraph1": "As a software developer and architect, I've always been passionate about fighting spam and making privacy accessible. In 2013, I launched asdasd.nl, a Dutch temporary email service that grew into the multilingual SpamOK.com, helping thousands protect themselves from spam and data collection.",
+      "paragraph2": "In 2024, I began building AliasVault. A self-hostable, end-to-end encrypted password and alias manager that puts users in control of their digital identity. It lets you generate unique passwords and email aliases for every site you use, keeping your personal data secure.",
+      "paragraph3": "Since the beta release in December, I've continued to work on AliasVault with bi-weekly updates. New features like browser extensions, 2FA, and imports from other password managers make AliasVault more powerful and accessible with each release.",
+      "paragraph4": "AliasVault is open source and as of right now, entirely self-funded. It's built to be transparent, community-driven, and privacy-first. Optional premium cloud features will support long-term development, but anyone can self-host it or inspect the code. Read more about",
+      "missionLink": "our mission",
+      "paragraph4End": "to learn what drives this project."
+    },
+    "founderName": "Leendert de Borst",
+    "founderTitle": "Founder & Creator of AliasVault",
+    "alt": {
+      "founderImage": "founder"
+    }
+  },
+  "githubRelease": {
+    "loading": "Loading GitHub release information...",
+    "error": "Error",
+    "latestRelease": "Latest Release",
+    "release": "Release",
+    "viewReleaseNotes": "View Full Release Notes on GitHub",
+    "installationInstructions": "For self-hosted installation instructions, please refer to the",
+    "installationGuide": "AliasVault Installation Guide",
+    "downloads": "Downloads",
+    "showDownloads": "Show Downloads",
+    "hideDownloads": "Hide Downloads"
+  },
+  "featureSection": {
+    "comingSoon": "Coming Soon"
   }
 }
