@@ -68,6 +68,14 @@
     "title": "Functies",
     "subtitle": "Wat maakt AliasVault uniek",
     "description": "AliasVault biedt uitgebreide privacybescherming door innovatieve functies die uw digitale identiteit veilig houden.",
+    "pageDescription": "Ontdek de krachtige functies die AliasVault de ultieme oplossing maken voor wachtwoord- en identiteitsbeheer.",
+    "legend": {
+      "available": "Beschikbaar",
+      "comingSoon": "Binnenkort",
+      "notAvailable": "Niet Beschikbaar",
+      "roadmapText": "Volg onze voortgang en zie wat er gaat komen op onze",
+      "roadmapLink": "roadmap op GitHub"
+    },
     "items": {
       "passwordManager": {
         "title": "Wachtwoordbeheerder",
@@ -99,6 +107,7 @@
     "title": "Over AliasVault",
     "subtitle": "Privacy-first wachtwoordbeheer",
     "description": "Leer meer over onze missie om veilig, privé wachtwoord- en aliasbeheer te bieden.",
+    "pageDescription": "AliasVault is een open-source end-to-end versleutelde wachtwoord- en aliasmanager. Met AliasVault kunt u unieke identiteiten, wachtwoorden en e-mailadressen aanmaken voor elke website die u gebruikt. Houd u veilig online.",
     "sectionOne": {
       "title": "Uw privacy. Beschermd.",
       "paragraph": "In een ideale wereld heeft u AliasVault niet nodig, in werkelijkheid wel. Veel bedrijven volgen uw online activiteit zonder uw toestemming of medeweten, en creëren <a href='https://en.wikipedia.org/wiki/Shadow_profile' target='_blank'>schaduwprofielen</a> van u. Zelfs de meest gerenommeerde bedrijven kunnen slachtoffer worden van <a href='https://en.wikipedia.org/wiki/Data_breach' target='_blank'>datalekken</a>, waardoor uw persoonlijke informatie in verkeerde handen valt. AliasVault helpt u online veilig te blijven door u controle te geven over hoe websites u zien en volgen.",
@@ -123,7 +132,46 @@
   "platforms": {
     "title": "Platforms",
     "subtitle": "Overal beschikbaar",
-    "description": "AliasVault is beschikbaar op alle belangrijke platforms en browsers."
+    "description": "AliasVault is beschikbaar op alle belangrijke platforms en browsers.",
+    "pageDescription": "AliasVault is beschikbaar op alle belangrijke platforms, inclusief web, desktop en mobiel.",
+    "mobileApps": {
+      "title": "Mobiele Apps",
+      "description": "AliasVault is beschikbaar als een native iOS en Android app waarmee u uw inloggegevens en aliassen onderweg kunt beheren en gebruiken.",
+      "appStoreAlt": "Download op de App Store",
+      "playStoreAlt": "Download op de Play Store",
+      "featuresTitle": "De AliasVault mobiele apps bevatten:",
+      "features": {
+        "biometric": "Biometrische authenticatie (Face ID / Touch ID)",
+        "offline": "Offline toegang tot uw wachtwoorden",
+        "integration": "Integratie met mobiele browsers",
+        "sync": "Naadloze synchronisatie tussen al uw apparaten"
+      }
+    },
+    "browserExtensions": {
+      "title": "Browserextensies",
+      "description": "AliasVault biedt browserextensies die naadloos integreren met uw browserervaring, waardoor het eenvoudig is om uw wachtwoorden en aliassen rechtstreeks vanuit uw browser te beheren.",
+      "install": "Installeren",
+      "featuresTitle": "Onze browserextensies stellen u in staat om:",
+      "features": {
+        "autofill": "Wachtwoorden en inloginformatie automatisch in te vullen",
+        "aliases": "Nieuwe e-mailaliassen ter plekke te genereren",
+        "access": "Uw kluis rechtstreeks vanuit uw browser te benaderen",
+        "save": "Nieuwe inloggegevens veilig op te slaan terwijl u browst"
+      }
+    },
+    "roadmap": {
+      "title": "Ontwikkelingsroadmap",
+      "description": "AliasVault is in actieve ontwikkeling, met een sterke focus op bruikbaarheid, beveiliging en cross-platform ondersteuning. De hoofdfocus ligt op het garanderen van robuuste bruikbaarheid voor dagelijkse taken, inclusief uitgebreide autofill-mogelijkheden op alle platforms.",
+      "statusTitle": "Huidige Ontwikkelingsstatus",
+      "statusItems": {
+        "releases": "🚀 Incrementele releases elke 2-3 weken",
+        "production": "✅ Productie-klaar met data-integriteitsgaranties",
+        "migration": "🔄 Automatische migratieondersteuning",
+        "feedback": "👥 Sterke nadruk op gebruikersfeedback en testen"
+      },
+      "roadmapLink": "Om onze voortgang te volgen en te zien wat er komt, bekijk onze",
+      "roadmapLinkText": "volledige roadmap op GitHub"
+    }
   },
   "common": {
     "loading": "Laden...",

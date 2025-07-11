@@ -7,6 +7,7 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import FeatureSection from "@/components/FeatureSection";
 import { allFeatureCategories } from "@/components/FeatureSection/featuresData";
 import CallToAction from "@/components/CallToAction/CallToAction";
+import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = {
   title: "Features | AliasVault",
@@ -14,11 +15,13 @@ export const metadata: Metadata = {
 };
 
 export default function Features() {
+  const t = useTranslations();
+  
   return (
     <>
       <Breadcrumb
-        pageName="Features"
-        description="Discover the powerful features that make AliasVault the ultimate solution for password and identity management."
+        pageName={t('features.title')}
+        description={t('features.pageDescription')}
       />
       <Suspense fallback={null}>
         <ScrollHandler />
@@ -50,7 +53,7 @@ export default function Features() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <span className="text-base text-gray-700 dark:text-gray-300">Available</span>
+              <span className="text-base text-gray-700 dark:text-gray-300">{t('features.legend.available')}</span>
             </div>
             <div className="flex items-center">
               <div className="mr-3 flex h-[50px] w-[50px] items-center justify-center rounded-md bg-primary-500 bg-opacity-10 text-primary-500">
@@ -58,7 +61,7 @@ export default function Features() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <span className="text-base text-gray-700 dark:text-gray-300">Coming Soon</span>
+              <span className="text-base text-gray-700 dark:text-gray-300">{t('features.legend.comingSoon')}</span>
             </div>
             <div className="flex items-center">
               <div className="mr-3 flex h-[50px] w-[50px] items-center justify-center rounded-md bg-red-500 bg-opacity-10 text-red-500">
@@ -66,20 +69,20 @@ export default function Features() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </div>
-              <span className="text-base text-gray-700 dark:text-gray-300">Not Available</span>
+              <span className="text-base text-gray-700 dark:text-gray-300">{t('features.legend.notAvailable')}</span>
             </div>
           </div>
           
           <div className="text-center mt-8">
             <p className="text-base text-gray-700 dark:text-gray-300">
-              Track our progress and see what&apos;s coming next on our{" "}
+              {t('features.legend.roadmapText')}{" "}
               <a
                 href="https://github.com/lanedirt/AliasVault/issues/731"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary-500 hover:underline"
               >
-                roadmap on GitHub
+                {t('features.legend.roadmapLink')}
               </a>
             </p>
           </div>
