@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { FaGithub, FaDownload, FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import { useTranslations } from 'next-intl';
 
 interface GitHubAsset {
   name: string;
@@ -21,6 +22,7 @@ interface GitHubReleaseProps {
 const CACHE_DURATION = 3600000; // 1 hour in milliseconds
 
 export const GitHubRelease = ({ version = 'latest' }: GitHubReleaseProps) => {
+  const t = useTranslations();
   const [release, setRelease] = useState<GitHubRelease | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -71,11 +73,11 @@ export const GitHubRelease = ({ version = 'latest' }: GitHubReleaseProps) => {
   }, [version]);
 
   if (loading) {
-    return <div className="animate-pulse">Loading GitHub release information...</div>;
+    return <div className="animate-pulse">{t('githubRelease.loading')}</div>;
   }
 
   if (error) {
-    return <div className="text-red-500">Error: {error}</div>;
+    return <div className="text-red-500">{t('githubRelease.error')}: {error}</div>;
   }
 
   if (!release) {
@@ -95,7 +97,7 @@ export const GitHubRelease = ({ version = 'latest' }: GitHubReleaseProps) => {
       <div className="flex items-center gap-4 mb-4">
         <FaGithub className="text-3xl text-gray-900 dark:text-white" />
         <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-          {version === 'latest' ? 'Latest Release' : 'Release'}: {release.tag_name}
+          {version === 'latest' ? t('githubRelease.latestRelease') : t('githubRelease.release')}: {release.tag_name}
         </h2>
       </div>
 
@@ -106,17 +108,17 @@ export const GitHubRelease = ({ version = 'latest' }: GitHubReleaseProps) => {
           rel="noopener noreferrer"
           className="flex items-center text-primary-600 hover:text-primary-800 dark:text-primary-400 dark:hover:text-primary-300"
         >
-          View Full Release Notes on GitHub
+          {t('githubRelease.viewReleaseNotes')}
         </a>
 
         <div className="text-sm text-gray-600 dark:text-gray-400">
-          <p>For self-hosted installation instructions, please refer to the <a 
+          <p>{t('githubRelease.installationInstructions')} <a 
             href="https://docs.aliasvault.net/installation/install.html" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-primary-600 hover:text-primary-800 dark:text-primary-400 dark:hover:text-primary-300"
           >
-            AliasVault Installation Guide
+            {t('githubRelease.installationGuide')}
           </a>.</p>
         </div>
 
@@ -124,19 +126,19 @@ export const GitHubRelease = ({ version = 'latest' }: GitHubReleaseProps) => {
           {release.assets.length > 0 && (
             <>
               <div className="flex items-center justify-between">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Downloads</h3>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{t('githubRelease.downloads')}</h3>
                 <button
                   onClick={() => setShowDownloads(!showDownloads)}
                   className="flex items-center text-primary-600 hover:text-primary-800 dark:text-primary-400 dark:hover:text-primary-300"
                 >
                   {showDownloads ? (
                     <>
-                      <span className="mr-2">Hide Downloads</span>
+                      <span className="mr-2">{t('githubRelease.hideDownloads')}</span>
                       <FaChevronUp />
                     </>
                   ) : (
                     <>
-                      <span className="mr-2">Show Downloads</span>
+                      <span className="mr-2">{t('githubRelease.showDownloads')}</span>
                       <FaChevronDown />
                     </>
                   )}

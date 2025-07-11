@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
+import { useTranslations } from "next-intl";
 
 interface FeatureItem {
   name: string;
@@ -24,6 +25,7 @@ const FeatureSection = ({
   imageAlt,
   reversed = false,
 }: FeatureSectionProps) => {
+  const t = useTranslations();
   return (
     <section className="py-16 md:py-20">
       <div className="container">
@@ -118,7 +120,7 @@ const FeatureSection = ({
                             rel="noopener noreferrer"
                             className="ml-2 text-xs font-normal text-yellow-500 hover:underline"
                           >
-                            (Coming Soon)
+                            ({t('featureSection.comingSoon')})
                           </a>
                         )}
                       </h3>

@@ -1,26 +1,29 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const ContactContent = () => {
+  const t = useTranslations();
+  
   return (
     <section className="pb-16 pt-8">
       <div className="container">
         <div className="mx-auto">
           <div className="mb-12">
             <p className="mb-4 text-base text-body-color dark:text-body-color-dark">
-              AliasVault is an open-source project founded and maintained by{" "}
+              {t('contact.content.intro')}{" "}
               <a
                 href="https://github.com/lanedirt"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:underline"
               >
-                Leendert de Borst
+                {t('contact.content.founder')}
               </a>{" "}
-              and operates from the Netherlands. We offer an official cloud-hosted version, with our own dedicated servers located in Germany, fully compliant with European GDPR regulations.
+              {t('contact.content.location')}
             </p>
             <p className="mb-12 text-base text-body-color dark:text-body-color-dark">
-              For inquiries regarding our cloud-hosted service, commercial licensing, or enterprise support, please contact:{" "}
+              {t('contact.content.inquiries')}{" "}
               <a
                 href="mailto:contact@support.aliasvault.net"
                 className="text-primary hover:underline"
@@ -29,10 +32,10 @@ const ContactContent = () => {
               </a>
             </p>
             <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-              Support & Bug Reports
+              {t('contact.content.support.title')}
             </h3>
             <p className="text-base text-body-color dark:text-body-color-dark">
-              For bug reports please use our GitHub repository. For technical discussions about the open-source project, join our Discord community:
+              {t('contact.content.support.description')}
             </p>
             <ul className="mt-4 list-disc pl-6 text-body-color dark:text-body-color-dark">
               <li className="mb-2">
@@ -42,7 +45,7 @@ const ContactContent = () => {
                     rel="noopener noreferrer"
                     className="text-primary hover:underline"
                 >
-                  Report issues on GitHub
+                  {t('contact.content.support.links.github')}
                 </a>
               </li>
               <li className="mb-2">
@@ -52,7 +55,7 @@ const ContactContent = () => {
                     rel="noopener noreferrer"
                     className="text-primary hover:underline"
                 >
-                  Ask your questions on our Discord Community
+                  {t('contact.content.support.links.discord')}
                 </a>
               </li>
             </ul>
@@ -60,36 +63,34 @@ const ContactContent = () => {
 
           <div className="mb-12">
             <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-              FAQ & Documentation
+              {t('contact.content.faq.title')}
             </h3>
             <p className="text-base text-body-color dark:text-body-color-dark">
-              Find answers to common questions in our FAQ, or find more information on our separate documentation website.
+              {t('contact.content.faq.description')}
             </p>
             <div className="mt-4">
             <Link
                   href="/#faq"
                   className="text-primary hover:underline"
               >
-                Read FAQ
+                {t('contact.content.faq.links.faq')}
               </Link>
               {" • "}
               <Link
                   href="/docs"
                   className="text-primary hover:underline"
               >
-                View Documentation
+                {t('contact.content.faq.links.docs')}
               </Link>
             </div>
           </div>
 
           <div>
             <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-              Feature Requests & Ideas
+              {t('contact.content.features.title')}
             </h3>
             <p className="text-base text-body-color dark:text-body-color-dark">
-              Have an idea for improving AliasVault? Submit feature requests through our GitHub Discussions. Please
-              check if your suggestion has already been made and feel free to upvote existing requests you support.
-              If you wish to get in contact with the author and maintainers instead, feel free to join our Discord community.
+              {t('contact.content.features.description')}
             </p>
             <div className="mt-4">
               <a
@@ -98,7 +99,7 @@ const ContactContent = () => {
                   rel="noopener noreferrer"
                   className="text-primary hover:underline"
               >
-                Submit Feature Request
+                {t('contact.content.features.links.submit')}
               </a>
               {" • "}
               <a
@@ -107,17 +108,17 @@ const ContactContent = () => {
                   rel="noopener noreferrer"
                   className="text-primary hover:underline"
               >
-               Discuss ideas on our Discord Community
+               {t('contact.content.features.links.discuss')}
               </a>
             </div>
           </div>
 
           <div className="mt-12">
             <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-              Donations
+              {t('contact.content.donations.title')}
             </h3>
             <p className="mb-4 text-base text-body-color dark:text-body-color-dark">
-              If you find AliasVault useful, consider supporting its development through Buy Me A Coffee. Donations are optional but greatly appreciated and will help us continue to improve the project.
+              {t('contact.content.donations.description')}
             </p>
             <a
               href="https://www.buymeacoffee.com/lanedirt"
@@ -126,7 +127,7 @@ const ContactContent = () => {
             >
               <Image
                 src="/images/contact/buymeacoffee.png"
-                alt="Buy Me A Coffee"
+                alt={t('contact.content.donations.imageAlt')}
                 width={217}
                 height={60}
               />

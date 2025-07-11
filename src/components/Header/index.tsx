@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
-import menuData from "./menuData";
+import getMenuData from "./menuData";
 import { useTranslations, useLocale } from "next-intl";
 
 const Header = () => {
@@ -29,9 +29,9 @@ const Header = () => {
   const pathname = usePathname();
   
   // Create localized menu data
+  const menuData = getMenuData(t);
   const localizedMenuData = menuData.map(item => ({
     ...item,
-    title: t(`navigation.${item.title.toLowerCase()}`),
     path: `/${locale}${item.path}`
   }));
 
