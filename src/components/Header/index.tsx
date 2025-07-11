@@ -66,13 +66,13 @@ const Header = () => {
               href="https://app.aliasvault.net/user/login"
               className="flex h-10 items-center justify-center rounded-md border border-primary px-4 py-2 font-medium text-primary hover:bg-primary hover:text-white active:bg-primary-dark transition-colors"
             >
-              Log in
+              {t('header.loginButton')}
             </Link>
 
             {/* Mobile Menu Button */}
             <button
               onClick={navbarToggleHandler}
-              aria-label="Mobile Menu"
+              aria-label={t('header.mobileMenuAriaLabel')}
               className="rounded-lg px-3 py-1 ring-primary focus:ring-2"
             >
               <span
@@ -292,8 +292,8 @@ const Header = () => {
                 href="https://github.com/lanedirt/AliasVault"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="GitHub"
-                title="GitHub"
+                aria-label={t('header.githubAriaLabel')}
+                title={t('header.githubTitle')}
                 className="hidden lg:flex h-10 items-center justify-center rounded-md border border-gray-300 px-4 py-2 text-dark hover:bg-gray-100 active:bg-gray-200 dark:border-gray-600 dark:text-white dark:hover:bg-gray-800 dark:active:bg-gray-700"
               >
                 <svg
@@ -313,8 +313,8 @@ const Header = () => {
                 href="https://discord.gg/DsaXMTEtpF"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Discord"
-                title="Discord"
+                aria-label={t('header.discordAriaLabel')}
+                title={t('header.discordTitle')}
                 className="hidden lg:flex h-10 items-center justify-center rounded-md border border-gray-300 px-4 py-2 text-dark hover:bg-blue-100 active:bg-blue-200 dark:border-gray-600 dark:text-white dark:hover:bg-blue-800 dark:active:bg-blue-700"
               >
                 <svg
@@ -332,7 +332,7 @@ const Header = () => {
                 href="https://app.aliasvault.net/user/login"
                 className="hidden lg:flex h-10 items-center justify-center rounded-md border border-primary px-4 py-2 font-medium text-primary hover:bg-primary hover:text-white active:bg-primary-dark transition-colors"
               >
-                Log in to your vault
+                {t('header.loginButtonFull')}
               </Link>
             </div>
           </div>

@@ -1,15 +1,18 @@
 import SectionTitle from "../Common/SectionTitle";
 import SingleFeature from "./SingleFeature";
-import featuresData from "./featuresData";
+import getFeaturesData from "./featuresData";
+import { useTranslations } from "next-intl";
 
 const Features = () => {
+  const t = useTranslations();
+  const featuresData = getFeaturesData(t);
   return (
     <>
       <section id="features" className="py-16 md:py-20 lg:py-28">
         <div className="container">
           <SectionTitle
-            title="AliasVault Features"
-            paragraph="Discover how AliasVault revolutionizes your digital identity with powerful features designed for your privacy."
+            title={t('features.title')}
+            paragraph={t('features.description')}
             center
           />
 

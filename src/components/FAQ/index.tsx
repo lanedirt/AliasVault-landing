@@ -2,10 +2,13 @@
 
 import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
-import faqData from "./faqData";
+import getFAQData from "./faqData";
+import { useTranslations } from "next-intl";
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const t = useTranslations();
+  const faqData = getFAQData(t);
 
   const handleToggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -15,8 +18,8 @@ const FAQ = () => {
     <section id="faq" className="pt-16 md:pt-20 lg:pt-28">
       <div className="container">
         <SectionTitle
-          title="Frequently Asked Questions"
-          paragraph="Find answers to common questions about AliasVault's features, security, and deployment options."
+          title={t('faq.title')}
+          paragraph={t('faq.description')}
           center
           width="640px"
         />

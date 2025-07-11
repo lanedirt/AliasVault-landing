@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
+import { useTranslations } from "next-intl";
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -8,6 +9,7 @@ const checkIcon = (
 );
 
 const AboutSectionOne = () => {
+  const t = useTranslations();
   const List = ({ text }: { text: string }) => (
     <p className="mb-5 flex items-center text-lg font-medium text-body-color">
       <span className="mr-4 flex h-[30px] min-w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
@@ -23,8 +25,8 @@ const AboutSectionOne = () => {
         <div className="-mx-4 flex flex-wrap items-center">
           <div className="w-full px-4 lg:w-1/2">
             <SectionTitle
-              title="Your privacy. Protected."
-              paragraph="In an ideal world you don't need AliasVault, in reality you do. Many companies track your online activity without your permission or knowledge, creating <a href='https://en.wikipedia.org/wiki/Shadow_profile' target='_blank'>shadow profiles</a> of you. Even the most reputable companies can fall victim to <a href='https://en.wikipedia.org/wiki/Data_breach' target='_blank'>data breaches</a>, causing your personal information to fall into the wrong hands. AliasVault helps keep you safe online by letting you control how websites see and track you."
+              title={t('about.sectionOne.title')}
+              paragraph={t('about.sectionOne.paragraph')}
               mb="44px"
             />
 
@@ -34,9 +36,9 @@ const AboutSectionOne = () => {
             >
               <div className="mx-[-12px] flex flex-wrap">
                 <div className="w-full px-3">
-                  <List text="Every website, a new alias, email address and password" />
-                  <List text="When your data is shared, you know which service caused it" />
-                  <List text="Only use your real identity and email address when it's absolutely necessary, keeping your private information private" />
+                  <List text={t('about.sectionOne.features.uniqueIdentity')} />
+                  <List text={t('about.sectionOne.features.dataTracking')} />
+                  <List text={t('about.sectionOne.features.privacyControl')} />
                 </div>
               </div>
             </div>
@@ -46,14 +48,14 @@ const AboutSectionOne = () => {
             <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
               <Image
                 src="/images/about/privacy-right.png"
-                alt="about-image"
+                alt={t('about.sectionOne.imageAlt')}
                 width={1000}
                 height={1000}
                 className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0"
               />
               <Image
                 src="/images/about/privacy-right.png"
-                alt="about-image"
+                alt={t('about.sectionOne.imageAlt')}
                 width={1000}
                 height={1000}
                 className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0"

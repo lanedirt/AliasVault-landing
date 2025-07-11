@@ -35,7 +35,7 @@ const Footer = () => {
                 <div className="flex items-center">
                   <a
                     href="https://github.com/lanedirt/AliasVault"
-                    aria-label="social-link"
+                    aria-label={t('footer.socialAriaLabel')}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
@@ -55,7 +55,7 @@ const Footer = () => {
                   </a>
                   <a
                     href="https://discord.gg/DsaXMTEtpF"
-                    aria-label="social-link"
+                    aria-label={t('footer.socialAriaLabel')}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
@@ -71,7 +71,7 @@ const Footer = () => {
                   </a>
                   <a
                     href="https://www.facebook.com/profile.php?id=61566284983827"
-                    aria-label="social-link"
+                    aria-label={t('footer.socialAriaLabel')}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
@@ -91,7 +91,7 @@ const Footer = () => {
                   </a>
                   <a
                     href="https://x.com/AliasVault"
-                    aria-label="social-link"
+                    aria-label={t('footer.socialAriaLabel')}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
@@ -113,7 +113,7 @@ const Footer = () => {
                   </a>
                   <a
                     href="https://www.youtube.com/@AliasVault"
-                    aria-label="social-link"
+                    aria-label={t('footer.socialAriaLabel')}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
@@ -310,7 +310,7 @@ const Footer = () => {
           <div className="border-t border-body-color/50 pt-6 dark:border-body-color/20 pb-8">
             <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
               <p className="text-base text-body-color dark:text-body-color-dark">
-                © 2024 AliasVault. All rights reserved.
+                {t('footer.copyright')}
               </p>
               <div className="flex items-center gap-4">
                 <span className="text-sm text-body-color dark:text-body-color-dark">
