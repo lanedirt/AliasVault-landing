@@ -2,9 +2,11 @@ import SingleBlog from "./SingleBlog";
 import { getAllBlogAndNewsPosts } from "@/lib/blog";
 import SingleNews from "./SingleNews";
 import RssIcon from "@/components/Common/RssIcon";
+import { useTranslations } from "next-intl";
 
 const RecentBlogAndNews = () => {
   const posts = getAllBlogAndNewsPosts();
+  const t = useTranslations();
 
   return (
     <section
@@ -14,11 +16,11 @@ const RecentBlogAndNews = () => {
       <div className="container">
         <div className="flex flex-col items-center mb-8">
           <div className="flex items-center gap-4 mb-4">
-            <h2 className="text-3xl font-bold text-black dark:text-white">Blog & Recent News</h2>
+            <h2 className="text-3xl font-bold text-black dark:text-white">{t('blogComponent.blogTitle')}</h2>
             <RssIcon />
           </div>
           <p className="text-base text-body-color dark:text-body-color-dark">
-            Read the latest blog posts and news published by AliasVault.
+            {t('blogComponent.blogDescription')}
           </p>
         </div>
 
