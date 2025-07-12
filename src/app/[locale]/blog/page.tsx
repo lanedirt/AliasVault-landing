@@ -3,7 +3,8 @@ import SingleBlog from "@/components/Blog/SingleBlog";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 import SingleNews from '@/components/Blog/SingleNews';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
+import { getTranslations } from 'next-intl/server';
 import RssIcon from '@/components/Common/RssIcon';
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ export default async function Blog({ searchParams }: BlogPageProps) {
   const currentPage = Number(page) || 1;
   const allPosts = getAllBlogAndNewsPosts();
   const totalPages = Math.ceil(allPosts.length / ITEMS_PER_PAGE);
+  const t = await getTranslations();
 
   // Calculate the posts to show for the current page
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
@@ -32,14 +34,14 @@ export default async function Blog({ searchParams }: BlogPageProps) {
   return (
     <>
       <Breadcrumb
-        pageName="Blog & Recent News"
-        description="Here you can find the latest blog posts and news published by AliasVault."
+        pageName={t('blogPage.breadcrumb.title')}
+        description={t('blogPage.breadcrumb.description')}
       />
 
       <section className="pb-[120px] pt-[120px]">
         <div className="container">
           <div className="mb-8 flex items-center justify-between">
-            <h2 className="text-2xl font-bold text-black dark:text-white">Latest Posts</h2>
+            <h2 className="text-2xl font-bold text-black dark:text-white">{t('blogComponent.latestPosts')}</h2>
             <RssIcon />
           </div>
           <div className="-mx-4 flex flex-wrap">
@@ -66,7 +68,7 @@ export default async function Blog({ searchParams }: BlogPageProps) {
                       href={`/blog?page=${Math.max(1, currentPage - 1)}`}
                       className={`flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white ${currentPage === 1 ? 'pointer-events-none opacity-50' : ''}`}
                     >
-                      Prev
+                      {t('blogComponent.prev')}
                     </Link>
                   </li>
 
@@ -90,7 +92,7 @@ export default async function Blog({ searchParams }: BlogPageProps) {
                       href={`/blog?page=${Math.min(totalPages, currentPage + 1)}`}
                       className={`flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white ${currentPage === totalPages ? 'pointer-events-none opacity-50' : ''}`}
                     >
-                      Next
+                      {t('blogComponent.next')}
                     </Link>
                   </li>
                 </ul>

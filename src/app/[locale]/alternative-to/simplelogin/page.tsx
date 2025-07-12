@@ -2,13 +2,15 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import CallToAction from "@/components/CallToAction/CallToAction";
+import { getTranslations } from "next-intl/server";
 
 export const metadata: Metadata = {
   title: "Alternative to SimpleLogin",
   description: "AliasVault is an open-source end-to-end encrypted password and alias manager.",
 };
 
-const SimpleLoginPage = () => {
+const SimpleLoginPage = async () => {
+  const t = await getTranslations();
   return (
     <>
       {/* Hero Section */}
@@ -18,17 +20,17 @@ const SimpleLoginPage = () => {
             <div className="w-full px-4 lg:w-1/2">
               <div className="text-center lg:text-left">
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Looking for a SimpleLogin Alternative?
+                  {t('alternativeSimpleLogin.hero.title')}
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  AliasVault offers a secure, open-source solution for email alias management with end-to-end encryption. Get all the features you love from SimpleLogin, plus enhanced privacy and security.
+                  {t('alternativeSimpleLogin.hero.description')}
                 </p>
                 <div className="flex flex-col items-center justify-center lg:items-start lg:justify-start space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
                     href="https://app.aliasvault.net"
                     className="rounded-3xl bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                    Try AliasVault (free)
+                    {t('alternativeSimpleLogin.hero.tryButton')}
                   </Link>
                   <Link
                     href="https://github.com/lanedirt/AliasVault"
@@ -46,9 +48,9 @@ const SimpleLoginPage = () => {
                         clipRule="evenodd"
                       />
                     </svg>
-                    GitHub <Image
+                    {t('alternativeSimpleLogin.hero.githubButton')} <Image
                       className="inline-block ml-3"
-                      alt="GitHub Repo stars"
+                      alt={t('alternativeSimpleLogin.hero.alt.githubStars')}
                       src={`https://img.shields.io/github/stars/lanedirt/AliasVault?${new Date().getTime()}`}
                       width={90}
                       height={20}
@@ -62,7 +64,7 @@ const SimpleLoginPage = () => {
               <div className="mt-8 text-center lg:mt-0">
                 <Image
                   src="/images/alternative/hero/simplelogin.png"
-                  alt="SimpleLogin Alternative"
+                  alt={t('alternativeSimpleLogin.hero.alt.hero')}
                   width={1000}
                   height={1000}
                   className="mx-auto"
@@ -148,7 +150,7 @@ const SimpleLoginPage = () => {
       {/* Feature Comparison */}
       <div className="container mx-auto px-4 py-16">
         <h2 className="text-2xl font-bold text-center mb-12">
-          Why Choose AliasVault over SimpleLogin
+          {t('alternativeSimpleLogin.comparison.title')}
         </h2>
 
         {/* Feature 1 - Password Manager */}
@@ -156,7 +158,7 @@ const SimpleLoginPage = () => {
           <div className="md:w-1/2">
             <Image
               src="/images/alternative/icons/passwords.png"
-              alt="Password Manager Integration"
+              alt={t('alternativeSimpleLogin.comparison.features.passwordManager.alt')}
               width={500}
               height={300}
               className="rounded-lg"
@@ -164,11 +166,10 @@ const SimpleLoginPage = () => {
           </div>
           <div className="md:w-1/2">
             <h3 className="text-xl font-semibold mb-4">
-              All-in-one password manager
+              {t('alternativeSimpleLogin.comparison.features.passwordManager.title')}
             </h3>
             <p>
-              AliasVault combines email alias management with a powerful password manager, providing a complete privacy solution in one secure platform.
-              AliasVault has no external dependencies and as a cherry on top, you can also fully self-host it.
+              {t('alternativeSimpleLogin.comparison.features.passwordManager.description')}
             </p>
           </div>
         </div>
@@ -178,7 +179,7 @@ const SimpleLoginPage = () => {
           <div className="md:w-1/2 text-end">
             <Image
               src="/images/alternative/icons/identities.png"
-              alt="Random Identity Generation"
+              alt={t('alternativeSimpleLogin.comparison.features.randomIdentities.alt')}
               width={500}
               height={300}
               className="rounded-lg"
@@ -186,10 +187,10 @@ const SimpleLoginPage = () => {
           </div>
           <div className="md:w-1/2">
             <h3 className="text-xl font-semibold mb-4">
-              Complete Random Identity Generation
+              {t('alternativeSimpleLogin.comparison.features.randomIdentities.title')}
             </h3>
             <p>
-              With AliasVault, each email alias comes with a complete randomly generated identity - including first name, last name, birthdate, and more. Using our browser extension, these identity details are automatically filled in forms, creating truly random alternative identities without any user input or bias. This ensures maximum privacy and convenience.
+              {t('alternativeSimpleLogin.comparison.features.randomIdentities.description')}
             </p>
           </div>
         </div>
@@ -199,7 +200,7 @@ const SimpleLoginPage = () => {
           <div className="md:w-1/2">
             <Image
               src="/images/alternative/icons/encryption.png"
-              alt="End-to-end encryption"
+              alt={t('alternativeSimpleLogin.comparison.features.encryption.alt')}
               width={500}
               height={300}
               className="rounded-lg"
@@ -207,11 +208,10 @@ const SimpleLoginPage = () => {
           </div>
           <div className="md:w-1/2">
             <h3 className="text-xl font-semibold mb-4">
-              End-to-end encryption and full anonymity
+              {t('alternativeSimpleLogin.comparison.features.encryption.title')}
             </h3>
             <p>
-              Unlike SimpleLogin which requires your personal email in order to forward received emails in plain text, AliasVault provides true end-to-end encryption that encrypts all email contents as soon as its received which is then safely stored on the AliasVault server.
-              No one can read your emails except you.
+              {t('alternativeSimpleLogin.comparison.features.encryption.description')}
             </p>
           </div>
         </div>
@@ -220,36 +220,36 @@ const SimpleLoginPage = () => {
       {/* Comparison Table */}
       <div className="container mx-auto px-4 py-16">
         <h2 className="text-2xl font-bold text-center mb-8">
-          Feature Comparison
+          {t('alternativeSimpleLogin.featureComparison.title')}
         </h2>
         <div className="overflow-x-auto">
           <table className="w-full border-collapse">
             <thead>
               <tr className="bg-gray-100 dark:bg-gray-800">
-                <th className="border border-gray-300 dark:border-gray-700 p-4 text-left dark:text-white">Feature</th>
-                <th className="border border-gray-300 dark:border-gray-700 p-4 text-center dark:text-white">AliasVault</th>
-                <th className="border border-gray-300 dark:border-gray-700 p-4 text-center dark:text-white">SimpleLogin</th>
+                <th className="border border-gray-300 dark:border-gray-700 p-4 text-left dark:text-white">{t('alternativeSimpleLogin.featureComparison.tableHeaders.feature')}</th>
+                <th className="border border-gray-300 dark:border-gray-700 p-4 text-center dark:text-white">{t('alternativeSimpleLogin.featureComparison.tableHeaders.aliasVault')}</th>
+                <th className="border border-gray-300 dark:border-gray-700 p-4 text-center dark:text-white">{t('alternativeSimpleLogin.featureComparison.tableHeaders.simpleLogin')}</th>
               </tr>
             </thead>
             <tbody>
               <tr className="dark:text-white">
-                <td className="border border-gray-300 dark:border-gray-700 p-4">End-to-End Encryption</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4">{t('alternativeSimpleLogin.featureComparison.features.endToEndEncryption')}</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">❌</td>
               </tr>
               <tr className="dark:text-white">
-                <td className="border border-gray-300 dark:border-gray-700 p-4">Open Source</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4">{t('alternativeSimpleLogin.featureComparison.features.openSource')}</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
               </tr>
               <tr className="dark:text-white">
-                <td className="border border-gray-300 dark:border-gray-700 p-4">Password Manager Integration</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4">{t('alternativeSimpleLogin.featureComparison.features.passwordManagerIntegration')}</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">❌</td>
               </tr>
               <tr className="dark:text-white">
-                <td className="border border-gray-300 dark:border-gray-700 p-4">Custom Domains</td>
-                <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅ (on self-hosted version)</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4">{t('alternativeSimpleLogin.featureComparison.features.customDomains')}</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">{t('alternativeSimpleLogin.featureComparison.features.customDomainsValue')}</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
               </tr>
               <tr className="dark:text-white">
@@ -280,18 +280,18 @@ const SimpleLoginPage = () => {
       {/* Limitations Section */}
       <div className="container mx-auto px-4 py-16">
         <h2 className="text-2xl font-bold text-center mb-8">
-          Good to Know
+          {t('alternativeSimpleLogin.limitations.title')}
         </h2>
         <div className="max-w-3xl mx-auto">
           <p className="mb-6 text-lg">
-            In the spirit of transparency, here are some current limitations of AliasVault compared to SimpleLogin:
+            {t('alternativeSimpleLogin.limitations.description')}
           </p>
           <ul className="list-disc pl-6 space-y-4">
             <li>
-              <strong>Email Responses:</strong> SimpleLogin allows users to respond to incoming emails, while AliasVault currently does not support this feature as part of our spam prevention strategy. We may introduce this capability in the future as part of a premium offering.
+              <strong>{t('alternativeSimpleLogin.limitations.items.emailResponses.title')}</strong> {t('alternativeSimpleLogin.limitations.items.emailResponses.description')}
             </li>
             <li>
-              <strong>Email Size Limit:</strong> AliasVault has a 10MB size limit for incoming emails. Any emails larger than this will be rejected.
+              <strong>{t('alternativeSimpleLogin.limitations.items.emailSizeLimit.title')}</strong> {t('alternativeSimpleLogin.limitations.items.emailSizeLimit.description')}
             </li>
           </ul>
         </div>

@@ -4,6 +4,7 @@ import { Metadata } from 'next'
 import SingleBlog from '@/components/Blog/SingleBlog'
 import SingleNews from '@/components/Blog/SingleNews'
 import Breadcrumb from '@/components/Common/Breadcrumb'
+import { getTranslations } from 'next-intl/server'
 
 interface TagPageProps {
   params: Promise<{
@@ -31,6 +32,7 @@ export async function generateMetadata({ params }: TagPageProps): Promise<Metada
 export default async function TagPage({ params }: TagPageProps) {
   const { tag } = await params
   const posts = getBlogPostsByTag(tag)
+  const t = await getTranslations()
 
   if (posts.length === 0) {
     notFound()
@@ -39,8 +41,8 @@ export default async function TagPage({ params }: TagPageProps) {
   return (
     <>
       <Breadcrumb
-        pageName={`Posts tagged with "${tag}"`}
-        description={`Browse all blog posts and news tagged with ${tag}`}
+        pageName={t('tagPage.breadcrumb.titleTemplate', { tag })}
+        description={t('tagPage.breadcrumb.descriptionTemplate', { tag })}
       />
 
       <section className="pb-[120px] pt-[120px]">

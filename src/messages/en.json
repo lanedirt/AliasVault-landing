@@ -341,6 +341,35 @@
       "author": "author"
     }
   },
+  "blogPage": {
+    "metadata": {
+      "title": "Blog & Recent News | AliasVault",
+      "description": "Here you can find the latest blog posts and news published by AliasVault."
+    },
+    "breadcrumb": {
+      "title": "Blog & Recent News",
+      "description": "Here you can find the latest blog posts and news published by AliasVault."
+    }
+  },
+  "blogPost": {
+    "metadata": {
+      "notFoundTitle": "Post Not Found",
+      "notFoundDescription": "The requested blog post could not be found."
+    },
+    "by": "By"
+  },
+  "tagPage": {
+    "metadata": {
+      "notFoundTitle": "Tag Not Found",
+      "notFoundDescription": "No posts found for this tag.",
+      "titleTemplate": "Posts tagged with \"{tag}\" | AliasVault Blog",
+      "descriptionTemplate": "Browse all blog posts tagged with {tag} on AliasVault."
+    },
+    "breadcrumb": {
+      "titleTemplate": "Posts tagged with \"{tag}\"",
+      "descriptionTemplate": "Browse all blog posts and news tagged with {tag}"
+    }
+  },
   "alternativeBitwarden": {
     "metadata": {
       "title": "Alternative to Bitwarden",
@@ -401,6 +430,166 @@
         "age": {
           "title": "Age:",
           "description": "Bitwarden has been around longer and has a larger user base, which means more community-tested features and integrations."
+        }
+      }
+    }
+  },
+  "alternativeSimpleLogin": {
+    "metadata": {
+      "title": "Alternative to SimpleLogin",
+      "description": "AliasVault is an open-source end-to-end encrypted password and alias manager."
+    },
+    "hero": {
+      "title": "Looking for a SimpleLogin Alternative?",
+      "description": "AliasVault offers a secure, open-source solution for email alias management with end-to-end encryption. Get all the features you love from SimpleLogin, plus enhanced privacy and security.",
+      "tryButton": "Try AliasVault (free)",
+      "githubButton": "GitHub",
+      "alt": {
+        "hero": "SimpleLogin Alternative",
+        "githubStars": "GitHub Repo stars"
+      }
+    },
+    "comparison": {
+      "title": "Why Choose AliasVault over SimpleLogin",
+      "features": {
+        "passwordManager": {
+          "title": "All-in-one password manager",
+          "description": "AliasVault combines email alias management with a powerful password manager, providing a complete privacy solution in one secure platform. AliasVault has no external dependencies and as a cherry on top, you can also fully self-host it.",
+          "alt": "Password Manager Integration"
+        },
+        "randomIdentities": {
+          "title": "Complete Random Identity Generation",
+          "description": "With AliasVault, each email alias comes with a complete randomly generated identity - including first name, last name, birthdate, and more. Using our browser extension, these identity details are automatically filled in forms, creating truly random alternative identities without any user input or bias. This ensures maximum privacy and convenience.",
+          "alt": "Random Identity Generation"
+        },
+        "encryption": {
+          "title": "End-to-end encryption and full anonymity",
+          "description": "Unlike SimpleLogin which requires your personal email in order to forward received emails in plain text, AliasVault provides true end-to-end encryption that encrypts all email contents as soon as its received which is then safely stored on the AliasVault server. No one can read your emails except you.",
+          "alt": "End-to-end encryption"
+        }
+      }
+    },
+    "featureComparison": {
+      "title": "Feature Comparison",
+      "tableHeaders": {
+        "feature": "Feature",
+        "aliasVault": "AliasVault",
+        "simpleLogin": "SimpleLogin"
+      },
+      "features": {
+        "endToEndEncryption": "End-to-End Encryption",
+        "openSource": "Open Source",
+        "passwordManagerIntegration": "Password Manager Integration",
+        "customDomains": "Custom Domains",
+        "customDomainsValue": "✅ (on self-hosted version)",
+        "browserExtension": "Browser Extension",
+        "selfHostInstaller": "Self-host easy installer",
+        "browserExtensions": "Browser Extensions",
+        "mobileApps": "Mobile Apps"
+      }
+    },
+    "limitations": {
+      "title": "Good to Know",
+      "description": "In the spirit of transparency, here are some current limitations of AliasVault compared to SimpleLogin:",
+      "items": {
+        "emailResponses": {
+          "title": "Email Responses:",
+          "description": "SimpleLogin allows users to respond to incoming emails, while AliasVault currently does not support this feature as part of our spam prevention strategy. We may introduce this capability in the future as part of a premium offering."
+        },
+        "emailSizeLimit": {
+          "title": "Email Size Limit:",
+          "description": "AliasVault has a 10MB size limit for incoming emails. Any emails larger than this will be rejected."
+        }
+      }
+    }
+  },
+  "alternativeProtonPass": {
+    "metadata": {
+      "title": "Alternative to Proton Pass",
+      "description": "AliasVault is a fully open-source end-to-end encrypted password and alias manager that can be self-hosted."
+    },
+    "hero": {
+      "title": "Looking for a Proton Pass Alternative?",
+      "description": "AliasVault offers complete transparency with fully open-source code and self-hosting capabilities. Get the features you expect from Proton Pass, but with full control over your data and complete source code access.",
+      "tryButton": "Try AliasVault (free)",
+      "githubButton": "GitHub",
+      "alt": {
+        "hero": "Proton Pass Alternative",
+        "githubStars": "GitHub Repo stars"
+      }
+    },
+    "comparison": {
+      "title": "Why Choose AliasVault over Proton Pass",
+      "features": {
+        "openSource": {
+          "title": "Complete Open Source Transparency",
+          "description": "While Proton Pass does open-source their client applications, their server code is actually proprietary and closed-source. AliasVault is fully open-source - both client and server code are publicly available. This means complete transparency and the ability to audit every line of code that handles your sensitive data.",
+          "alt": "Fully Open Source"
+        },
+        "selfHosting": {
+          "title": "Full Self-hosting Control",
+          "description": "Proton Pass cannot be self-hosted, meaning you're always dependent on their infrastructure. While AliasVault too offers a convenient and secure cloud-based version, it also provides complete self-hosting capabilities with an easy installation script. With AliasVault, you are in control and can choose where to host your data.",
+          "alt": "Self-hosting Capability"
+        },
+        "emailAlias": {
+          "title": "All-In-One Password Manager",
+          "description": "AliasVault combines password management with email alias and identity generation capabilities in one secure platform. Create disposable email addresses on the fly including fictive first name, last name, birthdate etc., providing enhanced privacy and convenience. All of this without any third-party dependencies and fully open-source.",
+          "alt": "Email Alias Integration"
+        }
+      }
+    },
+    "featureComparison": {
+      "title": "Feature Comparison",
+      "tableHeaders": {
+        "feature": "Feature",
+        "aliasVault": "AliasVault",
+        "protonPass": "Proton Pass"
+      },
+      "features": {
+        "passwordManagement": "Password Management",
+        "clientsOpenSource": "Clients Open Source",
+        "serverOpenSource": "Server/Backend Open Source",
+        "selfHostingCapability": "Self-hosting Capability",
+        "emailAliasManagement": "Email Alias Management",
+        "endToEndEncryption": "End-to-End Encryption",
+        "easyInstallation": "Easy Installation",
+        "browserExtensions": "Browser Extensions",
+        "mobileApps": "Mobile Apps"
+      }
+    },
+    "transparency": {
+      "title": "The Importance of Full Transparency",
+      "description": "When it comes to password managers, transparency is crucial for trust:",
+      "items": {
+        "codeAudit": {
+          "title": "Complete Code Audit:",
+          "description": "With AliasVault, you can audit every line of code that handles your passwords, including server-side logic that Proton Pass keeps closed-source."
+        },
+        "noBackdoors": {
+          "title": "No Hidden Backdoors:",
+          "description": "Full open-source transparency means there are no hidden features or backdoors that could compromise your security."
+        },
+        "communityVerification": {
+          "title": "Community Verification:",
+          "description": "The open-source nature allows security researchers and the community to continuously review and improve the codebase."
+        },
+        "selfHostingControl": {
+          "title": "Self-hosting Control:",
+          "description": "Run your own instance and have complete control over your data, eliminating dependency on third-party infrastructure."
+        }
+      }
+    },
+    "limitations": {
+      "title": "Good to Know",
+      "description": "In the spirit of transparency, here are some current limitations of AliasVault compared to Proton Pass:",
+      "items": {
+        "brandRecognition": {
+          "title": "Brand Recognition:",
+          "description": "Proton has a well-established brand and larger user base, which may provide more community support and integrations."
+        },
+        "ecosystemIntegration": {
+          "title": "Ecosystem Integration:",
+          "description": "Proton Pass integrates with other Proton services (Mail, VPN, etc.) if you're already in their ecosystem."
         }
       }
     }

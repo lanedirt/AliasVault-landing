@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import { ContentPost } from "@/lib/blog";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 interface SingleBlogProps {
   blog: ContentPost;
