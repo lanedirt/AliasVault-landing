@@ -317,5 +317,92 @@
   },
   "featureSection": {
     "comingSoon": "Coming Soon"
+  },
+  "error": {
+    "title": "Error Page",
+    "description": "The page you requested could not be found.",
+    "heading": "Sorry, the page can't be found",
+    "message": "The page you were looking for appears to have been moved, deleted or does not exist.",
+    "backToHome": "Back to Homepage"
+  },
+  "blogComponent": {
+    "by": "By",
+    "date": "Date",
+    "blogTitle": "Blog & Recent News",
+    "blogDescription": "Read the latest blog posts and news published by AliasVault.",
+    "latestPosts": "Latest Posts",
+    "prev": "Prev",
+    "next": "Next",
+    "tags": "Tags :",
+    "relatedPosts": "Related Posts",
+    "popularTags": "Popular Tags",
+    "alt": {
+      "image": "image",
+      "author": "author"
+    }
+  },
+  "alternativeBitwarden": {
+    "metadata": {
+      "title": "Alternative to Bitwarden",
+      "description": "AliasVault is an open-source end-to-end encrypted password and alias manager."
+    },
+    "hero": {
+      "title": "Looking for a Bitwarden Alternative?",
+      "description": "AliasVault offers a secure, open-source solution for password management with integrated email alias features. Get all the security you love from Bitwarden, plus enhanced privacy features.",
+      "tryButton": "Try AliasVault (free)",
+      "githubButton": "GitHub",
+      "alt": {
+        "hero": "Bitwarden Alternative",
+        "githubStars": "GitHub Repo stars"
+      }
+    },
+    "comparison": {
+      "title": "Why Choose AliasVault over Bitwarden",
+      "features": {
+        "emailAlias": {
+          "title": "Integrated Email Alias Management",
+          "description": "While Bitwarden excels at password management, AliasVault combines both password management and email alias capabilities in one secure platform. Create disposable email addresses on the fly while saving your passwords. No external email dependencies required.",
+          "alt": "Email Alias Integration"
+        },
+        "identityGeneration": {
+          "title": "Advanced Identity Generation",
+          "description": "AliasVault goes beyond simple form filling by generating complete random identities for each alias. This includes names, birthdates, and other details, providing enhanced privacy when signing up for services.",
+          "alt": "Identity Generation"
+        },
+        "selfHosting": {
+          "title": "Simplified Self-hosting",
+          "description": "While both platforms offer self-hosting options, AliasVault provides a streamlined installation process with our easy installer. Get your private instance up and running in minutes, not hours.",
+          "alt": "Easy Self-hosting"
+        }
+      }
+    },
+    "featureComparison": {
+      "title": "Feature Comparison",
+      "tableHeaders": {
+        "feature": "Feature",
+        "aliasVault": "AliasVault",
+        "bitwarden": "Bitwarden"
+      },
+      "features": {
+        "passwordManagement": "Password Management",
+        "emailAliasManagement": "Email Alias Management",
+        "randomIdentityGeneration": "Random Identity Generation",
+        "openSource": "Open Source",
+        "endToEndEncryption": "End-to-End Encryption",
+        "easySelfHosting": "Easy Self-hosting",
+        "browserExtensions": "Browser Extensions",
+        "mobileApps": "Mobile Apps"
+      }
+    },
+    "limitations": {
+      "title": "Good to Know",
+      "description": "In the spirit of transparency, here are some current limitations of AliasVault compared to Bitwarden:",
+      "items": {
+        "age": {
+          "title": "Age:",
+          "description": "Bitwarden has been around longer and has a larger user base, which means more community-tested features and integrations."
+        }
+      }
+    }
   }
 }

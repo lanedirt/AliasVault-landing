@@ -317,5 +317,92 @@
   },
   "featureSection": {
     "comingSoon": "Binnenkort"
+  },
+  "error": {
+    "title": "Foutpagina",
+    "description": "De pagina die u heeft aangevraagd kon niet worden gevonden.",
+    "heading": "Sorry, de pagina kan niet worden gevonden",
+    "message": "De pagina die u zocht lijkt te zijn verplaatst, verwijderd of bestaat niet.",
+    "backToHome": "Terug naar Homepage"
+  },
+  "blogComponent": {
+    "by": "Door",
+    "date": "Datum",
+    "blogTitle": "Blog & Recent Nieuws",
+    "blogDescription": "Lees de laatste blogposts en nieuws gepubliceerd door AliasVault.",
+    "latestPosts": "Laatste Posts",
+    "prev": "Vorige",
+    "next": "Volgende",
+    "tags": "Tags :",
+    "relatedPosts": "Gerelateerde Posts",
+    "popularTags": "Populaire Tags",
+    "alt": {
+      "image": "afbeelding",
+      "author": "auteur"
+    }
+  },
+  "alternativeBitwarden": {
+    "metadata": {
+      "title": "Alternatief voor Bitwarden",
+      "description": "AliasVault is een open-source end-to-end versleutelde wachtwoord- en aliasmanager."
+    },
+    "hero": {
+      "title": "Op zoek naar een Bitwarden Alternatief?",
+      "description": "AliasVault biedt een veilige, open-source oplossing voor wachtwoordbeheer met geïntegreerde e-mailalias functies. Krijg alle beveiliging die je van Bitwarden kent, plus verbeterde privacyfuncties.",
+      "tryButton": "Probeer AliasVault (gratis)",
+      "githubButton": "GitHub",
+      "alt": {
+        "hero": "Bitwarden Alternatief",
+        "githubStars": "GitHub Repo sterren"
+      }
+    },
+    "comparison": {
+      "title": "Waarom AliasVault kiezen boven Bitwarden",
+      "features": {
+        "emailAlias": {
+          "title": "Geïntegreerd E-mailalias Beheer",
+          "description": "Hoewel Bitwarden uitblinkt in wachtwoordbeheer, combineert AliasVault zowel wachtwoordbeheer als e-mailalias mogelijkheden in één veilig platform. Creëer wegwerp e-mailadressen ter plekke terwijl je je wachtwoorden opslaat. Geen externe e-mailafhankelijkheden vereist.",
+          "alt": "E-mailalias Integratie"
+        },
+        "identityGeneration": {
+          "title": "Geavanceerde Identiteitsgeneratie",
+          "description": "AliasVault gaat verder dan eenvoudig formulierinvullen door complete willekeurige identiteiten te genereren voor elke alias. Dit omvat namen, geboortedata en andere details, wat verbeterde privacy biedt bij het aanmelden voor diensten.",
+          "alt": "Identiteitsgeneratie"
+        },
+        "selfHosting": {
+          "title": "Vereenvoudigde Zelf-hosting",
+          "description": "Hoewel beide platforms zelf-hosting opties bieden, biedt AliasVault een gestroomlijnd installatieproces met onze eenvoudige installer. Krijg je privé-instantie binnen minuten operationeel, niet uren.",
+          "alt": "Eenvoudige Zelf-hosting"
+        }
+      }
+    },
+    "featureComparison": {
+      "title": "Functievergelijking",
+      "tableHeaders": {
+        "feature": "Functie",
+        "aliasVault": "AliasVault",
+        "bitwarden": "Bitwarden"
+      },
+      "features": {
+        "passwordManagement": "Wachtwoordbeheer",
+        "emailAliasManagement": "E-mailalias Beheer",
+        "randomIdentityGeneration": "Willekeurige Identiteitsgeneratie",
+        "openSource": "Open Source",
+        "endToEndEncryption": "End-to-End Versleuteling",
+        "easySelfHosting": "Eenvoudige Zelf-hosting",
+        "browserExtensions": "Browserextensies",
+        "mobileApps": "Mobiele Apps"
+      }
+    },
+    "limitations": {
+      "title": "Goed om te Weten",
+      "description": "In de geest van transparantie, hier zijn enkele huidige beperkingen van AliasVault vergeleken met Bitwarden:",
+      "items": {
+        "age": {
+          "title": "Leeftijd:",
+          "description": "Bitwarden bestaat al langer en heeft een grotere gebruikersbasis, wat meer door de gemeenschap geteste functies en integraties betekent."
+        }
+      }
+    }
   }
 }
