@@ -341,6 +341,35 @@
       "author": "auteur"
     }
   },
+  "blogPage": {
+    "metadata": {
+      "title": "Blog & Recent Nieuws | AliasVault",
+      "description": "Hier vind je de laatste blogposts en nieuws gepubliceerd door AliasVault."
+    },
+    "breadcrumb": {
+      "title": "Blog & Recent Nieuws",
+      "description": "Hier vind je de laatste blogposts en nieuws gepubliceerd door AliasVault."
+    }
+  },
+  "blogPost": {
+    "metadata": {
+      "notFoundTitle": "Post Niet Gevonden",
+      "notFoundDescription": "De gevraagde blogpost kon niet worden gevonden."
+    },
+    "by": "Door"
+  },
+  "tagPage": {
+    "metadata": {
+      "notFoundTitle": "Tag Niet Gevonden",
+      "notFoundDescription": "Geen posts gevonden voor deze tag.",
+      "titleTemplate": "Posts getagd met \"{tag}\" | AliasVault Blog",
+      "descriptionTemplate": "Bekijk alle blogposts getagd met {tag} op AliasVault."
+    },
+    "breadcrumb": {
+      "titleTemplate": "Posts getagd met \"{tag}\"",
+      "descriptionTemplate": "Bekijk alle blogposts en nieuws getagd met {tag}"
+    }
+  },
   "alternativeBitwarden": {
     "metadata": {
       "title": "Alternatief voor Bitwarden",
@@ -401,6 +430,166 @@
         "age": {
           "title": "Leeftijd:",
           "description": "Bitwarden bestaat al langer en heeft een grotere gebruikersbasis, wat meer door de gemeenschap geteste functies en integraties betekent."
+        }
+      }
+    }
+  },
+  "alternativeSimpleLogin": {
+    "metadata": {
+      "title": "Alternatief voor SimpleLogin",
+      "description": "AliasVault is een open-source end-to-end versleutelde wachtwoord- en aliasmanager."
+    },
+    "hero": {
+      "title": "Op zoek naar een SimpleLogin Alternatief?",
+      "description": "AliasVault biedt een veilige, open-source oplossing voor e-mailalias beheer met end-to-end versleuteling. Krijg alle functies die je van SimpleLogin kent, plus verbeterde privacy en beveiliging.",
+      "tryButton": "Probeer AliasVault (gratis)",
+      "githubButton": "GitHub",
+      "alt": {
+        "hero": "SimpleLogin Alternatief",
+        "githubStars": "GitHub Repo sterren"
+      }
+    },
+    "comparison": {
+      "title": "Waarom AliasVault kiezen boven SimpleLogin",
+      "features": {
+        "passwordManager": {
+          "title": "Alles-in-één wachtwoordbeheerder",
+          "description": "AliasVault combineert e-mailalias beheer met een krachtige wachtwoordbeheerder, wat een complete privacyoplossing biedt in één veilig platform. AliasVault heeft geen externe afhankelijkheden en als kers op de taart kun je het ook volledig zelf hosten.",
+          "alt": "Wachtwoordbeheerder Integratie"
+        },
+        "randomIdentities": {
+          "title": "Complete Willekeurige Identiteitsgeneratie",
+          "description": "Met AliasVault komt elke e-mailalias met een complete willekeurig gegenereerde identiteit - inclusief voornaam, achternaam, geboortedatum en meer. Met onze browserextensie worden deze identiteitsdetails automatisch ingevuld in formulieren, waardoor werkelijk willekeurige alternatieve identiteiten ontstaan zonder gebruikersinput of bias. Dit zorgt voor maximale privacy en gemak.",
+          "alt": "Willekeurige Identiteitsgeneratie"
+        },
+        "encryption": {
+          "title": "End-to-end versleuteling en volledige anonimiteit",
+          "description": "In tegenstelling tot SimpleLogin dat je persoonlijke e-mail vereist om ontvangen e-mails in platte tekst door te sturen, biedt AliasVault echte end-to-end versleuteling die alle e-mailinhoud versleutelt zodra het wordt ontvangen en veilig opslaat op de AliasVault server. Niemand kan je e-mails lezen behalve jij.",
+          "alt": "End-to-end versleuteling"
+        }
+      }
+    },
+    "featureComparison": {
+      "title": "Functievergelijking",
+      "tableHeaders": {
+        "feature": "Functie",
+        "aliasVault": "AliasVault",
+        "simpleLogin": "SimpleLogin"
+      },
+      "features": {
+        "endToEndEncryption": "End-to-End Versleuteling",
+        "openSource": "Open Source",
+        "passwordManagerIntegration": "Wachtwoordbeheerder Integratie",
+        "customDomains": "Aangepaste Domeinen",
+        "customDomainsValue": "✅ (op zelf-gehoste versie)",
+        "browserExtension": "Browserextensie",
+        "selfHostInstaller": "Zelf-host eenvoudige installer",
+        "browserExtensions": "Browserextensies",
+        "mobileApps": "Mobiele Apps"
+      }
+    },
+    "limitations": {
+      "title": "Goed om te Weten",
+      "description": "In de geest van transparantie, hier zijn enkele huidige beperkingen van AliasVault vergeleken met SimpleLogin:",
+      "items": {
+        "emailResponses": {
+          "title": "E-mail Antwoorden:",
+          "description": "SimpleLogin stelt gebruikers in staat om te reageren op inkomende e-mails, terwijl AliasVault deze functie momenteel niet ondersteunt als onderdeel van onze spampreventie strategie. We kunnen deze mogelijkheid in de toekomst introduceren als onderdeel van een premium aanbod."
+        },
+        "emailSizeLimit": {
+          "title": "E-mail Grootte Limiet:",
+          "description": "AliasVault heeft een limiet van 10MB voor inkomende e-mails. E-mails groter dan dit worden geweigerd."
+        }
+      }
+    }
+  },
+  "alternativeProtonPass": {
+    "metadata": {
+      "title": "Alternatief voor Proton Pass",
+      "description": "AliasVault is een volledig open-source end-to-end versleutelde wachtwoord- en aliasmanager die zelf gehost kan worden."
+    },
+    "hero": {
+      "title": "Op zoek naar een Proton Pass Alternatief?",
+      "description": "AliasVault biedt volledige transparantie met volledig open-source code en zelf-hosting mogelijkheden. Krijg de functies die je van Proton Pass verwacht, maar met volledige controle over je gegevens en complete toegang tot de broncode.",
+      "tryButton": "Probeer AliasVault (gratis)",
+      "githubButton": "GitHub",
+      "alt": {
+        "hero": "Proton Pass Alternatief",
+        "githubStars": "GitHub Repo sterren"
+      }
+    },
+    "comparison": {
+      "title": "Waarom AliasVault kiezen boven Proton Pass",
+      "features": {
+        "openSource": {
+          "title": "Complete Open Source Transparantie",
+          "description": "Hoewel Proton Pass hun clientapplicaties wel open-source maakt, is hun servercode eigenlijk propriëtair en closed-source. AliasVault is volledig open-source - zowel client- als servercode zijn publiek beschikbaar. Dit betekent complete transparantie en de mogelijkheid om elke regel code die je gevoelige gegevens verwerkt te auditen.",
+          "alt": "Volledig Open Source"
+        },
+        "selfHosting": {
+          "title": "Volledige Zelf-hosting Controle",
+          "description": "Proton Pass kan niet zelf gehost worden, wat betekent dat je altijd afhankelijk bent van hun infrastructuur. Hoewel AliasVault ook een handige en veilige cloud-versie biedt, biedt het ook volledige zelf-hosting mogelijkheden met een eenvoudig installatiescript. Met AliasVault heb je de controle en kun je kiezen waar je je gegevens host.",
+          "alt": "Zelf-hosting Mogelijkheid"
+        },
+        "emailAlias": {
+          "title": "Alles-in-Één Wachtwoordbeheerder",
+          "description": "AliasVault combineert wachtwoordbeheer met e-mailalias en identiteitsgeneratie mogelijkheden in één veilig platform. Creëer wegwerp e-mailadressen ter plekke inclusief fictieve voornaam, achternaam, geboortedatum etc., wat verbeterde privacy en gemak biedt. Dit alles zonder externe afhankelijkheden en volledig open-source.",
+          "alt": "E-mailalias Integratie"
+        }
+      }
+    },
+    "featureComparison": {
+      "title": "Functievergelijking",
+      "tableHeaders": {
+        "feature": "Functie",
+        "aliasVault": "AliasVault",
+        "protonPass": "Proton Pass"
+      },
+      "features": {
+        "passwordManagement": "Wachtwoordbeheer",
+        "clientsOpenSource": "Clients Open Source",
+        "serverOpenSource": "Server/Backend Open Source",
+        "selfHostingCapability": "Zelf-hosting Mogelijkheid",
+        "emailAliasManagement": "E-mailalias Beheer",
+        "endToEndEncryption": "End-to-End Versleuteling",
+        "easyInstallation": "Eenvoudige Installatie",
+        "browserExtensions": "Browserextensies",
+        "mobileApps": "Mobiele Apps"
+      }
+    },
+    "transparency": {
+      "title": "Het Belang van Volledige Transparantie",
+      "description": "Wanneer het gaat om wachtwoordbeheerders is transparantie cruciaal voor vertrouwen:",
+      "items": {
+        "codeAudit": {
+          "title": "Complete Code Audit:",
+          "description": "Met AliasVault kun je elke regel code die je wachtwoorden verwerkt auditen, inclusief server-side logica die Proton Pass closed-source houdt."
+        },
+        "noBackdoors": {
+          "title": "Geen Verborgen Backdoors:",
+          "description": "Volledige open-source transparantie betekent dat er geen verborgen functies of backdoors zijn die je beveiliging kunnen compromitteren."
+        },
+        "communityVerification": {
+          "title": "Gemeenschapsverificatie:",
+          "description": "De open-source aard stelt beveiligingsonderzoekers en de gemeenschap in staat om de codebase continu te reviewen en te verbeteren."
+        },
+        "selfHostingControl": {
+          "title": "Zelf-hosting Controle:",
+          "description": "Draai je eigen instantie en heb volledige controle over je gegevens, waardoor afhankelijkheid van externe infrastructuur wordt weggenomen."
+        }
+      }
+    },
+    "limitations": {
+      "title": "Goed om te Weten",
+      "description": "In de geest van transparantie, hier zijn enkele huidige beperkingen van AliasVault vergeleken met Proton Pass:",
+      "items": {
+        "brandRecognition": {
+          "title": "Merkherkenning:",
+          "description": "Proton heeft een gevestigd merk en grotere gebruikersbasis, wat meer community ondersteuning en integraties kan bieden."
+        },
+        "ecosystemIntegration": {
+          "title": "Ecosysteem Integratie:",
+          "description": "Proton Pass integreert met andere Proton diensten (Mail, VPN, etc.) als je al in hun ecosysteem zit."
         }
       }
     }

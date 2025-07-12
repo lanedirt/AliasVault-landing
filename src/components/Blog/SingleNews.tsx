@@ -1,12 +1,14 @@
 import Image from "next/image";
-import Link from "next/link";
 import { ContentPost } from "@/lib/blog";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 interface SingleNewsProps {
   news: ContentPost;
 }
 
 const SingleNews = ({ news }: SingleNewsProps) => {
+  const t = useTranslations();
   return (
     <div className="mb-8 overflow-hidden rounded-lg bg-white shadow-three dark:bg-gray-dark dark:shadow-none">
       <Link
@@ -18,7 +20,7 @@ const SingleNews = ({ news }: SingleNewsProps) => {
         </span>
         <Image
           src={news.image || "/images/blog/blog-01.jpg"}
-          alt="image"
+          alt={t('blogComponent.alt.image')}
           fill
           className="object-cover object-center transition group-hover:rotate-6 group-hover:scale-125"
         />
@@ -41,21 +43,21 @@ const SingleNews = ({ news }: SingleNewsProps) => {
               <div className="relative h-10 w-10 overflow-hidden rounded-full">
                 <Image
                   src={news.author.image}
-                  alt="author"
+                  alt={t('blogComponent.alt.author')}
                   fill
                 />
               </div>
             </div>
             <div className="w-full">
               <h4 className="mb-1 text-sm font-medium text-dark dark:text-white">
-                By {news.author.name}
+                {t('blogComponent.by')} {news.author.name}
               </h4>
               <p className="text-xs text-body-color">{news.author.designation}</p>
             </div>
           </div>
           <div className="inline-block">
             <h4 className="mb-1 text-sm font-medium text-dark dark:text-white">
-              Date
+              {t('blogComponent.date')}
             </h4>
             <p className="text-xs text-body-color">{news.date}</p>
           </div>

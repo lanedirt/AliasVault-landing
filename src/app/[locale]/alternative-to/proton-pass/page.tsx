@@ -2,13 +2,15 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import CallToAction from "@/components/CallToAction/CallToAction";
+import { getTranslations } from "next-intl/server";
 
 export const metadata: Metadata = {
   title: "Alternative to Proton Pass",
   description: "AliasVault is a fully open-source end-to-end encrypted password and alias manager that can be self-hosted.",
 };
 
-const ProtonPassPage = () => {
+const ProtonPassPage = async () => {
+  const t = await getTranslations();
   return (
     <>
       {/* Hero Section */}
@@ -18,10 +20,10 @@ const ProtonPassPage = () => {
             <div className="w-full px-4 lg:w-1/2">
               <div className="text-center lg:text-left">
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Looking for a Proton Pass Alternative?
+                  {t('alternativeProtonPass.hero.title')}
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  AliasVault offers complete transparency with fully open-source code and self-hosting capabilities. Get the features you expect from Proton Pass, but with full control over your data and complete source code access.
+                  {t('alternativeProtonPass.hero.description')}
                 </p>
                 {/* Same buttons as before */}
                 <div className="flex flex-col items-center justify-center lg:items-start lg:justify-start space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
@@ -29,7 +31,7 @@ const ProtonPassPage = () => {
                     href="https://app.aliasvault.net"
                     className="rounded-3xl bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                    Try AliasVault (free)
+                    {t('alternativeProtonPass.hero.tryButton')}
                   </Link>
                   <Link
                     href="https://github.com/lanedirt/AliasVault"
@@ -47,9 +49,9 @@ const ProtonPassPage = () => {
                         clipRule="evenodd"
                       />
                     </svg>
-                    GitHub <Image
+                    {t('alternativeProtonPass.hero.githubButton')} <Image
                       className="inline-block ml-3"
-                      alt="GitHub Repo stars"
+                      alt={t('alternativeProtonPass.hero.alt.githubStars')}
                       src={`https://img.shields.io/github/stars/lanedirt/AliasVault?${new Date().getTime()}`}
                       width={90}
                       height={20}
@@ -63,7 +65,7 @@ const ProtonPassPage = () => {
               <div className="mt-8 text-center lg:mt-0">
                 <Image
                   src="/images/alternative/hero/proton-pass.png"
-                  alt="Proton Pass Alternative"
+                  alt={t('alternativeProtonPass.hero.alt.hero')}
                   width={1000}
                   height={1000}
                   className="mx-auto"
@@ -78,7 +80,7 @@ const ProtonPassPage = () => {
       {/* Feature Comparison */}
       <div className="container mx-auto px-4 py-16">
         <h2 className="text-2xl font-bold text-center mb-12">
-          Why Choose AliasVault over Proton Pass
+          {t('alternativeProtonPass.comparison.title')}
         </h2>
 
         {/* Feature 1 - Full Open Source */}
@@ -86,7 +88,7 @@ const ProtonPassPage = () => {
           <div className="md:w-1/2">
             <Image
               src="/images/alternative/icons/open-source.png"
-              alt="Fully Open Source"
+              alt={t('alternativeProtonPass.comparison.features.openSource.alt')}
               width={500}
               height={300}
               className="rounded-lg"
@@ -94,10 +96,10 @@ const ProtonPassPage = () => {
           </div>
           <div className="md:w-1/2">
             <h3 className="text-xl font-semibold mb-4">
-              Complete Open Source Transparency
+              {t('alternativeProtonPass.comparison.features.openSource.title')}
             </h3>
             <p>
-              While Proton Pass does open-source their client applications, their server code is actually proprietary and closed-source. AliasVault is fully open-source - both client and server code are publicly available. This means complete transparency and the ability to audit every line of code that handles your sensitive data.
+              {t('alternativeProtonPass.comparison.features.openSource.description')}
             </p>
           </div>
         </div>
@@ -107,7 +109,7 @@ const ProtonPassPage = () => {
           <div className="md:w-1/2 text-end">
             <Image
               src="/images/alternative/icons/full-self-hosting.png"
-              alt="Self-hosting Capability"
+              alt={t('alternativeProtonPass.comparison.features.selfHosting.alt')}
               width={500}
               height={300}
               className="rounded-lg"
@@ -115,10 +117,10 @@ const ProtonPassPage = () => {
           </div>
           <div className="md:w-1/2">
             <h3 className="text-xl font-semibold mb-4">
-              Full Self-hosting Control
+              {t('alternativeProtonPass.comparison.features.selfHosting.title')}
             </h3>
             <p>
-              Proton Pass cannot be self-hosted, meaning you&apos;re always dependent on their infrastructure. While AliasVault too offers a convenient and secure cloud-based version, it also provides complete self-hosting capabilities with an easy installation script. With AliasVault, you are in control and can choose where to host your data.
+              {t('alternativeProtonPass.comparison.features.selfHosting.description')}
             </p>
           </div>
         </div>
@@ -128,7 +130,7 @@ const ProtonPassPage = () => {
           <div className="md:w-1/2">
             <Image
               src="/images/alternative/icons/passwords.png"
-              alt="Email Alias Integration"
+              alt={t('alternativeProtonPass.comparison.features.emailAlias.alt')}
               width={500}
               height={300}
               className="rounded-lg"
@@ -136,10 +138,10 @@ const ProtonPassPage = () => {
           </div>
           <div className="md:w-1/2">
             <h3 className="text-xl font-semibold mb-4">
-              All-In-One Password Manager
+              {t('alternativeProtonPass.comparison.features.emailAlias.title')}
             </h3>
             <p>
-              AliasVault combines password management with email alias and identity generation capabilities in one secure platform. Create disposable email addresses on the fly including fictive first name, last name, birthdate etc., providing enhanced privacy and convenience. All of this without any third-party dependencies and fully open-source.
+              {t('alternativeProtonPass.comparison.features.emailAlias.description')}
             </p>
           </div>
         </div>
@@ -148,15 +150,15 @@ const ProtonPassPage = () => {
       {/* Comparison Table */}
       <div className="container mx-auto px-4 py-16">
         <h2 className="text-2xl font-bold text-center mb-8">
-          Feature Comparison
+          {t('alternativeProtonPass.featureComparison.title')}
         </h2>
         <div className="overflow-x-auto">
           <table className="w-full border-collapse">
             <thead>
               <tr className="bg-gray-100 dark:bg-gray-800">
-                <th className="border border-gray-300 dark:border-gray-700 p-4 text-left dark:text-white">Feature</th>
-                <th className="border border-gray-300 dark:border-gray-700 p-4 text-center dark:text-white">AliasVault</th>
-                <th className="border border-gray-300 dark:border-gray-700 p-4 text-center dark:text-white">Proton Pass</th>
+                <th className="border border-gray-300 dark:border-gray-700 p-4 text-left dark:text-white">{t('alternativeProtonPass.featureComparison.tableHeaders.feature')}</th>
+                <th className="border border-gray-300 dark:border-gray-700 p-4 text-center dark:text-white">{t('alternativeProtonPass.featureComparison.tableHeaders.aliasVault')}</th>
+                <th className="border border-gray-300 dark:border-gray-700 p-4 text-center dark:text-white">{t('alternativeProtonPass.featureComparison.tableHeaders.protonPass')}</th>
               </tr>
             </thead>
             <tbody>
@@ -213,24 +215,24 @@ const ProtonPassPage = () => {
       {/* Transparency Section */}
       <div className="container mx-auto px-4 py-16">
         <h2 className="text-2xl font-bold text-center mb-8">
-          The Importance of Full Transparency
+          {t('alternativeProtonPass.transparency.title')}
         </h2>
         <div className="max-w-3xl mx-auto">
           <p className="mb-6 text-lg">
-            When it comes to password managers, transparency is crucial for trust:
+            {t('alternativeProtonPass.transparency.description')}
           </p>
           <ul className="list-disc pl-6 space-y-4">
             <li>
-              <strong>Complete Code Audit:</strong> With AliasVault, you can audit every line of code that handles your passwords, including server-side logic that Proton Pass keeps closed-source.
+              <strong>{t('alternativeProtonPass.transparency.items.codeAudit.title')}</strong> {t('alternativeProtonPass.transparency.items.codeAudit.description')}
             </li>
             <li>
-              <strong>No Hidden Backdoors:</strong> Full open-source transparency means there are no hidden features or backdoors that could compromise your security.
+              <strong>{t('alternativeProtonPass.transparency.items.noBackdoors.title')}</strong> {t('alternativeProtonPass.transparency.items.noBackdoors.description')}
             </li>
             <li>
-              <strong>Community Verification:</strong> The open-source nature allows security researchers and the community to continuously review and improve the codebase.
+              <strong>{t('alternativeProtonPass.transparency.items.communityVerification.title')}</strong> {t('alternativeProtonPass.transparency.items.communityVerification.description')}
             </li>
             <li>
-              <strong>Self-hosting Control:</strong> Run your own instance and have complete control over your data, eliminating dependency on third-party infrastructure.
+              <strong>{t('alternativeProtonPass.transparency.items.selfHostingControl.title')}</strong> {t('alternativeProtonPass.transparency.items.selfHostingControl.description')}
             </li>
           </ul>
         </div>
@@ -239,18 +241,18 @@ const ProtonPassPage = () => {
       {/* Limitations Section */}
       <div className="container mx-auto px-4 py-16">
         <h2 className="text-2xl font-bold text-center mb-8">
-          Good to Know
+          {t('alternativeProtonPass.limitations.title')}
         </h2>
         <div className="max-w-3xl mx-auto">
           <p className="mb-6 text-lg">
-            In the spirit of transparency, here are some current limitations of AliasVault compared to Proton Pass:
+            {t('alternativeProtonPass.limitations.description')}
           </p>
           <ul className="list-disc pl-6 space-y-4">
             <li>
-              <strong>Brand Recognition:</strong> Proton has a well-established brand and larger user base, which may provide more community support and integrations.
+              <strong>{t('alternativeProtonPass.limitations.items.brandRecognition.title')}</strong> {t('alternativeProtonPass.limitations.items.brandRecognition.description')}
             </li>
             <li>
-              <strong>Ecosystem Integration:</strong> Proton Pass integrates with other Proton services (Mail, VPN, etc.) if you&apos;re already in their ecosystem.
+              <strong>{t('alternativeProtonPass.limitations.items.ecosystemIntegration.title')}</strong> {t('alternativeProtonPass.limitations.items.ecosystemIntegration.description')}
             </li>
           </ul>
         </div>

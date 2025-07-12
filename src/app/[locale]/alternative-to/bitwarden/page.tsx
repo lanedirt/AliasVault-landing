@@ -2,13 +2,15 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import CallToAction from "@/components/CallToAction/CallToAction";
+import { getTranslations } from "next-intl/server";
 
 export const metadata: Metadata = {
   title: "Alternative to Bitwarden",
   description: "AliasVault is an open-source end-to-end encrypted password and alias manager.",
 };
 
-const BitwardenPage = () => {
+const BitwardenPage = async () => {
+  const t = await getTranslations();
   return (
     <>
       {/* Hero Section */}
@@ -18,10 +20,10 @@ const BitwardenPage = () => {
             <div className="w-full px-4 lg:w-1/2">
               <div className="text-center lg:text-left">
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Looking for a Bitwarden Alternative?
+                  {t('alternativeBitwarden.hero.title')}
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  AliasVault offers a secure, open-source solution for password management with integrated email alias features. Get all the security you love from Bitwarden, plus enhanced privacy features.
+                  {t('alternativeBitwarden.hero.description')}
                 </p>
                 {/* Same buttons as before */}
                 <div className="flex flex-col items-center justify-center lg:items-start lg:justify-start space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
@@ -29,7 +31,7 @@ const BitwardenPage = () => {
                     href="https://app.aliasvault.net"
                     className="rounded-3xl bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                    Try AliasVault (free)
+                    {t('alternativeBitwarden.hero.tryButton')}
                   </Link>
                   <Link
                     href="https://github.com/lanedirt/AliasVault"
@@ -47,9 +49,9 @@ const BitwardenPage = () => {
                         clipRule="evenodd"
                       />
                     </svg>
-                    GitHub <Image
+                    {t('alternativeBitwarden.hero.githubButton')} <Image
                       className="inline-block ml-3"
-                      alt="GitHub Repo stars"
+                      alt={t('alternativeBitwarden.hero.alt.githubStars')}
                       src={`https://img.shields.io/github/stars/lanedirt/AliasVault?${new Date().getTime()}`}
                       width={90}
                       height={20}
@@ -63,7 +65,7 @@ const BitwardenPage = () => {
               <div className="mt-8 text-center lg:mt-0">
                 <Image
                   src="/images/alternative/hero/bitwarden.png"
-                  alt="Bitwarden Alternative"
+                  alt={t('alternativeBitwarden.hero.alt.hero')}
                   width={1000}
                   height={1000}
                   className="mx-auto"
@@ -78,7 +80,7 @@ const BitwardenPage = () => {
       {/* Feature Comparison */}
       <div className="container mx-auto px-4 py-16">
         <h2 className="text-2xl font-bold text-center mb-12">
-          Why Choose AliasVault over Bitwarden
+          {t('alternativeBitwarden.comparison.title')}
         </h2>
 
         {/* Feature 1 - Email Alias Integration */}
@@ -86,7 +88,7 @@ const BitwardenPage = () => {
           <div className="md:w-1/2">
             <Image
               src="/images/alternative/icons/passwords.png"
-              alt="Email Alias Integration"
+              alt={t('alternativeBitwarden.comparison.features.emailAlias.alt')}
               width={500}
               height={300}
               className="rounded-lg"
@@ -94,10 +96,10 @@ const BitwardenPage = () => {
           </div>
           <div className="md:w-1/2">
             <h3 className="text-xl font-semibold mb-4">
-              Integrated Email Alias Management
+              {t('alternativeBitwarden.comparison.features.emailAlias.title')}
             </h3>
             <p>
-              While Bitwarden excels at password management, AliasVault combines both password management and email alias capabilities in one secure platform. Create disposable email addresses on the fly while saving your passwords. No external email dependencies required.
+              {t('alternativeBitwarden.comparison.features.emailAlias.description')}
             </p>
           </div>
         </div>
@@ -107,7 +109,7 @@ const BitwardenPage = () => {
           <div className="md:w-1/2 text-end">
             <Image
               src="/images/alternative/icons/identities.png"
-              alt="Identity Generation"
+              alt={t('alternativeBitwarden.comparison.features.identityGeneration.alt')}
               width={500}
               height={300}
               className="rounded-lg"
@@ -115,10 +117,10 @@ const BitwardenPage = () => {
           </div>
           <div className="md:w-1/2">
             <h3 className="text-xl font-semibold mb-4">
-              Advanced Identity Generation
+              {t('alternativeBitwarden.comparison.features.identityGeneration.title')}
             </h3>
             <p>
-              AliasVault goes beyond simple form filling by generating complete random identities for each alias. This includes names, birthdates, and other details, providing enhanced privacy when signing up for services.
+              {t('alternativeBitwarden.comparison.features.identityGeneration.description')}
             </p>
           </div>
         </div>
@@ -128,7 +130,7 @@ const BitwardenPage = () => {
           <div className="md:w-1/2">
             <Image
               src="/images/alternative/icons/encryption.png"
-              alt="Easy Self-hosting"
+              alt={t('alternativeBitwarden.comparison.features.selfHosting.alt')}
               width={500}
               height={300}
               className="rounded-lg"
@@ -136,10 +138,10 @@ const BitwardenPage = () => {
           </div>
           <div className="md:w-1/2">
             <h3 className="text-xl font-semibold mb-4">
-              Simplified Self-hosting
+              {t('alternativeBitwarden.comparison.features.selfHosting.title')}
             </h3>
             <p>
-              While both platforms offer self-hosting options, AliasVault provides a streamlined installation process with our easy installer. Get your private instance up and running in minutes, not hours.
+              {t('alternativeBitwarden.comparison.features.selfHosting.description')}
             </p>
           </div>
         </div>
@@ -148,55 +150,55 @@ const BitwardenPage = () => {
       {/* Comparison Table */}
       <div className="container mx-auto px-4 py-16">
         <h2 className="text-2xl font-bold text-center mb-8">
-          Feature Comparison
+          {t('alternativeBitwarden.featureComparison.title')}
         </h2>
         <div className="overflow-x-auto">
           <table className="w-full border-collapse">
             <thead>
               <tr className="bg-gray-100 dark:bg-gray-800">
-                <th className="border border-gray-300 dark:border-gray-700 p-4 text-left dark:text-white">Feature</th>
-                <th className="border border-gray-300 dark:border-gray-700 p-4 text-center dark:text-white">AliasVault</th>
-                <th className="border border-gray-300 dark:border-gray-700 p-4 text-center dark:text-white">Bitwarden</th>
+                <th className="border border-gray-300 dark:border-gray-700 p-4 text-left dark:text-white">{t('alternativeBitwarden.featureComparison.tableHeaders.feature')}</th>
+                <th className="border border-gray-300 dark:border-gray-700 p-4 text-center dark:text-white">{t('alternativeBitwarden.featureComparison.tableHeaders.aliasVault')}</th>
+                <th className="border border-gray-300 dark:border-gray-700 p-4 text-center dark:text-white">{t('alternativeBitwarden.featureComparison.tableHeaders.bitwarden')}</th>
               </tr>
             </thead>
             <tbody>
               <tr className="dark:text-white">
-                <td className="border border-gray-300 dark:border-gray-700 p-4">Password Management</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4">{t('alternativeBitwarden.featureComparison.features.passwordManagement')}</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
               </tr>
               <tr className="dark:text-white">
-                <td className="border border-gray-300 dark:border-gray-700 p-4">Email Alias Management</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4">{t('alternativeBitwarden.featureComparison.features.emailAliasManagement')}</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">❌</td>
               </tr>
               <tr className="dark:text-white">
-                <td className="border border-gray-300 dark:border-gray-700 p-4">Random Identity Generation</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4">{t('alternativeBitwarden.featureComparison.features.randomIdentityGeneration')}</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">❌</td>
               </tr>
               <tr className="dark:text-white">
-                <td className="border border-gray-300 dark:border-gray-700 p-4">Open Source</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4">{t('alternativeBitwarden.featureComparison.features.openSource')}</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
               </tr>
               <tr className="dark:text-white">
-                <td className="border border-gray-300 dark:border-gray-700 p-4">End-to-End Encryption</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4">{t('alternativeBitwarden.featureComparison.features.endToEndEncryption')}</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
               </tr>
               <tr className="dark:text-white">
-                <td className="border border-gray-300 dark:border-gray-700 p-4">Easy Self-hosting</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4">{t('alternativeBitwarden.featureComparison.features.easySelfHosting')}</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">⚠️</td>
               </tr>
               <tr className="dark:text-white">
-                <td className="border border-gray-300 dark:border-gray-700 p-4">Browser Extensions</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4">{t('alternativeBitwarden.featureComparison.features.browserExtensions')}</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
               </tr>
               <tr className="dark:text-white">
-                <td className="border border-gray-300 dark:border-gray-700 p-4">Mobile Apps</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4">{t('alternativeBitwarden.featureComparison.features.mobileApps')}</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
               </tr>
@@ -208,15 +210,15 @@ const BitwardenPage = () => {
       {/* Limitations Section */}
       <div className="container mx-auto px-4 py-16">
         <h2 className="text-2xl font-bold text-center mb-8">
-          Good to Know
+          {t('alternativeBitwarden.limitations.title')}
         </h2>
         <div className="max-w-3xl mx-auto">
           <p className="mb-6 text-lg">
-            In the spirit of transparency, here are some current limitations of AliasVault compared to Bitwarden:
+            {t('alternativeBitwarden.limitations.description')}
           </p>
           <ul className="list-disc pl-6 space-y-4">
             <li>
-              <strong>Age:</strong> Bitwarden has been around longer and has a larger user base, which means more community-tested features and integrations.
+              <strong>{t('alternativeBitwarden.limitations.items.age.title')}</strong> {t('alternativeBitwarden.limitations.items.age.description')}
             </li>
           </ul>
         </div>

@@ -1,12 +1,13 @@
 import { getBlogPostBySlug, getAllBlogPosts } from '@/lib/blog'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { Metadata } from 'next'
 import { serialize } from 'next-mdx-remote/serialize'
 import MDXContent from '@/components/MDX/MDXContent'
 import RelatedPost from '@/components/Blog/RelatedPost'
 import TagButton from '@/components/Blog/TagButton'
+import { getTranslations } from 'next-intl/server'
 
 interface BlogPostPageProps {
   params: Promise<{
@@ -67,6 +68,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const { slug } = await params
   const post = getBlogPostBySlug(slug)
   const allPosts = getAllBlogPosts()
+  const t = await getTranslations()
 
   if (!post) {
     notFound()
@@ -112,7 +114,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                     </div>
                     <div className="w-full">
                       <span className="mb-1 text-base font-medium text-body-color">
-                        By <span>{post.author.name}</span>
+                        {t('blogPost.by')} <span>{post.author.name}</span>
                       </span>
                     </div>
                   </div>
@@ -158,7 +160,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               <div className="items-center justify-between sm:flex">
                 <div className="mb-5">
                   <h4 className="mb-3 text-sm font-medium text-body-color">
-                    Tags :
+                    {t('blogComponent.tags')}
                   </h4>
                   <div className="flex items-center">
                     {post.tags.map((tag) => (
@@ -172,7 +174,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           <div className="w-full px-4 lg:w-4/12">
             <div className="shadow-three dark:bg-gray-dark mb-10 rounded-sm bg-white dark:shadow-none">
               <h3 className="border-b border-body-color border-opacity-10 px-8 py-4 text-lg font-semibold text-black dark:border-white dark:border-opacity-10 dark:text-white">
-                Related Posts
+                {t('blogComponent.relatedPosts')}
               </h3>
               <ul className="p-8">
                 {relatedPosts.map((relatedPost) => (
@@ -189,7 +191,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             </div>
             <div className="shadow-three dark:bg-gray-dark mb-10 rounded-sm bg-white dark:shadow-none">
               <h3 className="border-b border-body-color border-opacity-10 px-8 py-4 text-lg font-semibold text-black dark:border-white dark:border-opacity-10 dark:text-white">
-                Popular Tags
+                {t('blogComponent.popularTags')}
               </h3>
               <div className="flex flex-wrap px-8 py-6">
                 {allTags.map((tag) => (
