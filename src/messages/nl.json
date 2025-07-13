@@ -732,5 +732,80 @@
         }
       }
     }
+  },
+  "mission": {
+    "metadata": {
+      "title": "Missie",
+      "description": "Lees meer over onze missie en visie."
+    },
+    "breadcrumb": {
+      "title": "Onze Missie",
+      "description": "Lees meer over de missie en visie van AliasVault."
+    },
+    "sections": {
+      "whyAliasVault": {
+        "title": "Waarom AliasVault",
+        "paragraph1": "De missie van AliasVault is eenvoudig: het internet veiliger en meer privé maken, waarbij u beslist wat u deelt en met wie.",
+        "paragraph2": "Wij geloven dat privacy een recht is, geen luxe. Onze missie is om de controle terug te geven aan gebruikers, zodat zij veilig en anoniem online kunnen blijven.",
+        "paragraph3": "AliasVault is het antwoord op een web dat alles volgt: een manier om de controle over uw digitale privacy terug te nemen en u online veilig te houden."
+      },
+      "internetPrivacy": {
+        "title": "Het Internet & Privacy",
+        "paragraph1": "Nog niet zo lang geleden kon u leven zonder echt na te denken over privacy. U kon dingen kopen, met mensen praten en uw gedachten delen zonder u zorgen te maken over wie er meekeek.",
+        "paragraph2": "Toen het internet begon, was het een plek waar u kon zijn wie u maar wilde. Een plek om anoniem met mensen over de hele wereld te verbinden. Tegenwoordig is het internet echter een plek geworden waar bedrijven elke beweging volgen en uw gegevens aan de hoogste bieder verkopen.",
+        "paragraph3": "Neem reclame, bijvoorbeeld. Vroeger werd het aan miljoenen mensen tegelijk getoond. Het was vervelend, maar wist in ieder geval niet wie u was. Nu, door het internet, hebben bedrijven manieren ontwikkeld om precies te weten wie u bent, wat u leuk vindt en waar u naar op zoek bent, soms zelfs voordat u het zelf weet. En dit treft niet alleen volwassenen. Zelfs kinderen die onschuldige tekenfilms online kijken, worden gevolgd. Hun klikken, gewoonten en voorkeuren worden verzameld en gebruikt om een profiel van hen op te bouwen.",
+        "paragraph4": "Om het in perspectief te plaatsen: stel u voor dat u door een winkelcentrum loopt en iemand u overal volgt, alles opschrijft wat u doet, hoe lang u in elke winkel blijft, wat u bekijkt (misschien een bepaald medicijn) — en dat vervolgens deelt met alle andere winkels, of verkoopt aan de hoogste bieder. Dat zou stalking, intimidatie of erger worden genoemd. Maar op het internet is dit de norm geworden."
+      },
+      "takingBackControl": {
+        "title": "De Controle Terugpakken",
+        "paragraph1": "Privacy op het internet begint met uw e-mailadres. Het is het eerste waar een site om vraagt, soms in ruil voor een korting, en het eerste wat marketeers gebruiken om u te volgen.",
+        "paragraph2": "Overal hetzelfde adres gebruiken stelt vreemden in staat een profiel samen te stellen van welke sites u bezoekt, welke diensten u gebruikt en welke producten u leuk vindt. En het zijn niet alleen bedrijven die geïnteresseerd zijn in deze gegevens, ook overheden. Het politieke landschap verandert voortdurend, en wat vandaag acceptabel was, kan morgen reden zijn voor vervolging.",
+        "paragraph3": "AliasVault laat u beslissen welke informatie u deelt. Genereer unieke aliassen en wachtwoorden zodat u nooit meer weggeeft dan nodig is. Eén klik, één alias, en het datatraject stopt."
+      },
+      "ourVision": {
+        "title": "Onze Visie",
+        "paragraph1": "Wij zien een toekomst voor ons waarin mensen volledig de controle hebben over hun eigen privacy.",
+        "paragraph2": "Recente wetten zoals de AVG zijn een stap in de goede richting, maar regelgeving alleen is niet genoeg. Echte verandering gebeurt wanneer mensen begrijpen hoe hun gegevens worden gebruikt en eenvoudige, krachtige tools hebben om daar iets aan te doen. Daar komt AliasVault om de hoek kijken.",
+        "paragraph3": "Op dit moment helpt AliasVault u unieke aliassen en wachtwoorden te genereren, zodat u nooit meer hoeft weg te geven dan nodig is. Maar dit is nog maar het begin. We bouwen aan een privacyplatform dat u en uw gezin beschermt, met functies die het eenvoudig maken om standaard privé te blijven.",
+        "paragraph4": "Alles wat we bij AliasVault doen, ondersteunt één missie: het internet veiliger en meer privé maken. Waar u beslist wat u deelt en met wie."
+      }
+    },
+    "roadmap": {
+      "title": "Onze Roadmap",
+      "description": "Hieronder ziet u een tijdlijn van onze geplande roadmap. Voor meer details over onze roadmap, bekijk onze",
+      "githubLinkText": "GitHub-pagina",
+      "wereHere": "We zijn hier",
+      "years": {
+        "2024": {
+          "milestones": [
+            { "month": "5", "label": "Mei", "text": "Start van AliasVault-ontwikkeling" },
+            { "month": "12", "label": "December", "text": "Bètarelease van AliasVault" }
+          ]
+        },
+        "2025": {
+          "milestones": [
+            { "month": "3", "label": "Q1", "text": "Release van Browserextensies" },
+            { "month": "6", "label": "Q2", "text": "Release van Mobiele Apps" },
+            { "month": "9", "label": "Q3", "text": "Platform Stabiliteit & Volwassenheid" },
+            { "month": "12", "label": "Q4", "text": "v1.0 Stabiele Release + Security Audit" }
+          ]
+        },
+        "2026": {
+          "milestones": [
+            { "month": "3", "label": "Q1", "text": "Premium Gehoste Functies" },
+            { "month": "6", "label": "Q2", "text": "Gezinsfuncties" },
+            { "month": "9", "label": "Q3/Q4", "text": "Wegwerptelefoonnummers" }
+          ]
+        },
+        "2027": {
+          "milestones": [
+            { "month": "6", "label": "Medio", "text": "Meer Integraties" }
+          ]
+        },
+        "2028": {
+          "milestones": []
+        }
+      }
+    }
   }
 }
