@@ -11,7 +11,6 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { locales, defaultLocale } from '@/i18n/config';
 import { generateAlternateLanguageUrls } from '@/lib/i18n-utils';
-import DevTranslationHelper from '@/components/DevTranslationHelper';
 import { routing } from "@/i18n/routing";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -96,7 +95,6 @@ export default async function RootLayout({
             {children}
             <Footer />
             <ScrollToTop />
-            <DevTranslationHelper enabled={process.env.NODE_ENV === 'development'} />
           </Providers>
         </NextIntlClientProvider>
       </body>
