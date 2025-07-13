@@ -732,5 +732,80 @@
         }
       }
     }
+  },
+  "mission": {
+    "metadata": {
+      "title": "Mission",
+      "description": "Read more about our mission and vision."
+    },
+    "breadcrumb": {
+      "title": "Our Mission",
+      "description": "Read more about the mission and vision for AliasVault."
+    },
+    "sections": {
+      "whyAliasVault": {
+        "title": "Why AliasVault",
+        "paragraph1": "The mission of AliasVault is simple: to make the internet a safer and more private place, where you decide what to share, and with whom.",
+        "paragraph2": "We believe privacy is a right, not a luxury. Our mission is to put control back into the hands of users, helping them stay secure and anonymous online.",
+        "paragraph3": "AliasVault is the response to a web that tracks everything: a way to take back control of your digital privacy and help you stay secure online."
+      },
+      "internetPrivacy": {
+        "title": "The Internet & Privacy",
+        "paragraph1": "Not too long ago, you could live your life without really thinking about privacy. You could buy things, talk to people, and share your thoughts without worrying about who was watching.",
+        "paragraph2": "When the internet started, it was a place where you could be whoever you wanted to be. A place to connect with people all over the world in an anonymous way. Today however, the internet has become a place where companies track your every move and sell your data to the highest bidder.",
+        "paragraph3": "Take advertising, for example. It used to be shown to millions of people at the same time. It was annoying, but at least it didn’t know who you were. Now due to the internet, companies developed ways to know exactly who you are, what you like, and what you’re looking for, sometimes even before you do. And this doesn’t just affect adults. Even children watching innocent cartoons online are being tracked. Their clicks, their habits, even their preferences are collected and used to build up a profile on them.",
+        "paragraph4": "To put it in perspective: imagine you’re walking through a shopping mall and someone follows you around, writes down everything you do, how long you stay in each store, what you look at (perhaps a specific medicine) — and then shares that with all the other stores, or sells it to the highest bidder. That would be called stalking, harassment, or worse. But on the internet, this has become the norm."
+      },
+      "takingBackControl": {
+        "title": "Taking Back Control",
+        "paragraph1": "Privacy on the internet starts with your email address. It's the first thing a site asks for, sometimes in exchange for a discount, and the first thing marketers use to track you.",
+        "paragraph2": "Using the same address everywhere lets strangers piece together a profile of which sites you visit, which services you use, and which products you like. And it's not just companies that are interested in this data, it's also governments. The political arena is constantly changing, and what you did that was acceptable today can be reason for prosecution tomorrow.",
+        "paragraph3": "AliasVault lets you decide what information you share. Generate unique aliases and passwords so you never give away more than necessary. One click, one alias, and the data trail ends."
+      },
+      "ourVision": {
+        "title": "Our Vision",
+        "paragraph1": "We envision a future where people are fully in control of their own privacy.",
+        "paragraph2": "Recent laws like GDPR are a step in the right direction, but regulation alone isn't enough. Real change happens when people understand how their data is being used, and have simple, powerful tools to do something about it. That's where AliasVault comes in.",
+        "paragraph3": "Right now, AliasVault helps you generate unique aliases and passwords, so you never have to give away more than necessary. But this is just the beginning. We’re building a privacy platform designed to protect you and your family, with features that make it easy to stay private by default.",
+        "paragraph4": "Everything we do at AliasVault supports one mission: to make the internet a safer and more private place. Where you decide what to share, and with whom."
+      }
+    },
+    "roadmap": {
+      "title": "Our Roadmap",
+      "description": "Below shows a timeline of our planned roadmap. For more details regarding our roadmap, take a look at our",
+      "githubLinkText": "GitHub page",
+      "wereHere": "We're here",
+      "years": {
+        "2024": {
+          "milestones": [
+            { "month": "5", "label": "May", "text": "Start of AliasVault Development" },
+            { "month": "12", "label": "December", "text": "Beta Release of AliasVault" }
+          ]
+        },
+        "2025": {
+          "milestones": [
+            { "month": "3", "label": "Q1", "text": "Release of Browser Extensions" },
+            { "month": "6", "label": "Q2", "text": "Release of Mobile Apps" },
+            { "month": "9", "label": "Q3", "text": "Platform Stability & Maturity" },
+            { "month": "12", "label": "Q4", "text": "v1.0 Stable Release + Security Audit" }
+          ]
+        },
+        "2026": {
+          "milestones": [
+            { "month": "3", "label": "Q1", "text": "Premium Hosted Features" },
+            { "month": "6", "label": "Q2", "text": "Family Features" },
+            { "month": "9", "label": "Q3/Q4", "text": "Disposable Phone Numbers" }
+          ]
+        },
+        "2027": {
+          "milestones": [
+            { "month": "6", "label": "Mid-Year", "text": "More Integrations" }
+          ]
+        },
+        "2028": {
+          "milestones": []
+        }
+      }
+    }
   }
 }

@@ -1,4 +1,16 @@
-import { FeatureCategory } from './featuresData';
+export interface FeatureItem {
+  name: string;
+  description: string;
+  status: 'available' | 'upcoming' | 'unavailable';
+}
+
+export interface FeatureCategory {
+  title: string;
+  description: string;
+  features: FeatureItem[];
+  imageSrc: string;
+  imageAlt: string;
+}
 
 type TranslationFunction = (key: string) => string;
 

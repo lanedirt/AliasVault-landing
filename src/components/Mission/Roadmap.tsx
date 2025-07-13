@@ -1,55 +1,49 @@
 import React from "react";
+import { getTranslations } from "next-intl/server";
 
-const timeline = [
-  {
-    year: 2024,
-    milestones: [
-      { month: 5, label: "May", text: "Start of AliasVault Development" },
-      { month: 12, label: "December", text: "Beta Release of AliasVault" },
-    ],
-  },
-  {
-    year: 2025,
-    milestones: [
-      { month: 3, label: "Q1", text: "Release of Browser Extensions" },
-      { month: 6, label: "Q2", text: "Release of Mobile Apps" },
-      { month: 9, label: "Q3", text: "Platform Stability & Maturity" },
-      { month: 12, label: "Q4", text: "v1.0 Stable Release + Security Audit" },
-    ],
-  },
-  {
-    year: 2026,
-    milestones: [
-      { month: 3, label: "Q1", text: "Premium Hosted Features " },
-      { month: 6, label: "Q2", text: "Family Features" },
-      { month: 9, label: "Q3/Q4", text: "Disposable Phone Numbers" },
-    ],
-  },
-  {
-    year: 2027,
-    milestones: [
-      { month: 6, label: "Mid-Year", text: "More Integrations" },
-    ],
-  },
-  {
-    year: 2028,
-    milestones: [
-    ],
-  },
-];
+interface Milestone {
+  month: string;
+  label: string;
+  text: string;
+}
 
-export default function Roadmap() {
+export default async function Roadmap() {
+  const t = await getTranslations();
   const now = new Date();
   const currentYear = now.getFullYear();
   const currentMonth = now.getMonth() + 1;
 
+  // Create timeline from translations
+  const timeline = [
+    {
+      year: "2024",
+      milestones: t.raw('mission.roadmap.years.2024.milestones'),
+    },
+    {
+      year: "2025",
+      milestones: t.raw('mission.roadmap.years.2025.milestones'),
+    },
+    {
+      year: "2026",
+      milestones: t.raw('mission.roadmap.years.2026.milestones'),
+    },
+    {
+      year: "2027",
+      milestones: t.raw('mission.roadmap.years.2027.milestones'),
+    },
+    {
+      year: "2028",
+      milestones: t.raw('mission.roadmap.years.2028.milestones'),
+    },
+  ];
+
   return (
     <section className="mt-20">
       <h2 className="mb-4 text-center text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
-        Our Roadmap
+        {t('mission.roadmap.title')}
       </h2>
       <p className="text-center text-base !leading-relaxed text-body-color md:text-lg">
-        Below shows a timeline of our planned roadmap. For more details regarding our roadmap, take a look at our <a href="https://github.com/lanedirt/AliasVault/issues/731" className="text-primary">GitHub page</a>.
+        {t('mission.roadmap.description')} <a href="https://github.com/lanedirt/AliasVault/issues/731" className="text-primary">{t('mission.roadmap.githubLinkText')}</a>.
       </p>
 
       <div className="relative mt-12">
@@ -58,6 +52,7 @@ export default function Roadmap() {
         <div className="space-y-24">
           {timeline.map((yearBlock, yearIdx) => {
             const isLeft = yearIdx % 2 === 0;
+            const yearNumber = parseInt(yearBlock.year);
 
             return (
               <div
@@ -77,10 +72,10 @@ export default function Roadmap() {
                         {yearBlock.year}
                       </h3>
                       <ul className="mt-8 space-y-6">
-                        {yearBlock.milestones.map((m, i) => {
+                        {yearBlock.milestones && yearBlock.milestones.map((m: Milestone, i: number) => {
                           const isNow =
-                            yearBlock.year === currentYear &&
-                            Math.floor((m.month - 1) / 3) === Math.floor((currentMonth - 1) / 3);
+                            yearNumber === currentYear &&
+                            Math.floor((parseInt(m.month) - 1) / 3) === Math.floor((currentMonth - 1) / 3);
 
                           return (
                             <li key={i} className="relative text-base text-body-color">
@@ -91,7 +86,7 @@ export default function Roadmap() {
                               {/* Show "We're here" on right */}
                               {isNow && (
                                 <span className="absolute left-full ml-4 top-1/2 -translate-y-1/2 whitespace-nowrap rounded-full bg-primary px-2 py-0.5 text-xs font-semibold text-white">
-                                  We’re here
+                                  {t('mission.roadmap.wereHere')}
                                 </span>
                               )}
                             </li>
@@ -110,10 +105,10 @@ export default function Roadmap() {
                         {yearBlock.year}
                       </h3>
                       <ul className="mt-8 space-y-6">
-                        {yearBlock.milestones.map((m, i) => {
+                        {yearBlock.milestones && yearBlock.milestones.map((m: Milestone, i: number) => {
                           const isNow =
-                            yearBlock.year === currentYear &&
-                            Math.floor((m.month - 1) / 3) === Math.floor((currentMonth - 1) / 3);
+                            yearNumber === currentYear &&
+                            Math.floor((parseInt(m.month) - 1) / 3) === Math.floor((currentMonth - 1) / 3);
 
                           return (
                             <li key={i} className="relative text-base text-body-color">
@@ -124,7 +119,7 @@ export default function Roadmap() {
                               {/* Show "We're here" on left */}
                               {isNow && (
                                 <span className="absolute right-full mr-4 top-1/2 -translate-y-1/2 whitespace-nowrap rounded-full bg-primary px-2 py-0.5 text-xs font-semibold text-white">
-                                  We’re here
+                                  {t('mission.roadmap.wereHere')}
                                 </span>
                               )}
                             </li>
