@@ -110,7 +110,7 @@
     "pageDescription": "AliasVault is an open-source end-to-end encrypted password and alias manager. With AliasVault you can create unique identities, passwords and email addresses for every website you use. Keeping you safe online.",
     "sectionOne": {
       "title": "Your privacy. Protected.",
-      "paragraph": "In an ideal world you don't need AliasVault, in reality you do. Many companies track your online activity without your permission or knowledge, creating <a href='https://en.wikipedia.org/wiki/Shadow_profile' target='_blank'>shadow profiles</a> of you. Even the most reputable companies can fall victim to <a href='https://en.wikipedia.org/wiki/Data_breach' target='_blank'>data breaches</a>, causing your personal information to fall into the wrong hands. AliasVault helps keep you safe online by letting you control how websites see and track you.",
+      "paragraph": "In an ideal world you don't need AliasVault, in reality you do. Many companies track your online activity without your permission or knowledge, creating [shadowProfileLink]shadow profiles[/shadowProfileLink] of you. Even the most reputable companies can fall victim to [dataBreachLink]data breaches[/dataBreachLink], causing your personal information to fall into the wrong hands. AliasVault helps keep you safe online by letting you control how websites see and track you.",
       "features": {
         "uniqueIdentity": "Every website, a new alias, email address and password",
         "dataTracking": "When your data is shared, you know which service caused it",
@@ -233,7 +233,7 @@
       },
       "2": {
         "question": "How much does AliasVault cost?",
-        "answer": "The current core version of AliasVault, with all of its features, is completely free to use and will always remain that way. Both for the official cloud-hosted and self-hosted options. \n\nIn the near future, we do plan to introduce optional premium features such as additional storage space, automatic back-ups, and more. These paid options will help support the continued development and costs of the project.\n\nThat said, we are currently focused on developing and refining the basic features of AliasVault to ensure a stable and reliable foundation for all users. Premium features are part of our longer-term roadmap, but our current priority is to deliver a solid core experience.\n\nIf you'd like to support the project in the meantime, we welcome donations — please visit our <a href=\"/contact\" rel=\"noopener noreferrer\">contact page</a> for more information."
+        "answer": "The current core version of AliasVault, with all of its features, is completely free to use and will always remain that way. Both for the official cloud-hosted and self-hosted options. \n\nIn the near future, we do plan to introduce optional premium features such as additional storage space, automatic back-ups, and more. These paid options will help support the continued development and costs of the project.\n\nThat said, we are currently focused on developing and refining the basic features of AliasVault to ensure a stable and reliable foundation for all users. Premium features are part of our longer-term roadmap, but our current priority is to deliver a solid core experience.\n\nIf you'd like to support the project in the meantime, we welcome donations — please visit our [contactLink]contact page[/contactLink] for more information."
       },
       "3": {
         "question": "Which devices are supported by AliasVault?",
@@ -241,7 +241,7 @@
       },
       "4": {
         "question": "How does AliasVault protect my data?",
-        "answer": "Security is the foundation of AliasVault. End-to-end encryption (AES-256-GCM) is used to encrypt all your data. Everything, including usernames, passwords and even email contents, is encrypted on your device. Even on our servers, your information stays encrypted, protected by your master password, which only you know. Our strict zero-knowledge architecture guarantees that no one — not even us — can access your vault.\n\nFor in-depth technical details, visit our <a href=\"https://docs.aliasvault.net/architecture\" target=\"_blank\" rel=\"noopener noreferrer\">architecture documentation</a>."
+        "answer": "Security is the foundation of AliasVault. End-to-end encryption (AES-256-GCM) is used to encrypt all your data. Everything, including usernames, passwords and even email contents, is encrypted on your device. Even on our servers, your information stays encrypted, protected by your master password, which only you know. Our strict zero-knowledge architecture guarantees that no one — not even us — can access your vault.\n\nFor in-depth technical details, visit our [docsLink]architecture documentation[/docsLink]."
       },
       "5": {
         "question": "Can I import my passwords from other password managers?",
@@ -249,7 +249,7 @@
       },
       "6": {
         "question": "Can I self-host AliasVault on my own server?",
-        "answer": "Yes, AliasVault is designed from the ground up to be fully self-hosted. You can easily deploy it on your own server using Docker, giving you complete control over your data and infrastructure. AliasVault comes with an automatic install script which makes installation a breeze.\n\nDetailed installation instructions are available in our <a href=\"https://docs.aliasvault.net\" target=\"_blank\" rel=\"noopener noreferrer\">documentation</a>."
+        "answer": "Yes, AliasVault is designed from the ground up to be fully self-hosted. You can easily deploy it on your own server using Docker, giving you complete control over your data and infrastructure. AliasVault comes with an automatic install script which makes installation a breeze.\n\nDetailed installation instructions are available in our [docsLink]documentation[/docsLink]."
       },
       "7": {
         "question": "How does the email alias feature work?",
@@ -261,7 +261,7 @@
       },
       "9": {
         "question": "What's the story behind AliasVault?",
-        "answer": "AliasVault started as a side project in early 2024, driven by the belief that privacy is a right, not a luxury. It was created to make the internet a safer, more private place — where users are in control of their digital identity.\n\nThe creator of AliasVault, Leendert de Borst, has long been passionate about fighting spam and making privacy accessible. Back in 2013, he launched asdasd.nl, a Dutch temporary email service that over the years grew into the multilingual SpamOK.com, helping thousands of users shield themselves from spam and data collection.\n\nAliasVault is the next step in that journey: a self-hostable, end-to-end encrypted password and alias manager that helps you generate unique email aliases and strong passwords for every service you use. By minimizing the personal information you share online, AliasVault helps you stay secure and anonymous.\n\nSince the beta release in December 2024, AliasVault has seen steady bi-weekly updates, introducing new features like browser extensions, two-factor authentication, mobile apps and import support from other password managers — all designed to make privacy more powerful and accessible.\n\nAliasVault is fully open-source and entirely self-funded. It's built to be transparent, community-driven, and privacy-first.\n\nLearn more about <a href=\"/mission\" rel=\"noopener noreferrer\">our mission</a> and what drives this project."
+        "answer": "AliasVault started as a side project in early 2024, driven by the belief that privacy is a right, not a luxury. It was created to make the internet a safer, more private place — where users are in control of their digital identity.\n\nThe creator of AliasVault, Leendert de Borst, has long been passionate about fighting spam and making privacy accessible. Back in 2013, he launched asdasd.nl, a Dutch temporary email service that over the years grew into the multilingual SpamOK.com, helping thousands of users shield themselves from spam and data collection.\n\nAliasVault is the next step in that journey: a self-hostable, end-to-end encrypted password and alias manager that helps you generate unique email aliases and strong passwords for every service you use. By minimizing the personal information you share online, AliasVault helps you stay secure and anonymous.\n\nSince the beta release in December 2024, AliasVault has seen steady bi-weekly updates, introducing new features like browser extensions, two-factor authentication, mobile apps and import support from other password managers — all designed to make privacy more powerful and accessible.\n\nAliasVault is fully open-source and entirely self-funded. It's built to be transparent, community-driven, and privacy-first.\n\nLearn more about [missionLink]our mission[/missionLink] and what drives this project."
       }
     }
   },
@@ -368,6 +368,145 @@
     "breadcrumb": {
       "titleTemplate": "Posts tagged with \"{tag}\"",
       "descriptionTemplate": "Browse all blog posts and news tagged with {tag}"
+    }
+  },
+  "reportAbuse": {
+    "metadata": {
+      "title": "Report Abuse",
+      "description": "Report abuse of AliasVault email aliases."
+    },
+    "title": "Report Abuse",
+    "description": "If you or your service (website, app, etc.) is negatively affected by an email alias from AliasVault, please contact us. We take abuse reports seriously and will investigate all legitimate claims.",
+    "contactText": "To report abuse, please contact us directly at",
+    "emailAddress": "contact@support.aliasvault.net",
+    "responseTime": "and include the email addresses that are part of the abuse. We will respond within 48 hours."
+  },
+  "featuresData": {
+    "passwordManagement": {
+      "title": "Password Management",
+      "description": "Securely store, generate, and manage all your passwords in one place with AliasVault's powerful password management features.",
+      "imageAlt": "AliasVault Password Management",
+      "features": {
+        "passwordManager": {
+          "name": "Password Manager",
+          "description": "Store all your passwords securely in one place, accessible from any device with industry leading end-to-end encryption."
+        },
+        "adjustableGenerator": {
+          "name": "Adjustable Generator",
+          "description": "Create custom patterns, length, and character sets for your passwords to make them more secure. Customizable per credential."
+        },
+        "builtIn2FA": {
+          "name": "Built-in 2FA Authenticator",
+          "description": "Store and generate 2FA secrets for all your accounts directly in AliasVault."
+        },
+        "passwordSharing": {
+          "name": "Password Sharing",
+          "description": "Securely share access to stored passwords with family members or team members."
+        }
+      }
+    },
+    "emailAliases": {
+      "title": "Email Aliases",
+      "description": "Create unique email addresses for different services to protect your primary email and reduce spam with AliasVault's built-in email server. No external dependencies.",
+      "imageAlt": "AliasVault Email Aliases",
+      "features": {
+        "builtInEmailServer": {
+          "name": "Built-in Email Server",
+          "description": "Create unique email addresses and receive emails directly in AliasVault without needing a third-party email service."
+        },
+        "aliasGenerator": {
+          "name": "Alias Generator",
+          "description": "Generate unique email addresses with full alias support including first name, last name, birth date and more."
+        },
+        "customDomainsSelfHosted": {
+          "name": "Custom Domains (self-hosted)",
+          "description": "Use your own domain for your email aliases in self-hosted setups."
+        },
+        "customDomainsCloudHosted": {
+          "name": "Custom Domains (cloud-hosted)",
+          "description": "Use email aliases with your own domain on the official cloud-hosted AliasVault server."
+        }
+      }
+    },
+    "security": {
+      "title": "Security Features",
+      "description": "AliasVault uses industry-standard encryption and security measures to protect your data.",
+      "imageAlt": "AliasVault Security Features",
+      "features": {
+        "endToEndEncryption": {
+          "name": "End-to-End Encryption",
+          "description": "All data is encrypted on your device before being backed up online. Your master password is never transmitted to the server."
+        },
+        "twoFactorAuthentication": {
+          "name": "Two-Factor Authentication",
+          "description": "Add an extra layer of security to your vault with TOTP-based two-factor authentication."
+        },
+        "biometricAuthentication": {
+          "name": "Biometric Authentication",
+          "description": "Unlock your vault using fingerprint or face recognition on supported devices via WebAuthn."
+        },
+        "secureNotesAttachments": {
+          "name": "Secure Notes & Attachments",
+          "description": "Store sensitive information like credit card details, secure notes, and other confidential data inside your vault."
+        }
+      }
+    },
+    "browserExtensions": {
+      "title": "Browser Extensions",
+      "description": "Access your vault from anywhere with AliasVault's browser extensions.",
+      "imageAlt": "AliasVault Browser Extensions",
+      "features": {
+        "availableForEveryBrowser": {
+          "name": "Available for every browser",
+          "description": "The AliasVault browser extension is officially available for Chrome, Firefox, Edge, Safari. Additional Chrome-based browsers are also supported such as Brave, Vivaldi and Opera."
+        },
+        "autofillCredentials": {
+          "name": "Autofill Credentials",
+          "description": "Seamlessly autofill (user)names and passwords while you browse."
+        },
+        "emailAliasGenerator": {
+          "name": "Email Alias Generator",
+          "description": "Generate (email) aliases directly from the browser extension with a simple click."
+        }
+      }
+    },
+    "mobileApps": {
+      "title": "Mobile Apps",
+      "description": "Access your vault from anywhere with AliasVault's mobile apps.",
+      "imageAlt": "AliasVault Mobile Apps",
+      "features": {
+        "iosApp": {
+          "name": "iOS App",
+          "description": "Access your vault on your iPhone or iPad with the official iOS app. Supports native autofill and Face ID / Touch ID authentication, keeping your data secure."
+        },
+        "androidApp": {
+          "name": "Android App",
+          "description": "Access your vault on your Android device with the official Android app. Supports native autofill and biometric authentication, keeping your data secure. Available on Google Play or as a manual APK via GitHub."
+        }
+      }
+    },
+    "selfHosting": {
+      "title": "Self-hosting Support",
+      "description": "Take full control of your data by self-hosting AliasVault on your own server or a cloud provider of your choice.",
+      "imageAlt": "AliasVault Self-hosting",
+      "features": {
+        "cloudOrSelfHosted": {
+          "name": "Cloud or Self-hosted",
+          "description": "Use the official AliasVault cloud service for convenience or self-host on your own server for complete control of your data."
+        },
+        "freeAndOpenSource": {
+          "name": "Free and Open-Source",
+          "description": "Completely free and open-source software, with source code available on GitHub."
+        },
+        "adminPanelLogs": {
+          "name": "Admin Panel & Logs",
+          "description": "Track all activities on your server with the built-in admin panel and audit logs."
+        },
+        "familyTeamManagement": {
+          "name": "Family & Team Management",
+          "description": "Share vaults with family members and team members via organizational features."
+        }
+      }
     }
   },
   "alternativeBitwarden": {

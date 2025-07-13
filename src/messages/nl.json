@@ -110,7 +110,7 @@
     "pageDescription": "AliasVault is een open-source end-to-end versleutelde wachtwoord- en aliasmanager. Met AliasVault kunt u unieke identiteiten, wachtwoorden en e-mailadressen aanmaken voor elke website die u gebruikt. Houd u veilig online.",
     "sectionOne": {
       "title": "Uw privacy. Beschermd.",
-      "paragraph": "In een ideale wereld heeft u AliasVault niet nodig, in werkelijkheid wel. Veel bedrijven volgen uw online activiteit zonder uw toestemming of medeweten, en creëren <a href='https://en.wikipedia.org/wiki/Shadow_profile' target='_blank'>schaduwprofielen</a> van u. Zelfs de meest gerenommeerde bedrijven kunnen slachtoffer worden van <a href='https://en.wikipedia.org/wiki/Data_breach' target='_blank'>datalekken</a>, waardoor uw persoonlijke informatie in verkeerde handen valt. AliasVault helpt u online veilig te blijven door u controle te geven over hoe websites u zien en volgen.",
+      "paragraph": "In een ideale wereld heeft u AliasVault niet nodig, in werkelijkheid wel. Veel bedrijven volgen uw online activiteit zonder uw toestemming of medeweten, en creëren [shadowProfileLink]schaduwprofielen[/shadowProfileLink] van u. Zelfs de meest gerenommeerde bedrijven kunnen slachtoffer worden van [dataBreachLink]datalekken[/dataBreachLink], waardoor uw persoonlijke informatie in verkeerde handen valt. AliasVault helpt u online veilig te blijven door u controle te geven over hoe websites u zien en volgen.",
       "features": {
         "uniqueIdentity": "Elke website, een nieuwe alias, e-mailadres en wachtwoord",
         "dataTracking": "Wanneer uw gegevens worden gedeeld, weet u welke service dit heeft veroorzaakt",
@@ -233,7 +233,7 @@
       },
       "2": {
         "question": "Hoeveel kost AliasVault?",
-        "answer": "De huidige kernversie van AliasVault, met al zijn functies, is volledig gratis te gebruiken en zal dat altijd blijven. Zowel voor de officiële cloud-gehoste als zelf-gehoste opties.\n\nIn de nabije toekomst zijn we wel van plan om optionele premium functies te introduceren zoals extra opslagruimte, automatische back-ups en meer. Deze betaalde opties zullen helpen bij de voortdurende ontwikkeling en kosten van het project.\n\nDat gezegd hebbende, zijn we momenteel gefocust op het ontwikkelen en verfijnen van de basisfuncties van AliasVault om een stabiele en betrouwbare basis voor alle gebruikers te garanderen. Premium functies maken deel uit van onze langetermijn roadmap, maar onze huidige prioriteit is het leveren van een solide kernervaring.\n\nAls u het project in de tussentijd wilt ondersteunen, zijn donaties welkom — bezoek onze <a href=\"/contact\" rel=\"noopener noreferrer\">contactpagina</a> voor meer informatie."
+        "answer": "De huidige kernversie van AliasVault, met al zijn functies, is volledig gratis te gebruiken en zal dat altijd blijven. Zowel voor de officiële cloud-gehoste als zelf-gehoste opties.\n\nIn de nabije toekomst zijn we wel van plan om optionele premium functies te introduceren zoals extra opslagruimte, automatische back-ups en meer. Deze betaalde opties zullen helpen bij de voortdurende ontwikkeling en kosten van het project.\n\nDat gezegd hebbende, zijn we momenteel gefocust op het ontwikkelen en verfijnen van de basisfuncties van AliasVault om een stabiele en betrouwbare basis voor alle gebruikers te garanderen. Premium functies maken deel uit van onze langetermijn roadmap, maar onze huidige prioriteit is het leveren van een solide kernervaring.\n\nAls u het project in de tussentijd wilt ondersteunen, zijn donaties welkom — bezoek onze [contactLink]contactpagina[/contactLink] voor meer informatie."
       },
       "3": {
         "question": "Welke apparaten worden ondersteund door AliasVault?",
@@ -241,7 +241,7 @@
       },
       "4": {
         "question": "Hoe beschermt AliasVault mijn gegevens?",
-        "answer": "Beveiliging is de basis van AliasVault. End-to-end versleuteling (AES-256-GCM) wordt gebruikt om al uw gegevens te versleutelen. Alles, inclusief gebruikersnamen, wachtwoorden en zelfs e-mailinhoud, wordt versleuteld op uw apparaat. Zelfs op onze servers blijven uw gegevens versleuteld, beschermd door uw hoofdwachtwoord, dat alleen u kent. Onze strikte zero-knowledge architectuur garandeert dat niemand — zelfs wij niet — toegang heeft tot uw kluis.\n\nVoor uitgebreide technische details, bezoek onze <a href=\"https://docs.aliasvault.net/architecture\" target=\"_blank\" rel=\"noopener noreferrer\">architectuurdocumentatie</a>."
+        "answer": "Beveiliging is de basis van AliasVault. End-to-end versleuteling (AES-256-GCM) wordt gebruikt om al uw gegevens te versleutelen. Alles, inclusief gebruikersnamen, wachtwoorden en zelfs e-mailinhoud, wordt versleuteld op uw apparaat. Zelfs op onze servers blijven uw gegevens versleuteld, beschermd door uw hoofdwachtwoord, dat alleen u kent. Onze strikte zero-knowledge architectuur garandeert dat niemand — zelfs wij niet — toegang heeft tot uw kluis.\n\nVoor uitgebreide technische details, bezoek onze [docsLink]architectuurdocumentatie[/docsLink]."
       },
       "5": {
         "question": "Kan ik mijn wachtwoorden importeren van andere wachtwoordbeheerders?",
@@ -249,7 +249,7 @@
       },
       "6": {
         "question": "Kan ik AliasVault zelf hosten op mijn eigen server?",
-        "answer": "Ja, AliasVault is vanaf de grond opgebouwd om volledig zelf-gehost te worden. U kunt het eenvoudig implementeren op uw eigen server met Docker, waardoor u volledige controle heeft over uw gegevens en infrastructuur. AliasVault komt met een automatisch installatiescript dat installatie een fluitje van een cent maakt.\n\nGedetailleerde installatie-instructies zijn beschikbaar in onze <a href=\"https://docs.aliasvault.net\" target=\"_blank\" rel=\"noopener noreferrer\">documentatie</a>."
+        "answer": "Ja, AliasVault is vanaf de grond opgebouwd om volledig zelf-gehost te worden. U kunt het eenvoudig implementeren op uw eigen server met Docker, waardoor u volledige controle heeft over uw gegevens en infrastructuur. AliasVault komt met een automatisch installatiescript dat installatie een fluitje van een cent maakt.\n\nGedetailleerde installatie-instructies zijn beschikbaar in onze [docsLink]documentatie[/docsLink]."
       },
       "7": {
         "question": "Hoe werkt de e-mailalias functie?",
@@ -261,7 +261,7 @@
       },
       "9": {
         "question": "Wat is het verhaal achter AliasVault?",
-        "answer": "AliasVault begon als een zijproject begin 2024, gedreven door het geloof dat privacy een recht is, geen luxe. Het werd gecreëerd om het internet een veiligere, meer privé plek te maken — waar gebruikers de controle hebben over hun digitale identiteit.\n\nDe maker van AliasVault, Leendert de Borst, is al lang gepassioneerd over het bestrijden van spam en het toegankelijk maken van privacy. In 2013 lanceerde hij asdasd.nl, een Nederlandse tijdelijke e-mailservice die in de loop der jaren uitgroeide tot het meertalige SpamOK.com, dat duizenden gebruikers hielp om zichzelf te beschermen tegen spam en gegevensverzameling.\n\nAliasVault is de volgende stap in die reis: een zelf-hostbare, end-to-end versleutelde wachtwoord- en aliasmanager die u helpt unieke e-mailaliassen en sterke wachtwoorden te genereren voor elke service die u gebruikt. Door de persoonlijke informatie die u online deelt te minimaliseren, helpt AliasVault u veilig en anoniem te blijven.\n\nSinds de bètarelease in december 2024 heeft AliasVault stabiele tweewekelijkse updates gehad, waarbij nieuwe functies zijn geïntroduceerd zoals browserextensies, twee-factor authenticatie, mobiele apps en importondersteuning van andere wachtwoordbeheerders — allemaal ontworpen om privacy krachtiger en toegankelijker te maken.\n\nAliasVault is volledig open-source en volledig zelf-gefinancierd. Het is gebouwd om transparant, gemeenschapsgedreven en privacy-first te zijn.\n\nLeer meer over <a href=\"/mission\" rel=\"noopener noreferrer\">onze missie</a> en wat dit project drijft."
+        "answer": "AliasVault begon als een zijproject begin 2024, gedreven door het geloof dat privacy een recht is, geen luxe. Het werd gecreëerd om het internet een veiligere, meer privé plek te maken — waar gebruikers de controle hebben over hun digitale identiteit.\n\nDe maker van AliasVault, Leendert de Borst, is al lang gepassioneerd over het bestrijden van spam en het toegankelijk maken van privacy. In 2013 lanceerde hij asdasd.nl, een Nederlandse tijdelijke e-mailservice die in de loop der jaren uitgroeide tot het meertalige SpamOK.com, dat duizenden gebruikers hielp om zichzelf te beschermen tegen spam en gegevensverzameling.\n\nAliasVault is de volgende stap in die reis: een zelf-hostbare, end-to-end versleutelde wachtwoord- en aliasmanager die u helpt unieke e-mailaliassen en sterke wachtwoorden te genereren voor elke service die u gebruikt. Door de persoonlijke informatie die u online deelt te minimaliseren, helpt AliasVault u veilig en anoniem te blijven.\n\nSinds de bètarelease in december 2024 heeft AliasVault stabiele tweewekelijkse updates gehad, waarbij nieuwe functies zijn geïntroduceerd zoals browserextensies, twee-factor authenticatie, mobiele apps en importondersteuning van andere wachtwoordbeheerders — allemaal ontworpen om privacy krachtiger en toegankelijker te maken.\n\nAliasVault is volledig open-source en volledig zelf-gefinancierd. Het is gebouwd om transparant, gemeenschapsgedreven en privacy-first te zijn.\n\nLeer meer over [missionLink]onze missie[/missionLink] en wat dit project drijft."
       }
     }
   },
@@ -368,6 +368,145 @@
     "breadcrumb": {
       "titleTemplate": "Posts getagd met \"{tag}\"",
       "descriptionTemplate": "Bekijk alle blogposts en nieuws getagd met {tag}"
+    }
+  },
+  "reportAbuse": {
+    "metadata": {
+      "title": "Misbruik Melden",
+      "description": "Meld misbruik van AliasVault e-mailaliassen."
+    },
+    "title": "Misbruik Melden",
+    "description": "Als u of uw service (website, app, etc.) negatief wordt beïnvloed door een e-mailalias van AliasVault, neem dan contact met ons op. We nemen misbruikmeldingen serieus en zullen alle legitieme claims onderzoeken.",
+    "contactText": "Om misbruik te melden, neem direct contact met ons op via",
+    "emailAddress": "contact@support.aliasvault.net",
+    "responseTime": "en vermeld de e-mailadressen die onderdeel zijn van het misbruik. We reageren binnen 48 uur."
+  },
+  "featuresData": {
+    "passwordManagement": {
+      "title": "Wachtwoordbeheer",
+      "description": "Bewaar, genereer en beheer al uw wachtwoorden veilig op één plek met AliasVault's krachtige wachtwoordbeheerfuncties.",
+      "imageAlt": "AliasVault Wachtwoordbeheer",
+      "features": {
+        "passwordManager": {
+          "name": "Wachtwoordbeheerder",
+          "description": "Bewaar al uw wachtwoorden veilig op één plek, toegankelijk vanaf elk apparaat met toonaangevende end-to-end versleuteling."
+        },
+        "adjustableGenerator": {
+          "name": "Aanpasbare Generator",
+          "description": "Creëer aangepaste patronen, lengtes en tekensets voor uw wachtwoorden om ze veiliger te maken. Aanpasbaar per inloggegevens."
+        },
+        "builtIn2FA": {
+          "name": "Ingebouwde 2FA Authenticator",
+          "description": "Bewaar en genereer 2FA-secrets voor al uw accounts direct in AliasVault."
+        },
+        "passwordSharing": {
+          "name": "Wachtwoord Delen",
+          "description": "Deel veilig toegang tot opgeslagen wachtwoorden met familieleden of teamleden."
+        }
+      }
+    },
+    "emailAliases": {
+      "title": "E-mail Aliassen",
+      "description": "Creëer unieke e-mailadressen voor verschillende services om uw primaire e-mail te beschermen en spam te verminderen met AliasVault's ingebouwde e-mailserver. Geen externe afhankelijkheden.",
+      "imageAlt": "AliasVault E-mail Aliassen",
+      "features": {
+        "builtInEmailServer": {
+          "name": "Ingebouwde E-mailserver",
+          "description": "Creëer unieke e-mailadressen en ontvang e-mails direct in AliasVault zonder een externe e-mailservice nodig te hebben."
+        },
+        "aliasGenerator": {
+          "name": "Alias Generator",
+          "description": "Genereer unieke e-mailadressen met volledige aliasondersteuning inclusief voornaam, achternaam, geboortedatum en meer."
+        },
+        "customDomainsSelfHosted": {
+          "name": "Aangepaste Domeinen (zelf-gehost)",
+          "description": "Gebruik uw eigen domein voor uw e-mailaliassen in zelf-gehostte installaties."
+        },
+        "customDomainsCloudHosted": {
+          "name": "Aangepaste Domeinen (cloud-gehost)",
+          "description": "Gebruik e-mailaliassen met uw eigen domein op de officiële cloud-gehostte AliasVault server."
+        }
+      }
+    },
+    "security": {
+      "title": "Beveiligingsfuncties",
+      "description": "AliasVault gebruikt industriestandaard versleuteling en beveiligingsmaatregelen om uw gegevens te beschermen.",
+      "imageAlt": "AliasVault Beveiligingsfuncties",
+      "features": {
+        "endToEndEncryption": {
+          "name": "End-to-End Versleuteling",
+          "description": "Alle gegevens worden versleuteld op uw apparaat voordat ze online worden geback-upt. Uw hoofdwachtwoord wordt nooit naar de server verzonden."
+        },
+        "twoFactorAuthentication": {
+          "name": "Twee-Factor Authenticatie",
+          "description": "Voeg een extra beveiligingslaag toe aan uw kluis met TOTP-gebaseerde twee-factor authenticatie."
+        },
+        "biometricAuthentication": {
+          "name": "Biometrische Authenticatie",
+          "description": "Ontgrendel uw kluis met vingerafdruk of gezichtsherkenning op ondersteunde apparaten via WebAuthn."
+        },
+        "secureNotesAttachments": {
+          "name": "Veilige Notities & Bijlagen",
+          "description": "Bewaar gevoelige informatie zoals creditcardgegevens, veilige notities en andere vertrouwelijke gegevens in uw kluis."
+        }
+      }
+    },
+    "browserExtensions": {
+      "title": "Browser Extensies",
+      "description": "Krijg overal toegang tot uw kluis met AliasVault's browser extensies.",
+      "imageAlt": "AliasVault Browser Extensies",
+      "features": {
+        "availableForEveryBrowser": {
+          "name": "Beschikbaar voor elke browser",
+          "description": "De AliasVault browser extensie is officieel beschikbaar voor Chrome, Firefox, Edge, Safari. Aanvullende Chrome-gebaseerde browsers worden ook ondersteund zoals Brave, Vivaldi en Opera."
+        },
+        "autofillCredentials": {
+          "name": "Automatisch Invullen van Inloggegevens",
+          "description": "Vul naadloos (gebruikers)namen en wachtwoorden automatisch in tijdens het browsen."
+        },
+        "emailAliasGenerator": {
+          "name": "E-mail Alias Generator",
+          "description": "Genereer (e-mail) aliassen direct vanuit de browser extensie met een simpele klik."
+        }
+      }
+    },
+    "mobileApps": {
+      "title": "Mobiele Apps",
+      "description": "Krijg overal toegang tot uw kluis met AliasVault's mobiele apps.",
+      "imageAlt": "AliasVault Mobiele Apps",
+      "features": {
+        "iosApp": {
+          "name": "iOS App",
+          "description": "Krijg toegang tot uw kluis op uw iPhone of iPad met de officiële iOS app. Ondersteunt native automatisch invullen en Face ID / Touch ID authenticatie, waardoor uw gegevens veilig blijven."
+        },
+        "androidApp": {
+          "name": "Android App",
+          "description": "Krijg toegang tot uw kluis op uw Android apparaat met de officiële Android app. Ondersteunt native automatisch invullen en biometrische authenticatie, waardoor uw gegevens veilig blijven. Beschikbaar op Google Play of als handmatige APK via GitHub."
+        }
+      }
+    },
+    "selfHosting": {
+      "title": "Zelf-hosting Ondersteuning",
+      "description": "Neem volledige controle over uw gegevens door AliasVault zelf te hosten op uw eigen server of een cloudprovider van uw keuze.",
+      "imageAlt": "AliasVault Zelf-hosting",
+      "features": {
+        "cloudOrSelfHosted": {
+          "name": "Cloud of Zelf-gehost",
+          "description": "Gebruik de officiële AliasVault cloudservice voor gemak of host zelf op uw eigen server voor volledige controle over uw gegevens."
+        },
+        "freeAndOpenSource": {
+          "name": "Gratis en Open-Source",
+          "description": "Volledig gratis en open-source software, met broncode beschikbaar op GitHub."
+        },
+        "adminPanelLogs": {
+          "name": "Beheerpaneel & Logs",
+          "description": "Volg alle activiteiten op uw server met het ingebouwde beheerpaneel en auditlogs."
+        },
+        "familyTeamManagement": {
+          "name": "Familie & Team Beheer",
+          "description": "Deel kluizen met familieleden en teamleden via organisatorische functies."
+        }
+      }
     }
   },
   "alternativeBitwarden": {

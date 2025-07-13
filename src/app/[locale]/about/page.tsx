@@ -1,7 +1,7 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import Founder from "@/components/Founder";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
 import { Metadata } from "next";
 
@@ -11,8 +11,8 @@ export const metadata: Metadata = {
    // other metadata
 };
 
-const AboutPage = () => {
-  const t = useTranslations();
+const AboutPage = async () => {
+  const t = await getTranslations();
   
   return (
     <>

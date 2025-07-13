@@ -2,18 +2,14 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Providers } from "../providers";
-import { Inter } from "next/font/google";
 import "../../styles/index.css";
 import { Metadata } from "next";
-import Script from "next/script";
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { locales, defaultLocale } from '@/i18n/config';
 import { generateAlternateLanguageUrls } from '@/lib/i18n-utils';
 import { routing } from "@/i18n/routing";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export async function generateMetadata({
   params
@@ -84,21 +80,14 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html suppressHydrationWarning lang={locale}>
-      <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
-      <Script src="https://plausible.xivi.nl/js/script.js" defer data-domain="aliasvault.net" />
-      <head />
-      <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
-        <NextIntlClientProvider messages={messages}>
-          <Providers>
-            <Header />
-            {children}
-            <Footer />
-            <ScrollToTop />
-          </Providers>
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider messages={messages}>
+      <Providers>
+        <Header />
+        {children}
+        <Footer />
+        <ScrollToTop />
+      </Providers>
+    </NextIntlClientProvider>
   );
 }
 

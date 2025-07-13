@@ -5,17 +5,18 @@ import { Suspense } from 'react';
 import ScrollHandler from '@/components/ScrollHandler';
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import FeatureSection from "@/components/FeatureSection";
-import { allFeatureCategories } from "@/components/FeatureSection/featuresData";
+import { getLocalizedFeaturesData } from "@/components/FeatureSection/getLocalizedFeaturesData";
 import CallToAction from "@/components/CallToAction/CallToAction";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
 export const metadata: Metadata = {
   title: "Features | AliasVault",
   description: "Explore all the powerful features of AliasVault, the open-source end-to-end encrypted password and alias manager.",
 };
 
-export default function Features() {
-  const t = useTranslations();
+export default async function Features() {
+  const t = await getTranslations();
+  const localizedFeatureCategories = getLocalizedFeaturesData(t);
   
   return (
     <>
@@ -30,7 +31,7 @@ export default function Features() {
 
       {/* Feature Sections */}
       <div className="bg-gray-50 dark:bg-black">
-        {allFeatureCategories.map((category, index) => (
+        {localizedFeatureCategories.map((category, index) => (
           <FeatureSection
             key={index}
             title={category.title}

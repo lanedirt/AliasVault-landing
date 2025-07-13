@@ -13,7 +13,9 @@ const getFAQData = (t: (key: string) => string): FAQItem[] => [
   {
     id: 2,
     question: t('faq.items.2.question'),
-    answer: t('faq.items.2.answer'),
+    answer: t('faq.items.2.answer')
+      .replace(/\[contactLink\]/g, "<a href='/contact' rel='noopener noreferrer'>")
+      .replace(/\[\/contactLink\]/g, "</a>"),
   },
   {
     id: 3,
@@ -23,7 +25,9 @@ const getFAQData = (t: (key: string) => string): FAQItem[] => [
   {
     id: 4,
     question: t('faq.items.4.question'),
-    answer: t('faq.items.4.answer'),
+    answer: t('faq.items.4.answer')
+      .replace(/\[docsLink\]/g, "<a href='https://docs.aliasvault.net/architecture' target='_blank' rel='noopener noreferrer'>")
+      .replace(/\[\/docsLink\]/g, "</a>"),
   },
   {
     id: 5,
@@ -33,7 +37,9 @@ const getFAQData = (t: (key: string) => string): FAQItem[] => [
   {
     id: 6,
     question: t('faq.items.6.question'),
-    answer: t('faq.items.6.answer'),
+    answer: t('faq.items.6.answer')
+      .replace(/\[docsLink\]/g, "<a href='https://docs.aliasvault.net' target='_blank' rel='noopener noreferrer'>")
+      .replace(/\[\/docsLink\]/g, "</a>"),
   },
   {
     id: 7,
@@ -48,7 +54,9 @@ const getFAQData = (t: (key: string) => string): FAQItem[] => [
   {
     id: 9,
     question: t('faq.items.9.question'),
-    answer: t('faq.items.9.answer'),
+    answer: t('faq.items.9.answer')
+      .replace(/\[missionLink\]/g, "<a href='/mission' rel='noopener noreferrer'>")
+      .replace(/\[\/missionLink\]/g, "</a>"),
   },
 ];
 

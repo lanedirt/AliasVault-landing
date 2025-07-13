@@ -1,12 +1,14 @@
 import { Metadata } from "next";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import { getTranslations } from "next-intl/server";
 
 export const metadata: Metadata = {
     title: "Report Abuse",
     description: "Report abuse of AliasVault email aliases.",
   };
 
-const ReportAbusePage = () => {
+const ReportAbusePage = async () => {
+  const t = await getTranslations();
   return (
     <>
       <section className="pt-[150px] pb-[120px]">
@@ -15,23 +17,21 @@ const ReportAbusePage = () => {
             <div className="w-full px-4 lg:w-8/12">
               <div className="text-center mb-12">
                 <h1 className="mb-5 text-3xl font-bold text-dark dark:text-white sm:text-4xl">
-                  Report Abuse
+                  {t('reportAbuse.title')}
                 </h1>
               </div>
 
               <div className="prose dark:prose-invert max-w-none">
                 <p>
-                  If you or your service (website, app, etc.) is negatively affected by an email alias from AliasVault,
-                  please contact us. We take abuse reports seriously and will investigate
-                  all legitimate claims.
+                  {t('reportAbuse.description')}
                 </p>
 
                 <p className="my-6">
-                  To report abuse, please contact us directly at{" "}
+                  {t('reportAbuse.contactText')}{" "}
                   <Link href="mailto:contact@support.aliasvault.net" className="text-primary">
-                    contact@support.aliasvault.net
+                    {t('reportAbuse.emailAddress')}
                   </Link>{" "}
-                  and include the email addresses that are part of the abuse. We will respond within 48 hours.
+                  {t('reportAbuse.responseTime')}
                 </p>
               </div>
             </div>
