@@ -26,7 +26,11 @@ const AboutSectionOne = () => {
           <div className="w-full px-4 lg:w-1/2">
             <SectionTitle
               title={t('about.sectionOne.title')}
-              paragraph={t('about.sectionOne.paragraph')}
+              paragraph={t('about.sectionOne.paragraph')
+                .replace(/\[shadowProfileLink\]/g, "<a href='https://en.wikipedia.org/wiki/Shadow_profile' target='_blank'>")
+                .replace(/\[\/shadowProfileLink\]/g, "</a>")
+                .replace(/\[dataBreachLink\]/g, "<a href='https://en.wikipedia.org/wiki/Data_breach' target='_blank'>")
+                .replace(/\[\/dataBreachLink\]/g, "</a>")}
               mb="44px"
             />
 
