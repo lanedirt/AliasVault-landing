@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 interface RssIconProps {
   className?: string;
@@ -7,9 +7,10 @@ interface RssIconProps {
 
 const RssIcon = ({ className = '' }: RssIconProps) => {
   const t = useTranslations();
+  const locale = useLocale();
   return (
     <Link
-      href="/rss.xml"
+      href={`${locale === 'en' ? '' : '/' + locale}/rss.xml`}
       className={`inline-flex items-center justify-center rounded-full bg-primary p-2 text-white hover:bg-opacity-90 ${className}`}
       title={t('common.rssFeed')}
       target="_blank"
