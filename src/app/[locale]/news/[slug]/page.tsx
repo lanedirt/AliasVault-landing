@@ -29,7 +29,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: NewsArticlePageProps): Promise<Metadata> {
   const { slug, locale } = await params
-  const post = getNewsBySlug(slug)
+  const post = getNewsBySlug(slug, locale)
 
   if (!post) {
     return {
@@ -55,8 +55,8 @@ export async function generateMetadata({ params }: NewsArticlePageProps): Promis
 }
 
 export default async function NewsArticlePage({ params }: NewsArticlePageProps) {
-  const { slug } = await params
-  const post = getNewsBySlug(slug)
+  const { slug, locale } = await params
+  const post = getNewsBySlug(slug, locale)
 
   if (!post) {
     notFound()
