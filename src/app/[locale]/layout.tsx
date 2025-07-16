@@ -5,59 +5,35 @@ import { Providers } from "../providers";
 import "../../styles/index.css";
 import { Metadata } from "next";
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { locales, defaultLocale } from '@/i18n/config';
-import { generateAlternateLanguageUrls } from '@/lib/i18n-utils';
 import { routing } from "@/i18n/routing";
+import { generateSEOMetadata } from '@/components/SEO/SEOMetadata';
 
 export async function generateMetadata({
   params
 }: {
-  params: Promise<{ lang: string }>;
+  params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
-  const { lang: locale } = await params;
-  const messages = await getMessages();
-  const title = (messages as Record<string, Record<string, string>>).metadata?.title || 'AliasVault';
-  const description = (messages as Record<string, Record<string, string>>).metadata?.description || 'AliasVault is an open-source end-to-end encrypted password and alias manager.';
+  const { locale } = await params;
+  const t = await getTranslations();
+  
+  const title = t('metadata.title');
+  const description = t('metadata.description');
 
-  const alternateUrls = generateAlternateLanguageUrls('/');
-
-  // Use locale in the metadata
-  const siteUrl = locale === defaultLocale ? 'https://aliasvault.net' : `https://aliasvault.net/${locale}`;
+  const metadata = generateSEOMetadata({
+    title,
+    description,
+    path: '/',
+    locale,
+    type: 'website'
+  });
 
   return {
-    metadataBase: new URL('https://aliasvault.net'),
+    ...metadata,
     title: {
       default: title,
       template: `%s | ${title}`
-    },
-    description,
-    openGraph: {
-      type: 'website',
-      url: siteUrl,
-      siteName: 'AliasVault',
-      title,
-      description,
-      images: [
-        {
-          url: 'images/og/og-header.jpg',
-          width: 1200,
-          height: 630,
-          alt: 'AliasVault'
-        }
-      ]
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title,
-      description,
-      site: 'aliasvault.net',
-      creator: '@AliasVault',
-      images: ['images/og/og-header.jpg']
-    },
-    alternates: {
-      languages: alternateUrls
     }
   };
 }
@@ -92,5 +68,5 @@ export default async function RootLayout({
 }
 
 export function generateStaticParams() {
-  return locales.map((locale) => ({ lang: locale }));
+  return routing.locales.map((locale) => ({ locale }));
 }

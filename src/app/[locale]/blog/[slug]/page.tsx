@@ -8,17 +8,32 @@ import MDXContent from '@/components/MDX/MDXContent'
 import RelatedPost from '@/components/Blog/RelatedPost'
 import TagButton from '@/components/Blog/TagButton'
 import { getTranslations } from 'next-intl/server'
+import { generatePageSEOMetadata } from '@/lib/seo-utils'
+import { routing } from '@/i18n/routing'
 
 interface BlogPostPageProps {
   params: Promise<{
     slug: string
+    locale: string
   }>
 }
 
+export async function generateStaticParams() {
+  const posts = getAllBlogPosts()
+  const locales = routing.locales
+
+  return posts.flatMap((post) =>
+    locales.map((locale) => ({
+      slug: post.slug,
+      locale,
+    }))
+  )
+}
+
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
-  const { slug } = await params
+  const { slug, locale } = await params
   const post = getBlogPostBySlug(slug)
-  
+
   if (!post) {
     return {
       title: 'Post Not Found',
@@ -26,42 +41,20 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     }
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://aliasvault.net'
-  const imageUrl = post.image ? `${baseUrl}${post.image}` : `${baseUrl}/images/blog/post-01.jpg`
+  const imageUrl = post.image ? post.image : '/images/blog/post-01.jpg'
 
-  return {
+  return generatePageSEOMetadata({
     title: post.title,
     description: post.description,
-    openGraph: {
-      title: post.title,
-      description: post.description,
-      url: `${baseUrl}/blog/${slug}`,
-      siteName: 'AliasVault',
-      images: [
-        {
-          url: imageUrl,
-          width: 1200,
-          height: 630,
-          alt: post.title,
-        },
-      ],
-      locale: 'en_US',
-      type: 'article',
-      authors: [post.author.name],
-      publishedTime: post.date,
-      tags: post.tags,
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: post.title,
-      description: post.description,
-      images: [imageUrl],
-      creator: '@aliasvault',
-    },
-    alternates: {
-      canonical: `${baseUrl}/blog/${slug}`,
-    },
-  }
+    path: `/blog/${slug}`,
+    locale,
+    image: imageUrl,
+    type: 'article',
+    publishedTime: post.date,
+    authors: [post.author.name],
+    tags: post.tags,
+    contentLanguage: 'en'
+  })
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
@@ -204,4 +197,4 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       </div>
     </section>
   )
-} 
+}

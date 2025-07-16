@@ -10,13 +10,25 @@ import ScrollHandler from '@/components/ScrollHandler'
 import { Suspense } from 'react';
 import Video from "@/components/Video";
 import RecentBlogAndNews from "@/components/Blog/RecentBlogs";
+import { getTranslations } from 'next-intl/server';
+import { generatePageSEOMetadata } from '@/lib/seo-utils';
 
-
-export const metadata: Metadata = {
-  title: "AliasVault",
-  description: "AliasVault is an open-source end-to-end encrypted password and alias manager.",
-  // other metadata
-};
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations();
+  
+  return generatePageSEOMetadata({
+    title: t('metadata.title'),
+    description: t('metadata.description'),
+    path: '/',
+    locale,
+    type: 'website'
+  });
+}
 
 export default function Home() {
 
