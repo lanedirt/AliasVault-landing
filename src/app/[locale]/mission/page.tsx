@@ -4,14 +4,18 @@ import MissionSection from "@/components/Mission/MissionSection";
 import Roadmap from "@/components/Mission/Roadmap";
 import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
+import { generatePageSEOMetadata } from "@/lib/seo-utils";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations();
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale });
 
-  return {
+  return generatePageSEOMetadata({
     title: t('mission.metadata.title'),
     description: t('mission.metadata.description'),
-  };
+    path: '/mission',
+    locale,
+  });
 }
 
 export default async function MissionPage() {

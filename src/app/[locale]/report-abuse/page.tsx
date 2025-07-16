@@ -1,11 +1,19 @@
 import { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
+import { generatePageSEOMetadata } from "@/lib/seo-utils";
 
-export const metadata: Metadata = {
-    title: "Report Abuse",
-    description: "Report abuse of AliasVault email aliases.",
-  };
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale });
+  
+  return generatePageSEOMetadata({
+    title: t('reportAbuse.title'),
+    description: t('reportAbuse.description'),
+    path: '/report-abuse',
+    locale,
+  });
+}
 
 const ReportAbusePage = async () => {
   const t = await getTranslations();

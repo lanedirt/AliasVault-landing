@@ -2,11 +2,20 @@ import { Metadata } from "next";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import Platforms from "@/components/Platforms/Platforms";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { generatePageSEOMetadata } from "@/lib/seo-utils";
 
-export const metadata: Metadata = {
-  title: "Platforms",
-  description: "AliasVault browser extensions and mobile apps for password and alias management.",
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale });
+  
+  return generatePageSEOMetadata({
+    title: t('platforms.title'),
+    description: t('platforms.pageDescription'),
+    path: '/platforms',
+    locale,
+  });
+}
 
 const PluginsPage = () => {
   const t = useTranslations();
