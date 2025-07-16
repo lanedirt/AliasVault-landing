@@ -108,6 +108,10 @@
     }
   },
   "about": {
+    "metadata": {
+      "title": "Over AliasVault",
+      "description": "Leer meer over onze missie om veilig, privé wachtwoord- en aliasbeheer te bieden."
+    },
     "title": "Over AliasVault",
     "subtitle": "Privacy-first wachtwoordbeheer",
     "description": "Leer meer over onze missie om veilig, privé wachtwoord- en aliasbeheer te bieden.",
@@ -811,5 +815,13 @@
         }
       }
     }
+  },
+  "privacyPolicy": {
+    "title": "Privacybeleid",
+    "description": "AliasVault is een open-source end-to-end versleutelde wachtwoord- en aliasmanager."
+  },
+  "docs": {
+    "title": "Documentatie",
+    "description": "AliasVault is een open-source end-to-end versleutelde wachtwoord- en aliasmanager."
   }
 }
