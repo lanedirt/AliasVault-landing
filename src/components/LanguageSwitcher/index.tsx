@@ -2,7 +2,7 @@
 
 import { locales, localeLabels, localeFlags } from '@/i18n/config';
 import { useLocale, useTranslations } from 'next-intl';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname, useRouter } from '@/i18n/navigation';
 import { useState } from 'react';
 
 export default function LanguageSwitcher() {
@@ -13,9 +13,14 @@ export default function LanguageSwitcher() {
   const t = useTranslations();
 
   const handleLanguageChange = (newLocale: string) => {
-    const currentPath = pathname.replace(`/${locale}`, '') || '/';
-    const newPath = `/${newLocale}${currentPath}`;
-    router.push(newPath);
+    if (newLocale === locale) {
+      setIsOpen(false);
+      return; // No need to switch if already on the target locale
+    }
+
+    // Use next-intl's router which handles locale switching properly
+    // The pathname from usePathname() is already locale-neutral
+    router.push(pathname, { locale: newLocale });
     setIsOpen(false);
   };
 

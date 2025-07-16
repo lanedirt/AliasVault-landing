@@ -30,7 +30,12 @@ export async function generateMetadata({
   });
 }
 
-export default function Home() {
+interface HomeProps {
+  params: Promise<{ locale: string }>;
+}
+
+export default async function Home({ params }: HomeProps) {
+  const { locale } = await params;
 
   return (
     <>
@@ -48,7 +53,7 @@ export default function Home() {
       <SectionSpacing withBorder className="pt-16 md:pt-20" />
       <FAQ />
       <SectionSpacing className="pt-16" />
-      <RecentBlogAndNews />
+      <RecentBlogAndNews locale={locale} />
     </>
   );
 }

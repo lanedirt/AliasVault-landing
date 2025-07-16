@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { Link } from "@/i18n/navigation";
+import { usePathname } from "@/i18n/navigation";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import getMenuData from "./menuData";
@@ -32,7 +32,7 @@ const Header = () => {
   const menuData = getMenuData(t);
   const localizedMenuData = menuData.map(item => ({
     ...item,
-    path: `/${locale}${item.path}`
+    path: item.path
   }));
 
   return (
@@ -47,7 +47,7 @@ const Header = () => {
         <div className="relative -mx-4 flex items-center justify-between">
           {/* Logo */}
           <div className="w-60 max-w-full px-4">
-            <Link href={`/${locale}`} className={`flex items-center ${sticky ? "py-5" : "py-8"}`}>
+            <Link href="/" className={`flex items-center ${sticky ? "py-5" : "py-8"}`}>
               <Image
                 src="/images/logo/icon-trimmed.png"
                 alt={t('footer.alt.logo')}

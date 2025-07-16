@@ -1,12 +1,13 @@
 import { getNewsBySlug, getAllNewsPosts } from '@/lib/blog'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { Metadata } from 'next'
 import { serialize } from 'next-mdx-remote/serialize'
 import MDXContent from '@/components/MDX/MDXContent'
 import { generatePageSEOMetadata } from '@/lib/seo-utils'
 import { routing } from '@/i18n/routing'
+import { getTranslations } from 'next-intl/server'
 
 interface NewsArticlePageProps {
   params: Promise<{
@@ -30,6 +31,8 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: NewsArticlePageProps): Promise<Metadata> {
   const { slug, locale } = await params
   const post = getNewsBySlug(slug, locale)
+
+  console.log('Locale', locale)
 
   if (!post) {
     return {
@@ -57,6 +60,7 @@ export async function generateMetadata({ params }: NewsArticlePageProps): Promis
 export default async function NewsArticlePage({ params }: NewsArticlePageProps) {
   const { slug, locale } = await params
   const post = getNewsBySlug(slug, locale)
+  const t = await getTranslations()
 
   if (!post) {
     notFound()
@@ -71,7 +75,6 @@ export default async function NewsArticlePage({ params }: NewsArticlePageProps) 
     },
   })
 
-  console.log(mdxSource);
 
   return (
     <section className="pb-[120px] pt-[150px]">
@@ -96,7 +99,7 @@ export default async function NewsArticlePage({ params }: NewsArticlePageProps) 
                     </div>
                     <div className="w-full">
                       <span className="mb-1 text-base font-medium text-body-color">
-                        By <span>{post.author.name}</span>
+                        {t('blogPost.by')} <span>{post.author.name}</span>
                       </span>
                     </div>
                   </div>
