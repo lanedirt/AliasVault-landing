@@ -9,6 +9,8 @@ export const config = {
   // - … the ones containing a dot (e.g. `favicon.ico`)
   matcher: [
     '/((?!api|trpc|_next|_vercel|.*\\..*).*)',
+
+    '/:locale([a-z]{2})?/rss.xml',
     '/:locale([a-z]{2})?/news/:path*',
     '/:locale([a-z]{2})?/blog/:path*',
   ]
