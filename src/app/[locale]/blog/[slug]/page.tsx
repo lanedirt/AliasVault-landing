@@ -32,7 +32,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
   const { slug, locale } = await params
-  const post = getBlogPostBySlug(slug)
+  const post = getBlogPostBySlug(slug, locale)
 
   if (!post) {
     return {
@@ -58,9 +58,9 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
-  const { slug } = await params
-  const post = getBlogPostBySlug(slug)
-  const allPosts = getAllBlogPosts()
+  const { slug, locale } = await params
+  const post = getBlogPostBySlug(slug, locale)
+  const allPosts = getAllBlogPosts(locale)
   const t = await getTranslations()
 
   if (!post) {

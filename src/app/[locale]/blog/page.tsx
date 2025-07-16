@@ -28,13 +28,15 @@ export async function generateMetadata({
 const ITEMS_PER_PAGE = 12;
 
 interface BlogPageProps {
+  params: Promise<{ locale: string }>
   searchParams: Promise<{ page?: string }>
 }
 
-export default async function Blog({ searchParams }: BlogPageProps) {
+export default async function Blog({ params, searchParams }: BlogPageProps) {
+  const { locale } = await params;
   const { page } = await searchParams;
   const currentPage = Number(page) || 1;
-  const allPosts = getAllBlogAndNewsPosts();
+  const allPosts = getAllBlogAndNewsPosts(locale);
   const totalPages = Math.ceil(allPosts.length / ITEMS_PER_PAGE);
   const t = await getTranslations();
 
