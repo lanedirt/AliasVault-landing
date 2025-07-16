@@ -2,14 +2,25 @@ import AboutSectionOne from "@/components/About/AboutSectionOne";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import Founder from "@/components/Founder";
 import { getTranslations } from "next-intl/server";
-
 import { Metadata } from "next";
+import { generatePageSEOMetadata } from '@/lib/seo-utils';
 
-export const metadata: Metadata = {
-  title: "About",
-  description: "AliasVault is an open-source end-to-end encrypted password and alias manager.",
-   // other metadata
-};
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations();
+  
+  return generatePageSEOMetadata({
+    title: t('about.metadata.title'),
+    description: t('about.metadata.description'),
+    path: '/about',
+    locale,
+    type: 'website'
+  });
+}
 
 const AboutPage = async () => {
   const t = await getTranslations();

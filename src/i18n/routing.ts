@@ -5,5 +5,9 @@ export const routing = defineRouting({
   locales: ['en', 'nl'],
 
   // Used when no locale matches
-  defaultLocale: 'en'
+  defaultLocale: 'en',
+
+  // The default locale is served at the root path without prefix
+  // This means /blog shows English content, /nl/blog shows Dutch
+  localePrefix: 'as-needed'
 });

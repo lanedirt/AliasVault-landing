@@ -1,21 +1,36 @@
-import { getNewsBySlug } from '@/lib/blog'
+import { getNewsBySlug, getAllNewsPosts } from '@/lib/blog'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Metadata } from 'next'
 import { serialize } from 'next-mdx-remote/serialize'
 import MDXContent from '@/components/MDX/MDXContent'
+import { generatePageSEOMetadata } from '@/lib/seo-utils'
+import { routing } from '@/i18n/routing'
 
 interface NewsArticlePageProps {
   params: Promise<{
     slug: string
+    locale: string
   }>
 }
 
+export async function generateStaticParams() {
+  const posts = getAllNewsPosts()
+  const locales = routing.locales
+
+  return posts.flatMap((post) =>
+    locales.map((locale) => ({
+      slug: post.slug,
+      locale,
+    }))
+  )
+}
+
 export async function generateMetadata({ params }: NewsArticlePageProps): Promise<Metadata> {
-  const { slug } = await params
+  const { slug, locale } = await params
   const post = getNewsBySlug(slug)
-  
+
   if (!post) {
     return {
       title: 'News Article Not Found',
@@ -23,42 +38,20 @@ export async function generateMetadata({ params }: NewsArticlePageProps): Promis
     }
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://aliasvault.net'
-  const imageUrl = post.image ? `${baseUrl}${post.image}` : `${baseUrl}/images/blog/post-01.jpg`
+  const imageUrl = post.image ? post.image : '/images/blog/post-01.jpg'
 
-  return {
+  return generatePageSEOMetadata({
     title: post.title,
     description: post.description,
-    openGraph: {
-      title: post.title,
-      description: post.description,
-      url: `${baseUrl}/news/${slug}`,
-      siteName: 'AliasVault',
-      images: [
-        {
-          url: imageUrl,
-          width: 1200,
-          height: 630,
-          alt: post.title,
-        },
-      ],
-      locale: 'en_US',
-      type: 'article',
-      authors: [post.author.name],
-      publishedTime: post.date,
-      tags: post.tags,
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: post.title,
-      description: post.description,
-      images: [imageUrl],
-      creator: '@aliasvault',
-    },
-    alternates: {
-      canonical: `${baseUrl}/news/${slug}`,
-    },
-  }
+    path: `/news/${slug}`,
+    locale,
+    image: imageUrl,
+    type: 'article',
+    publishedTime: post.date,
+    authors: [post.author.name],
+    tags: post.tags,
+    contentLanguage: 'en'
+  })
 }
 
 export default async function NewsArticlePage({ params }: NewsArticlePageProps) {
@@ -152,4 +145,4 @@ export default async function NewsArticlePage({ params }: NewsArticlePageProps) 
       </div>
     </section>
   )
-} 
+}

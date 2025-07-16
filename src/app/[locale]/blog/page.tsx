@@ -6,12 +6,24 @@ import SingleNews from '@/components/Blog/SingleNews';
 import { Link } from '@/i18n/navigation';
 import { getTranslations } from 'next-intl/server';
 import RssIcon from '@/components/Common/RssIcon';
+import { generatePageSEOMetadata } from '@/lib/seo-utils';
 
-export const metadata: Metadata = {
-  title: "Blog & Recent News | AliasVault",
-  description: "Here you can find the latest blog posts and news published by AliasVault.",
-  // other metadata
-};
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations();
+  
+  return generatePageSEOMetadata({
+    title: t('blogPage.metadata.title'),
+    description: t('blogPage.metadata.description'),
+    path: '/blog',
+    locale,
+    type: 'website'
+  });
+}
 
 const ITEMS_PER_PAGE = 12;
 

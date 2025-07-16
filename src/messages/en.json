@@ -65,6 +65,10 @@
     "socialAriaLabel": "social-link"
   },
   "features": {
+    "metadata": {
+      "title": "AliasVault Features - Password & Email Alias Manager",
+      "description": "Discover the powerful features that make AliasVault the ultimate solution for password and identity management."
+    },
     "title": "Features",
     "subtitle": "What makes AliasVault unique",
     "description": "AliasVault provides comprehensive privacy protection through innovative features designed to keep your digital identity secure.",

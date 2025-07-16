@@ -65,6 +65,10 @@
     "socialAriaLabel": "social-link"
   },
   "features": {
+    "metadata": {
+      "title": "AliasVault Functies - Wachtwoord & E-mail Alias Manager",
+      "description": "Ontdek de krachtige functies die AliasVault de ultieme oplossing maken voor wachtwoord- en identiteitsbeheer."
+    },
     "title": "Functies",
     "subtitle": "Wat maakt AliasVault uniek",
     "description": "AliasVault biedt uitgebreide privacybescherming door innovatieve functies die uw digitale identiteit veilig houden.",

@@ -8,11 +8,24 @@ import FeatureSection from "@/components/FeatureSection";
 import { getLocalizedFeaturesData } from "@/components/FeatureSection/getLocalizedFeaturesData";
 import CallToAction from "@/components/CallToAction/CallToAction";
 import { getTranslations } from "next-intl/server";
+import { generatePageSEOMetadata } from '@/lib/seo-utils';
 
-export const metadata: Metadata = {
-  title: "Features | AliasVault",
-  description: "Explore all the powerful features of AliasVault, the open-source end-to-end encrypted password and alias manager.",
-};
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations();
+  
+  return generatePageSEOMetadata({
+    title: t('features.metadata.title'),
+    description: t('features.metadata.description'),
+    path: '/features',
+    locale,
+    type: 'website'
+  });
+}
 
 export default async function Features() {
   const t = await getTranslations();
