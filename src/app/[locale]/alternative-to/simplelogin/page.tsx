@@ -3,11 +3,19 @@ import Link from "next/link";
 import Image from "next/image";
 import CallToAction from "@/components/CallToAction/CallToAction";
 import { getTranslations } from "next-intl/server";
+import { generatePageSEOMetadata } from "@/lib/seo-utils";
 
-export const metadata: Metadata = {
-  title: "Alternative to SimpleLogin",
-  description: "AliasVault is an open-source end-to-end encrypted password and alias manager.",
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale });
+  
+  return generatePageSEOMetadata({
+    title: t('alternativeSimpleLogin.hero.title'),
+    description: t('alternativeSimpleLogin.hero.description'),
+    path: '/alternative-to/simplelogin',
+    locale,
+  });
+}
 
 const SimpleLoginPage = async () => {
   const t = await getTranslations();

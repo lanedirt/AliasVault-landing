@@ -1,11 +1,20 @@
 import Link from "next/link";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { generatePageSEOMetadata } from "@/lib/seo-utils";
 
-export const metadata: Metadata = {
-  title: "Error Page | AliasVault",
-  description: "The page you requested could not be found.",
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale });
+  
+  return generatePageSEOMetadata({
+    title: t('error.heading'),
+    description: t('error.message'),
+    path: '/error',
+    locale,
+  });
+}
 
 const ErrorPage = () => {
   const t = useTranslations();

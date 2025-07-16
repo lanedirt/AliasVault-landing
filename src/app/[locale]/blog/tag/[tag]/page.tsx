@@ -5,28 +5,35 @@ import SingleBlog from '@/components/Blog/SingleBlog'
 import SingleNews from '@/components/Blog/SingleNews'
 import Breadcrumb from '@/components/Common/Breadcrumb'
 import { getTranslations } from 'next-intl/server'
+import { generatePageSEOMetadata } from '@/lib/seo-utils'
 
 interface TagPageProps {
   params: Promise<{
     tag: string
+    locale: string
   }>
 }
 
 export async function generateMetadata({ params }: TagPageProps): Promise<Metadata> {
-  const { tag } = await params
+  const { tag, locale } = await params
   const posts = getBlogPostsByTag(tag)
+  const t = await getTranslations({ locale })
 
   if (posts.length === 0) {
-    return {
-      title: 'Tag Not Found',
-      description: 'No posts found for this tag.',
-    }
+    return generatePageSEOMetadata({
+      title: t('tagPage.notFound.title'),
+      description: t('tagPage.notFound.description'),
+      path: `/blog/tag/${tag}`,
+      locale,
+    })
   }
 
-  return {
-    title: `Posts tagged with "${tag}" | AliasVault Blog`,
-    description: `Browse all blog posts tagged with ${tag} on AliasVault.`,
-  }
+  return generatePageSEOMetadata({
+    title: t('tagPage.metadata.titleTemplate', { tag }),
+    description: t('tagPage.metadata.descriptionTemplate', { tag }),
+    path: `/blog/tag/${tag}`,
+    locale,
+  })
 }
 
 export default async function TagPage({ params }: TagPageProps) {

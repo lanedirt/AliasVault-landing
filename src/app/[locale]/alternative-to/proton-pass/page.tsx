@@ -3,11 +3,19 @@ import Link from "next/link";
 import Image from "next/image";
 import CallToAction from "@/components/CallToAction/CallToAction";
 import { getTranslations } from "next-intl/server";
+import { generatePageSEOMetadata } from "@/lib/seo-utils";
 
-export const metadata: Metadata = {
-  title: "Alternative to Proton Pass",
-  description: "AliasVault is a fully open-source end-to-end encrypted password and alias manager that can be self-hosted.",
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale });
+  
+  return generatePageSEOMetadata({
+    title: t('alternativeProtonPass.hero.title'),
+    description: t('alternativeProtonPass.hero.description'),
+    path: '/alternative-to/proton-pass',
+    locale,
+  });
+}
 
 const ProtonPassPage = async () => {
   const t = await getTranslations();

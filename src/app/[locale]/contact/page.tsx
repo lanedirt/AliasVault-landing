@@ -2,11 +2,20 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import ContactContent from "@/components/Contact/index";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { generatePageSEOMetadata } from "@/lib/seo-utils";
 
-export const metadata: Metadata = {
-  title: "Contact",
-  description: "Get in touch with the AliasVault team for support and inquiries.",
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale });
+  
+  return generatePageSEOMetadata({
+    title: t('contact.title'),
+    description: t('contact.description'),
+    path: '/contact',
+    locale,
+  });
+}
 
 const ContactPage = () => {
   const t = useTranslations();
