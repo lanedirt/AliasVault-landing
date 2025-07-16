@@ -4,8 +4,12 @@ import SingleNews from "./SingleNews";
 import RssIcon from "@/components/Common/RssIcon";
 import { useTranslations } from "next-intl";
 
-const RecentBlogAndNews = () => {
-  const posts = getAllBlogAndNewsPosts();
+interface RecentBlogAndNewsProps {
+  locale: string;
+}
+
+const RecentBlogAndNews = ({ locale }: RecentBlogAndNewsProps) => {
+  const posts = getAllBlogAndNewsPosts(locale);
   const t = useTranslations();
 
   return (
