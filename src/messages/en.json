@@ -825,5 +825,13 @@
         }
       }
     }
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "description": "AliasVault is an open-source end-to-end encrypted password and alias manager."
+  },
+  "docs": {
+    "title": "Documentation",
+    "description": "AliasVault is an open-source end-to-end encrypted password and alias manager."
   }
 }

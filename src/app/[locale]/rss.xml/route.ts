@@ -21,9 +21,9 @@ const localeTitles = {
 
 export async function GET(
   request: Request,
-  { params }: { params: { locale: string } }
+  { params }: { params: Promise<{ locale: string }> }
 ) {
-  const locale = params.locale;
+  const { locale } = await params;
 
   // Validate locale
   if (!locales.includes(locale)) {
