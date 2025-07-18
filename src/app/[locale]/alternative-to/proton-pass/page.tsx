@@ -8,7 +8,7 @@ import { generatePageSEOMetadata } from "@/lib/seo-utils";
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale });
-  
+
   return generatePageSEOMetadata({
     title: t('alternativeProtonPass.hero.title'),
     description: t('alternativeProtonPass.hero.description'),
@@ -171,47 +171,47 @@ const ProtonPassPage = async () => {
             </thead>
             <tbody>
               <tr className="dark:text-white">
-                <td className="border border-gray-300 dark:border-gray-700 p-4">Password Management</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4">{t('alternativeProtonPass.featureComparison.features.passwordManagement')}</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
               </tr>
               <tr className="dark:text-white">
-                <td className="border border-gray-300 dark:border-gray-700 p-4">Clients Open Source</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4">{t('alternativeProtonPass.featureComparison.features.clientsOpenSource')}</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
               </tr>
               <tr className="dark:text-white">
-                <td className="border border-gray-300 dark:border-gray-700 p-4">Server/Backend Open Source</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4">{t('alternativeProtonPass.featureComparison.features.serverOpenSource')}</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">❌</td>
               </tr>
               <tr className="dark:text-white">
-                <td className="border border-gray-300 dark:border-gray-700 p-4">Self-hosting Capability</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4">{t('alternativeProtonPass.featureComparison.features.selfHostingCapability')}</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">❌</td>
               </tr>
               <tr className="dark:text-white">
-                <td className="border border-gray-300 dark:border-gray-700 p-4">Email Alias Management</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4">{t('alternativeProtonPass.featureComparison.features.emailAliasManagement')}</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">⚠️</td>
               </tr>
               <tr className="dark:text-white">
-                <td className="border border-gray-300 dark:border-gray-700 p-4">End-to-End Encryption</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4">{t('alternativeProtonPass.featureComparison.features.endToEndEncryption')}</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
               </tr>
               <tr className="dark:text-white">
-                <td className="border border-gray-300 dark:border-gray-700 p-4">Easy Installation</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4">{t('alternativeProtonPass.featureComparison.features.easyInstallation')}</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">N/A</td>
               </tr>
               <tr className="dark:text-white">
-                <td className="border border-gray-300 dark:border-gray-700 p-4">Browser Extensions</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4">{t('alternativeProtonPass.featureComparison.features.browserExtensions')}</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
               </tr>
               <tr className="dark:text-white">
-                <td className="border border-gray-300 dark:border-gray-700 p-4">Mobile Apps</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4">{t('alternativeProtonPass.featureComparison.features.mobileApps')}</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
               </tr>

@@ -8,7 +8,7 @@ import { generatePageSEOMetadata } from "@/lib/seo-utils";
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale });
-  
+
   return generatePageSEOMetadata({
     title: t('alternativeSimpleLogin.hero.title'),
     description: t('alternativeSimpleLogin.hero.description'),
@@ -261,22 +261,22 @@ const SimpleLoginPage = async () => {
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
               </tr>
               <tr className="dark:text-white">
-                <td className="border border-gray-300 dark:border-gray-700 p-4">Browser Extension</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4">{t('alternativeSimpleLogin.featureComparison.features.browserExtension')}</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
               </tr>
               <tr className="dark:text-white">
-                <td className="border border-gray-300 dark:border-gray-700 p-4">Self-host easy installer</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4">{t('alternativeSimpleLogin.featureComparison.features.selfHostInstaller')}</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
-                <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">❌</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">⚠️</td>
               </tr>
               <tr className="dark:text-white">
-                <td className="border border-gray-300 dark:border-gray-700 p-4">Browser Extensions</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4">{t('alternativeSimpleLogin.featureComparison.features.browserExtensions')}</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
               </tr>
               <tr className="dark:text-white">
-                <td className="border border-gray-300 dark:border-gray-700 p-4">Mobile Apps</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4">{t('alternativeSimpleLogin.featureComparison.features.mobileApps')}</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
               </tr>
