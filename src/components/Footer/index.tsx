@@ -269,14 +269,6 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                        href={`/${locale}/report-abuse`}
-                        className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      {t('footer.links.report_abuse')}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
                       href="https://github.com/lanedirt/AliasVault/issues"
                       target="_blank"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
@@ -286,19 +278,18 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="https://github.com/lanedirt/AliasVault/blob/main/LICENSE.md"
-                      target="_blank"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      {t('footer.links.license')}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
                       href={`/${locale}/privacy-policy`}
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       {t('footer.links.privacy')}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                        href={`/${locale}/report-abuse`}
+                        className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      {t('footer.links.report_abuse')}
                     </Link>
                   </li>
                 </ul>
@@ -311,6 +302,15 @@ const Footer = () => {
             <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
               <p className="text-base text-body-color dark:text-body-color-dark">
                 {t('footer.copyright')}
+                &nbsp;{t('footer.links.license')}:&nbsp;
+                <Link
+                    href="https://github.com/lanedirt/AliasVault/blob/main/LICENSE.md"
+                    target="_blank"
+                    className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                  >
+                     AGPL-3.0
+                  </Link>
+                  .
               </p>
               <div className="flex items-center gap-4">
                 <span className="text-sm text-body-color dark:text-body-color-dark">

@@ -178,6 +178,7 @@
       "description": "AliasVault is available as a native iOS and Android app allowing you to manage and use your credentials and aliases on the go.",
       "appStoreAlt": "Download on the App Store",
       "playStoreAlt": "Download on the Play Store",
+      "fDroidAlt": "Download on F-Droid",
       "featuresTitle": "The AliasVault mobile apps feature:",
       "features": {
         "biometric": "Biometric authentication (Face ID / Touch ID)",
@@ -233,7 +234,7 @@
     "items": {
       "1": {
         "question": "What is AliasVault and who is it for?",
-        "answer": "AliasVault is a password manager built with a strong focus on privacy, making it the ideal choice for privacy-conscious individuals.\n\nAliasVault features a built-in email server that allows you to create unique email addresses (aliases) for different services. If you care about controlling your digital identity, preventing spam, and reducing your exposure in data breaches, AliasVault helps you manage credentials and aliases securely.\n\nFully open-source and transparent. No third-party dependencies."
+        "answer": "AliasVault is a password manager built with a strong focus on privacy, making it the ideal choice for privacy-conscious individuals. All your data is safely stored inside your own personal vault and encrypted with your master password that never leaves your device. No one but you, (not even us) can see inside your vault.\n\nAliasVault also features a built-in email server that allows you to create unique email addresses (aliases) for different services. If you care about controlling your digital identity, preventing spam, and reducing your exposure in data breaches, AliasVault helps you manage credentials and aliases securely.\n\nFully open-source and transparent. No third-party dependencies."
       },
       "2": {
         "question": "How much does AliasVault cost?",

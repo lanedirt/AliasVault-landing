@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 
 const Platforms = () => {
   const t = useTranslations();
-  
+
   return (
     <section className="pt-9 pb-16 md:pb-20 lg:pb-28">
       <div className="container">
@@ -40,6 +40,20 @@ const Platforms = () => {
                 <Image
                   src="/images/app-store/download-play-store.svg"
                   alt={t('platforms.mobileApps.playStoreAlt')}
+                  width={120}
+                  height={40}
+                  className="w-[120px] h-[40px]"
+                />
+              </a>
+              <a
+                href="https://f-droid.org/packages/net.aliasvault.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
+              >
+                <Image
+                  src="/images/app-store/download-f-droid.svg"
+                  alt={t('platforms.mobileApps.fDroidAlt')}
                   width={120}
                   height={40}
                   className="w-[120px] h-[40px]"
