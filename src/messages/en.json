@@ -1,7 +1,8 @@
 {
   "metadata": {
-    "title": "AliasVault",
-    "description": "AliasVault is an open-source end-to-end encrypted password and alias manager."
+    "title": "AliasVault - Privacy-First Password & Email Alias Manager",
+    "description": "AliasVault is an open-source end-to-end encrypted password and alias manager.",
+    "seoSuffix": "AliasVault"
   },
   "navigation": {
     "features": "Features",
@@ -66,7 +67,7 @@
   },
   "features": {
     "metadata": {
-      "title": "AliasVault Features - Password & Email Alias Manager",
+      "title": "Features",
       "description": "Discover the powerful features that make AliasVault the ultimate solution for password and identity management."
     },
     "title": "Features",
@@ -108,6 +109,10 @@
     }
   },
   "about": {
+    "metadata": {
+      "title": "About",
+      "description": "Learn more about our mission to provide secure, private password and alias management."
+    },
     "title": "About AliasVault",
     "subtitle": "Privacy-first password management",
     "description": "Learn more about our mission to provide secure, private password and alias management.",
@@ -124,6 +129,10 @@
     }
   },
   "contact": {
+    "metadata": {
+      "title": "Contact Us",
+      "description": "Have questions or need support? We're here to help."
+    },
     "title": "Contact Us",
     "subtitle": "Get in touch",
     "description": "Have questions or need support? We're here to help.",
@@ -169,6 +178,10 @@
     "description": "Stay up to date with the latest AliasVault news, updates, and privacy insights."
   },
   "platforms": {
+    "metadata": {
+      "title": "Platforms",
+      "description": "AliasVault is available on all major platforms and browsers."
+    },
     "title": "Platforms",
     "subtitle": "Available everywhere",
     "description": "AliasVault is available on all major platforms and browsers.",
@@ -348,7 +361,7 @@
   },
   "blogPage": {
     "metadata": {
-      "title": "Blog & Recent News | AliasVault",
+      "title": "Blog & Recent News",
       "description": "Here you can find the latest blog posts and news published by AliasVault."
     },
     "breadcrumb": {
@@ -367,7 +380,7 @@
     "metadata": {
       "notFoundTitle": "Tag Not Found",
       "notFoundDescription": "No posts found for this tag.",
-      "titleTemplate": "Posts tagged with \"{tag}\" | AliasVault Blog",
+      "titleTemplate": "Posts tagged with \"{tag}\"",
       "descriptionTemplate": "Browse all blog posts tagged with {tag} on AliasVault."
     },
     "breadcrumb": {

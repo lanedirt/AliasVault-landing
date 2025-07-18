@@ -1,7 +1,8 @@
 {
   "metadata": {
-    "title": "AliasVault",
-    "description": "AliasVault is een open-source end-to-end versleutelde wachtwoord- en aliasmanager."
+    "title": "AliasVault - Privacy-First Wachtwoord & E-mailalias Manager",
+    "description": "AliasVault is een open-source end-to-end versleutelde wachtwoord- en aliasmanager.",
+    "seoSuffix": "AliasVault"
   },
   "navigation": {
     "features": "Functies",
@@ -66,7 +67,7 @@
   },
   "features": {
     "metadata": {
-      "title": "AliasVault functies - Wachtwoord & e-mailaliasmanager",
+      "title": "Functies",
       "description": "Ontdek de krachtige functies die AliasVault de ultieme oplossing maken voor wachtwoord- en identiteitsbeheer."
     },
     "title": "Functies",
@@ -109,7 +110,7 @@
   },
   "about": {
     "metadata": {
-      "title": "Over AliasVault",
+      "title": "Over",
       "description": "Leer meer over onze missie om veilig, privé wachtwoord- en aliasbeheer te bieden."
     },
     "title": "Over AliasVault",
@@ -128,6 +129,10 @@
     }
   },
   "contact": {
+    "metadata": {
+      "title": "Neem contact op",
+      "description": "Heb je vragen of heb je ondersteuning nodig? Zie hieronder hoe je contact kunt opnemen."
+    },
     "title": "Neem contact op",
     "subtitle": "Neem contact met ons op",
     "description": "Heb je vragen of heb je ondersteuning nodig? Zie hieronder hoe je contact kunt opnemen.",
@@ -173,6 +178,10 @@
     "description": "Blijf op de hoogte van het laatste AliasVault nieuws, updates en privacy-inzichten."
   },
   "platforms": {
+    "metadata": {
+      "title": "Platforms",
+      "description": "AliasVault is beschikbaar op alle belangrijke platforms en browsers."
+    },
     "title": "Platforms",
     "subtitle": "Overal beschikbaar",
     "description": "AliasVault is beschikbaar op alle belangrijke platforms en browsers.",
@@ -352,7 +361,7 @@
   },
   "blogPage": {
     "metadata": {
-      "title": "Blog & Recent Nieuws | AliasVault",
+      "title": "Blog & Recent Nieuws",
       "description": "Hier vind je de laatste blogposts en nieuws gepubliceerd door AliasVault."
     },
     "breadcrumb": {
@@ -371,7 +380,7 @@
     "metadata": {
       "notFoundTitle": "Tag Niet Gevonden",
       "notFoundDescription": "Geen posts gevonden voor deze tag.",
-      "titleTemplate": "Posts getagd met \"{tag}\" | AliasVault Blog",
+      "titleTemplate": "Posts getagd met \"{tag}\"",
       "descriptionTemplate": "Bekijk alle blogposts getagd met {tag} op AliasVault."
     },
     "breadcrumb": {

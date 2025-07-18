@@ -10,8 +10,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const t = await getTranslations({ locale });
   
   return generatePageSEOMetadata({
-    title: t('platforms.title'),
-    description: t('platforms.pageDescription'),
+    title: t('platforms.metadata.title'),
+    description: t('platforms.metadata.description'),
     path: '/platforms',
     locale,
   });
