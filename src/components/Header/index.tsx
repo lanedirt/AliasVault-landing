@@ -5,13 +5,12 @@ import { usePathname } from "@/i18n/navigation";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import getMenuData from "./menuData";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 
 const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const navbarToggleHandler = () => setNavbarOpen(!navbarOpen);
   const t = useTranslations();
-  const locale = useLocale();
 
   const [sticky, setSticky] = useState(false);
   useEffect(() => {
@@ -27,7 +26,7 @@ const Header = () => {
     setOpenIndex(openIndex === index ? -1 : index);
 
   const pathname = usePathname();
-  
+
   // Create localized menu data
   const menuData = getMenuData(t);
   const localizedMenuData = menuData.map(item => ({

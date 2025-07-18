@@ -20,6 +20,7 @@ export async function generateMetadata({
   
   const title = t('metadata.title');
   const description = t('metadata.description');
+  const seoSuffix = t('metadata.seoSuffix');
 
   const metadata = generateSEOMetadata({
     title,
@@ -33,7 +34,7 @@ export async function generateMetadata({
     ...metadata,
     title: {
       default: title,
-      template: `%s | ${title}`
+      template: `%s | ${seoSuffix}`
     }
   };
 }

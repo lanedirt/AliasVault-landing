@@ -52,7 +52,7 @@ const nextConfig = {
               "form-action 'self'",
               "frame-ancestors 'self'",
               "block-all-mixed-content",
-              "upgrade-insecure-requests"
+              ...(process.env.NODE_ENV === 'production' ? ["upgrade-insecure-requests"] : [])
             ].join('; ')
           },
           {
