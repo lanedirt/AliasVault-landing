@@ -286,6 +286,14 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
+                      href={`/${locale}/terms-and-conditions`}
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      {t('footer.links.terms_and_conditions')}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
                         href={`/${locale}/report-abuse`}
                         className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >

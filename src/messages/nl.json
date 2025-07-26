@@ -49,7 +49,8 @@
       "report_abuse": "Report Abuse",
       "support_ticket": "Support Ticket Openen",
       "license": "Licentie",
-      "privacy": "Privacy Policy"
+      "privacy": "Privacy Policy",
+      "terms_and_conditions": "Algemene Voorwaarden"
     },
     "social": {
       "github": "GitHub",
@@ -829,6 +830,10 @@
   "privacyPolicy": {
     "title": "Privacybeleid",
     "description": "AliasVault is een open-source end-to-end versleutelde wachtwoord- en aliasmanager."
+  },
+  "termsAndConditions": {
+    "title": "Algemene Voorwaarden",
+    "description": "Lees meer over de voorwaarden voor het gebruik van AliasVault's diensten."
   },
   "docs": {
     "title": "Documentatie",

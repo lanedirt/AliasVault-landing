@@ -49,7 +49,8 @@
       "report_abuse": "Report Abuse",
       "support_ticket": "Open Support Ticket",
       "license": "License",
-      "privacy": "Privacy Policy"
+      "privacy": "Privacy Policy",
+      "terms_and_conditions": "Terms and Conditions"
     },
     "social": {
       "github": "GitHub",
@@ -829,6 +830,10 @@
   "privacyPolicy": {
     "title": "Privacy Policy",
     "description": "AliasVault is an open-source end-to-end encrypted password and alias manager."
+  },
+  "termsAndConditions": {
+    "title": "Terms and Conditions",
+    "description": "Learn about the terms and conditions for using AliasVault's services."
   },
   "docs": {
     "title": "Documentation",
