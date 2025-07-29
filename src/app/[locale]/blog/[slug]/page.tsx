@@ -90,10 +90,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-8/12">
             <div>
-              <h1 className="mb-8 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight">
+              <h1 className="mb-8 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight" data-aos="fade-up" data-aos-delay="0">
                 {post.title}
               </h1>
-              <div className="mb-10 flex flex-wrap items-center justify-between border-b border-body-color border-opacity-10 pb-4 dark:border-white dark:border-opacity-10">
+              <div className="mb-10 flex flex-wrap items-center justify-between border-b border-body-color border-opacity-10 pb-4 dark:border-white dark:border-opacity-10" data-aos="fade-up" data-aos-delay="100">
                 <div className="flex flex-wrap items-center">
                   <div className="mb-5 mr-10 flex items-center">
                     <div className="mr-4">
@@ -149,7 +149,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   </div>
                 </div>
               </div>
-              <MDXContent source={mdxSource} />
+              <div data-aos="fade-up" data-aos-delay="200">
+                <MDXContent source={mdxSource} />
+              </div>
               <div className="items-center justify-between sm:flex">
                 <div className="mb-5">
                   <h4 className="mb-3 text-sm font-medium text-body-color">
@@ -165,7 +167,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             </div>
           </div>
           <div className="w-full px-4 lg:w-4/12">
-            <div className="shadow-three dark:bg-gray-dark mb-10 rounded-sm bg-white dark:shadow-none">
+            <div className="shadow-three dark:bg-gray-dark mb-10 rounded-sm bg-white dark:shadow-none" data-aos="fade-up" data-aos-delay="150">
               <h3 className="border-b border-body-color border-opacity-10 px-8 py-4 text-lg font-semibold text-black dark:border-white dark:border-opacity-10 dark:text-white">
                 {t('blogComponent.relatedPosts')}
               </h3>
@@ -182,7 +184,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 ))}
               </ul>
             </div>
-            <div className="shadow-three dark:bg-gray-dark mb-10 rounded-sm bg-white dark:shadow-none">
+            <div className="shadow-three dark:bg-gray-dark mb-10 rounded-sm bg-white dark:shadow-none" data-aos="fade-up" data-aos-delay="250">
               <h3 className="border-b border-body-color border-opacity-10 px-8 py-4 text-lg font-semibold text-black dark:border-white dark:border-opacity-10 dark:text-white">
                 {t('blogComponent.popularTags')}
               </h3>

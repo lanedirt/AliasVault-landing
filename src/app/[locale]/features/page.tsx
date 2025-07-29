@@ -58,7 +58,7 @@ export default async function Features() {
       </div>
 
       {/* Legend Section */}
-      <section className="py-10 md:py-16">
+      <section className="py-10 md:py-16" data-aos="fade-up" data-aos-delay="0">
         <div className="container">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
             <div className="flex items-center">

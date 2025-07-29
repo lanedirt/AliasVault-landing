@@ -327,12 +327,12 @@
     "error": "Fout",
     "latestRelease": "Laatste Release",
     "release": "Release",
-    "viewReleaseNotes": "Bekijk Volledige Release Notes op GitHub",
-    "installationInstructions": "Voor zelf-hosting installatie instructies, zie de",
-    "installationGuide": "AliasVault Installatie Gids",
+    "viewReleaseNotes": "Bekijk volledige release notes op GitHub",
+    "installationInstructions": "Voor self-hosting installatie instructies, bekijk de",
+    "installationGuide": "installatiehandleiding",
     "downloads": "Downloads",
-    "showDownloads": "Toon Downloads",
-    "hideDownloads": "Verberg Downloads"
+    "showDownloads": "Toon downloads",
+    "hideDownloads": "Verberg downloads"
   },
   "featureSection": {
     "comingSoon": "Binnenkort"

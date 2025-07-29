@@ -27,7 +27,7 @@ const FeatureSection = ({
 }: FeatureSectionProps) => {
   const t = useTranslations();
   return (
-    <section className="py-16 md:py-20">
+    <section className="py-16 md:py-20" data-aos="fade-up" data-aos-delay="0">
       <div className="container">
         <div className="flex flex-wrap items-center">
           {/* Image Column */}
@@ -36,7 +36,7 @@ const FeatureSection = ({
               reversed ? "lg:order-2" : ""
             }`}
           >
-            <div className="relative mx-auto mb-12 max-w-[500px] text-center lg:m-0 lg:text-left">
+            <div className="relative mx-auto mb-12 max-w-[500px] text-center lg:m-0 lg:text-left" data-aos="fade-up" data-aos-delay="150">
               <Image
                 src={imageSrc}
                 alt={imageAlt}
@@ -84,7 +84,7 @@ const FeatureSection = ({
               reversed ? "lg:order-1" : ""
             }`}
           >
-            <div className="max-w-[570px]">
+            <div className="max-w-[570px]" data-aos="fade-up" data-aos-delay="0">
               <SectionTitle
                 title={title}
                 paragraph={description}
@@ -114,7 +114,7 @@ const FeatureSection = ({
                       <h3 className="mb-2 text-xl font-bold text-black dark:text-white">
                         {feature.name}
                         {feature.status === 'upcoming' && (
-                          <a 
+                          <a
                             href="https://github.com/lanedirt/AliasVault/issues/731"
                             target="_blank"
                             rel="noopener noreferrer"

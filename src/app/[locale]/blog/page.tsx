@@ -15,7 +15,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations();
-  
+
   return generatePageSEOMetadata({
     title: t('blogPage.metadata.title'),
     description: t('blogPage.metadata.description'),
@@ -52,13 +52,13 @@ export default async function Blog({ params, searchParams }: BlogPageProps) {
         description={t('blogPage.breadcrumb.description')}
       />
 
-      <section className="pb-[120px] pt-[120px]">
+      <section className="pb-[120px] pt-[120px]" data-aos="fade-down" data-aos-delay="0">
         <div className="container">
-          <div className="mb-8 flex items-center justify-between">
+          <div className="mb-8 flex items-center justify-between" data-aos="fade-down" data-aos-delay="0">
             <h2 className="text-2xl font-bold text-black dark:text-white">{t('blogComponent.latestPosts')}</h2>
             <RssIcon />
           </div>
-          <div className="-mx-4 flex flex-wrap">
+          <div className="-mx-4 flex flex-wrap" data-aos="fade-down" data-aos-delay="150">
             {currentPosts.map((post) => (
               <div
                 key={post.slug}
@@ -74,7 +74,7 @@ export default async function Blog({ params, searchParams }: BlogPageProps) {
           </div>
 
           {totalPages > 1 && (
-            <div className="-mx-4 flex flex-wrap" data-wow-delay=".15s">
+            <div className="-mx-4 flex flex-wrap">
               <div className="w-full px-4">
                 <ul className="flex items-center justify-center pt-8">
                   <li className="mx-1">

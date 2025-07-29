@@ -82,10 +82,10 @@ export default async function NewsArticlePage({ params }: NewsArticlePageProps) 
         <div className="-mx-4 flex flex-wrap justify-center">
           <div className="w-full px-4 lg:w-8/12">
             <div>
-              <h1 className="mb-8 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight">
+              <h1 className="mb-8 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight" data-aos="fade-up" data-aos-delay="0">
                 {post.title}
               </h1>
-              <div className="mb-10 flex flex-wrap items-center justify-between border-b border-body-color border-opacity-10 pb-4 dark:border-white dark:border-opacity-10">
+              <div className="mb-10 flex flex-wrap items-center justify-between border-b border-body-color border-opacity-10 pb-4 dark:border-white dark:border-opacity-10" data-aos="fade-up" data-aos-delay="100">
                 <div className="flex flex-wrap items-center">
                   <div className="mb-5 mr-10 flex items-center">
                     <div className="mr-4">
@@ -141,7 +141,9 @@ export default async function NewsArticlePage({ params }: NewsArticlePageProps) 
                   </div>
                 </div>
               </div>
-              <MDXContent source={mdxSource} />
+              <div data-aos="fade-up" data-aos-delay="200">
+                <MDXContent source={mdxSource} />
+              </div>
             </div>
           </div>
         </div>
