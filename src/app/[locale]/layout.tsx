@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
+import AOSInit from "@/components/AOS/AOSInit";
 import { Providers } from "../providers";
 import "../../styles/index.css";
 import { Metadata } from "next";
@@ -59,6 +60,7 @@ export default async function RootLayout({
   return (
     <NextIntlClientProvider messages={messages}>
       <Providers>
+        <AOSInit />
         <Header />
         {children}
         <Footer />

@@ -8,7 +8,7 @@ const Features = () => {
   const featuresData = getFeaturesData(t);
   return (
     <>
-      <section id="features" className="py-16 md:py-20 lg:py-28">
+      <section id="features" className="py-16 md:py-20 lg:py-28" data-aos="fade-up" data-aos-delay="0">
         <div className="container">
           <SectionTitle
             title={t('features.title')}

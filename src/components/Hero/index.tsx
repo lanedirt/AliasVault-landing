@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="container relative z-10">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
-              <div className="text-center lg:text-left">
+              <div className="text-center lg:text-left" data-aos="fade-down" data-aos-delay="0">
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
                   {t('title')}
                 </h1>
@@ -124,7 +124,7 @@ const Hero = () => {
               </div>
             </div>
             <div className="w-full px-4 lg:w-1/2">
-              <div className="mt-8 text-center lg:mt-0">
+              <div className="mt-8 text-center lg:mt-0" data-aos="fade-down" data-aos-delay="150">
                 <Image
                   src="/images/hero/hero-light.png"
                   alt={t('alt.heroImage')}

@@ -16,6 +16,7 @@ const RecentBlogAndNews = ({ locale }: RecentBlogAndNewsProps) => {
     <section
       id="blog"
       className="bg-gray-light dark:bg-bg-color-dark py-16 md:py-20 lg:py-28"
+      data-aos="fade-up" data-aos-delay="0"
     >
       <div className="container">
         <div className="flex flex-col items-center mb-8">
