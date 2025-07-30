@@ -9,9 +9,11 @@ const AOSInit = () => {
     AOS.init({
       once: true,
       disable: 'phone',
-      duration: 450,
-      easing: 'ease-out-sine',
+      duration: 300,
+      easing: 'ease-out-cubic',
       mirror: false,
+      offset: 50,
+      delay: 0,
     });
   }, []);
 

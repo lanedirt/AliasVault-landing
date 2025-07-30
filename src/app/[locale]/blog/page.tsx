@@ -52,13 +52,13 @@ export default async function Blog({ params, searchParams }: BlogPageProps) {
         description={t('blogPage.breadcrumb.description')}
       />
 
-      <section className="pb-[120px] pt-[120px]" data-aos="fade-down" data-aos-delay="0">
+      <section className="pb-[120px] pt-[120px]">
         <div className="container">
-          <div className="mb-8 flex items-center justify-between" data-aos="fade-down" data-aos-delay="0">
+          <div className="mb-8 flex items-center justify-between">
             <h2 className="text-2xl font-bold text-black dark:text-white">{t('blogComponent.latestPosts')}</h2>
             <RssIcon />
           </div>
-          <div className="-mx-4 flex flex-wrap" data-aos="fade-down" data-aos-delay="150">
+          <div className="-mx-4 flex flex-wrap">
             {currentPosts.map((post) => (
               <div
                 key={post.slug}
