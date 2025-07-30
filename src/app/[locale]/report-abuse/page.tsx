@@ -2,11 +2,12 @@ import { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
 import { generatePageSEOMetadata } from "@/lib/seo-utils";
+import Page from "@/components/Common/Page";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale });
-  
+
   return generatePageSEOMetadata({
     title: t('reportAbuse.title'),
     description: t('reportAbuse.description'),
@@ -18,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 const ReportAbusePage = async () => {
   const t = await getTranslations();
   return (
-    <>
+    <Page>
       <section className="pt-[150px] pb-[120px]">
         <div className="container">
           <div className="flex flex-wrap justify-center -mx-4">
@@ -46,7 +47,7 @@ const ReportAbusePage = async () => {
           </div>
         </div>
       </section>
-    </>
+    </Page>
   );
 };
 

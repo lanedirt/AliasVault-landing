@@ -9,6 +9,7 @@ import { getLocalizedFeaturesData } from "@/components/FeatureSection/getLocaliz
 import CallToAction from "@/components/CallToAction/CallToAction";
 import { getTranslations } from "next-intl/server";
 import { generatePageSEOMetadata } from '@/lib/seo-utils';
+import Page from "@/components/Common/Page";
 
 export async function generateMetadata({
   params
@@ -17,7 +18,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations();
-  
+
   return generatePageSEOMetadata({
     title: t('features.metadata.title'),
     description: t('features.metadata.description'),
@@ -30,9 +31,9 @@ export async function generateMetadata({
 export default async function Features() {
   const t = await getTranslations();
   const localizedFeatureCategories = getLocalizedFeaturesData(t);
-  
+
   return (
-    <>
+    <Page>
       <Breadcrumb
         pageName={t('features.title')}
         description={t('features.pageDescription')}
@@ -86,7 +87,7 @@ export default async function Features() {
               <span className="text-base text-gray-700 dark:text-gray-300">{t('features.legend.notAvailable')}</span>
             </div>
           </div>
-          
+
           <div className="text-center mt-8">
             <p className="text-base text-gray-700 dark:text-gray-300">
               {t('features.legend.roadmapText')}{" "}
@@ -107,6 +108,6 @@ export default async function Features() {
 
       <CallToAction />
 
-    </>
+    </Page>
   );
 }

@@ -4,6 +4,7 @@ import Image from "next/image";
 import CallToAction from "@/components/CallToAction/CallToAction";
 import { getTranslations } from "next-intl/server";
 import { generatePageSEOMetadata } from "@/lib/seo-utils";
+import Page from "@/components/Common/Page";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -20,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 const SimpleLoginPage = async () => {
   const t = await getTranslations();
   return (
-    <>
+    <Page>
       {/* Hero Section */}
       <section className="relative z-10 overflow-hidden bg-white pb-8 pt-[120px] dark:bg-gray-dark md:pb-[140px] md:pt-[150px] xl:pt-[180px]">
         <div className="container relative z-10">
@@ -306,7 +307,7 @@ const SimpleLoginPage = async () => {
       </div>
 
       <CallToAction />
-    </>
+    </Page>
   );
 };
 
