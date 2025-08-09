@@ -8,7 +8,7 @@ const AOSInit = () => {
   useEffect(() => {
     AOS.init({
       once: true,
-      disable: 'phone',
+      disable: false,
       duration: 300,
       easing: 'ease-out-cubic',
       mirror: false,
