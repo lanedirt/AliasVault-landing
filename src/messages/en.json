@@ -895,6 +895,7 @@
   "pressKitAbout": {
     "title": "About AliasVault",
     "description": "Information for use in (blog) articles and media coverage",
+    "perfectForTitle": "Perfect for",
     "shortVersion": {
       "title": "Short Version",
       "content": "AliasVault is a privacy-first, open-source, end-to-end encrypted password and email alias manager that puts users in control of their digital identity. Founded in 2024, it allows users to generate unique passwords and email aliases for every website, protecting personal data and preventing spam.",

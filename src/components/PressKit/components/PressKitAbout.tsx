@@ -24,7 +24,7 @@ const PressKitAbout = () => {
                 {t("shortVersion.content")}
               </p>
               <div className="text-sm text-gray-600 dark:text-gray-400">
-                <strong>Perfect for:</strong> {t("shortVersion.perfectFor")}
+                <strong>{t("perfectForTitle")}:</strong> {t("shortVersion.perfectFor")}
               </div>
             </div>
 
@@ -39,7 +39,7 @@ const PressKitAbout = () => {
                 ))}
               </div>
               <div className="mt-4 text-sm text-gray-600 dark:text-gray-400">
-                <strong>Perfect for:</strong> {t("longVersion.perfectFor")}
+                <strong>{t("perfectForTitle")}:</strong> {t("longVersion.perfectFor")}
               </div>
             </div>
           </div>

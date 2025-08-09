@@ -895,6 +895,7 @@
   "pressKitAbout": {
     "title": "Over AliasVault",
     "description": "Informatie die gebruikt kan worden in (blog) artikelen en mediaberichtgeving",
+    "perfectForTitle": "Ideaal voor",
     "shortVersion": {
       "title": "Korte versie",
       "content": "AliasVault is een privacy-first, open-source, end-to-end versleutelde wachtwoord- en e-mailaliasmanager, die gebruikers controle geeft over hun digitale identiteit en privacy. Opgericht in 2024 en volledig van Nederlandse bodem, stelt het gebruikers in staat unieke wachtwoorden en e-mailaliassen te genereren voor elke website, waarbij persoonlijke gegevens worden beschermd en spam wordt voorkomen.",
