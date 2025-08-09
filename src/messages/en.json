@@ -42,6 +42,7 @@
       "platforms": "Platforms",
       "documentation": "Documentation",
       "source": "Source code",
+      "press_kit": "Press Kit",
       "alt_simplelogin": "Alternative to SimpleLogin",
       "alt_bitwarden": "Alternative to Bitwarden",
       "alt_proton": "Alternative to Proton Pass",
@@ -109,6 +110,14 @@
       }
     }
   },
+  "pressKit": {
+    "metadata": {
+      "title": "Press Kit",
+      "description": "Download AliasVault logos, screenshots, and press materials pre-approved for media coverage."
+    },
+    "title": "Press Kit",
+    "pageDescription": "Download AliasVault logos, screenshots, and press materials pre-approved for media coverage."
+  },
   "about": {
     "metadata": {
       "title": "About",
@@ -127,6 +136,18 @@
         "privacyControl": "Only use your real identity and email address when it's absolutely necessary, keeping your private information private"
       },
       "imageAlt": "about-image"
+    },
+    "pressKit": {
+      "title": "About AliasVault - Press Kit",
+      "description": "Essential information for journalists and media professionals",
+      "shortVersion": {
+        "title": "Short Version (1-2 sentences)",
+        "content": "AliasVault is a privacy-first, open-source, end-to-end encrypted password and email alias manager that puts users in control of their digital identity. Founded in 2024, it allows users to generate unique passwords and email aliases for every website, protecting personal data and preventing spam."
+      },
+      "longVersion": {
+        "title": "Long Version (2-3 paragraphs)",
+        "content": "AliasVault is a privacy-first, open-source, end-to-end encrypted password and email alias manager. Our mission is to protect user privacy by providing secure alternatives to traditional password managers and email services. Founded in 2024, AliasVault has grown to serve thousands of users worldwide with its innovative approach to digital identity management.\n\nWhat sets AliasVault apart is its commitment to transparency and user control. As an open-source solution, anyone can inspect the code, self-host the application, or contribute to its development. The platform generates unique passwords and email aliases for every website, ensuring that if one service is compromised, the breach is isolated and doesn't affect other accounts. This approach not only enhances security but also gives users complete control over their digital footprint."
+      }
     }
   },
   "contact": {
@@ -280,7 +301,7 @@
       },
       "9": {
         "question": "What's the story behind AliasVault?",
-        "answer": "AliasVault started as a side project in early 2024, driven by the belief that privacy is a right, not a luxury. It was created to make the internet a safer, more private place — where users are in control of their digital identity.\n\nThe creator of AliasVault, Leendert de Borst, has long been passionate about fighting spam and making privacy accessible. Back in 2013, he launched asdasd.nl, a Dutch temporary email service that over the years grew into the multilingual SpamOK.com, helping thousands of users shield themselves from spam and data collection.\n\nAliasVault is the next step in that journey: a self-hostable, end-to-end encrypted password and alias manager that helps you generate unique email aliases and strong passwords for every service you use. By minimizing the personal information you share online, AliasVault helps you stay secure and anonymous.\n\nSince the beta release in December 2024, AliasVault has seen steady bi-weekly updates, introducing new features like browser extensions, two-factor authentication, mobile apps and import support from other password managers — all designed to make privacy more powerful and accessible.\n\nAliasVault is fully open-source and entirely self-funded. It's built to be transparent, community-driven, and privacy-first.\n\nLearn more about [missionLink]our mission[/missionLink] and what drives this project."
+        "answer": "AliasVault started as a side project in early 2024, driven by the belief that privacy is a right, not a luxury. It was created to make the internet a safer, more private place — where users are in control of their digital identity.\n\nThe creator of AliasVault, Leendert de Borst, has long been passionate about fighting spam and making privacy accessible. Back in 2013, he launched asdasd.nl, a Dutch temporary email service that over the years grew into the multilingual SpamOK.com, helping thousands of users shield themselves from spam and data collection.\n\nAliasVault is the next step in that journey: a self-hostable, end-to-end encrypted password and alias manager that helps you generate unique email aliases and strong passwords for every service you use. By minimizing the personal information you share online, AliasVault helps you stay secure and anonymous.\n\nSince the beta release in December 2024, AliasVault has seen steady and frequent updates, introducing new features like browser extensions, two-factor authentication, mobile apps and import support from other password managers — all designed to make privacy more powerful and accessible.\n\nAliasVault is fully open-source and entirely self-funded. It's built to be transparent, community-driven, and privacy-first.\n\nLearn more about [missionLink]our mission[/missionLink] and what drives this project."
       }
     }
   },
@@ -311,7 +332,7 @@
     "story": {
       "paragraph1": "As a software developer and architect, I've always been passionate about fighting spam and making privacy accessible. In 2013, I launched asdasd.nl, a Dutch temporary email service that grew into the multilingual SpamOK.com, helping thousands protect themselves from spam and data collection.",
       "paragraph2": "In 2024, I began building AliasVault. A self-hostable, end-to-end encrypted password and alias manager that puts users in control of their digital identity. It lets you generate unique passwords and email aliases for every site you use, keeping your personal data secure.",
-      "paragraph3": "Since the beta release in December, I've continued to work on AliasVault with bi-weekly updates. New features like browser extensions, 2FA, and imports from other password managers make AliasVault more powerful and accessible with each release.",
+      "paragraph3": "Since the beta release in December, I've continued to work on AliasVault with frequent updates. New features like browser extensions, 2FA, and imports from other password managers make AliasVault more powerful and accessible with each release.",
       "paragraph4": "AliasVault is open source and as of right now, entirely self-funded. It's built to be transparent, community-driven, and privacy-first. Optional premium cloud features will support long-term development, but anyone can self-host it or inspect the code. Read more about",
       "missionLink": "our mission",
       "paragraph4End": "to learn what drives this project."
@@ -320,6 +341,30 @@
     "founderTitle": "Founder & Creator of AliasVault",
     "alt": {
       "founderImage": "founder"
+    },
+    "pressKit": {
+      "title": "Founder Information - Press Kit",
+      "description": "Background information and quotes from Leendert de Borst, founder of AliasVault",
+      "background": {
+        "title": "Background",
+        "content": "Leendert de Borst is a software developer and architect with over a decade of experience in privacy-focused technology. In 2013, he launched asdasd.nl, a Dutch temporary email service that evolved into the multilingual SpamOK.com, helping thousands protect themselves from spam and data collection. His commitment to user privacy and open-source development led to the creation of AliasVault in 2024."
+      },
+      "quotes": {
+        "title": "Founder Quotes for Journalists",
+        "description": "Ready-to-use quotes from Leendert de Borst for your articles",
+        "quote1": {
+          "text": "If you ask me 'Why AliasVault?', the answer is simple: because every piece of feedback matters — and we're already improving the things people miss in other password managers.",
+          "context": "On the motivation behind AliasVault"
+        },
+        "quote2": {
+          "text": "Because it's open source and self-hostable, people trust us — they know we're not just another company selling convenience, but a community listening to real users.",
+          "context": "On AliasVault's open-source approach"
+        },
+        "quote3": {
+          "text": "Privacy isn't just about hiding data — it's about giving users control over their digital identity. That's why we built AliasVault to be transparent, community-driven, and privacy-first.",
+          "context": "On AliasVault's privacy philosophy"
+        }
+      }
     }
   },
   "githubRelease": {
@@ -838,5 +883,112 @@
   "docs": {
     "title": "Documentation",
     "description": "AliasVault is an open-source end-to-end encrypted password and alias manager."
+  },
+  "statistics": {
+    "title": "Statistics",
+    "description": "Key numbers that show AliasVault's growing impact on digital privacy since December 2024.",
+    "githubStars": "GitHub Stars",
+    "cloudRegistrations": "Cloud User Registrations",
+    "selfHostedDownloads": "Self-hosted Downloads",
+    "emailAliasesCreated": "Email Aliases Created"
+  },
+  "pressKitAbout": {
+    "title": "About AliasVault",
+    "description": "Information for use in (blog) articles and media coverage",
+    "shortVersion": {
+      "title": "Short Version",
+      "content": "AliasVault is a privacy-first, open-source, end-to-end encrypted password and email alias manager that puts users in control of their digital identity. Founded in 2024, it allows users to generate unique passwords and email aliases for every website, protecting personal data and preventing spam.",
+      "perfectFor": "Headlines, brief mentions, social media posts"
+    },
+    "longVersion": {
+      "title": "Long Version",
+      "content": "AliasVault is a privacy-first, open-source, end-to-end encrypted password and email alias manager. Our mission is to protect user privacy by providing secure alternatives to traditional password managers and email services. Founded in 2024, AliasVault has grown to serve thousands of users worldwide with its innovative approach to digital identity management.\n\nWhat sets AliasVault apart is its commitment to transparency and user control. As an open-source solution, anyone can inspect the code, self-host the application, or contribute to its development. The platform generates unique passwords and email aliases for every website, ensuring that if one service is compromised, the breach is isolated and doesn't affect other accounts. This approach not only enhances security but also gives users complete control over their digital footprint.",
+      "perfectFor": "Feature articles, detailed coverage, press releases"
+    }
+  },
+  "pressKitLogos": {
+    "title": "Logos & Brand Assets",
+    "description": "Download high-quality logos and brand assets for your articles and coverage",
+    "squareLogo": {
+      "title": "Square Logo",
+      "description": "App icon and square format logo"
+    },
+    "wordmarkLogos": {
+      "title": "Wordmark Logos",
+      "description": "Full wordmark versions for different backgrounds"
+    },
+    "usageGuidelines": {
+      "title": "Usage Guidelines:",
+      "items": [
+        "Use black wordmark on light backgrounds (white, light gray)",
+        "Use white wordmark on dark backgrounds (black, dark colors)",
+        "Do not alter colors, proportions, or add effects"
+      ]
+    },
+    "brandColors": {
+      "title": "Brand Colors",
+      "primary": "Primary",
+      "lightBackground": "Light background",
+      "darkBackground": "Dark background"
+    },
+    "downloads": {
+      "downloadSvg": "Download SVG",
+      "downloadPng": "Download PNG",
+      "downloadAll": "Download All Logos (.zip)",
+      "blackWordmark": "Black Wordmark",
+      "whiteWordmark": "White Wordmark"
+    }
+  },
+  "pressKitScreenshots": {
+    "title": "Screenshots",
+    "description": "High-resolution screenshots of the AliasVault interface across web, mobile, and browser extensions",
+    "webInterface": {
+      "title": "Web Interface",
+      "description": "Browser-based access to your vault"
+    },
+    "browserExtension": {
+      "title": "Browser Extension",
+      "description": "Browser extension for Chrome, Firefox, Edge and Safari with auto-fill mechanism"
+    },
+    "mobileApplication": {
+      "title": "Mobile Application",
+      "description": "iOS and Android apps with native auto-fill integration"
+    },
+    "downloadAll": "Download All Screenshots (.zip)",
+    "note1": "All visuals are available in both light and dark mode where applicable.",
+    "note2": "Screenshots show latest version as of August 2025."
+  },
+  "pressKitQuotes": {
+    "title": "Founder Quotes",
+    "description": "Ready-to-use quotes from Leendert de Borst for your articles",
+    "quotes": [
+      {
+        "text": "Our mission is simple: making the internet a safer and more private place. That means giving people tools that allow them to decide what they share and with whom.",
+        "context": "On AliasVault's mission and vision"
+      },
+      {
+        "text": "If someone followed you around in the real world, noting everything you do, we'd call it stalking. Online, that's become normal — and it shouldn't be.",
+        "context": "On the state of online privacy"
+      },
+      {
+        "text": "AliasVault helps you take back control by generating unique aliases and passwords for every service you use.",
+        "context": "On how AliasVault works"
+      },
+      {
+        "text": "I've been fighting spam and building privacy tools for over a decade. AliasVault is the privacy platform I always wished existed.",
+        "context": "On Leendert's experience and vision"
+      }
+    ]
+  },
+  "pressKitContact": {
+    "title": "Press Contact",
+    "description": "Get in touch for interviews, quotes, or additional press materials",
+    "contactInfo": {
+      "title": "Contact Information",
+      "name": "Leendert de Borst",
+      "founderTitle": "Founder of AliasVault",
+      "email": "Email:",
+      "linkedin": "LinkedIn:"
+    }
   }
 }

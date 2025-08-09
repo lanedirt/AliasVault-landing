@@ -16,6 +16,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         '/blog',
         '/contact',
         '/mission',
+        '/press-kit',
         '/report-abuse',
         '/privacy-policy',
         '/alternative-to/bitwarden',
@@ -25,13 +26,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     // Create routes for all locales
     const staticRoutes: MetadataRoute.Sitemap = []
-    
+
     routing.locales.forEach(locale => {
         staticPaths.forEach(path => {
-            const url = locale === routing.defaultLocale 
+            const url = locale === routing.defaultLocale
                 ? `${baseUrl}${path}`
                 : `${baseUrl}/${locale}${path}`
-                
+
             staticRoutes.push({
                 url,
                 lastModified: new Date(),
@@ -41,7 +42,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
                     languages: Object.fromEntries(
                         routing.locales.map(loc => [
                             loc,
-                            loc === routing.defaultLocale 
+                            loc === routing.defaultLocale
                                 ? `${baseUrl}${path}`
                                 : `${baseUrl}/${loc}${path}`
                         ])
@@ -56,13 +57,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     // Create dynamic routes for blog and news posts (all locales)
     const dynamicRoutes: MetadataRoute.Sitemap = []
-    
+
     routing.locales.forEach(locale => {
         posts.forEach(post => {
             const url = locale === routing.defaultLocale
                 ? `${baseUrl}/${post.type}/${post.slug}`
                 : `${baseUrl}/${locale}/${post.type}/${post.slug}`
-                
+
             dynamicRoutes.push({
                 url,
                 lastModified: new Date(post.date),

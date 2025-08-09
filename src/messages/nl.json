@@ -24,7 +24,7 @@
       "safari": "Safari extensie",
       "brave": "Brave extensie",
       "madeInNL": "Gemaakt in Nederland (EU)",
-      "gdpr": "GDPR-conform",
+      "gdpr": "Conform AVG",
       "heroImage": "hero-afbeelding"
     }
   },
@@ -42,6 +42,7 @@
       "platforms": "Platforms",
       "documentation": "Documentatie",
       "source": "Broncode",
+      "press_kit": "Perskit",
       "alt_simplelogin": "Alternatief voor SimpleLogin",
       "alt_bitwarden": "Alternatief voor Bitwarden",
       "alt_proton": "Alternatief voor Proton Pass",
@@ -109,6 +110,14 @@
       }
     }
   },
+  "pressKit": {
+    "metadata": {
+      "title": "Perskit",
+      "description": "Download AliasVault logo's, screenshots en persmateriaal voor mediaberichtgeving."
+    },
+    "title": "Perskit",
+    "pageDescription": "Download AliasVault logo's, screenshots en persmateriaal voor mediaberichtgeving."
+  },
   "about": {
     "metadata": {
       "title": "Over",
@@ -127,6 +136,18 @@
         "privacyControl": "Gebruik alleen je echte identiteit en e-mailadres wanneer het absoluut noodzakelijk is, houd je privé-informatie privé"
       },
       "imageAlt": "over-afbeelding"
+    },
+    "pressKit": {
+      "title": "Over AliasVault - Perskit",
+      "description": "Essentiële informatie voor journalisten en mediaprofessionals",
+      "shortVersion": {
+        "title": "Korte Versie (1-2 zinnen)",
+        "content": "AliasVault is een privacy-first, open-source, end-to-end versleutelde wachtwoord- en e-mail alias manager die gebruikers controle geeft over hun digitale identiteit. Opgericht in 2023, stelt het gebruikers in staat om unieke wachtwoorden en e-mailaliassen te genereren voor elke website, waarbij persoonlijke gegevens worden beschermd en spam wordt voorkomen."
+      },
+      "longVersion": {
+        "title": "Lange Versie (2-3 alinea's)",
+        "content": "AliasVault is een privacy-first, open-source, end-to-end versleutelde wachtwoord- en e-mail alias manager. Onze missie is om gebruikersprivacy te beschermen door veilige alternatieven te bieden voor traditionele wachtwoordmanagers en e-maildiensten. Opgericht in 2023, heeft AliasVault zich ontwikkeld tot een dienst voor duizenden gebruikers wereldwijd met zijn innovatieve aanpak van digitaal identiteitsbeheer.\n\nWat AliasVault onderscheidt is zijn toewijding aan transparantie en gebruikerscontrole. Als open-source oplossing kan iedereen de code inspecteren, de applicatie zelf hosten of bijdragen aan de ontwikkeling. Het platform genereert unieke wachtwoorden en e-mailaliassen voor elke website, waardoor als één dienst wordt gecompromitteerd, het lek geïsoleerd blijft en andere accounts niet worden beïnvloed. Deze aanpak verbetert niet alleen de veiligheid, maar geeft gebruikers ook volledige controle over hun digitale voetafdruk."
+      }
     }
   },
   "contact": {
@@ -320,6 +341,30 @@
     "founderTitle": "Oprichter & Maker van AliasVault",
     "alt": {
       "founderImage": "oprichter"
+    },
+    "pressKit": {
+      "title": "Oprichter Informatie - Perskit",
+      "description": "Achtergrondinformatie en quotes van Leendert de Borst, oprichter van AliasVault",
+      "background": {
+        "title": "Achtergrond",
+        "content": "Leendert de Borst is een software ontwikkelaar en architect met meer dan tien jaar ervaring in privacy-gerichte technologie. In 2013 lanceerde hij alsdasd.nl, een Nederlandse tijdelijke e-mailservice die evolueerde naar de meertalige SpamOK.com, wat duizenden mensen hielp zich te beschermen tegen spam en gegevensverzameling. Zijn toewijding aan gebruikersprivacy en open-source ontwikkeling leidde tot de creatie van AliasVault in 2024."
+      },
+      "quotes": {
+        "title": "Oprichter Quotes voor Journalisten",
+        "description": "Kant-en-klare quotes van Leendert de Borst voor je artikelen",
+        "quote1": {
+          "text": "Als je mij vraagt 'Waarom AliasVault?', is het antwoord simpel: omdat elk stukje feedback ertoe doet — en we verbeteren al de dingen die mensen missen in andere wachtwoordmanagers.",
+          "context": "Over de motivatie achter AliasVault"
+        },
+        "quote2": {
+          "text": "Omdat het open source en self-hostable is, vertrouwen mensen ons — ze weten dat we niet zomaar een ander bedrijf zijn dat gemak verkoopt, maar een community die luistert naar echte gebruikers.",
+          "context": "Over AliasVault's open-source aanpak"
+        },
+        "quote3": {
+          "text": "Privacy gaat niet alleen over het verbergen van gegevens — het gaat over gebruikers controle geven over hun digitale identiteit. Daarom hebben we AliasVault gebouwd om transparant, community-driven en privacy-first te zijn.",
+          "context": "Over AliasVault's privacy filosofie"
+        }
+      }
     }
   },
   "githubRelease": {
@@ -766,7 +811,7 @@
         "title": "Waarom AliasVault",
         "paragraph1": "De missie van AliasVault is eenvoudig: het internet veiliger en meer anoniem te maken, waarbij jij beslist wat je deelt en met wie.",
         "paragraph2": "Wij geloven dat privacy een recht is, geen luxe. Onze missie is om de controle terug te geven aan gebruikers, zodat zij veilig en anoniem online kunnen blijven.",
-        "paragraph3": "AliasVault is het antwoord op een web dat alles volgt: een manier om de controle over je digitale privacy terug te nemen en je online veilig te houden."
+        "paragraph3": "AliasVault is het antwoord op een web dat alles volgt: een manier om de regie terug te nemen over je digitale privacy en jezelf online te beschermen."
       },
       "internetPrivacy": {
         "title": "Het Internet & Privacy",
@@ -838,5 +883,112 @@
   "docs": {
     "title": "Documentatie",
     "description": "AliasVault is een open-source end-to-end versleutelde wachtwoord- en aliasmanager."
+  },
+  "statistics": {
+    "title": "Cijfers",
+    "description": "Belangrijke cijfers die AliasVault's groeiende impact op digitale privacy weergeven, sinds de lancering in december 2024.",
+    "githubStars": "GitHub Sterren",
+    "cloudRegistrations": "Cloud gebruikers",
+    "selfHostedDownloads": "Self-hosted downloads",
+    "emailAliasesCreated": "E-mail aliassen"
+  },
+  "pressKitAbout": {
+    "title": "Over AliasVault",
+    "description": "Informatie die gebruikt kan worden in (blog) artikelen en mediaberichtgeving",
+    "shortVersion": {
+      "title": "Korte versie",
+      "content": "AliasVault is een privacy-first, open-source, end-to-end versleutelde wachtwoord- en e-mailaliasmanager, die gebruikers controle geeft over hun digitale identiteit en privacy. Opgericht in 2024 en volledig van Nederlandse bodem, stelt het gebruikers in staat unieke wachtwoorden en e-mailaliassen te genereren voor elke website, waarbij persoonlijke gegevens worden beschermd en spam wordt voorkomen.",
+      "perfectFor": "Koppen, korte vermeldingen, sociale media berichten"
+    },
+    "longVersion": {
+      "title": "Lange versie",
+      "content": "AliasVault is een privacy-first, open-source, end-to-end versleutelde wachtwoord- en e-mailaliasmanager volledig van Nederlandse bodem. Onze missie is om gebruikersprivacy te beschermen door veilige alternatieven te bieden voor traditionele wachtwoordmanagers en e-maildiensten. Opgericht in 2024, is AliasVault inmiddels al uitgegroeid tot een platform dat duizenden gebruikers wereldwijd helpt om hun (online) privacy te beschermen.\n\nWat AliasVault onderscheidt is de focus op privacy en transparantie. Als open-source oplossing kan iedereen de code inspecteren, de applicatie zelf hosten of bijdragen aan de ontwikkeling. Het platform stelt gebruikers in staat unieke wachtwoorden en e-mailaliassen te genereren voor elke website, waardoor als één specifieke dienst slachtoffer is geworden van een datalek, de inbreuk geïsoleerd blijft en wachtwoorden en e-mailadressen van andere diensten niet worden getroffen. Deze aanpak verbetert niet alleen de beveiliging, maar geeft gebruikers ook volledige controle over hun (online) privacy.",
+      "perfectFor": "Feature artikelen, gedetailleerde berichtgeving, persberichten"
+    }
+  },
+  "pressKitLogos": {
+    "title": "Logo's & Assets",
+    "description": "Download hoogwaardige logo's en assets om te gebruiken in artikelen en mediaberichtgeving",
+    "squareLogo": {
+      "title": "Vierkant logo",
+      "description": "App-icoon en vierkant formaat logo"
+    },
+    "wordmarkLogos": {
+      "title": "Beeldmerken",
+      "description": "Volledige beeldmerk versies voor verschillende achtergronden"
+    },
+    "usageGuidelines": {
+      "title": "Gebruiksrichtlijnen:",
+      "items": [
+        "Gebruik zwarte beeldmerk op lichte achtergronden (wit, lichtgrijs)",
+        "Gebruik witte beeldmerk op donkere achtergronden (zwart, donkere kleuren)",
+        "Wijzig geen kleuren, verhoudingen en voeg geen effecten toe"
+      ]
+    },
+    "brandColors": {
+      "title": "Merkkleuren",
+      "primary": "Primair",
+      "lightBackground": "Lichte achtergrond",
+      "darkBackground": "Donkere achtergrond"
+    },
+    "downloads": {
+      "downloadSvg": "Download SVG",
+      "downloadPng": "Download PNG",
+      "downloadAll": "Download alle logo's (.zip)",
+      "blackWordmark": "Zwarte beeldmerk",
+      "whiteWordmark": "Witte beeldmerk"
+    }
+  },
+  "pressKitScreenshots": {
+    "title": "Screenshots",
+    "description": "Hoge resolutie screenshots van de AliasVault applicatie interface op web, browserextensies en mobiel",
+    "webInterface": {
+      "title": "Webapplicatie",
+      "description": "Browser-gebaseerde toegang tot je kluis"
+    },
+    "browserExtension": {
+      "title": "Browserextensie",
+      "description": "Browser extensies voor Chrome, Firefox, Edge en Safari met auto-fill mechanisme"
+    },
+    "mobileApplication": {
+      "title": "Mobiele Applicatie",
+      "description": "iOS en Android apps met native auto-fill integratie"
+    },
+    "downloadAll": "Download alle screenshots (.zip)",
+    "note1": "Alle afbeeldingen zijn beschikbaar in zowel lichte als donkere modus waar van toepassing.",
+    "note2": "Screenshots tonen de meest recente versie van augustus 2025."
+  },
+  "pressKitQuotes": {
+    "title": "Quotes",
+    "description": "Kant-en-klare quotes van Leendert de Borst welke kunnen worden gebruikt in media en blogartikelen",
+    "quotes": [
+      {
+        "text": "Onze missie is eenvoudig: het internet veiliger en meer anoniem te maken, waarbij jij beslist wat je deelt en met wie.",
+        "context": "Over AliasVault's missie en visie"
+      },
+      {
+        "text": "Als iemand je op straat zou volgen en alles zou opschrijven wat je doet, zouden we dat stalking noemen. Online is dat normaal geworden — en dat zou het niet moeten zijn.",
+        "context": "Over de staat van online privacy"
+      },
+      {
+        "text": "AliasVault helpt je de regie terug te nemen over je online privacy door unieke aliassen en wachtwoorden te genereren voor elke website die je gebruikt.",
+        "context": "Over hoe AliasVault werkt"
+      },
+      {
+        "text": "Ik ben al meer dan tien jaar actief met het maken van online oplossingen die spam tegengaan. AliasVault is het privacy-platform waarvan ik altijd heb gewild dat het bestond.",
+        "context": "Over Leendert's ervaring en visie"
+      }
+    ]
+  },
+  "pressKitContact": {
+    "title": "Contactgegevens voor de pers",
+    "description": "Wil je schrijven over AliasVault? We delen graag ons verhaal. Je kunt vrijblijvend gebruik maken van bovenstaande informatie.\nVoor interviews, quotes of aanvullend persmateriaal, neem gerust contact op:",
+    "contactInfo": {
+      "title": "Contactgegevens",
+      "name": "Leendert de Borst",
+      "founderTitle": "Founder van AliasVault",
+      "email": "E-mail:",
+      "linkedin": "LinkedIn:"
+    }
   }
 }

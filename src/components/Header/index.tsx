@@ -1,11 +1,11 @@
 "use client";
-import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { usePathname } from "@/i18n/navigation";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import getMenuData from "./menuData";
 import { useTranslations } from "next-intl";
+import Logo from "@/components/Common/Logo";
 
 const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -45,16 +45,14 @@ const Header = () => {
       <div className="container">
         <div className="relative -mx-4 flex items-center justify-between">
           {/* Logo */}
-          <div className="w-60 max-w-full px-4">
-            <Link href="/" className={`flex items-center ${sticky ? "py-5" : "py-8"}`}>
-              <Image
-                src="/images/logo/icon-trimmed.png"
-                alt={t('footer.alt.logo')}
-                width={45}
-                height={45}
+          <div className="max-w-full px-4">
+            <Link href="/" className={`flex items-center ${sticky ? "py-2" : "py-8"}`}>
+              <Logo
+                width={220}
+                height={60}
                 className="mr-3"
+                color="currentColor"
               />
-              <span className="text-2xl font-bold">AliasVault</span>
             </Link>
           </div>
 

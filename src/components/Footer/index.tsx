@@ -171,6 +171,14 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
+                      href={`/${locale}/press-kit`}
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      {t('footer.links.press_kit')}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
                       href="https://docs.aliasvault.net"
                       target="_blank"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
