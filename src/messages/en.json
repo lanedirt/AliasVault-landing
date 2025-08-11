@@ -623,7 +623,12 @@
         "endToEndEncryption": "End-to-End Encryption",
         "easySelfHosting": "Easy Self-hosting",
         "browserExtensions": "Browser Extensions",
-        "mobileApps": "Mobile Apps"
+        "mobileApps": "Mobile Apps",
+        "dataStorageLocation": "Data Storage Location"
+      },
+      "storageDetails": {
+        "aliasVault": "🇩🇪 Germany (EU, own servers)",
+        "bitwarden": "☁️ Azure Cloud (US jurisdiction)"
       }
     },
     "limitations": {

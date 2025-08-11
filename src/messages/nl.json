@@ -623,7 +623,12 @@
         "endToEndEncryption": "End-to-end versleuteling",
         "easySelfHosting": "Eenvoudige self-hosting",
         "browserExtensions": "Browserextensies",
-        "mobileApps": "Mobiele Apps"
+        "mobileApps": "Mobiele Apps",
+        "dataStorageLocation": "Gegevensopslag locatie"
+      },
+      "storageDetails": {
+        "aliasVault": "🇩🇪 Duitsland (EU, eigen servers)",
+        "bitwarden": "☁️ Azure Cloud (USA jurisdictie)"
       }
     },
     "limitations": {
