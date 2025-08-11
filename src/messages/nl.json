@@ -209,7 +209,7 @@
     "description": "AliasVault is beschikbaar op alle belangrijke platforms en browsers.",
     "pageDescription": "AliasVault is beschikbaar op alle belangrijke platforms, inclusief web, browser extensies en smartphones.",
     "mobileApps": {
-      "title": "Mobiele Apps",
+      "title": "Mobiele apps",
       "description": "AliasVault is beschikbaar als een native iOS en Android app waarmee je je inloggegevens en aliassen onderweg kunt beheren en gebruiken.",
       "appStoreAlt": "Download op de App Store",
       "playStoreAlt": "Download op de Play Store",
@@ -619,11 +619,11 @@
         "passwordManagement": "Wachtwoordmanager",
         "emailAliasManagement": "E-mailaliassen",
         "randomIdentityGeneration": "Identiteitgeneratie",
-        "openSource": "Open Source",
+        "openSource": "Open source",
         "endToEndEncryption": "End-to-end versleuteling",
         "easySelfHosting": "Eenvoudige self-hosting",
         "browserExtensions": "Browserextensies",
-        "mobileApps": "Mobiele Apps",
+        "mobileApps": "Mobiele apps",
         "dataStorageLocation": "Gegevensopslag locatie"
       },
       "storageDetails": {
@@ -685,15 +685,20 @@
         "simpleLogin": "SimpleLogin"
       },
       "features": {
-        "endToEndEncryption": "End-to-End Versleuteling",
-        "openSource": "Open Source",
-        "passwordManagerIntegration": "Wachtwoordmanager Integratie",
-        "customDomains": "Aangepaste Domeinen",
+        "endToEndEncryption": "End-to-end versleuteling",
+        "openSource": "Open source",
+        "passwordManagerIntegration": "Wachtwoordmanager integratie",
+        "customDomains": "Aangepaste domeinen",
         "customDomainsValue": "✅ (op self-hosted versie)",
         "browserExtension": "Browserextensie",
         "selfHostInstaller": "Self-host eenvoudige installatie",
         "browserExtensions": "Browserextensies",
-        "mobileApps": "Mobiele Apps"
+        "mobileApps": "Mobiele apps",
+        "dataStorageLocation": "Gegevensopslag locatie"
+      },
+      "storageDetails": {
+        "aliasVault": "🇪🇺 EU (Duitsland, eigen servers)",
+        "simpleLogin": "🇪🇺 EU (Proton en UpCloud servers)"
       }
     },
     "limitations": {
@@ -762,7 +767,12 @@
         "endToEndEncryption": "End-to-end versleuteling",
         "easyInstallation": "Eenvoudige installatie",
         "browserExtensions": "Browserextensies",
-        "mobileApps": "Mobiele Apps"
+        "mobileApps": "Mobiele apps",
+        "dataStorageLocation": "Gegevensopslag locatie"
+      },
+      "storageDetails": {
+        "aliasVault": "🇪🇺 EU (Duitsland, eigen servers)",
+        "protonPass": "🇪🇺 EU (Duitsland, Zwitserland, Noorwegen)"
       }
     },
     "transparency": {

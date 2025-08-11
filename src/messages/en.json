@@ -628,7 +628,7 @@
       },
       "storageDetails": {
         "aliasVault": "🇩🇪 Germany (EU, own servers)",
-        "bitwarden": "☁️ Azure Cloud (US jurisdiction)"
+        "bitwarden": "☁️ Azure Cloud (USA jurisdiction)"
       }
     },
     "limitations": {
@@ -693,7 +693,12 @@
         "browserExtension": "Browser Extension",
         "selfHostInstaller": "Self-host easy installer",
         "browserExtensions": "Browser Extensions",
-        "mobileApps": "Mobile Apps"
+        "mobileApps": "Mobile Apps",
+        "dataStorageLocation": "Data Storage Location"
+      },
+      "storageDetails": {
+        "aliasVault": "🇪🇺 EU (Germany, own servers)",
+        "simpleLogin": "🇪🇺 EU (Proton and UpCloud servers)"
       }
     },
     "limitations": {
@@ -762,7 +767,12 @@
         "endToEndEncryption": "End-to-End Encryption",
         "easyInstallation": "Easy Installation",
         "browserExtensions": "Browser Extensions",
-        "mobileApps": "Mobile Apps"
+        "mobileApps": "Mobile Apps",
+        "dataStorageLocation": "Data Storage Location"
+      },
+      "storageDetails": {
+        "aliasVault": "🇩🇪 EU (Germany, own servers)",
+        "protonPass": "🇪🇺 EU (Germany, Norway, Switzerland)"
       }
     },
     "transparency": {

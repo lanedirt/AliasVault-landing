@@ -281,6 +281,11 @@ const SimpleLoginPage = async () => {
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
                 <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">✅</td>
               </tr>
+              <tr className="dark:text-white">
+                <td className="border border-gray-300 dark:border-gray-700 p-4">{t('alternativeSimpleLogin.featureComparison.features.dataStorageLocation')}</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">{t('alternativeSimpleLogin.featureComparison.storageDetails.aliasVault')}</td>
+                <td className="border border-gray-300 dark:border-gray-700 p-4 text-center">{t('alternativeSimpleLogin.featureComparison.storageDetails.simpleLogin')}</td>
+              </tr>
             </tbody>
           </table>
         </div>
