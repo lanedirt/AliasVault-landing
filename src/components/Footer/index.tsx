@@ -317,7 +317,7 @@ const Footer = () => {
           <div className="border-t border-body-color/50 pt-6 dark:border-body-color/20 pb-8">
             <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
               <p className="text-base text-body-color dark:text-body-color-dark">
-                {t('footer.copyright')}
+               © 2024{new Date().getFullYear() !== 2024 ? `-${new Date().getFullYear()}` : ""} {t('footer.copyright')}
                 &nbsp;{t('footer.links.license')}:&nbsp;
                 <Link
                     href="https://github.com/lanedirt/AliasVault/blob/main/LICENSE.md"
