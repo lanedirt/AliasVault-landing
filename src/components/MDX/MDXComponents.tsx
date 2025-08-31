@@ -52,9 +52,15 @@ export const components = {
       {...props}
     />
   ),
+  ol: (props: ComponentProps<'ol'>) => (
+    <ol
+      className="list-decimal list-inside mb-6 text-body-color"
+      {...props}
+    />
+  ),
   li: (props: ComponentProps<'li'>) => (
     <li
-      className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg"
+      className="mb-2 text-base font-medium text-body-color"
       {...props}
     />
   ),
@@ -63,4 +69,4 @@ export const components = {
       <blockquote className="text-center text-base font-medium italic text-body-color" {...props} />
     </div>
   ),
-} 
+}
