@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: NewsArticlePageProps): Promis
     }
   }
 
-  const imageUrl = post.image ? post.image : '/images/blog/post-01.jpg'
+  const imageUrl = post.image ? post.image : '/images/blog/post-placeholder.jpg'
 
   return generatePageSEOMetadata({
     title: post.title,

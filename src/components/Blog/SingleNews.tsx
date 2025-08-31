@@ -19,7 +19,7 @@ const SingleNews = ({ news }: SingleNewsProps) => {
           {news.tags[0]}
         </span>
         <Image
-          src={news.image || "/images/blog/blog-01.jpg"}
+          src={news.image || "/images/blog/blog-placeholder.jpg"}
           alt={t('blogComponent.alt.image')}
           fill
           className="object-cover object-center transition group-hover:rotate-6 group-hover:scale-125"

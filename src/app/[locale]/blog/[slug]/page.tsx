@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     }
   }
 
-  const imageUrl = post.image ? post.image : '/images/blog/post-01.jpg'
+  const imageUrl = post.image ? post.image : '/images/blog/post-placeholder.jpg'
 
   return generatePageSEOMetadata({
     title: post.title,
@@ -176,7 +176,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   <li key={relatedPost.slug} className="mb-6 border-b border-body-color border-opacity-10 pb-6 dark:border-white dark:border-opacity-10">
                     <RelatedPost
                       title={relatedPost.title}
-                      image={relatedPost.image || '/images/blog/post-01.jpg'}
+                      image={relatedPost.image || '/images/blog/post-placeholder.jpg'}
                       slug={`/blog/${relatedPost.slug}`}
                       date={relatedPost.date}
                     />
