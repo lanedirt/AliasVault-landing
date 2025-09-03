@@ -43,7 +43,7 @@ export default async function Roadmap() {
         {t('mission.roadmap.title')}
       </h2>
       <p className="text-center text-base !leading-relaxed text-body-color md:text-lg">
-        {t('mission.roadmap.description')} <a href="https://github.com/lanedirt/AliasVault/issues/731" className="text-primary">{t('mission.roadmap.githubLinkText')}</a>.
+        {t('mission.roadmap.description')} <a href="https://github.com/aliasvault/aliasvault/issues/731" className="text-primary">{t('mission.roadmap.githubLinkText')}</a>.
       </p>
 
       <div className="relative mt-12">

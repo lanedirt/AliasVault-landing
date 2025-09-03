@@ -92,7 +92,7 @@ export default async function Features() {
             <p className="text-base text-gray-700 dark:text-gray-300">
               {t('features.legend.roadmapText')}{" "}
               <a
-                href="https://github.com/lanedirt/AliasVault/issues/731"
+                href="https://github.com/aliasvault/aliasvault/issues/731"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary-500 hover:underline"

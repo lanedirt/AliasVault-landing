@@ -43,7 +43,7 @@ const ProtonPassPage = async () => {
                     {t('alternativeProtonPass.hero.tryButton')}
                   </Link>
                   <Link
-                    href="https://github.com/lanedirt/AliasVault"
+                    href="https://github.com/aliasvault/aliasvault"
                     className="inline-flex items-center justify-center py-4 text-base font-semibold duration-300 ease-in-out hover:underline dark:text-white"
                   >
                     <svg
@@ -61,7 +61,7 @@ const ProtonPassPage = async () => {
                     {t('alternativeProtonPass.hero.githubButton')} <Image
                       className="inline-block ml-3"
                       alt={t('alternativeProtonPass.hero.alt.githubStars')}
-                      src={`https://img.shields.io/github/stars/lanedirt/AliasVault?${new Date().getTime()}`}
+                      src={`https://img.shields.io/github/stars/aliasvault/aliasvault?${new Date().getTime()}`}
                       width={90}
                       height={20}
                       unoptimized

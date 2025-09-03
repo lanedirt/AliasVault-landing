@@ -115,7 +115,7 @@ const FeatureSection = ({
                         {feature.name}
                         {feature.status === 'upcoming' && (
                           <a
-                            href="https://github.com/lanedirt/AliasVault/issues/731"
+                            href="https://github.com/aliasvault/aliasvault/issues/731"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="ml-2 text-xs font-normal text-yellow-500 hover:underline"

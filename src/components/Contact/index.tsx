@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 
 const ContactContent = () => {
   const t = useTranslations();
-  
+
   return (
     <section className="pb-16 pt-8">
       <div className="container">
@@ -40,7 +40,7 @@ const ContactContent = () => {
             <ul className="mt-4 list-disc pl-6 text-body-color dark:text-body-color-dark">
               <li className="mb-2">
                 <a
-                    href="https://github.com/lanedirt/aliasvault/issues"
+                    href="https://github.com/aliasvault/aliasvault/issues"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-primary hover:underline"
@@ -94,7 +94,7 @@ const ContactContent = () => {
             </p>
             <div className="mt-4">
               <a
-                  href="https://github.com/lanedirt/aliasvault/discussions/categories/ideas"
+                  href="https://github.com/aliasvault/aliasvault/discussions/categories/ideas"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary hover:underline"

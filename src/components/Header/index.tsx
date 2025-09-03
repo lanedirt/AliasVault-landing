@@ -188,7 +188,7 @@ const Header = () => {
               </li>
               <li className="py-3">
                 <Link
-                  href="https://github.com/lanedirt/AliasVault"
+                  href="https://github.com/aliasvault/aliasvault"
                   className="block text-base text-dark hover:text-primary dark:text-white/70 dark:hover:text-white transition-colors"
                   onClick={() => setNavbarOpen(false)}
                 >
@@ -309,7 +309,7 @@ const Header = () => {
             <div className="items-center gap-3 lg:ml-4 hidden lg:flex">
               <ThemeToggler />
               <Link
-                href="https://github.com/lanedirt/AliasVault"
+                href="https://github.com/aliasvault/aliasvault"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={t('header.githubAriaLabel')}

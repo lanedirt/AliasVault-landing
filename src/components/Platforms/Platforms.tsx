@@ -176,7 +176,7 @@ const Platforms = () => {
               <p className="text-base font-medium leading-relaxed text-body-color dark:text-body-color-dark">
                 {t('platforms.roadmap.roadmapLink')}{" "}
                 <a
-                  href="https://github.com/lanedirt/AliasVault/issues/731"
+                  href="https://github.com/aliasvault/aliasvault/issues/731"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary hover:underline"

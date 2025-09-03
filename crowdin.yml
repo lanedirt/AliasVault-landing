@@ -1,0 +1,53 @@
+# Crowdin configuration file for AliasVault landing page
+
+# Your Crowdin project ID
+project_id: "your-project-id"
+
+# Your Crowdin API token (use environment variable)
+api_token_env: "CROWDIN_PERSONAL_TOKEN"
+
+# Base path for your project
+base_path: "."
+
+# Preserve hierarchy in Crowdin
+preserve_hierarchy: true
+
+# Files configuration
+files:
+  # Source files (English)
+  - source: "/src/messages/en.json"
+    translation: "/src/messages/%locale%.json"
+    # Only translate to supported locales
+    languages_mapping:
+      locale:
+        # Dutch
+        nl: "nl"
+        # Add more languages as needed
+        # fr: "fr"
+        # de: "de"
+        # es: "es"
+        # it: "it"
+        # pt: "pt"
+        # ja: "ja"
+        # ko: "ko"
+        # zh-CN: "zh-CN"
+        # zh-TW: "zh-TW"
+        # ar: "ar"
+        # ru: "ru"
+
+# Export settings
+export_approved_only: true
+skip_untranslated_strings: false
+skip_untranslated_files: false
+export_string_that_passed_workflow: false
+
+# Update sources
+update_option: "update_as_unapproved"
+
+# Ignore files
+ignore:
+  - "node_modules/**"
+  - "*.md"
+  - ".next/**"
+  - "dist/**"
+  - "build/**"

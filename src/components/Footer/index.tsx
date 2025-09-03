@@ -34,7 +34,7 @@ const Footer = () => {
                 </p>
                 <div className="flex items-center">
                   <a
-                    href="https://github.com/lanedirt/AliasVault"
+                    href="https://github.com/aliasvault/aliasvault"
                     aria-label={t('footer.socialAriaLabel')}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -202,7 +202,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="https://github.com/lanedirt/AliasVault"
+                      href="https://github.com/aliasvault/aliasvault"
                       target="_blank"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
@@ -277,7 +277,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="https://github.com/lanedirt/AliasVault/issues"
+                      href="https://github.com/aliasvault/aliasvault/issues"
                       target="_blank"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
@@ -320,7 +320,7 @@ const Footer = () => {
                © 2024{new Date().getFullYear() !== 2024 ? `-${new Date().getFullYear()}` : ""} {t('footer.copyright')}
                 &nbsp;{t('footer.links.license')}:&nbsp;
                 <Link
-                    href="https://github.com/lanedirt/AliasVault/blob/main/LICENSE.md"
+                    href="https://github.com/aliasvault/aliasvault/blob/main/LICENSE.md"
                     target="_blank"
                     className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >

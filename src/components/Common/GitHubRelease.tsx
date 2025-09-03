@@ -33,11 +33,11 @@ export const GitHubRelease = ({ version = 'latest' }: GitHubReleaseProps) => {
       try {
         const cacheKey = `githubReleaseData-${version}`;
         const timestampKey = `githubReleaseTimestamp-${version}`;
-        
+
         // Check if we have cached data
         const cachedData = localStorage.getItem(cacheKey);
         const cachedTimestamp = localStorage.getItem(timestampKey);
-        
+
         if (cachedData && cachedTimestamp) {
           const timestamp = parseInt(cachedTimestamp);
           if (Date.now() - timestamp < CACHE_DURATION) {
@@ -47,9 +47,9 @@ export const GitHubRelease = ({ version = 'latest' }: GitHubReleaseProps) => {
           }
         }
 
-        const endpoint = version === 'latest' 
-          ? 'https://api.github.com/repos/lanedirt/AliasVault/releases/latest'
-          : `https://api.github.com/repos/lanedirt/AliasVault/releases/tags/${version}`;
+        const endpoint = version === 'latest'
+          ? 'https://api.github.com/repos/aliasvault/aliasvault/releases/latest'
+          : `https://api.github.com/repos/aliasvault/aliasvault/releases/tags/${version}`;
 
         const response = await fetch(endpoint);
         if (!response.ok) {
@@ -58,7 +58,7 @@ export const GitHubRelease = ({ version = 'latest' }: GitHubReleaseProps) => {
 
         const data = await response.json();
         setRelease(data);
-        
+
         // Cache the data
         localStorage.setItem(cacheKey, JSON.stringify(data));
         localStorage.setItem(timestampKey, Date.now().toString());
@@ -112,9 +112,9 @@ export const GitHubRelease = ({ version = 'latest' }: GitHubReleaseProps) => {
         </a>
 
         <div className="text-sm text-gray-600 dark:text-gray-400">
-          <p>{t('githubRelease.installationInstructions')} <a 
-            href="https://docs.aliasvault.net/installation/install.html" 
-            target="_blank" 
+          <p>{t('githubRelease.installationInstructions')} <a
+            href="https://docs.aliasvault.net/installation/install.html"
+            target="_blank"
             rel="noopener noreferrer"
             className="text-primary-600 hover:text-primary-800 dark:text-primary-400 dark:hover:text-primary-300"
           >
@@ -144,7 +144,7 @@ export const GitHubRelease = ({ version = 'latest' }: GitHubReleaseProps) => {
                   )}
                 </button>
               </div>
-              
+
               {showDownloads && (
                 <div className="grid gap-4">
                   {release.assets.map((asset) => (
@@ -170,4 +170,4 @@ export const GitHubRelease = ({ version = 'latest' }: GitHubReleaseProps) => {
       </div>
     </div>
   );
-}; 
+};
