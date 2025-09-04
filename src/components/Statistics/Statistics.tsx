@@ -37,7 +37,7 @@ const Statistics = () => {
         <p className="mb-12 text-base text-center leading-relaxed text-body-color dark:text-body-color-dark">
           {t("description")}
         </p>
-        
+
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             <StatisticItem
@@ -49,9 +49,9 @@ const Statistics = () => {
                 </svg>
               }
             />
-            
+
             <StatisticItem
-              number="3.5k+"
+              number="4k+"
               label={t("cloudRegistrations")}
               icon={
                 <svg className="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -59,9 +59,9 @@ const Statistics = () => {
                 </svg>
               }
             />
-            
+
             <StatisticItem
-              number="12k+"
+              number="14k+"
               label={t("selfHostedDownloads")}
               icon={
                 <svg className="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -69,9 +69,9 @@ const Statistics = () => {
                 </svg>
               }
             />
-            
+
             <StatisticItem
-              number="16k+"
+              number="20k+"
               label={t("emailAliasesCreated")}
               icon={
                 <svg className="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
