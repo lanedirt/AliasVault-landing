@@ -497,17 +497,17 @@
       "description": "AliasVault uses industry-standard encryption and security measures to protect your data.",
       "imageAlt": "AliasVault Security Features",
       "features": {
-        "endToEndEncryption": {
-          "name": "End-to-End Encryption",
-          "description": "All data is encrypted on your device before being backed up online. Your master password is never transmitted to the server."
-        },
-        "twoFactorAuthentication": {
-          "name": "Two-Factor Authentication",
-          "description": "Add an extra layer of security to your vault with TOTP-based two-factor authentication."
+        "encryption2Fa": {
+          "name": "End-to-End Encryption & 2FA",
+          "description": "All data is encrypted on your device before being backed up online. Your master password is never transmitted to the server. Add an extra layer of security to access your vault with two-factor authentication."
         },
         "biometricAuthentication": {
           "name": "Biometric Authentication",
           "description": "Unlock your vault using fingerprint or face recognition on supported devices via WebAuthn."
+        },
+        "autoClipboardClear": {
+          "name": "Automatistic clipboard clearing",
+          "description": "Data copied from AliasVault is automatically cleared from your clipboard after a set time. Works on all platforms."
         },
         "secureNotesAttachments": {
           "name": "Secure Notes & Attachments",

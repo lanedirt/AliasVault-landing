@@ -82,18 +82,18 @@ export function getLocalizedFeaturesData(t: TranslationFunction): FeatureCategor
       imageAlt: t('featuresData.security.imageAlt'),
       features: [
         {
-          name: t('featuresData.security.features.endToEndEncryption.name'),
-          description: t('featuresData.security.features.endToEndEncryption.description'),
-          status: "available" as const
-        },
-        {
-          name: t('featuresData.security.features.twoFactorAuthentication.name'),
-          description: t('featuresData.security.features.twoFactorAuthentication.description'),
+          name: t('featuresData.security.features.encryption2Fa.name'),
+          description: t('featuresData.security.features.encryption2Fa.description'),
           status: "available" as const
         },
         {
           name: t('featuresData.security.features.biometricAuthentication.name'),
           description: t('featuresData.security.features.biometricAuthentication.description'),
+          status: "available" as const
+        },
+        {
+          name: t('featuresData.security.features.autoClipboardClear.name'),
+          description: t('featuresData.security.features.autoClipboardClear.description'),
           status: "available" as const
         },
         {

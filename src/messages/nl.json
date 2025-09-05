@@ -449,7 +449,7 @@
     "passwordManagement": {
       "title": "Wachtwoordmanager",
       "description": "Bewaar, genereer en beheer al je wachtwoorden veilig op één plek met AliasVault's krachtige wachtwoordmanagerfuncties.",
-      "imageAlt": "AliasVault Wachtwoordmanager",
+      "imageAlt": "AliasVault wachtwoordmanager",
       "features": {
         "passwordManager": {
           "name": "Wachtwoordmanager",
@@ -460,11 +460,11 @@
           "description": "Genereer wachtwoorden met aangepaste patronen, lengtes en tekensets om ze veiliger te maken. Aanpasbaar per credential."
         },
         "builtIn2FA": {
-          "name": "Ingebouwde 2FA Authenticator",
+          "name": "Ingebouwde 2FA authenticator",
           "description": "Bewaar en genereer 2FA-secrets voor al je accounts direct in AliasVault."
         },
         "passwordSharing": {
-          "name": "Wachtwoord Delen",
+          "name": "Wachtwoord delen",
           "description": "Deel veilig toegang tot opgeslagen wachtwoorden met familieleden of teamleden."
         }
       }
@@ -484,11 +484,11 @@
         },
         "customDomainsSelfHosted": {
           "name": "Eigen domein (self-hosted)",
-          "description": "Gebruik je eigen domein voor je e-mailaliassen in self-hosted installaties."
+          "description": "Gebruik je eigen domeinnaam (alias@jouwdomein.nl) voor je e-mailaliassen in self-hosted installaties."
         },
         "customDomainsCloudHosted": {
           "name": "Eigen domein (cloud-hosted)",
-          "description": "Gebruik e-mailaliassen met je eigen domein op de officiële cloud-gehostte AliasVault server."
+          "description": "Gebruik e-mailaliassen met je eigen domeinnaam op de officiële cloud-gehostte AliasVault server."
         }
       }
     },
@@ -497,20 +497,20 @@
       "description": "AliasVault gebruikt industry-standard versleuteling en beveiligingsmaatregelen om je gegevens te beschermen.",
       "imageAlt": "AliasVault Beveiligingsfuncties",
       "features": {
-        "endToEndEncryption": {
-          "name": "End-to-End Versleuteling",
-          "description": "Alle gegevens worden versleuteld op je apparaat voordat ze online worden geback-upt. Je hoofdwachtwoord wordt nooit naar de server verzonden."
-        },
-        "twoFactorAuthentication": {
-          "name": "Twee-Factor Authenticatie",
-          "description": "Voeg een extra beveiligingslaag toe aan je vault met TOTP-gebaseerde twee-factor authenticatie."
+        "encryption2Fa": {
+          "name": "End-to-end versleuteling & 2FA",
+          "description": "Alle gegevens worden versleuteld op je apparaat voordat ze online worden geback-upt. Je hoofdwachtwoord wordt nooit naar de server verzonden. Voeg daarnaast een extra beveiligingslaag toe voor het raadplegen van je vault met twee-factor authenticatie."
         },
         "biometricAuthentication": {
-          "name": "Biometrische Authenticatie",
-          "description": "Ontgrendel je vault met vingerafdruk of gezichtsherkenning op ondersteunde apparaten via WebAuthn."
+          "name": "Biometrische authenticatie",
+          "description": "Ontgrendel je vault met vingerafdruk of gezichtsherkenning op ondersteunde apparaten."
+        },
+        "autoClipboardClear": {
+          "name": "Automatisch klembord wissen",
+          "description": "Gegevens die je vanuit AliasVault kopieert worden automatisch gewist van je klembord na een instelbare tijd. Werkt op alle platforms."
         },
         "secureNotesAttachments": {
-          "name": "Veilige Notities & Bijlagen",
+          "name": "Veilige notities & bijlagen",
           "description": "Bewaar gevoelige informatie zoals creditcardgegevens, veilige notities en andere vertrouwelijke gegevens in je vault."
         }
       }
@@ -529,7 +529,7 @@
           "description": "Gebruikersnamen en wachtwoorden worden automatisch voor je ingevuld met een druk op de knop."
         },
         "emailAliasGenerator": {
-          "name": "E-mailalias Generator",
+          "name": "E-mailalias generator",
           "description": "Genereer (e-mail) aliassen direct vanuit de browser extensie met een simpele klik."
         }
       }
@@ -540,11 +540,11 @@
       "imageAlt": "AliasVault Mobiele Apps",
       "features": {
         "iosApp": {
-          "name": "iOS App",
+          "name": "iOS app",
           "description": "Krijg toegang tot je vault op je iPhone of iPad met de officiële iOS app. Ondersteunt native autofill en Face ID / Touch ID authenticatie, waardoor je gegevens veilig blijven."
         },
         "androidApp": {
-          "name": "Android App",
+          "name": "Android app",
           "description": "Krijg toegang tot je vault op je Android apparaat met de officiële Android app. Ondersteunt native autofill en biometrische authenticatie, waardoor je gegevens veilig blijven. Beschikbaar op Google Play of als handmatige APK via GitHub."
         }
       }
