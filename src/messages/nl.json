@@ -29,7 +29,7 @@
     }
   },
   "footer": {
-    "description": "AliasVault is een privacy-first, open-source, end-to-end versleutelde wachtwoord- en (e-mail) aliasmanager die je privacy beschermt.",
+    "description": "AliasVault is een Nederlandse privacy-first, open-source, end-to-end versleutelde wachtwoord- en (e-mail) aliasmanager die je privacy beschermt.",
     "sections": {
       "aliasvault": "AliasVault",
       "alternatives": "Alternatief",
@@ -142,11 +142,11 @@
       "description": "Essentiële informatie voor journalisten en mediaprofessionals",
       "shortVersion": {
         "title": "Korte Versie (1-2 zinnen)",
-        "content": "AliasVault is een privacy-first, open-source, end-to-end versleutelde wachtwoord- en e-mail alias manager die gebruikers controle geeft over hun digitale identiteit. Opgericht in 2023, stelt het gebruikers in staat om unieke wachtwoorden en e-mailaliassen te genereren voor elke website, waarbij persoonlijke gegevens worden beschermd en spam wordt voorkomen."
+        "content": "AliasVault is een Nederlandse privacy-first, open-source, end-to-end versleutelde wachtwoord- en e-mail alias manager die gebruikers controle geeft over hun digitale identiteit. Opgericht in 2023, stelt het gebruikers in staat om unieke wachtwoorden en e-mailaliassen te genereren voor elke website, waarbij persoonlijke gegevens worden beschermd en spam wordt voorkomen."
       },
       "longVersion": {
         "title": "Lange Versie (2-3 alinea's)",
-        "content": "AliasVault is een privacy-first, open-source, end-to-end versleutelde wachtwoord- en e-mail alias manager. Onze missie is om gebruikersprivacy te beschermen door veilige alternatieven te bieden voor traditionele wachtwoordmanagers en e-maildiensten. Opgericht in 2023, heeft AliasVault zich ontwikkeld tot een dienst voor duizenden gebruikers wereldwijd met zijn innovatieve aanpak van digitaal identiteitsbeheer.\n\nWat AliasVault onderscheidt is zijn toewijding aan transparantie en gebruikerscontrole. Als open-source oplossing kan iedereen de code inspecteren, de applicatie zelf hosten of bijdragen aan de ontwikkeling. Het platform genereert unieke wachtwoorden en e-mailaliassen voor elke website, waardoor als één dienst wordt gecompromitteerd, het lek geïsoleerd blijft en andere accounts niet worden beïnvloed. Deze aanpak verbetert niet alleen de veiligheid, maar geeft gebruikers ook volledige controle over hun digitale voetafdruk."
+        "content": "AliasVault is een Nederlandse privacy-first, open-source, end-to-end versleutelde wachtwoord- en e-mail alias manager. Onze missie is om gebruikersprivacy te beschermen door veilige alternatieven te bieden voor traditionele wachtwoordmanagers en e-maildiensten. Opgericht in 2023, heeft AliasVault zich ontwikkeld tot een dienst voor duizenden gebruikers wereldwijd met zijn innovatieve aanpak van digitaal identiteitsbeheer.\n\nWat AliasVault onderscheidt is zijn toewijding aan transparantie en gebruikerscontrole. Als open-source oplossing kan iedereen de code inspecteren, de applicatie zelf hosten of bijdragen aan de ontwikkeling. Het platform genereert unieke wachtwoorden en e-mailaliassen voor elke website, waardoor als één dienst wordt gecompromitteerd, het lek geïsoleerd blijft en andere accounts niet worden beïnvloed. Deze aanpak verbetert niet alleen de veiligheid, maar geeft gebruikers ook volledige controle over hun digitale voetafdruk."
       }
     }
   },
@@ -597,9 +597,9 @@
           "alt": "E-mailalias Integratie"
         },
         "identityGeneration": {
-          "title": "Geavanceerde identiteitsgeneratie",
-          "description": "AliasVault genereert eenvoudig willekeurige identiteiten voor iedere dienst die je gebruikt. Dit is inclusief fictieve voor- en achternaam, geboortedatum en andere details. Gebruik deze willekeurige identiteit(en) zo lang het niet nodig is om je echte identiteit te gebruiken.",
-          "alt": "Identiteitsgeneratie"
+          "title": "Geavanceerde pseudoniemgeneratie",
+          "description": "AliasVault genereert eenvoudig willekeurige pseudoniemen/schuilnamen voor iedere dienst die je gebruikt. Dit is inclusief fictieve voor- en achternaam, geboortedatum en andere details. Gebruik deze willekeurige identiteit(en) zo lang het niet nodig is om je echte identiteit te gebruiken.",
+          "alt": "Pseudoniemgeneratie"
         },
         "selfHosting": {
           "title": "Eenvoudige self-hosting",
@@ -666,9 +666,9 @@
           "alt": "Wachtwoordmanager Integratie"
         },
         "randomIdentities": {
-          "title": "Complete willekeurige identiteitsgeneratie",
-          "description": "Met AliasVault komt elke e-mailalias met een complete willekeurig gegenereerde identiteit - inclusief fictieve voornaam, achternaam, geboortedatum en meer. Met onze browserextensie worden deze identiteitsdetails automatisch ingevuld in formulieren.",
-          "alt": "Willekeurige identiteitsgeneratie"
+          "title": "Complete willekeurige pseudoniemgeneratie",
+          "description": "Met AliasVault komt elke e-mailalias met een complete willekeurig gegenereerde pseudoniem/schuilnaam - inclusief fictieve voornaam, achternaam, geboortedatum en meer. Met onze browserextensie worden deze pseudoniemdetails automatisch ingevuld in formulieren.",
+          "alt": "Willekeurige pseudoniemgeneratie"
         },
         "encryption": {
           "title": "End-to-end versleuteling en volledige anonimiteit",
@@ -746,7 +746,7 @@
         },
         "emailAlias": {
           "title": "Alles-in-één wachtwoord & e-mailaliasmanager",
-          "description": "AliasVault combineert wachtwoordmanagement met e-mailalias en identiteitsgeneratie mogelijkheden in één veilig platform. Creëer eenvoudig (wegwerp) e-mailadressen voor iedere dienst die je gebruikt. Alles is geintegreerd in één veilig platform, zonder externe afhankelijkheden.",
+          "description": "AliasVault combineert wachtwoordmanagement met e-mailalias en pseudoniem/schuilnaam mogelijkheden in één veilig platform. Creëer eenvoudig (wegwerp) e-mailadressen voor iedere dienst die je gebruikt. Alles is geintegreerd in één veilig platform, zonder externe afhankelijkheden.",
           "alt": "E-mailalias Integratie"
         }
       }
@@ -901,7 +901,7 @@
   },
   "statistics": {
     "title": "Cijfers",
-    "description": "Belangrijke cijfers die AliasVault's groeiende impact op digitale privacy weergeven, sinds de lancering in december 2024.",
+    "description": "Belangrijke cijfers die AliasVault's groeiende impact op digitale privacy weergeven (sinds de beta release in december 2024).",
     "githubStars": "GitHub Sterren",
     "cloudRegistrations": "Cloud gebruikers",
     "selfHostedDownloads": "Self-hosted downloads",
@@ -913,12 +913,12 @@
     "perfectForTitle": "Ideaal voor",
     "shortVersion": {
       "title": "Korte versie",
-      "content": "AliasVault is een privacy-first, open-source, end-to-end versleutelde wachtwoord- en e-mailaliasmanager, die gebruikers controle geeft over hun digitale identiteit en privacy. Opgericht in 2024 en volledig van Nederlandse bodem, stelt het gebruikers in staat unieke wachtwoorden en e-mailaliassen te genereren voor elke website, waarbij persoonlijke gegevens worden beschermd en spam wordt voorkomen.",
+      "content": "AliasVault is een Nederlandse privacy-first, open-source & versleutelde wachtwoord- en e-mailaliasmanager, die gebruikers controle geeft over hun digitale identiteit en privacy. Opgericht in 2024 en volledig van Nederlandse bodem, stelt het gebruikers in staat unieke wachtwoorden en e-mailaliassen te genereren voor elke website, waarbij persoonlijke gegevens worden beschermd en spam wordt voorkomen.",
       "perfectFor": "Koppen, korte vermeldingen, sociale media berichten"
     },
     "longVersion": {
       "title": "Lange versie",
-      "content": "AliasVault is een privacy-first, open-source, end-to-end versleutelde wachtwoord- en e-mailaliasmanager volledig van Nederlandse bodem. Onze missie is om gebruikersprivacy te beschermen door veilige alternatieven te bieden voor traditionele wachtwoordmanagers en e-maildiensten. Opgericht in 2024, is AliasVault inmiddels al uitgegroeid tot een platform dat duizenden gebruikers wereldwijd helpt om hun (online) privacy te beschermen.\n\nWat AliasVault onderscheidt is de focus op privacy en transparantie. Als open-source oplossing kan iedereen de code inspecteren, de applicatie zelf hosten of bijdragen aan de ontwikkeling. Het platform stelt gebruikers in staat unieke wachtwoorden en e-mailaliassen te genereren voor elke website, waardoor als één specifieke dienst slachtoffer is geworden van een datalek, de inbreuk geïsoleerd blijft en wachtwoorden en e-mailadressen van andere diensten niet worden getroffen. Deze aanpak verbetert niet alleen de beveiliging, maar geeft gebruikers ook volledige controle over hun (online) privacy.",
+      "content": "AliasVault is een Nederlandse privacy-first, open-source & versleutelde wachtwoord- en e-mailaliasmanager volledig van Nederlandse bodem. Onze missie is om gebruikersprivacy te beschermen door veilige alternatieven te bieden voor traditionele wachtwoordmanagers en e-maildiensten. Opgericht in 2024, is AliasVault inmiddels al uitgegroeid tot een platform dat duizenden gebruikers wereldwijd helpt om hun (online) privacy te beschermen.\n\nWat AliasVault onderscheidt is de focus op privacy en transparantie. Als open-source oplossing kan iedereen de code inspecteren, de applicatie zelf hosten of bijdragen aan de ontwikkeling. Het platform stelt gebruikers in staat unieke wachtwoorden en e-mailaliassen te genereren voor elke website, waardoor als één specifieke dienst slachtoffer is geworden van een datalek, de inbreuk geïsoleerd blijft en wachtwoorden en e-mailadressen van andere diensten niet worden getroffen. Deze aanpak verbetert niet alleen de beveiliging, maar geeft gebruikers ook volledige controle over hun (online) privacy.",
       "perfectFor": "Feature artikelen, gedetailleerde berichtgeving, persberichten"
     }
   },

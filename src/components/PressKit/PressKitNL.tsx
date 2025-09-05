@@ -22,7 +22,7 @@ const PressKitNL = () => {
         <div className="container">
           <h2 className="mb-4 text-3xl text-center font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">Wat maakt AliasVault uniek</h2>
           <p className="mb-8 text-base text-center leading-relaxed text-body-color dark:text-body-color-dark">
-            AliasVault gaat verder dan traditionele wachtwoordmanagers door een complete privacy-first identiteitsbeheertoolkit aan te bieden. Gebouwd voor gebruikers die geven om controle, beveiliging en anonimiteit, combineert AliasVault wachtwoordopslag, e-mailaliasing en identiteitsgeneratie in één open-source oplossing. Bekijk hieronder een overzicht van alle unieke functies.
+            AliasVault gaat verder dan traditionele wachtwoordmanagers door een complete privacy-first identiteitsbeheertoolkit aan te bieden. Gebouwd voor gebruikers die geven om controle, beveiliging en anonimiteit, combineert AliasVault wachtwoordopslag, e-mailaliasing en pseudoniemgeneratie in één open-source oplossing. Bekijk hieronder een overzicht van alle unieke functies.
           </p>
           <div className="mx-auto max-w-6xl mt-20">
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -62,9 +62,9 @@ const PressKitNL = () => {
                     </svg>
                   </div>
                 </div>
-                <h4 className="mb-2 text-lg font-semibold text-black dark:text-white">Random identiteitsgeneratie</h4>
+                <h4 className="mb-2 text-lg font-semibold text-black dark:text-white">Random pseudoniemen</h4>
                 <p className="text-sm text-body-color dark:text-body-color-dark">
-                  Maak direct willekeurige identiteitsprofielen (naam, geboortedatum, gebruikersnaam, e-mail) voor anonieme aanmeldingen en accounts.
+                  Maak direct willekeurige pseudoniemen/schuilnamen (naam, geboortedatum, gebruikersnaam, e-mail) voor anonieme aanmeldingen en accounts.
                 </p>
               </div>
 
@@ -138,7 +138,7 @@ const PressKitNL = () => {
                 Leendert de Borst is een Nederlandse softwareontwikkelaar en voorvechter van privacy met meer dan 15 jaar ervaring in het maken van tools om (digitale) privacy te beschermen. In 2013 lanceerde hij de gratis tijdelijke e-mailservice asdasd.nl, dat later evolueerde naar SpamOK.nl, een meertalig platform dat door tienduizenden wordt gebruikt om zich te beschermen tegen spam en gegevensverzameling.
               </p>
               <p>
-                In 2024 begon hij met het bouwen van AliasVault: een open-source, zelf-te-hosten wachtwoord- en (e-mail)aliasmanager die veilige wachtwoordopslag, e-mailaliasing en identiteitsgeneratie combineert in één privacy-first tool. Sinds de eerste bètarelease in december 2024 krijgt AliasVault met iedere update steeds meer functies zoals bijvoorbeeld browserextensies, mobiele apps, tweefactorauthenticatie en importtools voor 10+ wachtwoordmanagers. Volledig open source, zelf gefinancierd en gratis te gebruiken, zal het project in de toekomst optionele premium cloudfuncties aan gaan bieden om de lange termijn ontwikkeling te ondersteunen.
+                In 2024 begon hij met het bouwen van AliasVault: een open-source, zelf-te-hosten wachtwoord- en (e-mail)aliasmanager die veilige wachtwoordopslag, e-mailaliasing en pseudoniemgeneratie combineert in één privacy-first tool. Sinds de eerste bètarelease in december 2024 krijgt AliasVault met iedere update steeds meer functies zoals bijvoorbeeld browserextensies, mobiele apps, tweefactorauthenticatie en importtools voor 10+ wachtwoordmanagers. Volledig open source, zelf gefinancierd en gratis te gebruiken, zal het project in de toekomst optionele premium cloudfuncties aan gaan bieden om de lange termijn ontwikkeling te ondersteunen.
               </p>
               <p>
                 Op de vraag waarom hij AliasVault heeft gemaakt, zegt Leendert het volgende: &ldquo;Ik ben al meer dan tien jaar actief met het maken van online oplossingen die spam tegengaan. AliasVault is het privacy-platform waarvan ik altijd heb gewild dat het bestond.&rdquo; Vanaf het begin ging het om het combineren van wachtwoordbeheer en privacybescherming in één open-source platform, waar de gebruiker beslist wat ze delen en met wie. Het ging ook om het oplossen van problemen die mensen ondervinden met andere wachtwoordmanagers en hen iets geven waar ze echt op kunnen vertrouwen.</p>
@@ -276,7 +276,7 @@ const PressKitNL = () => {
                           In-depth walkthrough and demonstration
                         </p>
                       </div>
-                      <span className="ml-4 text-xs text-gray-500 dark:text-gray-400">Jan 2025</span>
+                      <span className="ml-4 text-xs text-gray-500 dark:text-gray-400">Januari 2025</span>
                     </div>
                   </div>
                 </div>
@@ -294,18 +294,18 @@ const PressKitNL = () => {
                     <div className="flex items-start justify-between">
                       <div className="flex-1">
                         <a
-                          href="https://tweakers.net/downloads/73474/aliasvault-0210.html"
+                          href="https://tweakers.net/downloads/73852/aliasvault-0220.html"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="font-medium text-primary hover:underline"
                         >
-                          Tweakers.nl: AliasVault 0.21.0
+                          Tweakers.nl: AliasVault 0.22.0
                         </a>
                         <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">
                           Nederlandse tech community
                         </p>
                       </div>
-                      <span className="ml-4 text-xs text-gray-500 dark:text-gray-400">July 2025</span>
+                      <span className="ml-4 text-xs text-gray-500 dark:text-gray-400">Augustus 2025</span>
                     </div>
                   </div>
                   <div className="group">
@@ -323,7 +323,7 @@ const PressKitNL = () => {
                           Nieuws over open source software
                         </p>
                       </div>
-                      <span className="ml-4 text-xs text-gray-500 dark:text-gray-400">June 2025</span>
+                      <span className="ml-4 text-xs text-gray-500 dark:text-gray-400">Juni 2025</span>
                     </div>
                   </div>
                   <div className="group">
@@ -341,7 +341,7 @@ const PressKitNL = () => {
                           Independent home lab, self hosting and security blog
                         </p>
                       </div>
-                      <span className="ml-4 text-xs text-gray-500 dark:text-gray-400">March 2025</span>
+                      <span className="ml-4 text-xs text-gray-500 dark:text-gray-400">Maart 2025</span>
                     </div>
                   </div>
                 </div>
@@ -370,7 +370,7 @@ const PressKitNL = () => {
                           AliasVault introduction and discussion
                         </p>
                       </div>
-                      <span className="ml-4 text-xs text-gray-500 dark:text-gray-400">August 2025</span>
+                      <span className="ml-4 text-xs text-gray-500 dark:text-gray-400">Augustus 2025</span>
                     </div>
                   </div>
 
@@ -389,7 +389,7 @@ const PressKitNL = () => {
                           Self-hosting community discussion
                         </p>
                       </div>
-                      <span className="ml-4 text-xs text-gray-500 dark:text-gray-400">Jan 2025</span>
+                      <span className="ml-4 text-xs text-gray-500 dark:text-gray-400">Januari 2025</span>
                     </div>
                   </div>
 
@@ -408,7 +408,7 @@ const PressKitNL = () => {
                           Technical discussion and feedback
                         </p>
                       </div>
-                      <span className="ml-4 text-xs text-gray-500 dark:text-gray-400">Dec 2024</span>
+                      <span className="ml-4 text-xs text-gray-500 dark:text-gray-400">December 2024</span>
                     </div>
                   </div>
                 </div>
@@ -456,7 +456,7 @@ const PressKitNL = () => {
                           Curated list of self-hosted software
                         </p>
                       </div>
-                      <span className="ml-4 text-xs text-gray-500 dark:text-gray-400">March 2025</span>
+                      <span className="ml-4 text-xs text-gray-500 dark:text-gray-400">Maart 2025</span>
                     </div>
                   </div>
 
@@ -475,7 +475,7 @@ const PressKitNL = () => {
                           Listed as alternative to 1Password, Bitwarden, and SimpleLogin
                         </p>
                       </div>
-                      <span className="ml-4 text-xs text-gray-500 dark:text-gray-400">Jan 2025</span>
+                      <span className="ml-4 text-xs text-gray-500 dark:text-gray-400">Januari 2025</span>
                     </div>
                   </div>
                 </div>
