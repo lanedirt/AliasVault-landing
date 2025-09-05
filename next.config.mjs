@@ -23,6 +23,19 @@ const nextConfig = {
   async headers() {
     return [
       {
+        source: '/.well-known/:path*',
+        headers: [
+          {
+            key: 'Content-Type',
+            value: 'text/plain; charset=utf-8'
+          },
+          {
+            key: 'Content-Disposition',
+            value: 'inline'
+          }
+        ]
+      },
+      {
         source: '/:path*',
         headers: [
           {
