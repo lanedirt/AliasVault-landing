@@ -143,6 +143,11 @@ export function getLocalizedFeaturesData(t: TranslationFunction): FeatureCategor
           name: t('featuresData.mobileApps.features.androidApp.name'),
           description: t('featuresData.mobileApps.features.androidApp.description'),
           status: "available" as const
+        },
+        {
+          name: t('featuresData.mobileApps.features.offlineMode.name'),
+          description: t('featuresData.mobileApps.features.offlineMode.description'),
+          status: "available" as const
         }
       ]
     },

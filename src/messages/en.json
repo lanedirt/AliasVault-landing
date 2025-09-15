@@ -546,6 +546,10 @@
         "androidApp": {
           "name": "Android App",
           "description": "Access your vault on your Android device with the official Android app. Supports native autofill and biometric authentication, keeping your data secure. Available on Google Play or as a manual APK via GitHub."
+        },
+        "offlineMode": {
+          "name": "Offline Mode",
+          "description": "Access your vault without internet connection or when the server cannot be reached. Supports CSV export from mobile app so access to credentials is always safeguarded, ensuring you never lose access to your passwords."
         }
       }
     },
