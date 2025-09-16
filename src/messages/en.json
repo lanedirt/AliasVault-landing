@@ -49,6 +49,7 @@
       "contact": "Contact",
       "report_abuse": "Report Abuse",
       "support_ticket": "Open Support Ticket",
+      "responsible_disclosure": "Responsible Disclosure",
       "license": "License",
       "privacy": "Privacy Policy",
       "terms_and_conditions": "Terms and Conditions"
@@ -179,6 +180,14 @@
           "docs": "View Documentation"
         }
       },
+      "security": {
+        "title": "Security Issues & Vulnerabilities",
+        "description": "If you believe you have discovered a security vulnerability in AliasVault, please report it responsibly through our dedicated security disclosure process.",
+        "links": {
+          "disclosure": "Report Security Vulnerability",
+          "email": "security@support.aliasvault.net"
+        }
+      },
       "features": {
         "title": "Feature Requests & Ideas",
         "description": "Have an idea for improving AliasVault? Submit feature requests through our GitHub Discussions. Please check if your suggestion has already been made and feel free to upvote existing requests you support. If you wish to get in contact with the author and maintainers instead, feel free to join our Discord community.",
@@ -189,8 +198,9 @@
       },
       "donations": {
         "title": "Donations",
-        "description": "If you find AliasVault useful, consider supporting its development through Buy Me A Coffee. Donations are optional but greatly appreciated and will help us continue to improve the project.",
-        "imageAlt": "Buy Me A Coffee"
+        "description": "If you find AliasVault useful, consider supporting its development. Donations are optional but greatly appreciated and will help us continue to improve the project.",
+        "imageAlt": "Buy Me A Coffee",
+        "openCollectiveAlt": "Support on OpenCollective"
       }
     }
   },
@@ -1009,6 +1019,66 @@
       "founderTitle": "Founder of AliasVault",
       "email": "Email:",
       "linkedin": "LinkedIn:"
+    }
+  },
+  "responsibleDisclosure": {
+    "metadata": {
+      "title": "Responsible Disclosure",
+      "description": "Security vulnerability disclosure policy and contact information for security researchers."
+    },
+    "title": "Responsible Disclosure",
+    "subtitle": "Security Vulnerability Reporting",
+    "description": "AliasVault takes security seriously and encourages responsible disclosure of security vulnerabilities.",
+    "content": {
+      "intro": "We appreciate the work of security researchers and ethical hackers who help keep AliasVault and our users secure. If you believe you have discovered a security vulnerability in AliasVault, we encourage you to report it to us responsibly.",
+      "email": "Please report security vulnerabilities to:",
+      "emailAddress": "security@support.aliasvault.net",
+      "commitment": {
+        "title": "Commitment",
+        "description": "We take responsible disclosure of security vulnerabilities seriously. Where applicable, we will:"
+      },
+      "commitmentList": {
+        "acknowledge": "Acknowledge receipt of your report within 48 hours",
+        "investigate": "Investigate and validate the reported vulnerability",
+        "timeline": "Provide regular updates on our progress",
+        "credit": "Credit you in our security advisory (if desired)",
+        "cve": "Submit for CVE assignment when applicable",
+        "coordinate": "Coordinate disclosure timeline with you"
+      },
+      "guidelines": {
+        "title": "Disclosure Guidelines",
+        "description": "To ensure the safety of our users and systems, please follow these guidelines:",
+        "items": {
+          "noHarm": "Do not access, modify, or delete user data",
+          "minimal": "Use minimal interaction necessary to demonstrate the vulnerability",
+          "confidential": "Keep vulnerability details confidential until coordinated disclosure",
+          "legal": "Do not violate any applicable laws or regulations",
+          "scope": "Test only against systems you own (self-hosted) or have explicit permission to test"
+        }
+      },
+      "scope": {
+        "title": "Scope",
+        "description": "This policy applies to:",
+        "items": {
+          "main": "AliasVault main application (app.aliasvault.net)",
+          "api": "AliasVault API endpoints (app.aliasvault.net/api)",
+          "website": "AliasVault website and subdomains",
+          "mobile": "Official AliasVault mobile applications",
+          "extensions": "Official AliasVault browser extensions"
+        }
+      },
+      "outOfScope": {
+        "title": "Out of Scope",
+        "description": "The following are typically considered out of scope:",
+        "items": {
+          "social": "Social engineering attacks",
+          "physical": "Physical attacks against AliasVault infrastructure",
+          "dos": "Denial of service attacks",
+          "spam": "Spam or content injection",
+          "automated": "Automated scanning without prior approval"
+        }
+      },
+      "thanks": "Thank you for helping us keep AliasVault secure for everyone."
     }
   }
 }

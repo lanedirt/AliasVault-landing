@@ -1,0 +1,17 @@
+Contact: mailto:security@support.aliasvault.net
+Expires: 2026-09-16T12:00:00.000Z
+Preferred-Languages: en
+Canonical: https://raw.githubusercontent.com/aliasvault/aliasvault/main/SECURITY.txt
+
+# Security Policy for AliasVault
+#
+# We take security seriously and appreciate responsible disclosure of vulnerabilities.
+# Please report security issues to the email above rather than opening public issues.
+#
+# Include the following information in your report:
+# - Description of the vulnerability
+# - Steps to reproduce
+# - Potential impact
+# - Suggested remediation (if any)
+#
+# We will acknowledge receipt within 48 hours and provide updates as we investigate.

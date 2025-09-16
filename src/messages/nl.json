@@ -49,6 +49,7 @@
       "contact": "Contact",
       "report_abuse": "Report Abuse",
       "support_ticket": "Support Ticket Openen",
+      "responsible_disclosure": "Responsible Disclosure",
       "license": "Licentie",
       "privacy": "Privacy Policy",
       "terms_and_conditions": "Algemene Voorwaarden"
@@ -179,6 +180,14 @@
           "docs": "Bekijk Documentatie"
         }
       },
+      "security": {
+        "title": "Beveiligingsproblemen & Kwetsbaarheden",
+        "description": "Als je denkt dat je een beveiligingskwetsbaarheid hebt ontdekt in AliasVault, meld dit dan op verantwoordelijke wijze via ons dedicated security disclosure proces.",
+        "links": {
+          "disclosure": "Meld Beveiligingskwetsbaarheid",
+          "email": "security@support.aliasvault.net"
+        }
+      },
       "features": {
         "title": "Ideeën & Feedback",
         "description": "Heb je een idee om AliasVault te verbeteren? Stel verbeteringen voor via onze GitHub Discussions. Controleer of je suggestie al eerder gedaan is en/of voel je vrij om bestaande ideeverzoeken te upvoten. Als je liever (eerst) in contact wilt komen met de auteur en andere gebruikers, sluit je dan aan bij onze Discord community.",
@@ -189,8 +198,9 @@
       },
       "donations": {
         "title": "Donaties",
-        "description": "Als je het project wilt steunen dan kan dat via een donatie op Buy Me A Coffee. Donaties zijn optioneel maar worden zeer gewaardeerd en zullen ons helpen het project te blijven verbeteren!",
-        "imageAlt": "Buy Me A Coffee"
+        "description": "Als je het project wilt steunen dan kan dat via een donatie. Donaties zijn optioneel maar worden zeer gewaardeerd en zullen ons helpen het project te blijven verbeteren!",
+        "imageAlt": "Buy Me A Coffee",
+        "openCollectiveAlt": "Steun via OpenCollective"
       }
     }
   },
@@ -1009,6 +1019,66 @@
       "founderTitle": "Founder van AliasVault",
       "email": "E-mail:",
       "linkedin": "LinkedIn:"
+    }
+  },
+  "responsibleDisclosure": {
+    "metadata": {
+      "title": "Responsible Disclosure",
+      "description": "Beveiligingskwetsbaarheden melden en contactgegevens voor beveiligingsonderzoekers."
+    },
+    "title": "Responsible Disclosure",
+    "subtitle": "Beveiligingskwetsbaarheden Melden",
+    "description": "AliasVault neemt beveiliging serieus en moedigt responsible disclosure van beveiligingskwetsbaarheden aan.",
+    "content": {
+      "intro": "We waarderen het werk van beveiligingsonderzoekers en ethische hackers die helpen AliasVault en onze gebruikers veilig te houden. Als je denkt dat je een beveiligingskwetsbaarheid hebt ontdekt in AliasVault, moedigen we je aan om dit op een verantwoordelijke manier te melden.",
+      "email": "Meld beveiligingskwetsbaarheden aan:",
+      "emailAddress": "security@support.aliasvault.net",
+      "commitment": {
+        "title": "Commitment",
+        "description": "We nemen responsible disclosure van beveiligingskwetsbaarheden serieus. Waar van toepassing zullen we:"
+      },
+      "commitmentList": {
+        "acknowledge": "Ontvangst van je rapport binnen 48 uur bevestigen",
+        "investigate": "De gerapporteerde kwetsbaarheid onderzoeken en valideren",
+        "timeline": "Regelmatige updates geven over onze voortgang",
+        "credit": "Je vermelden in onze security advisory (indien gewenst)",
+        "cve": "CVE-toewijzing aanvragen waar van toepassing",
+        "coordinate": "Disclosure tijdlijn met je coördineren"
+      },
+      "guidelines": {
+        "title": "Disclosure richtlijnen",
+        "description": "Om de veiligheid van onze gebruikers en systemen te waarborgen, volg deze richtlijnen:",
+        "items": {
+          "noHarm": "Geen gebruikersgegevens openen, aanpassen of verwijderen",
+          "minimal": "Alleen de minimale interactie uitvoeren die nodig is om de kwetsbaarheid aan te tonen",
+          "confidential": "Details over de kwetsbaarheid vertrouwelijk houden tot gecoördineerde openbaarmaking",
+          "legal": "Geen toepasselijke wetten of regelgeving schenden",
+          "scope": "Alleen testen op systemen die je bezit (self-hosted) of waarvoor je expliciete toestemming hebt"
+        }
+      },
+      "scope": {
+        "title": "Scope",
+        "description": "Dit beleid is van toepassing op:",
+        "items": {
+          "main": "AliasVault hoofdapplicatie (app.aliasvault.net)",
+          "api": "AliasVault API endpoints (app.aliasvault.net/api)",
+          "website": "AliasVault website en subdomeinen",
+          "mobile": "Officiële AliasVault mobiele applicaties",
+          "extensions": "Officiële AliasVault browserextensies"
+        }
+      },
+      "outOfScope": {
+        "title": "Buiten scope",
+        "description": "Het volgende wordt doorgaans als buiten scope beschouwd:",
+        "items": {
+          "social": "Social engineering aanvallen",
+          "physical": "Fysieke aanvallen tegen AliasVault infrastructuur",
+          "dos": "Denial of service aanvallen",
+          "spam": "Spam of content injectie",
+          "automated": "Geautomatiseerd scannen zonder voorafgaande goedkeuring"
+        }
+      },
+      "thanks": "Bedankt dat je helpt AliasVault veilig te houden voor iedereen."
     }
   }
 }
