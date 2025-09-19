@@ -65,8 +65,25 @@ export const components = {
     />
   ),
   blockquote: (props: ComponentProps<'blockquote'>) => (
-    <div className="relative z-10 mb-6 overflow-hidden rounded-md bg-primary bg-opacity-10 p-4 md:p-5">
-      <blockquote className="text-center text-base font-medium italic text-body-color" {...props} />
+    <div className="relative z-10 mb-6 overflow-hidden rounded-lg bg-primary/10 border border-primary/20 p-4 md:p-5 shadow-sm dark:bg-primary/5 dark:border-primary/10">
+      <blockquote className="text-left text-base font-medium text-body-color dark:text-body-color-dark [&>p]:mb-0" {...props} />
     </div>
+  ),
+  pre: (props: ComponentProps<'pre'>) => (
+    <div className="relative mb-6 overflow-hidden rounded-lg bg-gray-50 border border-gray-200 shadow-sm dark:bg-gray-800 dark:border-gray-700">
+      <pre className="overflow-x-auto p-4 text-sm leading-relaxed text-gray-800 dark:text-gray-200 [&>code]:bg-transparent [&>code]:p-0" {...props} />
+    </div>
+  ),
+  code: (props: ComponentProps<'code'>) => (
+    <code
+      className="rounded bg-gray-100 px-1.5 py-0.5 text-sm font-mono text-gray-800 dark:bg-gray-800 dark:text-gray-200"
+      {...props}
+    />
+  ),
+  hr: (props: ComponentProps<'hr'>) => (
+    <hr
+      className="my-8 border-0 border-t border-gray-200 dark:border-gray-700"
+      {...props}
+    />
   ),
 }
