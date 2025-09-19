@@ -1058,27 +1058,14 @@
       },
       "scope": {
         "title": "Scope",
-        "description": "This policy applies to:",
-        "items": {
-          "main": "AliasVault main application (app.aliasvault.net)",
-          "api": "AliasVault API endpoints (app.aliasvault.net/api)",
-          "website": "AliasVault website and subdomains",
-          "mobile": "Official AliasVault mobile applications",
-          "extensions": "Official AliasVault browser extensions"
-        }
-      },
-      "outOfScope": {
-        "title": "Out of Scope",
-        "description": "The following are typically considered out of scope:",
-        "items": {
-          "social": "Social engineering attacks",
-          "physical": "Physical attacks against AliasVault infrastructure",
-          "dos": "Denial of service attacks",
-          "spam": "Spam or content injection",
-          "automated": "Automated scanning without prior approval"
-        }
-      },
-      "thanks": "Thank you for helping us keep AliasVault secure for everyone."
+        "description": "This policy applies to the AliasVault main application (app.aliasvault.net) and API endpoints. Social engineering, physical attacks, denial of service, spam, and automated scanning without prior approval are typically considered out of scope."
+      }
+    },
+    "hallOfFame": {
+      "title": "Hall of Fame",
+      "description": "This Hall of Fame consists of security researchers who have helped make AliasVault more secure by responsibly disclosing vulnerabilities in the past. We recognize and thank these researchers for their valuable contributions:",
+      "viewAdvisory": "View Advisory",
+      "allPatched": "All vulnerabilities listed below have been patched and are no longer exploitable."
     }
   }
 }

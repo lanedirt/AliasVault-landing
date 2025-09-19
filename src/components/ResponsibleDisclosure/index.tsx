@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import HallOfFame from "./HallOfFame";
 
 const ResponsibleDisclosureContent = () => {
   const t = useTranslations();
@@ -56,45 +57,16 @@ const ResponsibleDisclosureContent = () => {
             </ul>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-2">
-            <div>
-              <h3 className="mb-6 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                {t('responsibleDisclosure.content.scope.title')}
-              </h3>
-              <p className="mb-4 text-base text-body-color dark:text-body-color-dark">
-                {t('responsibleDisclosure.content.scope.description')}
-              </p>
-              <ul className="list-disc pl-6 text-body-color dark:text-body-color-dark">
-                <li className="mb-2">{t('responsibleDisclosure.content.scope.items.main')}</li>
-                <li className="mb-2">{t('responsibleDisclosure.content.scope.items.api')}</li>
-                <li className="mb-2">{t('responsibleDisclosure.content.scope.items.website')}</li>
-                <li className="mb-2">{t('responsibleDisclosure.content.scope.items.mobile')}</li>
-                <li className="mb-2">{t('responsibleDisclosure.content.scope.items.extensions')}</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="mb-6 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                {t('responsibleDisclosure.content.outOfScope.title')}
-              </h3>
-              <p className="mb-4 text-base text-body-color dark:text-body-color-dark">
-                {t('responsibleDisclosure.content.outOfScope.description')}
-              </p>
-              <ul className="list-disc pl-6 text-body-color dark:text-body-color-dark">
-                <li className="mb-2">{t('responsibleDisclosure.content.outOfScope.items.social')}</li>
-                <li className="mb-2">{t('responsibleDisclosure.content.outOfScope.items.physical')}</li>
-                <li className="mb-2">{t('responsibleDisclosure.content.outOfScope.items.dos')}</li>
-                <li className="mb-2">{t('responsibleDisclosure.content.outOfScope.items.spam')}</li>
-                <li className="mb-2">{t('responsibleDisclosure.content.outOfScope.items.automated')}</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="mt-12 rounded-lg border border-primary/20 bg-primary/5 p-6 text-center">
+          <div className="mb-12">
+            <h3 className="mb-6 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+              {t('responsibleDisclosure.content.scope.title')}
+            </h3>
             <p className="text-base text-body-color dark:text-body-color-dark">
-              {t('responsibleDisclosure.content.thanks')}
+              {t('responsibleDisclosure.content.scope.description')}
             </p>
           </div>
+
+          <HallOfFame />
         </div>
       </div>
     </section>
